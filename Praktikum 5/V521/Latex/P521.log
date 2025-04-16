@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.14)  14 APR 2025 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.14)  16 APR 2025 18:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/tomchelius/Documents/GitHub/Uni/Praktika/Praktikum 5/V521/P521"
-(/Users/tomchelius/Documents/GitHub/Uni/Praktika/Praktikum 5/V521/P521.tex
+**"/Users/tomchelius/Documents/GitHub/Uni/Praktika/Praktikum 5/V521/Latex/P521"
+(/Users/tomchelius/Documents/GitHub/Uni/Praktika/Praktikum 5/V521/Latex/P521.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -638,8 +638,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-
-No file P521.aux.
+ (./P521.aux)
 \openout1 = `P521.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -660,7 +659,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
-(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count459
 \scratchdimen=\dimen198
@@ -683,6 +682,7 @@ File: translations-basic-dictionary-german.trsl (german translation file `transl
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 29.
 Package hyperref Info: Link coloring OFF on input line 29.
+ (./P521.out) (./P521.out)
 \@outlinefile=\write6
 \openout6 = `P521.out'.
 
@@ -713,7 +713,7 @@ Package biblatex Info: Reference section=0 on input line 29.
 Package biblatex Info: Reference segment=0 on input line 29.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-No file P521.toc.
+(./P521.toc)
 \tf@toc=\write7
 \openout7 = `P521.toc'.
 
@@ -732,40 +732,25 @@ LaTeX Warning: Empty bibliography on input line 38.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `P521.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `P521.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  5094E4EB7061D518F6AABF96528EC15D;93.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                P521
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `P521.out' has not changed.
+(rerunfilecheck)             Checksum: 5094E4EB7061D518F6AABF96528EC15D;93.
 Package logreq Info: Writing requests to 'P521.run.xml'.
 \openout1 = `P521.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25336 strings out of 473190
- 510779 string characters out of 5715800
- 1330266 words of memory out of 5000000
- 48331 multiletter control sequences out of 15000+600000
- 563151 words of font info for 51 fonts, out of 8000000 for 9000
+ 25354 strings out of 473190
+ 511020 string characters out of 5715800
+ 1330398 words of memory out of 5000000
+ 48340 multiletter control sequences out of 15000+600000
+ 564298 words of font info for 55 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,7n,81p,756b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on P521.pdf (2 pages, 46429 bytes).
+ 75i,7n,81p,762b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on P521.pdf (2 pages, 66801 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  5 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
