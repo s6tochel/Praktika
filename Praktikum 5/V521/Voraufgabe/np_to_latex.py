@@ -60,6 +60,8 @@ sorted_file_list = [data_path + f for f in sorted_file_names]
 
 join_files(sorted_file_list, data_path + "big_data.txt")
 
-data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(1, 7)).T
+data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(2, 7)).T
+
+data = np.insert(data, 0, np.array(range(data[0].size)), axis=0)
 
 to_latex_table(data, current_path + "latex_table_data",round_to=2)
