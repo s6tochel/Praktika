@@ -17,7 +17,7 @@ def readin(filename):
     
     return np.vstack((array_index, array_data))
 
-def bound_maker(gauss_fits, H_is, H_os, A_is, A_os, x0_is, x0_os, sigma_is, sigma_os):
+def bound_maker(gauss_fits, H1_is, H1_os, H2_is, H2_os, A_is, A_os, x0_is, x0_os, sigma_is, sigma_os):
     single_i_peaks = []
     single_o_peaks = []
     Master_list = []
@@ -25,8 +25,8 @@ def bound_maker(gauss_fits, H_is, H_os, A_is, A_os, x0_is, x0_os, sigma_is, sigm
         single_i_peaks.append([A_is[i], x0_is[i], sigma_is[i]])
         single_o_peaks.append([A_os[i], x0_os[i], sigma_os[i]])
     for i in range(len(gauss_fits)):
-        params_i = [H_is.pop(0)]
-        params_o = [H_os.pop(0)]
+        params_i = [H1_is.pop(0), H2_is.pop(0)]
+        params_o = [H1_os.pop(0), H2_os.pop(0)]
         for j in range(gauss_fits[i]):
             params_i = params_i + single_i_peaks.pop(0)
             params_o = params_o + single_o_peaks.pop(0)
