@@ -19,11 +19,20 @@ def to_latex_table(columns, file_name="latex_table_content", point_to_comma=True
 
     for i in range(data_lenght):
         line = "         "
-        for column in columns:
-            if round_to != False:
-                content = str(np.round(column[i], round_to))
+        for j in range(len(columns)):
+            if round_to == False:
+                content = str(columns[j][i])
+            elif isinstance(round_to, float) or isinstance(round_to, int):
+                content = str(np.round(columns[j][i], round_to))
+                if round_to <= 0:
+                    content = content[:-2]
+            elif isinstance(round_to, list) and len(round_to) == len(columns):
+                content = str(np.round(columns[j][i], round_to[j]))
+                if round_to[j]<= 0:
+                    content = content[:-2]
             else:
-                content = str(column[i])
+                print("round_to has to be set to False, be an int/float or be a list of same lenght as columns")
+                raise TypeError
             if point_to_comma:
                 content = content.replace('.', ',')
             line = line + f"{content} & "
@@ -54,14 +63,16 @@ file_list = [data_path + f for f in os.listdir(data_path) if isfile(join(data_pa
 file_names = [f for f in os.listdir(data_path) if isfile(join(data_path, f))]
 print(file_names)
 
-sorted_file_names = ['spectrum_line1.txt', 'spectrum_line234.txt', 'spectrum_line56.txt']
+sorted_file_names = ['Untergrund_HPGe_fits.txt', 'Cs_HPGe_fits.txt', 'Co_HPGe_fits1.txt', 'Co_HPGe_fits2.txt', 'Eu_HPGe_fits1.txt', 'Eu_HPGe_fits2.txt', 'Eu_HPGe_fits3.txt', 'Eu_HPGe_fits4.txt', 'Eu_HPGe_fits5.txt', 'Eu_HPGe_fits6.txt', 'Eu_HPGe_fits7.txt', 'Eu_HPGe_fits8.txt', 'Eu_HPGe_fits9.txt', 'Eu_HPGe_fits10.txt', 'Eu_HPGe_fits11.txt']
 
 sorted_file_list = [data_path + f for f in sorted_file_names]
 
 join_files(sorted_file_list, data_path + "big_data.txt")
 
-data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(2, 7)).T
+data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(2, 8)).T
 
-data = np.insert(data, 0, np.array(range(data[0].size)), axis=0)
+data = np.insert(data, 0, np.array(range(data[0].size))+1, axis=0)
 
-to_latex_table(data, current_path + "latex_table_data",round_to=2)
+rounding_list = [0, 0, 0, 2, 3, 2, 4]
+
+to_latex_table(data, current_path + "latex_table_data",round_to=rounding_list)

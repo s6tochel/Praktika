@@ -2,3 +2,5 @@
 \contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
 \contentsline {section}{\numberline {2}Theorie}{2}{section.2}%
 \contentsline {section}{\numberline {3}Voraufgabe}{2}{section.3}%
+\contentsline {section}{\numberline {4}NaI-Szintillationsdetektor}{2}{section.4}%
+\contentsline {section}{\numberline {5}HPGe-Halbleiterdetektore}{2}{section.5}%

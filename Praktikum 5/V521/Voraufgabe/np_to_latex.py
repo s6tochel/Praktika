@@ -19,11 +19,20 @@ def to_latex_table(columns, file_name="latex_table_content", point_to_comma=True
 
     for i in range(data_lenght):
         line = "         "
-        for column in columns:
-            if round_to != False:
-                content = str(np.round(column[i], round_to))
+        for j in range(len(columns)):
+            if round_to == False:
+                content = str(columns[j][i])
+            elif isinstance(round_to, float) or isinstance(round_to, int):
+                content = str(np.round(columns[j][i], round_to))
+                if round_to <= 0:
+                    content = content[:-2]
+            elif isinstance(round_to, list) and len(round_to) == len(columns):
+                content = str(np.round(columns[j][i], round_to[j]))
+                if round_to[j]<= 0:
+                    content = content[:-2]
             else:
-                content = str(column[i])
+                print("round_to has to be set to False, be an int/float or be a list of same lenght as columns")
+                raise TypeError
             if point_to_comma:
                 content = content.replace('.', ',')
             line = line + f"{content} & "
@@ -60,8 +69,14 @@ sorted_file_list = [data_path + f for f in sorted_file_names]
 
 join_files(sorted_file_list, data_path + "big_data.txt")
 
-data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(2, 7)).T
+data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(2, 8)).T
 
-data = np.insert(data, 0, np.array(range(data[0].size)), axis=0)
+data = np.insert(data, 0, np.array(range(data[0].size))+1, axis=0)
 
-to_latex_table(data, current_path + "latex_table_data",round_to=2)
+
+rounding_list = []
+
+
+rounding_list = [0, 0, 0, 2, 3, 2, 4]
+
+to_latex_table(data, current_path + "latex_table_data",round_to=rounding_list)
