@@ -32,7 +32,8 @@ def triple_gauss(x, H1, H2, A1, mu1, sigma1, A2, mu2, sigma2, A3, mu3, sigma3):
 
 # GLOBAL VARIABLES
 
-colors = ['red', 'green', 'purple', 'cyan','indigo', 'yellow']
+colors = ['red', 'black', 'purple', 'cyan','indigo', 'yellow']
+chi_squared = 0
 
 ################################################################################################################################
 
@@ -40,25 +41,27 @@ colors = ['red', 'green', 'purple', 'cyan','indigo', 'yellow']
 
 txtfile_name = "spectrum.txt"
 
-save_name = "spectrum_line56"
+save_name = "spectrum_full"
+figure_title = "Voraufgabe Spektrum"
 
-crop = (2700, 4500)
+crop = False
 
-ranges = [(2800, 4500)]
-gauss_fit_orders = [2]
+ranges = []
+gauss_fit_orders = []
 
 # Bounds
 
-H1_i = [0]
-H1_o = [60]
-H2_i = [-1]
-H2_o = [1]
-A_i = [0, 50]
-A_o = [np.inf, np.inf]
-x0_i = [3100, 3750]
-x0_o = [3500, 4250]
-sigma_i = [0, 0]
-sigma_o = [np.inf, np.inf]
+H1_i = [-np.inf, -np.inf, -np.inf]
+H1_o = [np.inf, np.inf, np.inf]
+H2_i = [-np.inf, -np.inf, -np.inf]
+H2_o = [np.inf, np.inf, np.inf]
+
+A_i = [0.0, 0.0, 0.0, 0.0]
+A_o = [np.inf, np.inf, np.inf, np.inf]
+x0_i = [550, 700, 900, 2800]
+x0_o = [650, 890, 1000, 3100]
+sigma_i = [0.0, 0.0, 0.0, 0.0]
+sigma_o = [np.inf, np.inf, np.inf, np.inf]
 
 
 ################################################################################################################################
@@ -66,6 +69,7 @@ sigma_o = [np.inf, np.inf]
 # get data from txt file
 dir_path = os.path.dirname(os.path.realpath(__file__))
 file_path = dir_path + "/" + txtfile_name
+print(file_path)
 data = np.loadtxt(file_path, delimiter="\t", dtype=int).T
 
 # define variables n (idices of bins), I (number of mesured photons in said bin), I_err (error on I)
@@ -82,13 +86,15 @@ else:
     print("\ncrop should either be a tuple containing a lower bound and an upper bound or set to False\n")
     raise TypeError
 I_err = np.sqrt(I)
+I_err[I_err == 0] = 1
 
 # create bounds
 bounds = []
 bounds = bound_maker(gauss_fit_orders, H1_i, H1_o, H2_i, H2_o, A_i, A_o, x0_i, x0_o, sigma_i, sigma_o)
 
 # create txt file to save line data in
-data_file = open(dir_path + "/line_data/" + save_name + ".txt", "w")
+data_file_dir = dir_path + "/line_data/" + save_name + ".txt"
+data_file = open(data_file_dir, "w")
 peak_nr = 1
 
 # actual calculations, iterate over ranges
@@ -100,6 +106,8 @@ for i in range(len(ranges)):
     n_slice = n[range_[0]-crop_i:range_[1]-crop_i]
     I_slice = I[range_[0]-crop_i:range_[1]-crop_i]
     I_err_slice = I_err[range_[0]-crop_i:range_[1]-crop_i]
+
+    print(crop_i)
 
     # do gauss fits
     bounds_i = bounds[i]
@@ -150,19 +158,25 @@ for i in range(len(ranges)):
     fit_vals = np.linspace(n_slice[0], n_slice[-1], 300)
 
     if gauss_fit_orders[i] == 1:
-        plt.plot(fit_vals, gauss(fit_vals, *popt), label=f'Gauss-Fit ({peak_nr-1})', color=colors.pop(0), linewidth=1.5, zorder=3, alpha=0.85)
+        plt.plot(fit_vals, gauss(fit_vals, *popt), label=f"Gauss {peak_nr-1}" + r" ($\chi^2 \approx$" + f"{int(np.round(chi_squared, 0))})", color=colors.pop(0), linewidth=1.7, zorder=3, alpha=1)
     if gauss_fit_orders[i] == 2:
-        plt.plot(fit_vals, double_gauss(fit_vals, *popt), label=f'Doppel Gauss-Fit ({peak_nr-2}&{peak_nr-1})', color=colors.pop(0), linewidth=1.5, zorder=3, alpha=0.85)
+        plt.plot(fit_vals, double_gauss(fit_vals, *popt), label=f"Gauss {peak_nr-2},{peak_nr-1}" + r" ($\chi^2 \approx$" + f"{int(np.round(chi_squared, 0))})", color=colors.pop(0), linewidth=1.7, zorder=3, alpha=1)
+    if gauss_fit_orders[i] == 3:
+        plt.plot(fit_vals, triple_gauss(fit_vals, *popt), label=f"Gauss {peak_nr-3},{peak_nr-2},{peak_nr-1}" + r" ($\chi^2 \approx$" + f"{int(np.round(chi_squared, 0))})", color=colors.pop(0), linewidth=1.7, zorder=3, alpha=1)
+
 
 data_file.close
 
+if len(ranges) == 0:
+    os.remove(data_file_dir)
+
 # plot the data
-plt.errorbar(n, I, yerr=I_err, fmt='o', label=f'Messfehler', color='orange', ms=2, zorder=1, alpha=0.6)
-plt.errorbar(n, I, fmt='o', label='Messwerte', color='blue', ms=2, zorder=2)
-plt.xlabel(r'Kanalnummer $n$')
-plt.ylabel(r'Zählrate $R$ / $\text{s}^{-1}$')
+plt.errorbar(n, I, yerr=I_err, fmt='o', label=f'Messfehler', color='orange', ms=2, zorder=1, alpha=0.5)
+plt.errorbar(n, I, fmt='o', label='Messwerte', color='g', ms=1, zorder=2, alpha=0.8)
+plt.xlabel(r'Kanalnummer $b$')
+plt.ylabel(r'Ticks $N$')
 plt.legend()
 plt.grid()
-plt.title(save_name + f"       ($\chi^2 = ${np.round(chi_squared, 1)})")
+plt.title(figure_title)
 
 save(save_name)
