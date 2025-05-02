@@ -43,9 +43,6 @@ E_nai_err = np.sqrt( ((m_nai*b_nai)**2)*((m_nai_err/m_nai)**2 + (b_nai_err/b_nai
 E_hpge = m_hpge * b_hpge + n_hpge
 E_hpge_err = np.sqrt( ((m_hpge*b_hpge)**2)*((m_hpge_err/m_hpge)**2 + (b_hpge_err/b_hpge)**2) + n_hpge_err**2 )
 
-print(E_hpge)
-print(E_hpge_err)
-
 j = 2 * np.sqrt(2 * np.log(2))
 FWHM_nai = m_nai * (j * sigma_nai) + n_nai
 FWHM_nai_err = np.sqrt( ((m_nai*(j * sigma_nai))**2)*((m_nai_err/m_nai)**2 + (sigma_nai_err/sigma_nai)**2) + n_nai_err**2 )
