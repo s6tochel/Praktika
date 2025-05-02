@@ -1,0 +1,40 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+import os
+from np_to_latex import to_latex_table
+
+dir_path = os.path.dirname(os.path.realpath(__file__)) + "/"
+
+hpge_data_Untergrund = np.loadtxt(dir_path + "Messdaten/" + "Untergrund_HPGe.txt", delimiter=" ", dtype=int).T
+hpge_data_Cs = np.loadtxt(dir_path + "Messdaten/" + "Cs_HPGe.txt", delimiter=" ", dtype=int).T
+hpge_data_Co = np.loadtxt(dir_path + "Messdaten/" + "Co_HPGe.txt", delimiter=" ", dtype=int).T
+nai_data_untergrund = np.loadtxt(dir_path + "Messdaten/" + "Untergrund_NaI.txt", delimiter=" ", dtype=int).T
+nai_data_Cs = np.loadtxt(dir_path + "Messdaten/" + "Cs_NaI.txt", delimiter=" ", dtype=int).T
+nai_data_Co = np.loadtxt(dir_path + "Messdaten/" + "Co_NaI.txt", delimiter=" ", dtype=int).T
+
+hpge_Cs = hpge_data_Cs[1] - hpge_data_Untergrund[1]
+hpge_Co = hpge_data_Co[1] - hpge_data_Untergrund[1]
+nai_Cs = nai_data_Cs[1] - hpge_data_Untergrund[1]
+nai_Co = nai_data_Co[1] - hpge_data_Untergrund[1]
+
+hpge_Cs_tot = np.sum(hpge_Cs)
+hpge_Co_tot = np.sum(hpge_Co)
+nai_Cs_tot = np.sum(nai_Cs)
+nai_Co_tot = np.sum(nai_Co)
+
+hpge_Cs_peak = np.sum(hpge_Cs[6863-3*7:6863+3*7])
+hpge_Co_peak1 = np.sum(hpge_Co[12170-3*8:12170+3*8])
+hpge_Co_peak2 = np.sum(hpge_Co[13823-3*8:13823+3*8])
+nai_Cs_peak = np.sum(nai_Cs[5600-3*165:5600+3*165])
+nai_Co_peak1 = np.sum(nai_Co[9711-3*211:9711+3*211])
+nai_Co_peak2 = np.sum(nai_Co[11011-3*249:11011+3*249])
+
+total = np.array([hpge_Cs_tot, hpge_Co_tot, nai_Cs_tot, nai_Co_tot])
+peaks = np.array([hpge_Cs_peak, hpge_Co_peak1+hpge_Co_peak2, nai_Cs_peak, nai_Co_peak1+nai_Co_peak2])
+
+to_latex_table(
+    [total, np.sqrt(total), peaks, np.sqrt(peaks), peaks/total, (peaks/total)*np.sqrt((1/peaks) + (1/total))],
+    dir_path + "latex_table_content.txt",
+    round_to=[0, 0, 0, 0, 4, 4]
+               )
