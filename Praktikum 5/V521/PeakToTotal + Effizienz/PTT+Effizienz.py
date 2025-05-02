@@ -119,7 +119,7 @@ residuals = ydata=y_data - linear(x_data, *popt)
 chi_squared = np.sum((residuals / y_err) ** 2)
 
 fit_vals = np.linspace(0, 1500, 300)
-plt.plot(fit_vals, linear(fit_vals, *popt), label=f"linearer Fit", color="black", linewidth=1.7, zorder=3, alpha=1)
+plt.plot(fit_vals, linear(fit_vals, *popt), label=r"linearer Fit ($\chi^2 \approx $" + f"{np.round(chi_squared, 0)}"[:-2] + ")", color="black", linewidth=1.7, zorder=3, alpha=1)
 
 for j in range(2):
     print(f"{j}:\t{fit_values[j]}\t± {fit_value_errors[j]}")
