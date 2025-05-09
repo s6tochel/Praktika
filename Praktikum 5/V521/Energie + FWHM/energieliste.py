@@ -20,14 +20,14 @@ sigma_hpge_err = data_hpge[5]
 sigma_nai = data_nai[4]
 sigma_nai_err = data_nai[5]
 
-m_nai_old = 8.35452400042536
-m_nai_err_old = 3.37993427063346e-05
-n_nai_old = 111.75220471040922
-n_nai_err_old = 0.5241331197287311
-m_hpge_old = 10.374249036389141
-m_hpge_err_old = 2.2588503871179685e-11
-n_hpge_old = -1.3269022430118487
-n_hpge_err_old = 9.476926407467874e-07
+m_nai_old = 8.263947995069694
+m_nai_err_old = 1.456387810485596e-07
+n_nai_old = 124.20649170283689
+n_nai_err_old = 0.01919811433712138
+m_hpge_old = 10.374055384001757
+m_hpge_err_old = 2.457629404221388e-12
+n_hpge_old = -1.304584171756852
+n_hpge_err_old = 5.539282569971812e-07
 
 m_nai = 1 / m_nai_old
 m_nai_err = m_nai * (m_nai_err_old / m_nai_old)
@@ -49,16 +49,15 @@ FWHM_nai_err = np.sqrt( ((m_nai*(j * sigma_nai))**2)*((m_nai_err/m_nai)**2 + (si
 FWHM_hpge = m_hpge * (j * sigma_hpge) + n_hpge
 FWHM_hpge_err = np.sqrt( ((m_hpge*(j * sigma_hpge))**2)*((m_hpge_err/m_hpge)**2 + (sigma_hpge_err/sigma_hpge)**2) + n_hpge_err**2 )
 
-slice = list(range(4, len(E_hpge)))
-other_dot = slice.pop(-3)
+slice = list(range(3, len(E_hpge)))
 
 x = E_hpge
 y = FWHM_hpge**2
 x_err = E_hpge_err
 y_err = y * 2 * FWHM_hpge_err / FWHM_hpge
 
-to_latex_table([E_nai, E_nai_err, FWHM_nai, FWHM_nai_err], dir_path + "nai_energy_fwhm.txt", round_to=3)
-to_latex_table([E_hpge, E_hpge_err, FWHM_hpge, FWHM_hpge_err, y, y_err], dir_path + "hpge_energy_fwhm.txt", round_to=3)
+to_latex_table([E_nai, E_nai_err, FWHM_nai, FWHM_nai_err], dir_path + "nai_energy_fwhm.txt", round_to=5)
+to_latex_table([E_hpge, E_hpge_err, FWHM_hpge, FWHM_hpge_err, y, y_err], dir_path + "hpge_energy_fwhm.txt", round_to=5)
 
 popt, pcov = curve_fit(f=linear, xdata=x[slice], ydata=y[slice], sigma=y_err[slice], absolute_sigma=True)
 fit_values = popt
@@ -70,17 +69,23 @@ for j in range(2):
     print(f"{j}:\t{fit_values[j]}\t± {fit_value_errors[j]}")
 print(f"\tChi: {chi_squared}")
 
-fit_vals = np.linspace(300, 1500, 300)
+fit_vals = np.linspace(100, 1500, 300)
 plt.plot(fit_vals, linear(fit_vals, *popt), label=r"Linearer Fit ($\chi^2 \approx $" + f"{int(np.round(chi_squared,0))}" + ")", color="black", linewidth=1, zorder=3, alpha=0.8)
 
 plt.xlabel(r"Photonenenergie $E_\gamma$ / keV")
 plt.ylabel("quadrierte Halbwertsbreite $\Delta E ^2$ / keV")
 plt.title("Geradenfit Bestimmung zur Halbwertszeitkomposition")
 
-plt.errorbar(x[slice], y[slice], yerr=y_err[slice], xerr=x_err[slice], fmt='o', label=f'Messwerte', color='b', ms=4, zorder=1, alpha=1)
-plt.errorbar(x[other_dot], y[other_dot], xerr=x_err[other_dot], yerr=y_err[other_dot], fmt='o', label=f'Ausgenommener Messwert', color='g', ms=4, zorder=1, alpha=0.5)
+plt.errorbar(x[slice], y[slice], yerr=y_err[slice], xerr=x_err[slice], fmt='o', label=f'Messwerte', color='b', ms=4, zorder=4, alpha=1)
 
 plt.grid()
 plt.legend()
 
 plt.savefig(dir_path + "figure1.png", dpi=300)
+
+print("\nNaI:")
+print(f"m':\t{m_nai}\t±  {m_nai_err}")
+print(f"n':\t{n_nai}\t±  {n_nai_err}\n")
+print("HPGe:")
+print(f"m':\t{m_hpge}\t±  {m_hpge_err}")
+print(f"n':\t{n_hpge}\t±  {n_hpge_err}\n")

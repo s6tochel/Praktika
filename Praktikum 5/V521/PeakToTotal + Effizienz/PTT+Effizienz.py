@@ -71,12 +71,12 @@ r_nai_Eu = 200
 r_hpge_err = 5
 r_nai_err = 1
 
-P_nai_Cs = (3/4) * d_nai / r_nai_Cs**3
-P_hpge_Cs = (3/4) * d_hpge / r_hpge_Cs**3
-P_hpge_Eu = (3/4) * d_hpge / r_hpge_Eu**3
-P_nai_Cs_err = (9/(4*r_nai_Cs**3)) * r_nai_err / r_nai_Cs
-P_hpge_Cs_err = (9/(4*r_hpge_Cs**3)) * r_hpge_err / r_hpge_Cs
-P_hpge_Eu_err = (9/(4*r_hpge_Eu**3)) * r_hpge_err / r_hpge_Eu
+P_nai_Cs = (d_nai / ( 4 * r_nai_Cs )) ** 2
+P_hpge_Cs = (d_hpge / ( 4 * r_hpge_Cs )) ** 2
+P_hpge_Eu = (d_hpge / ( 4 * r_hpge_Eu )) ** 2
+P_nai_Cs_err = d_nai**2 * r_nai_err / (8 * r_nai_Cs**3)
+P_hpge_Cs_err = d_hpge**2 * r_hpge_err / (8 * r_hpge_Cs**3)
+P_hpge_Eu_err = d_hpge**2 * r_hpge_err / (8 * r_hpge_Eu**3)
 
 N_nai_Cs = A_Cs * t * P_nai_Cs
 N_hpge_Cs = A_Cs * t * P_hpge_Cs
@@ -96,9 +96,15 @@ print(f"Effizienz NaI Cs: \t{eff_nai_Cs} \t± {eff_nai_Cs_err}")
 print(f"Effizienz HPGe Cs: \t{eff_hpge_Cs} \t± {eff_hpge_Cs_err}")
 
 to_latex_table(
+    [E, Eu_peaks, np.sqrt(Eu_peaks), I_rel, I_rel_err],
+    dir_path + "Eu_N_I.txt"
+    # round_to= [0, 3, 3]
+               )
+
+to_latex_table(
     [E, eff_hpge_Eu, eff_hpge_Eu_err],
     dir_path + "Eu_eff.txt",
-    round_to= [0, 3, 3]
+    round_to= [0, 3, 6]
                )
 
 def linear(x, a, b):
@@ -119,20 +125,23 @@ residuals = ydata=y_data - linear(x_data, *popt)
 chi_squared = np.sum((residuals / y_err) ** 2)
 
 fit_vals = np.linspace(0, 1500, 300)
-plt.plot(fit_vals, linear(fit_vals, *popt), label=r"linearer Fit ($\chi^2 \approx $" + f"{np.round(chi_squared, 0)}"[:-2] + ")", color="black", linewidth=1.7, zorder=3, alpha=1)
+plt.plot(fit_vals, linear(fit_vals, *popt), label=r"linearer Fit ($\chi^2 \approx $" + f"{np.round(chi_squared, 0)}"[:-2] + ")", color="black", linewidth=1, zorder=3, alpha=1)
 
 for j in range(2):
     print(f"{j}:\t{fit_values[j]}\t± {fit_value_errors[j]}")
 print(f"\tChi: {chi_squared}")
 
-plt.errorbar(x_data, y_data, xerr=x_err, yerr=y_err, fmt='o', label='Messwerte der Eu-Quelle', color='b', ms=3, zorder=2, alpha=0.8)
+Cs_E = np.array([661.68817])
+Cs_E_err = np.array([6e-05])
+
+plt.errorbar(x_data, y_data, xerr=x_err, yerr=y_err, fmt='o', label='Messwerte der Eu-Quelle', color='b', ms=3, zorder=4, alpha=0.8)
+plt.errorbar(Cs_E, np.array([np.log(eff_hpge_Cs)]), xerr=Cs_E_err, yerr=np.array([eff_hpge_Cs_err/eff_hpge_Cs]), fmt='o', label='Messwert der Cs-Quelle', color='g', ms=3, zorder=4, alpha=0.8)
 
 plt.legend()
 plt.grid()
-plt.xlabel(r"Energie $E$ / keV")
+plt.xlabel(r"Photonenenergie $E_\gamma$ / keV")
 plt.ylabel(r"Logarithmus der Effizienz log($\epsilon$)")
 
 plt.title("Fit zur Bestimmung der Energieabhänigkeit der Effizienz")
 
 plt.savefig(dir_path + "figure1.png", dpi=300)
-

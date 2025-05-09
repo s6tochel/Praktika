@@ -39,15 +39,15 @@ chi_squared = 0
 
 # ENTER DATA HERE
 
-txtfile_name = "Differenz.txt"
+txtfile_name = "Langzeit_Untergrund.txt"
 
-save_name = "differenz_full"
-figure_title = "Differenzspektrum der Bodenprobe"
+save_name = "untergrund_fits8"
+figure_title = "Untergrundspektrum mit HPGe-Detektor"
 
-crop = False
+crop = (15100, 15200)
 
-ranges = []
-gauss_fit_orders = []
+ranges = [(15120, 15180)]
+gauss_fit_orders = [1]
 
 # Bounds
 
@@ -58,8 +58,8 @@ H2_o = [np.inf, np.inf, np.inf]
 
 A_i = [0.0, 0.0, 0.0, 0.0]
 A_o = [np.inf, np.inf, np.inf, np.inf]
-x0_i = [14600, 11290, 11500, 2800]
-x0_o = [14625, 11325, 11550, 3100]
+x0_i = [15140, 10000, 10021, 900]
+x0_o = [15160, 10020, 10080, 920]
 sigma_i = [0.0, 0.0, 0.0, 0.0]
 sigma_o = [np.inf, np.inf, np.inf, np.inf]
 

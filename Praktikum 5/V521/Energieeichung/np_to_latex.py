@@ -53,26 +53,3 @@ def join_files(list_of_files, new_file_name):
     new_file = open(new_file_name, "w")
     new_file.write(entire_text)
     new_file.close()
-
-
-
-current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
-data_path = current_path + "line_data/"
-
-file_list = [data_path + f for f in os.listdir(data_path) if isfile(join(data_path, f))]
-file_names = [f for f in os.listdir(data_path) if isfile(join(data_path, f))]
-print(file_names)
-
-sorted_file_names = ['untergrund_fits1.txt', 'untergrund_fits2.txt', 'untergrund_fits3.txt', 'untergrund_fits4.txt', 'untergrund_fits5.txt', 'untergrund_fits6.txt', 'untergrund_fits7.txt', 'untergrund_fits8.txt']
-
-sorted_file_list = [data_path + f for f in sorted_file_names]
-
-join_files(sorted_file_list, data_path + "big_data.txt")
-
-data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(2, 8)).T
-
-data = np.insert(data, 0, np.array(range(data[0].size))+1, axis=0)
-
-rounding_list = [0, 0, 0, 2, 3, 2, 2]
-
-to_latex_table(data, current_path + "latex_table_data",round_to=rounding_list)

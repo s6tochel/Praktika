@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import os
 
-E_lit = [121.7817, 244.6974, 344.2785, 778.9045, 867.380, 964.057, 1085.837, 1112.076, 1408.013]
-E_lit_err = [0.0003, 0.0008, 0.0012, 0.0024, 0.003, 0.005, 0.010, 0.003, 0.003]
+E_lit = [661.7, 1173.2, 1332.5, 121.7817, 244.6974, 344.2785, 778.9045, 867.380, 964.057, 1085.837, 1112.076, 1408.013]
+E_lit_err = [0, 0, 0, 0.0003, 0.0008, 0.0012, 0.0024, 0.003, 0.005, 0.010, 0.003, 0.003]
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -22,13 +22,13 @@ nai_scale = 0.125
 hpge_scale = 0.1
 nai_offset = 0
 
-hpge_takeout = [3,4,5, -3]
-nai_takeout = [0, 1, 2]
+hpge_takeout = [6,7,8, -3]
+nai_takeout = [3, 4, 5]
 
-b_hpge = np.delete(b_hpge, hpge_takeout)
-b_hpge_err = np.delete(b_hpge_err, hpge_takeout)
-b_nai = np.delete(b_nai, nai_takeout)
-b_nai_err = np.delete(b_nai_err, nai_takeout)
+# b_hpge = np.delete(b_hpge, hpge_takeout)
+# b_hpge_err = np.delete(b_hpge_err, hpge_takeout)
+# b_nai = np.delete(b_nai, nai_takeout)
+# b_nai_err = np.delete(b_nai_err, nai_takeout)
 
 fig,ax = plt.subplots(1)
 
@@ -44,7 +44,7 @@ plt.title("Vergleich der ermittelten Peaks zu den Literatur-Energiewerten")
 # Turn off tick labels
 ax.set_yticklabels([])
 
-plt.savefig(dir_path + "/figure2.png", dpi=300)
+plt.savefig(dir_path + "/figure1.png", dpi=300)
 
 
 
