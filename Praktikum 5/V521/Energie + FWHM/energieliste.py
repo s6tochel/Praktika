@@ -44,10 +44,10 @@ E_hpge = m_hpge * b_hpge + n_hpge
 E_hpge_err = np.sqrt( ((m_hpge*b_hpge)**2)*((m_hpge_err/m_hpge)**2 + (b_hpge_err/b_hpge)**2) + n_hpge_err**2 )
 
 j = 2 * np.sqrt(2 * np.log(2))
-FWHM_nai = m_nai * (j * sigma_nai) + n_nai
-FWHM_nai_err = np.sqrt( ((m_nai*(j * sigma_nai))**2)*((m_nai_err/m_nai)**2 + (sigma_nai_err/sigma_nai)**2) + n_nai_err**2 )
-FWHM_hpge = m_hpge * (j * sigma_hpge) + n_hpge
-FWHM_hpge_err = np.sqrt( ((m_hpge*(j * sigma_hpge))**2)*((m_hpge_err/m_hpge)**2 + (sigma_hpge_err/sigma_hpge)**2) + n_hpge_err**2 )
+FWHM_nai = m_nai * (j * sigma_nai) 
+FWHM_nai_err = np.sqrt( ((m_nai*(j * sigma_nai))**2)*((m_nai_err/m_nai)**2 + (sigma_nai_err/sigma_nai)**2) )
+FWHM_hpge = m_hpge * (j * sigma_hpge)
+FWHM_hpge_err = np.sqrt( ((m_hpge*(j * sigma_hpge))**2)*((m_hpge_err/m_hpge)**2 + (sigma_hpge_err/sigma_hpge)**2))
 
 slice = list(range(3, len(E_hpge)))
 
@@ -56,8 +56,8 @@ y = FWHM_hpge**2
 x_err = E_hpge_err
 y_err = y * 2 * FWHM_hpge_err / FWHM_hpge
 
-to_latex_table([E_nai, E_nai_err, FWHM_nai, FWHM_nai_err], dir_path + "nai_energy_fwhm.txt", round_to=5)
-to_latex_table([E_hpge, E_hpge_err, FWHM_hpge, FWHM_hpge_err, y, y_err], dir_path + "hpge_energy_fwhm.txt", round_to=5)
+to_latex_table([E_nai, E_nai_err, FWHM_nai, FWHM_nai_err], dir_path + "nai_energy_fwhm.txt", round_to=1)
+to_latex_table([E_hpge, E_hpge_err, FWHM_hpge, FWHM_hpge_err, y, y_err], dir_path + "hpge_energy_fwhm.txt", round_to=3)
 
 popt, pcov = curve_fit(f=linear, xdata=x[slice], ydata=y[slice], sigma=y_err[slice], absolute_sigma=True)
 fit_values = popt
@@ -73,7 +73,7 @@ fit_vals = np.linspace(100, 1500, 300)
 plt.plot(fit_vals, linear(fit_vals, *popt), label=r"Linearer Fit ($\chi^2 \approx $" + f"{int(np.round(chi_squared,0))}" + ")", color="black", linewidth=1, zorder=3, alpha=0.8)
 
 plt.xlabel(r"Photonenenergie $E_\gamma$ / keV")
-plt.ylabel("quadrierte Halbwertsbreite $\Delta E ^2$ / keV")
+plt.ylabel("quadrierte Halbwertsbreite $\Delta E ^2$ / keV${}^2$")
 plt.title("Geradenfit Bestimmung zur Halbwertszeitkomposition")
 
 plt.errorbar(x[slice], y[slice], yerr=y_err[slice], xerr=x_err[slice], fmt='o', label=f'Messwerte', color='b', ms=4, zorder=4, alpha=1)

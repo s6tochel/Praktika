@@ -33,6 +33,9 @@ nai_Cs_peak = np.sum(nai_Cs[5600-3*165:5600+1+3*165])
 nai_Co_peak1 = np.sum(nai_Co[9711-3*211:9711+1+3*211])
 nai_Co_peak2 = np.sum(nai_Co[11011-3*249:11011+1+3*249])
 
+print(hpge_Co[13823-3*8:13823+1+3*8])
+
+
 Eu_peak1 = np.sum(Eu[1262-3*5:1262+1+3*5])
 Eu_peak2 = np.sum(Eu[2537-3*5:2537+1+3*5])
 Eu_peak3 = np.sum(Eu[3570-3*6:3570+1+3*6])
@@ -47,17 +50,19 @@ total = np.array([hpge_Cs_tot, hpge_Co_tot, nai_Cs_tot, nai_Co_tot])
 peaks = np.array([hpge_Cs_peak, hpge_Co_peak1+hpge_Co_peak2, nai_Cs_peak, nai_Co_peak1+nai_Co_peak2])
 Eu_peaks = np.array([Eu_peak1, Eu_peak2, Eu_peak3, Eu_peak7, Eu_peak8, Eu_peak9, Eu_peak10, Eu_peak12, Eu_peak13])
 
+print(total)
+
 to_latex_table(
     [total, np.sqrt(total), peaks, np.sqrt(peaks), peaks/total, (peaks/total)*np.sqrt((1/peaks) + (1/total))],
     dir_path + "ppt.txt",
-    round_to=[0, 0, 0, 0, 4, 4]
+    round_to=[1, 1, 1, 1, 4, 4]
                )
 
 E = np.array([121.7828343, 244.68766158, 344.27180967, 778.93568111, 867.36660395, 964.09834685, 1085.89298118, 1112.10118512, 1408.02845613])
 E_err = np.array([6.00304465e-05, 3.93680392e-04, 1.37707565e-04, 9.37920019e-04, 4.70693823e-03, 1.15629976e-03, 1.91873986e-03, 1.59615595e-03, 1.24216853e-03])
 
-I_rel = np.array([28.54, 7.55, 26.59, 12.93, 4.23, 14.51, 10.11, 13.67, 20.87])
-I_rel_err = np.array([0.16, 0.04, 0.2, 0.08, 0.03, 0.07, 0.05, 0.08, 0.09])
+I_rel = np.array([28.54, 7.55, 26.59, 12.93, 4.23, 14.51, 10.11, 13.67, 20.87]) * 0.01
+I_rel_err = np.array([0.16, 0.04, 0.2, 0.08, 0.03, 0.07, 0.05, 0.08, 0.09])*0.01
 
 A_Cs = 405000
 A_Eu = 709000
@@ -96,9 +101,9 @@ print(f"Effizienz NaI Cs: \t{eff_nai_Cs} \t± {eff_nai_Cs_err}")
 print(f"Effizienz HPGe Cs: \t{eff_hpge_Cs} \t± {eff_hpge_Cs_err}")
 
 to_latex_table(
-    [E, Eu_peaks, np.sqrt(Eu_peaks), I_rel, I_rel_err],
-    dir_path + "Eu_N_I.txt"
-    # round_to= [0, 3, 3]
+    [E, Eu_peaks, np.sqrt(Eu_peaks), eff_hpge_Eu*100, eff_hpge_Eu_err*100],
+    dir_path + "Eu_N_eff.txt",
+    round_to= [0, 1, 0, 3, 3]
                )
 
 to_latex_table(
@@ -145,3 +150,9 @@ plt.ylabel(r"Logarithmus der Effizienz log($\epsilon$)")
 plt.title("Fit zur Bestimmung der Energieabhänigkeit der Effizienz")
 
 plt.savefig(dir_path + "figure1.png", dpi=300)
+
+print(N_nai_Cs)
+print(N_nai_Cs_err)
+print(N_hpge_Cs)
+print(N_hpge_Cs_err)
+print(hpge_Co_peak1 + hpge_Co_peak2)

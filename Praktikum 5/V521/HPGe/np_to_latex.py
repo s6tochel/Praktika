@@ -73,6 +73,6 @@ data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(2, 
 
 data = np.insert(data, 0, np.array(range(data[0].size))+1, axis=0)
 
-rounding_list = [0, 0, 0, 2, 3, 2, 4]
+rounding_list = [0, 0, 0, 2, 2, 2, 2]
 
 to_latex_table(data, current_path + "latex_table_data",round_to=rounding_list)

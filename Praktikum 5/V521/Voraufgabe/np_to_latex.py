@@ -77,6 +77,6 @@ data = np.insert(data, 0, np.array(range(data[0].size))+1, axis=0)
 rounding_list = []
 
 
-rounding_list = [0, 0, 0, 2, 3, 2, 4]
+rounding_list = [0, 0, 0, 0, 0, 1, 1]
 
 to_latex_table(data, current_path + "latex_table_data",round_to=rounding_list)
