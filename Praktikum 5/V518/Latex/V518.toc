@@ -1,0 +1,10 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Kosmische Strahlung}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Standardmodell}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Szintillator und Photomultiplier}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Logische Schaltung: Diskriminator, Koinzidenz-Module und FPGA}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Zufallskoinzidenz}{9}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Druchführung}{9}{section.3}%
+\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
