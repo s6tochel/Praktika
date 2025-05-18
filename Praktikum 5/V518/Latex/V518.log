@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  17 MAY 2025 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  17 MAY 2025 19:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -637,8 +637,10 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-
-No file V518.aux.
+ (./V518.aux
+Package babel Info: 'ngerman' activates 'ngerman' shorthands.
+(babel)             Reported  on input line 9.
+)
 \openout1 = `V518.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -659,7 +661,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
-(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count460
 \scratchdimen=\dimen259
@@ -682,11 +684,10 @@ File: translations-basic-dictionary-german.trsl (german translation file `transl
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 32.
 Package hyperref Info: Link coloring OFF on input line 32.
+ (./V518.out) (./V518.out)
 \@outlinefile=\write6
 \openout6 = `V518.out'.
 
-Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported  on input line 32.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -718,8 +719,7 @@ Package caption Info: End \AtBeginDocument code.
 
 [1
 
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-No file V518.toc.
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./V518.toc)
 \tf@toc=\write7
 \openout7 = `V518.toc'.
 
@@ -728,24 +728,19 @@ No file V518.toc.
 [2]
 
 [3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-LaTeX Warning: Reference `fig:Teilchenschauer' on page 4 undefined on input line 72.
-
-<figures/Teilchenschauer.png, id=28, 451.6875pt x 451.6875pt>
+<figures/Teilchenschauer.png, id=71, 451.6875pt x 451.6875pt>
 File: figures/Teilchenschauer.png Graphic file (type png)
 <use figures/Teilchenschauer.png>
 Package pdftex.def Info: figures/Teilchenschauer.png  used on input line 75.
 (pdftex.def)             Requested size: 172.5pt x 172.50455pt.
 
-LaTeX Warning: Citation 'shower' on page 4 undefined on input line 76.
-
 
 LaTeX Warning: Citation 'shower' on page 4 undefined on input line 76.
 
 
-LaTeX Warning: Reference `fig:Fluss' on page 4 undefined on input line 86.
+LaTeX Warning: Citation 'shower' on page 4 undefined on input line 76.
 
-<figures/Fluss.png, id=29, 347.79938pt x 448.67625pt>
+<figures/Fluss.png, id=73, 347.79938pt x 448.67625pt>
 File: figures/Fluss.png Graphic file (type png)
 <use figures/Fluss.png>
 Package pdftex.def Info: figures/Fluss.png  used on input line 89.
@@ -759,14 +754,12 @@ LaTeX Warning: Citation 'Naka' on page 4 undefined on input line 90.
 
 
 [4 <./figures/Teilchenschauer.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:Standardmodell' on page 5 undefined on input line 96.
-
-<figures/Standardmodell.png, id=36, 963.6pt x 922.44624pt>
+<figures/Standardmodell.png, id=82, 963.6pt x 922.44624pt>
 File: figures/Standardmodell.png Graphic file (type png)
 <use figures/Standardmodell.png>
 Package pdftex.def Info: figures/Standardmodell.png  used on input line 99.
 (pdftex.def)             Requested size: 172.5pt x 165.13232pt.
+
 
 LaTeX Warning: Citation 'Standardmodell' on page 5 undefined on input line 100.
 
@@ -776,72 +769,43 @@ LaTeX Warning: Citation 'Standardmodell' on page 5 undefined on input line 100.
 
 
 [5 <./figures/Fluss.png> <./figures/Standardmodell.png>]
-
-LaTeX Warning: Reference `fig:SzintillatorBandl체cke' on page 6 undefined on input line 108.
-
-
-LaTeX Warning: File `Versuch 521/figures/Szintillator_B채ndermodell.png' not found on input line 113.
-
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:113: Package pdftex.def Error: File `Versuch 521/figures/Szintillator_B채ndermodell.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 ...1/figures/Szintillator_B채ndermodell.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no � in font cmtt10!
-Missing character: There is no � in font cmtt10!
-
-LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 114.
+<figures/Szintillator_B채ndermodell.png, id=91, 592.46344pt x 286.82156pt>
+File: figures/Szintillator_B채ndermodell.png Graphic file (type png)
+<use figures/Szintillator_B채ndermodell.png>
+Package pdftex.def Info: figures/Szintillator_B채ndermodell.png  used on input line 118.
+(pdftex.def)             Requested size: 345.0pt x 167.02621pt.
 
 
-LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 114.
+LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 119.
 
 
-LaTeX Warning: Reference `fig:AufbauSzinti' on page 6 undefined on input line 118.
+LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 119.
+
+<figures/SzintillatorAufbau.png, id=93, 730.22812pt x 243.15843pt>
+File: figures/SzintillatorAufbau.png Graphic file (type png)
+<use figures/SzintillatorAufbau.png>
+Package pdftex.def Info: figures/SzintillatorAufbau.png  used on input line 127.
+(pdftex.def)             Requested size: 345.0pt x 114.88184pt.
+
+LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 128.
 
 
-LaTeX Warning: File `Versuch 521/figures/SzintillatorAufbau.png' not found on input line 122.
-
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:122: Package pdftex.def Error: File `Versuch 521/figures/SzintillatorAufbau.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.122 ...rsuch 521/figures/SzintillatorAufbau.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 123.
-
-
-LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 123.
+LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 128.
 
 
 
-[6]
-
-[7]
-Overfull \hbox (7.37134pt too wide) in paragraph at lines 127--127
+[6 <./figures/Szintillator_B채ndermodell.png>]
+Overfull \hbox (7.37134pt too wide) in paragraph at lines 132--132
 []\OT1/cmr/bx/n/12 Logische Schal-tung: Dis-kri-mi-na-tor, Koinzidenz-Module
  []
 
 
 
+[7 <./figures/SzintillatorAufbau.png>]
+
 [8]
 
-[9]
-
-LaTeX Warning: Empty bibliography on input line 156.
+LaTeX Warning: Empty bibliography on input line 161.
 
 (./V518.aux)
  ***********
@@ -852,17 +816,8 @@ L3 programming layer <2025-03-26>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `V518.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `V518.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  4C4BFA46B60E36B55941036855A41C86;1394.
+Package rerunfilecheck Info: File `V518.out' has not changed.
+(rerunfilecheck)             Checksum: 4C4BFA46B60E36B55941036855A41C86;1394.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                V518
@@ -873,18 +828,18 @@ Package logreq Info: Writing requests to 'V518.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25659 strings out of 469626
- 517470 string characters out of 5475183
- 1325237 words of memory out of 5000000
- 52193 multiletter control sequences out of 15000+600000
- 632711 words of font info for 61 fonts, out of 8000000 for 9000
+ 25620 strings out of 469626
+ 514761 string characters out of 5475183
+ 1325812 words of memory out of 5000000
+ 52148 multiletter control sequences out of 15000+600000
+ 632543 words of font info for 60 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,7n,80p,1060b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on V518.pdf (9 pages, 549194 bytes).
+ 75i,7n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on V518.pdf (8 pages, 631872 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

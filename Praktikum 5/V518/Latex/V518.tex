@@ -78,7 +78,7 @@ Diese Teilchenschauer bestehten aus 3 Bereichen, wie in der Abbildung \ref{fig:T
 \end{figure}
 \begin{itemize}
     \item Elektomagnetische-Komponente: Diese besteht aus Photonen und Elektronen und wird die \enquote{Softe} Komponente genannt.
-    \item Mesonen-Komponente: Diese besteht aus Myonen und wird die "Harte" Komponente genannt.
+    \item Mesonen-Komponente: Diese besteht aus Myonen und wird die \enquote{Harte} Komponente genannt.
     \item Nukleonen-Komponente: Diese besteht aus Protonen und Neutronen.
 \end{itemize}
 Die Teilchen die wir auf der Erdatmosphäre messen, sind hauptsächlich Myonen, da diese die Teilchen sind die mit am weitesten
@@ -103,14 +103,19 @@ Aus diesem können die Eigenschaften der Teilchen abgeleitet werden. Das Standar
 \textbf{\color{red}MEHR SCHREIBEN}
 
 \subsection{Szintillator und Photomultiplier}
-Szintillationsdetektoren basieren auf ausgesendeten Lichtteilchen (Photonen). Ionisierende Strahlung trifft auf das szintillierende Material und erzeugt durch Ionisation eine Kaskade an Elektron-Loch-Paaren. Dies geschieht durch Prozesse, wie im Abschnitt "Materie und Photonen Wechselwirkung" beschrieben. Die herausgelösten Elektronen überwinden somit die Bandlücke und landen im Leitungsband. Dort sind sie (sowie ihre hinerlassenen Löcher) als frei bewegliche Ladungen delokalisiert und können an anderer Stelle auf aktive Zentren stoßen. Diese aktiven Zentren kommen von der Dotierung mit einem anderen Material (hier Thallium) in unser Gitter. An diesen aktiven Zentren können sich die Elektron-Lochpaare über ein anderes Energieniveau lumineszierend abbauen, wobei Photonen im nahen bis sichtbaren Bereich ausgesendet werden. Wir verwenden in dem Versuch einen Natrium-Iod-Szintillationsdetektor den wir kurz NaI-Detektor nennen.
+Szintillationsdetektoren basieren auf ausgesendeten Lichtteilchen (Photonen). Ionisierende Strahlung trifft auf das szintillierende Material 
+und erzeugt durch Ionisation eine Kaskade an Elektron-Loch-Paaren. Dies geschieht durch Prozesse, wie im Abschnitt \enquote{Materie und Photonen Wechselwirkung} 
+beschrieben. Die herausgelösten Elektronen überwinden somit die Bandlücke und landen im Leitungsband. Dort sind sie (sowie ihre hinerlassenen Löcher) 
+als frei bewegliche Ladungen delokalisiert und können an anderer Stelle auf aktive Zentren stoßen. Diese aktiven Zentren kommen von der Dotierung mit 
+einem anderen Material (hier Thallium) in unser Gitter. An diesen aktiven Zentren können sich die Elektron-Lochpaare über ein anderes Energieniveau 
+lumineszierend abbauen, wobei Photonen im nahen bis sichtbaren Bereich ausgesendet werden. Wir verwenden in dem Versuch einen 
+Natrium-Iod-Szintillationsdetektor den wir kurz NaI-Detektor nennen.
 
 Der beschriebene Prozess ist auch nochmal in der Abbildung \ref{fig:SzintillatorBandlücke} dargestellt.
 
-
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{Versuch 521/figures/Szintillator_Bändermodell.png}
+    \includegraphics[width=1\linewidth]{figures/Szintillator_Bändermodell.png}
     \caption{Darstellung des Bändermodell eines Szintillators \cite{Wer}}
     \label{fig:SzintillatorBandlücke}
 \end{figure}
@@ -119,15 +124,15 @@ In dem Photomultiplier lösen die Photonen dann Elektronen aus der Photokathode.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Versuch 521/figures/SzintillatorAufbau.png}
+    \includegraphics[width=1\linewidth]{figures/SzintillatorAufbau.png}
     \caption{Aufbau eines Szintillator \cite{Wer}}
     \label{fig:AufbauSzinti}
 \end{figure}
 
 \subsection{Logische Schaltung: Diskriminator, Koinzidenz-Module und FPGA}
 Um aus den gemessenen Analogen Signalen digitale Signale zu erzeugen, verwenden wir einen Diskriminator. 
-Dieser trennt die Signale in zwei Bereiche: Ein Signal unterhalb der Schwelle wird als \enquote{0} und ein Signal oberhalb der Schwelle als "1" gewertet. 
-Hiermit können wir Rauscheffekte vermeiden und zusätzlich gibt der Diskriminator uns die Möglichkeit, die Signaldauer einzustellen
+Dieser trennt die Signale in zwei Bereiche: Ein Signal unterhalb der Schwelle wird als \enquote{0} und ein Signal oberhalb der Schwelle als \enquote{1} gewertet. 
+Hiermit können wir Rauscheffekte vermeiden und zusätzlich gibt der Diskriminator uns die Möglichkeit, die Signaldauer einzustellen.
 
 Das Koinzidenz-Modul wirkt als ein logisches Und, es nimmt eine Menge an Signalen entgegen und gibt nur dann ein Signal aus, 
 wenn alle Signale gleichzeitig anliegen. Das Koinzidenz-Modul wird verwendet damit einem durchfliegenden Teilchen ein Winkel zugeordnet werden kann, 

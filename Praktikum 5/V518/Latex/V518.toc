@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {2.1}Kosmische Strahlung}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Standardmodell}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Szintillator und Photomultiplier}{6}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Logische Schaltung: Diskriminator, Koinzidenz-Module und FPGA}{8}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Zufallskoinzidenz}{9}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Druchführung}{9}{section.3}%
-\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
+\contentsline {subsection}{\numberline {2.4}Logische Schaltung: Diskriminator, Koinzidenz-Module und FPGA}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Zufallskoinzidenz}{7}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Druchführung}{8}{section.3}%
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}%
