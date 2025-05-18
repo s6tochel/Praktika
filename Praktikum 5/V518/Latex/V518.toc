@@ -7,4 +7,6 @@
 \contentsline {subsection}{\numberline {2.4}Logische Schaltung: Diskriminator, Koinzidenz-Module und FPGA}{7}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Zufallskoinzidenz}{7}{subsection.2.5}%
 \contentsline {section}{\numberline {3}Druchführung}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Winkelverteilung}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Lebensdauer}{8}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Auswertung}{8}{section.4}%
