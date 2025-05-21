@@ -154,20 +154,143 @@ Diese kann auf 2 Arten bestimmt werden:
 \end{itemize}   
 
 \section{Druchführung}
+Dieser Versuch besteht aus 2 Teilen. Im ersten Teil sollen die Winkelverteilung der Höhenstrahlung bestimmt werden und im zweiten Teil die Lebensdauer der Myonen.
 
 \subsection{Winkelverteilung}
+Um die Winkelverteilung der Höhenstrahlung zu bestimmen, werden 24 Szintillatoren verwendet, die in einem Kreis angeordnet sind, ein 25. Szintillator ist in der Mitte des Kreises angebracht.
+Der Kreis hat einen Durchmesser von 1,5 m.
+Je zwei gegenüberliegende Szintillatoren und der mittlere (Z25) sind mit einem Koinzidenzmodul verbunden, das die Signale der drei Szintillatoren verarbeitet, somit kann der Raum in 12 Sektoren unterteilt werden, 
+welche je einen Raumwinkel von $\SI{15}{\degree}$ abdecken.
+Alle Szintillatoren sind mit einem Diskriminator verbunden, der die Signale in digitale Signale umwandelt.
+Dieser Aufbau ist in der Abbildung \ref{fig:AufbauWinkelverteilung} dargestellt.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Aufbau_Winkelverteilung.png}
+    \caption{Aufbau der Winkelverteilungsmessung\cite{Anleitung}}
+    \label{fig:AufbauWinkelverteilung}
+\end{figure}
+
+\subsubsection*{Schwellenspannung D12}
+Damit die Szintillatoren und der Photomultiplier richtig arbeiten, muss die Schwellenspannung eingestellt werden.
+Hierzu wurde mit Hilfe von LABView ein Programm geschrieben, dass die Schwellenspannungen von $\SI{-50}{\milli\volt}$ bis $\SI{-200}{\milli\volt}$ variiert.
+Das Programm ist im Anhang zu finden \ref{fig:LABView1} bis \ref{fig:LABView4}.
+In diesem Programm wird zunächst die NIM-Box eingelesen. Anschließend werden die Diskriminatoren der Szinitillatoren D1, D2, D23, D24, D25 und D12 initialisiert, sodass das FPGA diese erkennen kann.	
+Die Schwellenspannungen der Diskriminatoren D1, D2, D23 und D24 sind bereits vorgegeben.
+Nun werden folgende Signale gezählt:
+\begin{itemize}
+    \item \textbf{Z25}
+    \item \textbf{Z12}
+    \item ODER Signal von \textbf{D24}, \textbf{D23}, \textbf{D1} und \textbf{D2} gebildet	
+    \item Koinzidenzsignal von \textbf{D12} und \textbf{ODER Signal}  	
+\end{itemize}
+Dann wird in einer Schleife die Schwellenspannung von D12 von $\SI{-50}{\milli\volt}$ bis $\SI{-200}{\milli\volt}$ in Schritten von $\SI{-10}{\milli\volt}$ variiert, jeder Schleifendurchgang wurde mit
+einer Messdauer von \textbf{\color[red]{HIER NOCH ZEIT EINFÜGEN}}.
+Im letzten Schritt werden die gemessenen Zählwerte in ein Array geschrieben und in eine Txt-Datei gespeichert.
+Hieraus kann dann die geeinete Schwellenspannung abgeleitet werden und
+damit kann dann eine vom Höhenstrahlungsfluss unabhängig Analyse von der Schwellenspannung durchgeführt werden.
+
+\subsubsection*{Langzeitmessung}
+Wenn die Schwellenspannung eingestellt ist, wird eine Langzeitmessung durchgeführt.
+Hierzu wurde ein Programm zur Winekelverteilungsmessung vorgegeben. 
+\textbf{\color[red]{HIER MEHR SCHREIBEN}}
+
 
 \subsection{Lebensdauer}
-\begin{figure}
+Auch bei der Lebensdauermessung der Myonen müssen erst die Schwellenspannungen eingestellt werden.
+Dabei wurde ein anderes Verfahren verwendet, als bei der Winkelverteilungsmessung.
+Es wurde für verschiedene Schwellenspannungen die Zählrate gemessen, dabei wurde wie in Abbildung \ref{fig:AufbauLebensdauer} dargestellt, doppelt gezählt.
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{figures/Aufbau_Lebensdauermessung.pdf}
-    \caption{Schmatischer Aufbau der Lebensdauermessung}
+    \caption{Schmatischer Aufbau für die Bestimmung der Schwellenspannung für die Lebensdauermessung}
     \label{fig:AufbauLebensdauer}
 \end{figure}
+Es wurde mit der variierten Schwellspannung im Messkreis des einen Szintillators, die Anzahl an Ereignissen gezählt.
+In den Monitorkreisen und dem Messkreis des anderen Szintillators wurde die Zählrate mit einer konstanten Schwellenspannung von $\SI{-50}{\milli\volt}$ gehalten. 
+Da während unserer Durchführung der dicke Szintillator defekt war konnten wir nur die Zählrate des dünnen Szintillators messen.
+Daher konnten wir auch nicht die Messung zur Lebensdauer der Myonen durchführen. Die Daten zur Auswertung erhielten wir von den Tutoren.
+Nachdem die Schwellenspannungen eingestellt wurden, kann mit der Schaltung aus der Abbildung \ref{fig:AufbauZerfall} die Lebensdauer der Myonen bestimmt werden.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Aufbau_Zerfallsmessung.pdf}
+    \caption{Aufbau der Lebensdauermessung mit Start- und Stop-Signal}
+    \label{fig:AufbauZerfall} 
+\end{figure}
+Hierzu wird ein Start Signal ausgelöst, wenn ein Myon durch beide Szintillatoren fliegt und somit das Koinzidenzmodul auslöst. 
+Wenn dies geschehen ist wird durch ein Schalt-Flip-Flop ein Gate geöffnet. Durch dieses Gate gelangt eine $\SI{20}{\mega\hertz}$-Pulsfrequenz auf zahn kaskadierte 1:20-Untersetzer mit
+zugeordneten Sichtzählern. Nun kann es zu zwei Szenarien kommen, Ein Myon fliegt durch den Szintillator und löst das Koinzidenzmodul aus. Das Gate öffnet sich und die Zählrate wird gezählt, wenn:
+\begin{itemize}
+    \item ein Stop Signal innerhalb von $\SI{10}{\micro\second}$ ausgelöst wird, wird das Gate geschlossen und der Sichtzähler bleibt bei der Kodierung stehen. In dieser Zeit wird eine Totzeit-Generator gestartet
+    und es kann für eine gewisse Zeit kein weiteres Start-Signal ausgelöst werden. Wenn die Totzeit abgelaufen ist, wird ein Reset-Impuls erzeugt und der Untersetzer auf Null zurückgesetzt.
+    \item kein Stop-Signal innerhalb der $\SI{10}{\micro\second}$ erscheint, wird am Ende des Zählers ein Overflow-Impuls gesetzt, dieser lößt direkt ein Reset-Impuls aus, der den Zähler auf Null zurückgesetzt. 
+\end{itemize}
+Damit das Stop-Signal nicht durch Zufallskoinzidenzen sofort ausgelöst wird, wird das Start-Signal zeitverzögert.
 
 \section{Auswertung}
 
+\subsection{Winkelverteilung}
+Aus der Messung der Schwellenspannung D12 (\ref{tab:SchwellenspannungWinkelverteilung}) ergibt sich eine geeignete Schwellenspannung von $\SI{-70}{\milli\volt}$.
+Dieser wurde ermittelt, indem der erste Sattelwert aus der Auftragung von $N_\text{koin}/N_{25}$ gegen die Schwellenspannungen betrachtet wurde, 
+dies ist zu sehen in der Abbildung \ref{fig:SchwellenspannungWinkelverteilung}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Schwellenspannung_Winkelverteilung.png}
+    \caption{Auftragung zur Bestimmung der Schwellenspannung des Szintillators D12}
+    \label{fig:SchwellenspannungWinkelverteilung}
+\end{figure}
+\section{Anhang}
 
+\subsection{LABView-Programm}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/ProgrammScreen1.png}
+    \caption{LABView-Programm zur Schwellenspannungseinstellung Teil 1}
+    \label{fig:LABView1}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/ProgrammScreen2.png}
+    \caption{LABView-Programm zur Schwellenspannungseinstellung Teil 2}
+    \label{fig:LABView2}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/ProgrammScreen3.png}
+    \caption{LABView-Programm zur Schwellenspannungseinstellung Teil 3}
+    \label{fig:LABView3}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/ProgrammScreen4.png}
+    \caption{LABView-Programm zur Schwellenspannungseinstellung Teil 4}
+    \label{fig:LABView4}
+\end{figure}
+
+\subsection*{Winkelverteilung}
+\begin{table}[H]
+    \centering
+    \caption{Anpassungsparameter der Bestimmung der Schwellenspannung für die Winkelverteilung}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $-U$ / mV & $N_\mathrm{Koin.}/N_{25}$ & $\Delta (N_\mathrm{Koin.}/N_{25})$ \\ \hline
+        10 & 8.24e-03 & 6.89e-04 \\ \hline
+        20 & 7.23e-03 & 6.39e-04 \\ \hline
+        30 & 5.98e-03 & 5.83e-04 \\ \hline
+        40 & 4.88e-03 & 5.27e-04 \\ \hline
+        50 & 3.72e-03 & 4.56e-04 \\ \hline
+        60 & 2.07e-03 & 3.40e-04 \\ \hline
+        70 & 2.34e-03 & 3.61e-04 \\ \hline
+        80 & 1.40e-03 & 2.81e-04 \\ \hline
+        90 & 1.35e-03 & 2.75e-04 \\ \hline
+        100 & 7.29e-04 & 2.02e-04 \\ \hline
+        110 & 5.65e-04 & 1.79e-04 \\ \hline
+        120 & 5.20e-04 & 1.73e-04 \\ \hline
+        130 & 7.92e-04 & 2.12e-04 \\ \hline
+        140 & 7.27e-04 & 2.02e-04 \\ \hline
+        150 & 1.68e-04 & 9.71e-05 \\ \hline
+    \end{tabular}   
+    \label{tab:SchwellenspannungWinkelverteilung}
+\end{table}
 \newpage
 \printbibliography[heading=bibintoc]
 

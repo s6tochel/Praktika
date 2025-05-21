@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  18 MAY 2025 21:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  21 MAY 2025 11:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -637,10 +637,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./V518.aux
-Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported  on input line 9.
-)
+
+No file V518.aux.
 \openout1 = `V518.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -661,7 +659,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
- (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count460
 \scratchdimen=\dimen259
@@ -684,10 +682,11 @@ File: translations-basic-dictionary-german.trsl (german translation file `transl
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 32.
 Package hyperref Info: Link coloring OFF on input line 32.
- (./V518.out) (./V518.out)
 \@outlinefile=\write6
 \openout6 = `V518.out'.
 
+Package babel Info: 'ngerman' activates 'ngerman' shorthands.
+(babel)             Reported  on input line 32.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -719,7 +718,8 @@ Package caption Info: End \AtBeginDocument code.
 
 [1
 
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./V518.toc)
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+No file V518.toc.
 \tf@toc=\write7
 \openout7 = `V518.toc'.
 
@@ -728,19 +728,24 @@ Package caption Info: End \AtBeginDocument code.
 [2]
 
 [3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<figures/Teilchenschauer.png, id=81, 451.6875pt x 451.6875pt>
+
+LaTeX Warning: Reference `fig:Teilchenschauer' on page 4 undefined on input line 72.
+
+<figures/Teilchenschauer.png, id=28, 451.6875pt x 451.6875pt>
 File: figures/Teilchenschauer.png Graphic file (type png)
 <use figures/Teilchenschauer.png>
 Package pdftex.def Info: figures/Teilchenschauer.png  used on input line 75.
 (pdftex.def)             Requested size: 172.5pt x 172.50455pt.
 
-
 LaTeX Warning: Citation 'shower' on page 4 undefined on input line 76.
 
 
 LaTeX Warning: Citation 'shower' on page 4 undefined on input line 76.
 
-<figures/Fluss.png, id=83, 347.79938pt x 448.67625pt>
+
+LaTeX Warning: Reference `fig:Fluss' on page 4 undefined on input line 86.
+
+<figures/Fluss.png, id=29, 347.79938pt x 448.67625pt>
 File: figures/Fluss.png Graphic file (type png)
 <use figures/Fluss.png>
 Package pdftex.def Info: figures/Fluss.png  used on input line 89.
@@ -754,12 +759,14 @@ LaTeX Warning: Citation 'Naka' on page 4 undefined on input line 90.
 
 
 [4 <./figures/Teilchenschauer.png (PNG copy)>]
-<figures/Standardmodell.png, id=92, 963.6pt x 922.44624pt>
+
+LaTeX Warning: Reference `fig:Standardmodell' on page 5 undefined on input line 96.
+
+<figures/Standardmodell.png, id=36, 963.6pt x 922.44624pt>
 File: figures/Standardmodell.png Graphic file (type png)
 <use figures/Standardmodell.png>
 Package pdftex.def Info: figures/Standardmodell.png  used on input line 99.
 (pdftex.def)             Requested size: 172.5pt x 165.13232pt.
-
 
 LaTeX Warning: Citation 'Standardmodell' on page 5 undefined on input line 100.
 
@@ -769,19 +776,24 @@ LaTeX Warning: Citation 'Standardmodell' on page 5 undefined on input line 100.
 
 
 [5 <./figures/Fluss.png> <./figures/Standardmodell.png>]
-<figures/Szintillator_Bändermodell.png, id=101, 592.46344pt x 286.82156pt>
+
+LaTeX Warning: Reference `fig:SzintillatorBandlücke' on page 6 undefined on input line 114.
+
+<figures/Szintillator_Bändermodell.png, id=46, 592.46344pt x 286.82156pt>
 File: figures/Szintillator_Bändermodell.png Graphic file (type png)
 <use figures/Szintillator_Bändermodell.png>
 Package pdftex.def Info: figures/Szintillator_Bändermodell.png  used on input line 118.
 (pdftex.def)             Requested size: 345.0pt x 167.02621pt.
 
-
 LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 119.
 
 
 LaTeX Warning: Citation 'Wer' on page 6 undefined on input line 119.
 
-<figures/SzintillatorAufbau.png, id=103, 730.22812pt x 243.15843pt>
+
+LaTeX Warning: Reference `fig:AufbauSzinti' on page 6 undefined on input line 123.
+
+<figures/SzintillatorAufbau.png, id=47, 730.22812pt x 243.15843pt>
 File: figures/SzintillatorAufbau.png Graphic file (type png)
 <use figures/SzintillatorAufbau.png>
 Package pdftex.def Info: figures/SzintillatorAufbau.png  used on input line 127.
@@ -802,16 +814,132 @@ Overfull \hbox (7.37134pt too wide) in paragraph at lines 132--132
 
 
 [7 <./figures/SzintillatorAufbau.png>]
-<figures/Aufbau_Lebensdauermessung.pdf, id=117, 603.19843pt x 298.75392pt>
+
+LaTeX Warning: Reference `fig:AufbauWinkelverteilung' on page 8 undefined on input line 165.
+
+<figures/Aufbau_Winkelverteilung.png, id=64, 550.30594pt x 510.40688pt>
+File: figures/Aufbau_Winkelverteilung.png Graphic file (type png)
+<use figures/Aufbau_Winkelverteilung.png>
+Package pdftex.def Info: figures/Aufbau_Winkelverteilung.png  used on input line 168.
+(pdftex.def)             Requested size: 241.49895pt x 223.98781pt.
+
+LaTeX Warning: Citation 'Anleitung' on page 8 undefined on input line 169.
+
+
+LaTeX Warning: Citation 'Anleitung' on page 8 undefined on input line 169.
+
+
+LaTeX Warning: Reference `fig:LABView1' on page 8 undefined on input line 176.
+
+
+LaTeX Warning: Reference `fig:LABView4' on page 8 undefined on input line 176.
+
+
+Overfull \hbox (0.22385pt too wide) in paragraph at lines 174--180
+\OT1/cmr/m/n/10 Pro-gramm ge-schrie-ben, dass die Schwel-len-span-nun-gen von $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 50 []$ bis $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 200 []$
+ []
+
+
+
+[8 <./figures/Aufbau_Winkelverteilung.png>]
+
+h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:187: LaTeX Error: Undefined color model `red'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.187 ...bf{\color[red]{HIER NOCH ZEIT EINFÜGEN}}
+                                                  .
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:195: LaTeX Error: Undefined color model `red'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \textbf{\color[red]{HIER MEHR SCHREIBEN}}
+                                               
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:AufbauLebensdauer' on page 9 undefined on input line 201.
+
+<figures/Aufbau_Lebensdauermessung.pdf, id=74, 603.19843pt x 298.75392pt>
 File: figures/Aufbau_Lebensdauermessung.pdf Graphic file (type pdf)
 <use figures/Aufbau_Lebensdauermessung.pdf>
-Package pdftex.def Info: figures/Aufbau_Lebensdauermessung.pdf  used on input line 163.
+Package pdftex.def Info: figures/Aufbau_Lebensdauermessung.pdf  used on input line 204.
 (pdftex.def)             Requested size: 345.0pt x 170.875pt.
 
 
-[8 <./figures/Aufbau_Lebensdauermessung.pdf>]
+[9]
 
-LaTeX Warning: Empty bibliography on input line 172.
+LaTeX Warning: Reference `fig:AufbauZerfall' on page 10 undefined on input line 212.
+
+<figures/Aufbau_Zerfallsmessung.pdf, id=82, 318.67087pt x 128.0374pt>
+File: figures/Aufbau_Zerfallsmessung.pdf Graphic file (type pdf)
+<use figures/Aufbau_Zerfallsmessung.pdf>
+Package pdftex.def Info: figures/Aufbau_Zerfallsmessung.pdf  used on input line 215.
+(pdftex.def)             Requested size: 345.0pt x 138.6202pt.
+
+
+[10 <./figures/Aufbau_Lebensdauermessung.pdf> <./figures/Aufbau_Zerfallsmessung.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/Aufbau_Zerfallsmessung.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `tab:SchwellenspannungWinkelverteilung' on page 11 undefined on input line 232.
+
+
+LaTeX Warning: Reference `fig:SchwellenspannungWinkelverteilung' on page 11 undefined on input line 234.
+
+<figures/Schwellenspannung_Winkelverteilung.png, id=104, 462.528pt x 346.896pt>
+File: figures/Schwellenspannung_Winkelverteilung.png Graphic file (type png)
+<use figures/Schwellenspannung_Winkelverteilung.png>
+Package pdftex.def Info: figures/Schwellenspannung_Winkelverteilung.png  used on input line 237.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+
+
+[11]
+<figures/ProgrammScreen1.png, id=113, 574.39594pt x 680.5425pt>
+File: figures/ProgrammScreen1.png Graphic file (type png)
+<use figures/ProgrammScreen1.png>
+Package pdftex.def Info: figures/ProgrammScreen1.png  used on input line 246.
+(pdftex.def)             Requested size: 345.0pt x 408.76479pt.
+<figures/ProgrammScreen2.png, id=114, 1013.28563pt x 651.93562pt>
+File: figures/ProgrammScreen2.png Graphic file (type png)
+<use figures/ProgrammScreen2.png>
+Package pdftex.def Info: figures/ProgrammScreen2.png  used on input line 252.
+(pdftex.def)             Requested size: 345.0pt x 221.96355pt.
+<figures/ProgrammScreen3.png, id=115, 558.58687pt x 636.87938pt>
+File: figures/ProgrammScreen3.png Graphic file (type png)
+<use figures/ProgrammScreen3.png>
+Package pdftex.def Info: figures/ProgrammScreen3.png  used on input line 258.
+(pdftex.def)             Requested size: 345.0pt x 393.36456pt.
+<figures/ProgrammScreen4.png, id=116, 843.15pt x 654.19406pt>
+File: figures/ProgrammScreen4.png Graphic file (type png)
+<use figures/ProgrammScreen4.png>
+Package pdftex.def Info: figures/ProgrammScreen4.png  used on input line 264.
+(pdftex.def)             Requested size: 345.0pt x 267.68225pt.
+
+
+[12 <./figures/Schwellenspannung_Winkelverteilung.png>]
+
+[13 <./figures/ProgrammScreen1.png>]
+
+[14 <./figures/ProgrammScreen2.png>]
+
+[15 <./figures/ProgrammScreen3.png>]
+
+[16 <./figures/ProgrammScreen4.png>]
+
+[17]
+
+LaTeX Warning: Empty bibliography on input line 295.
 
 (./V518.aux)
  ***********
@@ -822,8 +950,17 @@ L3 programming layer <2025-03-26>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `V518.out' has not changed.
-(rerunfilecheck)             Checksum: 4532B7D20960E69251D9C2386535CEB6;1645.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `V518.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `V518.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  39D741B10FE737B14CAB8AD28C076A37;1995.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                V518
@@ -834,18 +971,18 @@ Package logreq Info: Writing requests to 'V518.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25633 strings out of 469626
- 515191 string characters out of 5475183
- 1325887 words of memory out of 5000000
- 52158 multiletter control sequences out of 15000+600000
- 632543 words of font info for 60 fonts, out of 8000000 for 9000
+ 25700 strings out of 469626
+ 517409 string characters out of 5475183
+ 1325237 words of memory out of 5000000
+ 52208 multiletter control sequences out of 15000+600000
+ 633221 words of font info for 62 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,7n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on V518.pdf (8 pages, 651335 bytes).
+ 75i,10n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on V518.pdf (17 pages, 996118 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
