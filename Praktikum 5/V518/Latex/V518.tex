@@ -91,6 +91,27 @@ In der Abbildung \ref{fig:Fluss} ist der vertikale Fluss zur atmosphärischen Ei
     \label{fig:Fluss}
 \end{figure} 
 
+\subsection{Energieverlust von Teilchen in Materie}
+Durch die Wechselwirkung der Teilchen mit der Materie verlieren sie Energie. Der mittlere Energieverlust eines Teilchens in Materie wird durch die Bethe-Bloch-Gleichung (\cite{Bethe}) beschrieben.
+\begin{equation*}
+    -\frac{\mathrm{d}E}{\mathrm{d}x} = \frac{4\pi n z^2}{m_e c^2} \cdot \frac{e^4}{(4\pi \varepsilon_0)^2} \cdot \frac{1}{\beta^2} \cdot \left[ \ln\left(\frac{2 m_e c^2 \beta^2 }{I\cdot (1-\beta^2)}\right) - \beta^2 \right]    
+\end{equation*}
+Dabei ist $E$ die Energie des Teilchens, $x$ die Wegstrecke in der Materie, $m_e$ die Masse des Elektrons, $c$ die Lichtgeschwindigkeit, $Z$ die Ordnungszahl des Materials, $A$ die Massenzahl des Materials, $e$ die Elementarladung, $\varepsilon_0$ die elektrische Feldkonstante, $\beta = \frac{v}{c}$ die Geschwindigkeit des Teilchens relativ zur Lichtgeschwindigkeit und $I$ die Ionisationsenergie des Materials. 
+
+Die Bethe-Bloch-Gleichung zeigt, dass der Energieverlust von der Geschwindigkeit des Teilchens, der Ordnungszahl des Materials und der Ionisationsenergie des Materials abhängt.
+Da aber der Energieverlust von Teilchen in Materie ein statistischer Prozess ist, wird seine Verteilung durch die Landau-Verteilung (\cite{Landau}) beschrieben.
+\begin{equation*}
+    f(x) = \frac{1}{\sqrt{2\pi}} \cdot e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}\right)^2}    
+\end{equation*}
+Dabei ist $\mu$ der Mittelwert und $\sigma$ die Standardabweichung der Verteilung.
+Wie in der Abbildung \ref{fig:Landau} zu erkennen ist der Verlauf der Landau-Verteilung nicht symmetrisch, sondern hat einen langen Schwanz in Richtung höherer Energieverluste.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/Landau.png}
+    \caption{Landau-Verteilung \cite{Landau}}
+    \label{fig:Landau}
+\end{figure}
+
 \subsection{Standardmodell}
 Das Standardmodell der Teilchenphysik ist eine Theorie, die die fundamentalen Teilchen und ihre Wechselwirkungen beschreibt.
 Aus diesem können die Eigenschaften der Teilchen abgeleitet werden. Das Standardmodell ist in der Abbildung \ref{fig:Standardmodell} dargestellt.
@@ -100,7 +121,7 @@ Aus diesem können die Eigenschaften der Teilchen abgeleitet werden. Das Standar
     \caption{Das Standardmodell der Teilchenphysik \cite{Standardmodell}}
     \label{fig:Standardmodell} 
 \end{figure}
-\textbf{\color{red}MEHR SCHREIBEN}
+\textbf{\color{red}MEHR SCHREIBEN ODER RAUSNEHMEN}
 
 \subsection{Szintillator und Photomultiplier}
 Szintillationsdetektoren basieren auf ausgesendeten Lichtteilchen (Photonen). Ionisierende Strahlung trifft auf das szintillierende Material 
@@ -154,7 +175,7 @@ Diese kann auf 2 Arten bestimmt werden:
 \end{itemize}   
 
 \section{Druchführung}
-Dieser Versuch besteht aus 2 Teilen. Im ersten Teil sollen die Winkelverteilung der Höhenstrahlung bestimmt werden und im zweiten Teil die Lebensdauer der Myonen.
+Dieser Versuch besteht aus 2 Teilen. Im ersten Teil soll die Winkelverteilung der Höhenstrahlung bestimmt werden und im zweiten Teil die Lebensdauer der Myonen.
 
 \subsection{Winkelverteilung}
 Um die Winkelverteilung der Höhenstrahlung zu bestimmen, werden 24 Szintillatoren verwendet, die in einem Kreis angeordnet sind, ein 25. Szintillator ist in der Mitte des Kreises angebracht.
@@ -170,9 +191,11 @@ Dieser Aufbau ist in der Abbildung \ref{fig:AufbauWinkelverteilung} dargestellt.
     \label{fig:AufbauWinkelverteilung}
 \end{figure}
 
+
 \subsubsection*{Schwellenspannung D12}
 Damit die Szintillatoren und der Photomultiplier richtig arbeiten, muss die Schwellenspannung eingestellt werden.
-Hierzu wurde mit Hilfe von LABView ein Programm geschrieben, dass die Schwellenspannungen von $\SI{-50}{\milli\volt}$ bis $\SI{-200}{\milli\volt}$ variiert.
+Hierzu wurde mit Hilfe von LABView ein Programm geschrieben, dass die Schwellenspannungen von $\SI{-50}{\milli\volt}$ bis $\SI{-200}{\milli\volt}$ variiert und die Anzahl an Koinzidenzen misst.
+
 Das Programm ist im Anhang zu finden \ref{fig:LABView1} bis \ref{fig:LABView4}.
 In diesem Programm wird zunächst die NIM-Box eingelesen. Anschließend werden die Diskriminatoren der Szinitillatoren D1, D2, D23, D24, D25 und D12 initialisiert, sodass das FPGA diese erkennen kann.	
 Die Schwellenspannungen der Diskriminatoren D1, D2, D23 und D24 sind bereits vorgegeben.
@@ -183,30 +206,38 @@ Nun werden folgende Signale gezählt:
     \item ODER Signal von \textbf{D24}, \textbf{D23}, \textbf{D1} und \textbf{D2} gebildet	
     \item Koinzidenzsignal von \textbf{D12} und \textbf{ODER Signal}  	
 \end{itemize}
-Dann wird in einer Schleife die Schwellenspannung von D12 von $\SI{-50}{\milli\volt}$ bis $\SI{-200}{\milli\volt}$ in Schritten von $\SI{-10}{\milli\volt}$ variiert, jeder Schleifendurchgang wurde mit
-einer Messdauer von \textbf{\color[red]{HIER NOCH ZEIT EINFÜGEN}}.
+Dann wird in einer Schleife die Schwellenspannung von D12 von $\SI{-50}{\milli\volt}$ bis $\SI{-200}{\milli\volt}$ in Schritten von $\SI{-10}{\milli\volt}$ variiert.
 Im letzten Schritt werden die gemessenen Zählwerte in ein Array geschrieben und in eine Txt-Datei gespeichert.
 Hieraus kann dann die geeinete Schwellenspannung abgeleitet werden und
 damit kann dann eine vom Höhenstrahlungsfluss unabhängig Analyse von der Schwellenspannung durchgeführt werden.
 
 \subsubsection*{Langzeitmessung}
 Wenn die Schwellenspannung eingestellt ist, wird eine Langzeitmessung durchgeführt.
-Hierzu wurde ein Programm zur Winekelverteilungsmessung vorgegeben. 
-\textbf{\color[red]{HIER MEHR SCHREIBEN}}
+Hierzu wurde ein Programm zur Winkelverteilungsmessung vorgegeben. Dieser funktioniert nach dem Prinzip der Koinzidenzmessung, der genaue Aufbau ist in der Abbildung \ref{fig:AufbauWinkelverteilungLangzeit} schmematisch dargestellt.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/SchematischWinkelverteilung.png}
+    \caption{Schematischer Aufbau der Winkelverteilungsmessung}
+    \label{fig:AufbauWinkelverteilungLangzeit}
+\end{figure}
+Es werden je 2 Detektoren die sich gegenüberliegende Detektoren mit der mittleren Szintillatoren Z25 durch Diskriminatoren in ein Kooinzidenzmodul geschickt und dort von einem Stichzähler gezählt.
+Diese Messung wurde mit einer Dauer von $\SI{598215}{\second}$ durchgeführt, dies entspricht etwa einer Woche.
 
 
 \subsection{Lebensdauer}
-Auch bei der Lebensdauermessung der Myonen müssen erst die Schwellenspannungen eingestellt werden.
+Auch bei der Lebensdauermessung der Myonen müssen erst die Schwellenspannungen der Diskriminatoren eingestellt werden.
 Dabei wurde ein anderes Verfahren verwendet, als bei der Winkelverteilungsmessung.
-Es wurde für verschiedene Schwellenspannungen die Zählrate gemessen, dabei wurde wie in Abbildung \ref{fig:AufbauLebensdauer} dargestellt, doppelt gezählt.
+Bei dieser Methode wurde jeder Szintillator an 2 Diskriminatoren angeschlossen, diese Bilden den Messkreis (in Abbildung \ref{fig:AufbauLebensdauer} dunkel Blau) und den Monitorkreis (in Abbildung \ref{fig:AufbauLebensdauer} Rot).
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{figures/Aufbau_Lebensdauermessung.pdf}
     \caption{Schmatischer Aufbau für die Bestimmung der Schwellenspannung für die Lebensdauermessung}
     \label{fig:AufbauLebensdauer}
 \end{figure}
-Es wurde mit der variierten Schwellspannung im Messkreis des einen Szintillators, die Anzahl an Ereignissen gezählt.
-In den Monitorkreisen und dem Messkreis des anderen Szintillators wurde die Zählrate mit einer konstanten Schwellenspannung von $\SI{-50}{\milli\volt}$ gehalten. 
+Dann wurde im Messkreis die Schwellenspannung des einen Szintillators variiert, während die Schwellenspannung des anderen Szintillators konstant gehalten wurde.
+Die Schwellenspannungen im Monitorkreis wurden auf $\SI{-50}{\milli\volt}$ eingestellt und festgehalten.
+Es wurde mit der variierten Schwellenspannung im Messkreis des einen Szintillators, die Anzahl an Ereignissen gezählt.
+Damit kann dann die Schwellenspannung des Szintillators über den Monitorkreis normiert werden. 
 Da während unserer Durchführung der dicke Szintillator defekt war konnten wir nur die Zählrate des dünnen Szintillators messen.
 Daher konnten wir auch nicht die Messung zur Lebensdauer der Myonen durchführen. Die Daten zur Auswertung erhielten wir von den Tutoren.
 Nachdem die Schwellenspannungen eingestellt wurden, kann mit der Schaltung aus der Abbildung \ref{fig:AufbauZerfall} die Lebensdauer der Myonen bestimmt werden.
@@ -229,6 +260,7 @@ Damit das Stop-Signal nicht durch Zufallskoinzidenzen sofort ausgelöst wird, wi
 \section{Auswertung}
 
 \subsection{Winkelverteilung}
+\subsubsection*{Schwellenspannung D12}
 Aus der Messung der Schwellenspannung D12 (\ref{tab:SchwellenspannungWinkelverteilung}) ergibt sich eine geeignete Schwellenspannung von $\SI{-70}{\milli\volt}$.
 Dieser wurde ermittelt, indem der erste Sattelwert aus der Auftragung von $N_\text{koin}/N_{25}$ gegen die Schwellenspannungen betrachtet wurde, 
 dies ist zu sehen in der Abbildung \ref{fig:SchwellenspannungWinkelverteilung}.
@@ -238,6 +270,125 @@ dies ist zu sehen in der Abbildung \ref{fig:SchwellenspannungWinkelverteilung}.
     \caption{Auftragung zur Bestimmung der Schwellenspannung des Szintillators D12}
     \label{fig:SchwellenspannungWinkelverteilung}
 \end{figure}
+\subsubsection*{Anpassung der Winkelverteilung}
+Nachdem die Schwellenspannung bestimmt und eingestellt wurde, wurde die Langzeitmessung druchgeführt, die gemessenen Werte sind im Anhang in der Tabelle \ref{tab:Winkelverteilung} hinterlegt.
+An diese Werte wurde eine Cosinus und eine Gaussanpassung durchgeführt, diese sind in den Abbildungen \ref{fig:WinkelverteilungCosinus} und \ref{fig:WinkelverteilungGauss} dargestellt.
+Bei den Anpassungen wurden die Rot markierten Werte nicht berücksichtigt, da diese offensichtlich ausreißer sind, wie diese Zustande kommen wird nachher im Abschnitt \enquote{Pulshöhenspektrum} genauer erklärt.
+Die Anpassungsfunktionen sind zu sehen in der Gleichung \ref{eq:CosinusAnpassung} und \ref{eq:GaussAnpassung}.
+\begin{displaymath}
+    A \cdot \cos( x + \phi )^n + c \cdot x + d
+\label{eq:CosinusAnpassung}
+\end{displaymath}
+\begin{displaymath}
+    A \cdot e^{-\frac{(x - \mu)^2}{2\sigma^2}} + b
+\label{eq:GaussAnpassung}
+\end{displaymath}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/cosAnpassung.png}
+    \caption{Cosinus-Anpassung an die Winkelverteilung}
+    \label{fig:WinkelverteilungCosinus}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/gaussAnpassung.png}
+    \caption{Gauss-Anpassung an die Winkelverteilung}
+    \label{fig:WinkelverteilungGauss}
+\end{figure} 
+Die Parameter der Cosinus-Anpassung sind in der Tabelle \ref{tab:CosinusAnpassungWinkelverteilung} und die der Gauss-Anpassung in der Tabelle \ref{tab:GaussAnpassungWinkelverteilung} zu finden.
+\begin{table}[H]
+    \centering
+    \caption{Cosinus-Anpassung an die Winkelverteilung}
+    \begin{tabular}{|c|c|}
+        \hline
+        Parameter & Wert \\ \hline
+        $A$ & 4378(50) \\ \hline
+        $\phi$ / $\radian$ & 0,020(8) \\ \hline
+        $n$ & 1.82(6) \\ \hline
+        $c$ & -08(35) \\ \hline
+        $d$ & 03(20) \\ \hline
+    \end{tabular}
+    \label{tab:CosinusAnpassungWinkelverteilung}
+\end{table}
+\begin{table}[H]
+    \centering
+    \caption{Gauss-Anpassung an die Winkelverteilung}
+    \begin{tabular}{|c|c|}
+        \hline
+        Parameter & Wert \\ \hline
+        $A$ & 4949(49) \\ \hline
+        $\mu$ & -0,016(4) \\ \hline
+        $\sigma$ & -0,667(6) \\ \hline
+        $b$ & -291(16) \\ \hline
+    \end{tabular}
+    \label{tab:GaussAnpassungWinkelverteilung}
+\end{table}
+Wie zu erwarten war ist die Cosinus-Anpassung besser als die Gauss-Anpassung, da die Winkelverteilung eine Cosinus-Verteilung ist. Dies ist zu erkennen an den $\chi^2$ der Anpassungen.
+Genauer wurde eine $\cos^2$ Abhängigkeit festgestellt, da die Cosinus-Anpassung eine $n=1,82(6)$-Abhängigkeit hat, die nahe bei 2 liegt.
+
+\subsubsection*{Pulshöhenspektrum}
+Die Messung des Pulshöhenspektrums wurde in der Abbildung \ref{fig:PulshoheWinkelverteilung} aufgetragen.
+Hierbei ist keine Landau-Verteilung zu erkennen, was aber auffällt ist, dass der Rauschanteil am Anfang des Spektrums sehr hoch ist.
+Dies fiel uns schon direkt nach der Messung auf, daher haben wir hier auch einen weiteren Datensatz von einer anderen Gruppe erhalten, die das gleiche Experiment durchgeführt hat.
+Im Vergleich zu unserem Spektrum \ref{PulshoheWinkelverteilung} sieht man im Spektrum der anderen Gruppe \ref{fig:PulshoheWinkelverteilungAndereGruppe} eine Landau-Verteilung und der Rauschpeak
+ist deutlich kleiner.
+Wir gehen davon aus, dass unsere Schwellspannung zu niedrig eingestellt war, sodass auch ein starker Rauschanteil im Spektrum zu sehen ist. Daher ist auch die Landau-Verteilung \enquote{verwaschen} da der Rauschanteil auch
+bei höheren Pulshöhen zu sehen ist und damit sich mit dem der Landau-Verteilung überlappt.
+Dies kann auch der Grundsein, warum bei der Winkelverteilung einige Detektoren deutlich mehr Rauschanteilgemessen haben und damit die Außreißer in der Winkelverteilung entstanden sind.
+Bei der weiteren Auswertung wurde der Datensatz der anderen Gruppe verwendet.
+Das Pulshöhenspektrum ohne den Rauschanteil ist in der Abbildung \ref{fig:PulshoheWinkelverteilungLandauOhneFit} zu sehen.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Pulshöhenspektrum_Landau_ohne_fit.png}
+    \caption{Pulshöhenspektrum gezoomt auf den Landauanteil}
+    \label{fig:PulshoheWinkelverteilungLandauOhneFit}
+\end{figure}
+Hier wurde ein Bereich von $100$ bis $800$ betrachtet.
+In der Abbildung \ref{fig:PulshoheWinkelverteilungLandau} ist das Pulshöhenspektrum mit der Landau- und Gauss-Anpassung zu sehen.
+Die Angepassten Funktionen sind in der Gleichung \ref{eq:LandauAnpassung} und \ref{eq:GaussAnpassungPulshohe} zu finden.
+\begin{displaymath}
+    L(x) = A \cdot exp\left[ -\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right) + exp\left( -\frac{x - \mu }{\sigma} \right) \right] 
+\label{eq:LandauAnpassung}
+\end{displaymath}
+\begin{displaymath}
+    G(x) = A \cdot e^{-\frac{(x - \mu)^2}{2\sigma^2}} + b
+\label{eq:GaussAnpassungPulshohe}
+\end{displaymath}
+Die Parameter der Anpassungen sind in der Tabelle \ref{tab:LandauAnpassungPulshohe} und \ref{tab:GaussAnpassungPulshohe} zu finden.
+\begin{table}[H]
+    \centering
+    \caption{Landau-Anpassung an das Pulshöhenspektrum}
+    \begin{tabular}{|c|c|}
+        \hline
+        Parameter & Wert \\ \hline
+        $\mu$ & 257,54(83) \\ \hline
+        $\sigma$ & 38.78(52) \\ \hline
+        $A$ & 62,6(11) \\ \hline
+    \end{tabular}
+    \label{tab:LandauAnpassungPulshohe}
+\end{table}
+\begin{table}[H]
+    \centering
+    \caption{Gauss-Anpassung an das Pulshöhenspektrum}
+    \begin{tabular}{|c|c|}
+        \hline
+        Parameter & Wert \\ \hline
+        $\mu$ & 260,47(83) \\ \hline
+        $\sigma$ & 41,5(5) \\ \hline
+        $A$ & 59(1) \\ \hline
+    \end{tabular}
+    \label{tab:LandauAnpassungPulshohe}
+\end{table}
+
+Durch die Anpassungen ist zu erkennen, dass die Landau-Anpassung besser ist als die Gauss-Anpassung, da die $\chi^2$-Werte der Anpassungen deutlich kleiner sind.
+Dies deutet wie erwartet darauf hin, dass es sich um ein dünnes Szintillationsmaterial handelt, da die Landau-Verteilung für dünne Szintillatoren typisch ist.
+
+
+\subsubsection*{Zufallskoinzidenz}
+
+
 \section{Anhang}
 
 \subsection{LABView-Programm}
@@ -291,7 +442,40 @@ dies ist zu sehen in der Abbildung \ref{fig:SchwellenspannungWinkelverteilung}.
     \end{tabular}   
     \label{tab:SchwellenspannungWinkelverteilung}
 \end{table}
+
+\begin{table}
+    \centering
+    \caption{Messwerte der Winkelverteilung}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Winkel / $\degree$ & $N_\mathrm{Koin.}$ & $\Delta (N_\mathrm{Koin.})$ \\ \hline
+        -1 & 405 & 20 \\ \hline
+        -1 & 1349 & 37 \\ \hline
+        -1 & 3372 & 58 \\ \hline
+        0 & 4344 & 66 \\ \hline
+        1 & 3037 & 55 \\ \hline
+        1 & 2304 & 48 \\ \hline
+        1 & 1111 & 33 \\ \hline
+        1 & 351 & 19 \\ \hline
+        2 & 0 & 0 \\ \hline
+    \end{tabular}
+    \label{tab:Winkelverteilung}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Pulshöhenspektrum_Unser.png}
+    \caption{Pulshöhenspektrum der Winkelverteilungsmessung}
+    \label{fig:PulshoheWinkelverteilung}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Pulshöhenspektrum_B109.png}
+    \caption{Pulshöhenspektrum der Winkelverteilungsmessung einer anderen Gruppe}
+    \label{fig:PulshoheWinkelverteilungAndereGruppe}
+\end{figure}
 \newpage
+
 \printbibliography[heading=bibintoc]
 
 \end{document}

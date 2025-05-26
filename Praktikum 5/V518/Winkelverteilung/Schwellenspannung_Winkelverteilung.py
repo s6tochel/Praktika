@@ -87,4 +87,4 @@ plt.legend()
 plt.grid()
 plt.title(figure_title)
 
-save(save_name)
+save(dir_path + "/../Latex/figures/" + save_name)

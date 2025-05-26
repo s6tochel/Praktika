@@ -4,6 +4,31 @@ from scipy.optimize import curve_fit
 import os
 #from np_to_latex import to_latex_table
 
+def sci_fmt(val, sig=2):
+    return f"{val:.{sig}e}"
+
+def write_latex_table(filename, columns, header=None, colformats=None):
+    n_rows = len(columns[0])
+    n_cols = len(columns)
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(r"\begin{tabular}{|" + "c|"*n_cols + "}\n")
+        f.write(r"\hline" + "\n")
+        if header:
+            f.write(" & ".join(header) + r" \\ \hline" + "\n")
+        for i in range(n_rows):
+            row = []
+            for j in range(n_cols):
+                val = columns[j][i]
+                if colformats and colformats[j]:
+                    if colformats[j] == 'sci2':
+                        row.append(f"{val:.2e}")
+                    else:
+                        row.append(f"{val:{colformats[j]}}")
+                else:
+                    row.append(str(val))
+            f.write(" & ".join(row) + r" \\ \hline" + "\n")
+        f.write(r"\end{tabular}" + "\n")
+
 def cosine(x, a, b, c, d, m):
     return a * np.abs(np.cos(x + b))**c + m*x + d
 
@@ -63,7 +88,14 @@ fit_value_errors2 = np.sqrt(np.diag(pcov2))
 residuals2 = Koinzidenzen - gaussian(Winkel, *popt2)
 chi_squared2 = np.sum((residuals2 / Koinzidenzen_err) ** 2)
 
-
+header = [r"Winekel / $\degree$", r"$N_\mathrm{Koin.}$", r"$\Delta (N_\mathrm{Koin.})$"]
+colformats = ['.0f', '.0f', '.0f']
+write_latex_table(
+    os.path.join(dir_path, "Winkelverteilung_Latex.txt"),
+    [Winkel, Koinzidenzen, Koinzidenzen_err],
+    header=header,
+    colformats=colformats
+)
 
 for j in range(len(fit_values)):
     print(f"{j}:\t{fit_values[j]}\t± {fit_value_errors[j]}")
