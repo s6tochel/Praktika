@@ -387,7 +387,44 @@ Dies deutet wie erwartet darauf hin, dass es sich um ein dünnes Szintillationsm
 
 
 \subsubsection*{Zufallskoinzidenz}
-
+Wie im Abschnitt \enquote{Zufallskoinzidenz} beschrieben, wurde die Zufallskoinzidenzrate auf 2 Arten bestimmt.
+Für die zeitliche Zufallskoinzidenzrate wurde eine Zeitverzögerung von $\SI{20}{\micro\second}$ für den Diskriminator $D25$, $\SI{90}{\micro\second}$ für den Diskriminator $D14$ und 
+$\SI{165}{\micro\second}$ für den Diskriminator $D2$ gewählt, dabei kommen je $\SI{5}{\micro\second}$ durch die minimal Verzögerungszeit \cite{}.
+Die räumliche Zufallskoinzidenz war die Verteilung der Detektoren vorausgewählt, diese waren in einem rechtwinkligen Dreieck angeordnet, sodass ein einzelnes Teilchen keine Koinzidenz erzeugen kann.
+Damit die Zufallskoinzidenz bestimmt werden kann muss zunächst eine theoretische Zufallskoinzidenzrate bestimmt werden.
+Die durchschnittliche Überlagerung für n-Signale der Szintillatoren ist gegeben mit:
+\begin{displaymath}
+    \frac{1}{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
+\end{displaymath}
+Dabei ist $\Delta t$ die Zeit der überlagerten Signale, $n$ die Anzahl der Signale und $\Delta t_i$ die Zeit, in der das i-te Signal vorhanden ist.
+Die Rate daraus erhalten wir durch:
+\begin{displaymath}
+    f=\Sigma_{i=1}^{n} (f_i \Delta t_i) \cdot \frac{1}{\Delta t_i}
+\end{displaymath}
+Die Gesamtzahl an Ereignissen $N$ ist gegeben durch:
+\begin{displaymath}
+    N = f \cdot T
+\end{displaymath}
+wobei $T=\SI{598215}{\second}$ die gesamt Zeitdauer der Messung ist.
+Daraus folgt die theoretische Zufallskoinzidenzrate für 3 Signale:
+\begin{displaymath}
+    N_3=T\Sigma_{i=1}^{3} (f_i \Delta t_i) \cdot \frac{1}{\Delta t_i}
+\end{displaymath}
+Dabei gilt $N_{25}=f_1 \cdot T$ und es folgt:
+\begin{displaymath}
+    N_3 = \frac{N_{25}^3}{T^2} \cdot \Sigma_{i=1}^{3} \sum_{i=1}^{3}\frac{1}{\Delta t_i}
+\end{displaymath}
+Mit $N_{25}=2993503$ und $T=\SI{598215}{\second}$ ergibt sich für die zeitliche Zufallskoinzidenzrate:
+\begin{displaymath}
+    N_3 = 1,5 \cdot 10^6    
+\end{displaymath}
+Da bei der räumlichen Zufallskoinzidenzrate auch bei 2 Signale gleichzeitig anliegen können, ergibt sich für die räumliche Zufallskoinzidenzrate:
+\begin{displaymath}
+    N_2 = 2,28
+\end{displaymath}
+Auch hier sind die Effekte der niedrigen Schwellenspannung zu erkennen, da die Zufallskoinzidenzrate deutlich höher ist als die theoretische Zufallskoinzidenzrate.
+Aber Qualitativ entspricht das unseren Erwartungen, dass die zeitliche Zufallskoinzidenz fast bei 0 ist und die räumliche im gegensatz zu Theorie eine viel höhere Rate hat, da hier auch die
+Rauscheffekte mit einfließen und diese auch schon von 2 Signalen ausgelöst werden kann. 
 
 \section{Anhang}
 
