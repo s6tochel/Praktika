@@ -305,7 +305,7 @@ Die Parameter der Cosinus-Anpassung sind in der Tabelle \ref{tab:CosinusAnpassun
         \hline
         Parameter & Wert \\ \hline
         $A$ & 4378(50) \\ \hline
-        $\phi$ / $\radian$ & 0,020(8) \\ \hline
+        $\phi$ / rad & 0,020(8) \\ \hline
         $n$ & 1.82(6) \\ \hline
         $c$ & -08(35) \\ \hline
         $d$ & 03(20) \\ \hline
@@ -331,13 +331,16 @@ Genauer wurde eine $\cos^2$ Abhängigkeit festgestellt, da die Cosinus-Anpassung
 \subsubsection*{Pulshöhenspektrum}
 Die Messung des Pulshöhenspektrums wurde in der Abbildung \ref{fig:PulshoheWinkelverteilung} aufgetragen.
 Hierbei ist keine Landau-Verteilung zu erkennen, was aber auffällt ist, dass der Rauschanteil am Anfang des Spektrums sehr hoch ist.
+
 Dies fiel uns schon direkt nach der Messung auf, daher haben wir hier auch einen weiteren Datensatz von einer anderen Gruppe erhalten, die das gleiche Experiment durchgeführt hat.
 Im Vergleich zu unserem Spektrum \ref{PulshoheWinkelverteilung} sieht man im Spektrum der anderen Gruppe \ref{fig:PulshoheWinkelverteilungAndereGruppe} eine Landau-Verteilung und der Rauschpeak
 ist deutlich kleiner.
-Wir gehen davon aus, dass unsere Schwellspannung zu niedrig eingestellt war, sodass auch ein starker Rauschanteil im Spektrum zu sehen ist. Daher ist auch die Landau-Verteilung \enquote{verwaschen} da der Rauschanteil auch
+
+Wir gehen davon aus, dass unsere Schwellenspannung zu niedrig eingestellt war, sodass auch ein starker Rauschanteil im Spektrum zu sehen ist. Daher ist auch die Landau-Verteilung \enquote{verwaschen}, da der Rauschanteil auch
 bei höheren Pulshöhen zu sehen ist und damit sich mit dem der Landau-Verteilung überlappt.
-Dies kann auch der Grundsein, warum bei der Winkelverteilung einige Detektoren deutlich mehr Rauschanteilgemessen haben und damit die Außreißer in der Winkelverteilung entstanden sind.
+Dies kann auch der Grund sein, warum bei der Winkelverteilung einige Detektoren deutlich mehr Rauschanteil gemessen haben und damit die Ausreißer in der Winkelverteilung entstanden sind.
 Bei der weiteren Auswertung wurde der Datensatz der anderen Gruppe verwendet.
+
 Das Pulshöhenspektrum ohne den Rauschanteil ist in der Abbildung \ref{fig:PulshoheWinkelverteilungLandauOhneFit} zu sehen.
 \begin{figure}
     \centering
@@ -345,7 +348,7 @@ Das Pulshöhenspektrum ohne den Rauschanteil ist in der Abbildung \ref{fig:Pulsh
     \caption{Pulshöhenspektrum gezoomt auf den Landauanteil}
     \label{fig:PulshoheWinkelverteilungLandauOhneFit}
 \end{figure}
-Hier wurde ein Bereich von $100$ bis $800$ betrachtet.
+Hier wurde ein Bereich von Kanal $100$ bis $800$ betrachtet.
 In der Abbildung \ref{fig:PulshoheWinkelverteilungLandau} ist das Pulshöhenspektrum mit der Landau- und Gauss-Anpassung zu sehen.
 Die Angepassten Funktionen sind in der Gleichung \ref{eq:LandauAnpassung} und \ref{eq:GaussAnpassungPulshohe} zu finden.
 \begin{displaymath}
@@ -390,41 +393,44 @@ Dies deutet wie erwartet darauf hin, dass es sich um ein dünnes Szintillationsm
 Wie im Abschnitt \enquote{Zufallskoinzidenz} beschrieben, wurde die Zufallskoinzidenzrate auf 2 Arten bestimmt.
 Für die zeitliche Zufallskoinzidenzrate wurde eine Zeitverzögerung von $\SI{20}{\micro\second}$ für den Diskriminator $D25$, $\SI{90}{\micro\second}$ für den Diskriminator $D14$ und 
 $\SI{165}{\micro\second}$ für den Diskriminator $D2$ gewählt, dabei kommen je $\SI{5}{\micro\second}$ durch die minimal Verzögerungszeit \cite{}.
-Die räumliche Zufallskoinzidenz war die Verteilung der Detektoren vorausgewählt, diese waren in einem rechtwinkligen Dreieck angeordnet, sodass ein einzelnes Teilchen keine Koinzidenz erzeugen kann.
-Damit die Zufallskoinzidenz bestimmt werden kann muss zunächst eine theoretische Zufallskoinzidenzrate bestimmt werden.
+Die räumliche Zufallskoinzidenz war für die Verteilung der Detektoren vorausgewählt, diese waren in einem rechtwinkligen Dreieck angeordnet, sodass ein einzelnes Teilchen keine Koinzidenz erzeugen kann.
+Damit die Zufallskoinzidenz bestimmt werden kann muss zunächst eine theoretische Zufallskoinzidenzrate interpretiert werden.
+
 Die durchschnittliche Überlagerung für n-Signale der Szintillatoren ist gegeben mit:
 \begin{displaymath}
-    \frac{1}{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
+    \frac{1}{\Delta t}= \sum_{i=1}^{n} \frac{1}{\Delta t_i}
 \end{displaymath}
 Dabei ist $\Delta t$ die Zeit der überlagerten Signale, $n$ die Anzahl der Signale und $\Delta t_i$ die Zeit, in der das i-te Signal vorhanden ist.
 Die Rate daraus erhalten wir durch:
 \begin{displaymath}
-    f=\Sigma_{i=1}^{n} (f_i \Delta t_i) \cdot \frac{1}{\Delta t_i}
+    f=\prod_{i=1}^{n} (f_i \Delta t_i) \cdot \frac{1}{\Delta t_i}
 \end{displaymath}
-Die Gesamtzahl an Ereignissen $N$ ist gegeben durch:
+Die Gesamtzahl an Ereignissen $N$ ist gegeben als:
 \begin{displaymath}
     N = f \cdot T
 \end{displaymath}
 wobei $T=\SI{598215}{\second}$ die gesamt Zeitdauer der Messung ist.
 Daraus folgt die theoretische Zufallskoinzidenzrate für 3 Signale:
 \begin{displaymath}
-    N_3=T\Sigma_{i=1}^{3} (f_i \Delta t_i) \cdot \frac{1}{\Delta t_i}
+    N_3=T\prod_{i=1}^{3} (f_i \Delta t_i) \cdot \frac{1}{\Delta t_i}
 \end{displaymath}
 Dabei gilt $N_{25}=f_1 \cdot T$ und es folgt:
 \begin{displaymath}
-    N_3 = \frac{N_{25}^3}{T^2} \cdot \Sigma_{i=1}^{3} \sum_{i=1}^{3}\frac{1}{\Delta t_i}
+    N_3 = \frac{N_{25}^3}{T^2} \cdot \prod_{i=1}^{3} \Delta t_i \sum_{i=1}^{3}\frac{1}{\Delta t_i}
 \end{displaymath}
 Mit $N_{25}=2993503$ und $T=\SI{598215}{\second}$ ergibt sich für die zeitliche Zufallskoinzidenzrate:
 \begin{displaymath}
-    N_3 = 1,5 \cdot 10^6    
+    N_3 \approx 1,5 \cdot 10^{-6}    
 \end{displaymath}
 Da bei der räumlichen Zufallskoinzidenzrate auch bei 2 Signale gleichzeitig anliegen können, ergibt sich für die räumliche Zufallskoinzidenzrate:
 \begin{displaymath}
-    N_2 = 2,28
+    N_2 \approx 2,28
 \end{displaymath}
 Auch hier sind die Effekte der niedrigen Schwellenspannung zu erkennen, da die Zufallskoinzidenzrate deutlich höher ist als die theoretische Zufallskoinzidenzrate.
-Aber Qualitativ entspricht das unseren Erwartungen, dass die zeitliche Zufallskoinzidenz fast bei 0 ist und die räumliche im gegensatz zu Theorie eine viel höhere Rate hat, da hier auch die
-Rauscheffekte mit einfließen und diese auch schon von 2 Signalen ausgelöst werden kann. 
+Gemessen wurde $N_\text{Koin,zeit}=3$ und $N_\text{Koin,zeit}=2569$.
+Diese sind höher als erwartet, aber qualitativ entspricht das unseren Erwartungen, da die zeitliche Zufallskoinzidenz fast bei 0 ist und die räumliche im gegensatz zu Theorie eine viel höhere Rate hat, weil hier auch die
+Rauscheffekte mit einfließen und diese auch schon von 2 Signalen ausgelöst werden kann.
+
 
 \section{Anhang}
 

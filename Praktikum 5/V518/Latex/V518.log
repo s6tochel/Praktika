@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  26 MAY 2025 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  26 MAY 2025 15:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -955,17 +955,6 @@ LaTeX Warning: Reference `tab:CosinusAnpassungWinkelverteilung' on page 16 undef
 
 LaTeX Warning: Reference `tab:GaussAnpassungWinkelverteilung' on page 16 undefined on input line 300.
 
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:308: Undefined control sequence.
-\radian ->\ERROR 
-                 
-l.308         $\phi$ / $\radian
-                               $ & 0,020(8) \\ \hline
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 Overfull \hbox (12.79211pt too wide) in paragraph at lines 328--330
 []\OT1/cmr/m/n/10 Wie zu er-war-ten war ist die Cosinus-Anpassung bes-ser als die Gauss-Anpassung,
@@ -978,195 +967,48 @@ Overfull \hbox (12.79211pt too wide) in paragraph at lines 328--330
 LaTeX Warning: Reference `fig:PulshoheWinkelverteilung' on page 17 undefined on input line 332.
 
 
-LaTeX Warning: Reference `PulshoheWinkelverteilung' on page 17 undefined on input line 335.
+LaTeX Warning: Reference `PulshoheWinkelverteilung' on page 17 undefined on input line 336.
 
 
-LaTeX Warning: Reference `fig:PulshoheWinkelverteilungAndereGruppe' on page 17 undefined on input line 335.
+LaTeX Warning: Reference `fig:PulshoheWinkelverteilungAndereGruppe' on page 17 undefined on input line 336.
 
 
-LaTeX Warning: Reference `fig:PulshoheWinkelverteilungLandauOhneFit' on page 17 undefined on input line 341.
+LaTeX Warning: Reference `fig:PulshoheWinkelverteilungLandauOhneFit' on page 17 undefined on input line 344.
 
 <figures/Pulshöhenspektrum_Landau_ohne_fit.png, id=157, 462.528pt x 346.896pt>
 File: figures/Pulshöhenspektrum_Landau_ohne_fit.png Graphic file (type png)
 <use figures/Pulshöhenspektrum_Landau_ohne_fit.png>
-Package pdftex.def Info: figures/Pulshöhenspektrum_Landau_ohne_fit.png  used on input line 344.
+Package pdftex.def Info: figures/Pulshöhenspektrum_Landau_ohne_fit.png  used on input line 347.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
 
-LaTeX Warning: Reference `fig:PulshoheWinkelverteilungLandau' on page 17 undefined on input line 349.
+LaTeX Warning: Reference `fig:PulshoheWinkelverteilungLandau' on page 17 undefined on input line 352.
 
 
-LaTeX Warning: Reference `eq:LandauAnpassung' on page 17 undefined on input line 350.
+LaTeX Warning: Reference `eq:LandauAnpassung' on page 17 undefined on input line 353.
 
 
-LaTeX Warning: Reference `eq:GaussAnpassungPulshohe' on page 17 undefined on input line 350.
+LaTeX Warning: Reference `eq:GaussAnpassungPulshohe' on page 17 undefined on input line 353.
 
 
-LaTeX Warning: Reference `tab:LandauAnpassungPulshohe' on page 17 undefined on input line 359.
+LaTeX Warning: Reference `tab:LandauAnpassungPulshohe' on page 17 undefined on input line 362.
 
 
-LaTeX Warning: Reference `tab:GaussAnpassungPulshohe' on page 17 undefined on input line 359.
+LaTeX Warning: Reference `tab:GaussAnpassungPulshohe' on page 17 undefined on input line 362.
 
 
 
 [17]
 
 [18 <./figures/Pulshöhenspektrum_Landau_ohne_fit.png>]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 392.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 395.
  (c:/texlive/2025/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 392.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 395.
 
 
-LaTeX Warning: Citation '' on page 19 undefined on input line 392.
-
-
-LaTeX Warning: Command \t invalid in math mode on input line 397.
-
-
-LaTeX Warning: Command \t invalid in math mode on input line 397.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:397: Missing $ inserted.
-<inserted text> 
-                $
-l.397 ...{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:397: Missing { inserted.
-<to be read again> 
-                   \global 
-l.397 ...{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
-                                                  
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:397: Improper \spacefactor.
-<recently read> \spacefactor 
-                             
-l.397 ...{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
-                                                  
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:397: Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.397 ...{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
-                                                  
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:397: Missing { inserted.
-<to be read again> 
-                   \edef 
-l.397 ...{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
-                                                  
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:397: Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.397 ...{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
-                                                  
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:397: Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
-                                                 
-l.397 ...{\Delta t}= \sum_{i=1}^{n} \frac{1}{\t_i}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:398: Missing $ inserted.
-<inserted text> 
-                $
-l.398 \end{displaymath}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:398: Missing } inserted.
-<inserted text> 
-                }
-l.398 \end{displaymath}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:398: Missing } inserted.
-<inserted text> 
-                }
-l.398 \end{displaymath}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:398: Missing } inserted.
-<inserted text> 
-                }
-l.398 \end{displaymath}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:398: Missing } inserted.
-<inserted text> 
-                }
-l.398 \end{displaymath}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:398: Missing $ inserted.
-<inserted text> 
-                $
-l.398 \end{displaymath}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:398: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.398 \end{displaymath}
-                       
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+LaTeX Warning: Citation '' on page 19 undefined on input line 395.
 
 
 
@@ -1174,28 +1016,28 @@ So I shall assume that you typed `$$' both times.
 <figures/ProgrammScreen1.png, id=179, 574.39594pt x 680.5425pt>
 File: figures/ProgrammScreen1.png Graphic file (type png)
 <use figures/ProgrammScreen1.png>
-Package pdftex.def Info: figures/ProgrammScreen1.png  used on input line 434.
+Package pdftex.def Info: figures/ProgrammScreen1.png  used on input line 440.
 (pdftex.def)             Requested size: 345.0pt x 408.76479pt.
 <figures/ProgrammScreen2.png, id=180, 1013.28563pt x 651.93562pt>
 File: figures/ProgrammScreen2.png Graphic file (type png)
 <use figures/ProgrammScreen2.png>
-Package pdftex.def Info: figures/ProgrammScreen2.png  used on input line 440.
+Package pdftex.def Info: figures/ProgrammScreen2.png  used on input line 446.
 (pdftex.def)             Requested size: 345.0pt x 221.96355pt.
 <figures/ProgrammScreen3.png, id=181, 558.58687pt x 636.87938pt>
 File: figures/ProgrammScreen3.png Graphic file (type png)
 <use figures/ProgrammScreen3.png>
-Package pdftex.def Info: figures/ProgrammScreen3.png  used on input line 446.
+Package pdftex.def Info: figures/ProgrammScreen3.png  used on input line 452.
 (pdftex.def)             Requested size: 345.0pt x 393.36456pt.
 <figures/ProgrammScreen4.png, id=182, 843.15pt x 654.19406pt>
 File: figures/ProgrammScreen4.png Graphic file (type png)
 <use figures/ProgrammScreen4.png>
-Package pdftex.def Info: figures/ProgrammScreen4.png  used on input line 452.
+Package pdftex.def Info: figures/ProgrammScreen4.png  used on input line 458.
 (pdftex.def)             Requested size: 345.0pt x 267.68225pt.
 
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:488: Undefined control sequence.
+h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:494: Undefined control sequence.
 \degree ->\ERROR 
                  
-l.488         Winkel / $\degree
+l.494         Winkel / $\degree
                                $ & $N_\mathrm{Koin.}$ & $\Delta (N_\mathrm{K...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1206,12 +1048,12 @@ and I'll forget about whatever was undefined.
 <figures/Pulshöhenspektrum_Unser.png, id=183, 462.528pt x 346.896pt>
 File: figures/Pulshöhenspektrum_Unser.png Graphic file (type png)
 <use figures/Pulshöhenspektrum_Unser.png>
-Package pdftex.def Info: figures/Pulshöhenspektrum_Unser.png  used on input line 504.
+Package pdftex.def Info: figures/Pulshöhenspektrum_Unser.png  used on input line 510.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
 <figures/Pulshöhenspektrum_B109.png, id=184, 462.528pt x 346.896pt>
 File: figures/Pulshöhenspektrum_B109.png Graphic file (type png)
 <use figures/Pulshöhenspektrum_B109.png>
-Package pdftex.def Info: figures/Pulshöhenspektrum_B109.png  used on input line 510.
+Package pdftex.def Info: figures/Pulshöhenspektrum_B109.png  used on input line 516.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
 
 
@@ -1229,7 +1071,7 @@ Package pdftex.def Info: figures/Pulshöhenspektrum_B109.png  used on input line
 
 [26 <./figures/Pulshöhenspektrum_B109.png>]
 
-LaTeX Warning: Empty bibliography on input line 516.
+LaTeX Warning: Empty bibliography on input line 522.
 
 (./V518.aux)
  ***********
@@ -1261,15 +1103,15 @@ Package logreq Info: Writing requests to 'V518.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25820 strings out of 469626
- 520645 string characters out of 5475183
- 1330237 words of memory out of 5000000
- 52298 multiletter control sequences out of 15000+600000
+ 25819 strings out of 469626
+ 520640 string characters out of 5475183
+ 1332237 words of memory out of 5000000
+ 52297 multiletter control sequences out of 15000+600000
  633579 words of font info for 63 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  75i,10n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on V518.pdf (26 pages, 1691470 bytes).
+Output written on V518.pdf (26 pages, 1692213 bytes).
 PDF statistics:
  318 PDF objects out of 1000 (max. 8388607)
  215 compressed objects within 3 object streams
