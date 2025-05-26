@@ -637,10 +637,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./V518.aux
-Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported  on input line 9.
-)
+
+No file V518.aux.
 \openout1 = `V518.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -661,7 +659,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
- (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count460
 \scratchdimen=\dimen259
@@ -684,10 +682,11 @@ File: translations-basic-dictionary-german.trsl (german translation file `transl
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 32.
 Package hyperref Info: Link coloring OFF on input line 32.
- (./V518.out) (./V518.out)
 \@outlinefile=\write6
 \openout6 = `V518.out'.
 
+Package babel Info: 'ngerman' activates 'ngerman' shorthands.
+(babel)             Reported  on input line 32.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -703,4 +702,417 @@ Package biblatex Info: ... file 'german.lbx' found.
 File: german.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
-Pa
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `V518.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'V518.bbl' not found.
+
+No file V518.bbl.
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+
+[1
+
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+No file V518.toc.
+\tf@toc=\write7
+\openout7 = `V518.toc'.
+
+
+
+[2]
+
+[3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+LaTeX Warning: Reference `fig:Teilchenschauer' on page 4 undefined on input line 72.
+
+<figures/Teilchenschauer.png, id=28, 451.6875pt x 451.6875pt>
+File: figures/Teilchenschauer.png Graphic file (type png)
+<use figures/Teilchenschauer.png>
+Package pdftex.def Info: figures/Teilchenschauer.png  used on input line 75.
+(pdftex.def)             Requested size: 172.5pt x 172.50455pt.
+
+LaTeX Warning: Citation 'shower' on page 4 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'shower' on page 4 undefined on input line 76.
+
+
+LaTeX Warning: Reference `fig:Fluss' on page 4 undefined on input line 86.
+
+<figures/Fluss.png, id=29, 347.79938pt x 448.67625pt>
+File: figures/Fluss.png Graphic file (type png)
+<use figures/Fluss.png>
+Package pdftex.def Info: figures/Fluss.png  used on input line 89.
+(pdftex.def)             Requested size: 172.5pt x 222.53017pt.
+
+LaTeX Warning: Citation 'Naka' on page 4 undefined on input line 90.
+
+
+LaTeX Warning: Citation 'Naka' on page 4 undefined on input line 90.
+
+
+
+[4 <./figures/Teilchenschauer.png (PNG copy)>]
+
+LaTeX Warning: Citation 'Bethe' on page 5 undefined on input line 95.
+
+
+LaTeX Warning: Citation 'Landau' on page 5 undefined on input line 102.
+
+
+LaTeX Warning: Reference `fig:Landau' on page 5 undefined on input line 107.
+
+<figures/Landau.png, id=36, 903.375pt x 903.375pt>
+File: figures/Landau.png Graphic file (type png)
+<use figures/Landau.png>
+Package pdftex.def Info: figures/Landau.png  used on input line 110.
+(pdftex.def)             Requested size: 172.5pt x 172.49767pt.
+
+LaTeX Warning: Citation 'Landau' on page 5 undefined on input line 111.
+
+
+LaTeX Warning: Citation 'Landau' on page 5 undefined on input line 111.
+
+
+
+[5 <./figures/Fluss.png>]
+
+LaTeX Warning: Reference `fig:Standardmodell' on page 6 undefined on input line 117.
+
+<figures/Standardmodell.png, id=52, 963.6pt x 922.44624pt>
+File: figures/Standardmodell.png Graphic file (type png)
+<use figures/Standardmodell.png>
+Package pdftex.def Info: figures/Standardmodell.png  used on input line 120.
+(pdftex.def)             Requested size: 172.5pt x 165.13232pt.
+
+LaTeX Warning: Citation 'Standardmodell' on page 6 undefined on input line 121.
+
+
+LaTeX Warning: Citation 'Standardmodell' on page 6 undefined on input line 121.
+
+
+
+[6 <./figures/Landau.png> <./figures/Standardmodell.png>]
+
+LaTeX Warning: Reference `fig:SzintillatorBandlücke' on page 7 undefined on input line 135.
+
+<figures/Szintillator_Bändermodell.png, id=61, 592.46344pt x 286.82156pt>
+File: figures/Szintillator_Bändermodell.png Graphic file (type png)
+<use figures/Szintillator_Bändermodell.png>
+Package pdftex.def Info: figures/Szintillator_Bändermodell.png  used on input line 139.
+(pdftex.def)             Requested size: 345.0pt x 167.02621pt.
+
+LaTeX Warning: Citation 'Wer' on page 7 undefined on input line 140.
+
+
+LaTeX Warning: Citation 'Wer' on page 7 undefined on input line 140.
+
+
+LaTeX Warning: Reference `fig:AufbauSzinti' on page 7 undefined on input line 144.
+
+<figures/SzintillatorAufbau.png, id=62, 730.22812pt x 243.15843pt>
+File: figures/SzintillatorAufbau.png Graphic file (type png)
+<use figures/SzintillatorAufbau.png>
+Package pdftex.def Info: figures/SzintillatorAufbau.png  used on input line 148.
+(pdftex.def)             Requested size: 345.0pt x 114.88184pt.
+
+LaTeX Warning: Citation 'Wer' on page 7 undefined on input line 149.
+
+
+LaTeX Warning: Citation 'Wer' on page 7 undefined on input line 149.
+
+
+
+[7 <./figures/Szintillator_Bändermodell.png>]
+Overfull \hbox (7.37134pt too wide) in paragraph at lines 153--153
+[]\OT1/cmr/bx/n/12 Logische Schal-tung: Dis-kri-mi-na-tor, Koinzidenz-Module
+ []
+
+
+
+[8 <./figures/SzintillatorAufbau.png>]
+
+LaTeX Warning: Reference `fig:AufbauWinkelverteilung' on page 9 undefined on input line 186.
+
+<figures/Aufbau_Winkelverteilung.png, id=79, 550.30594pt x 510.40688pt>
+File: figures/Aufbau_Winkelverteilung.png Graphic file (type png)
+<use figures/Aufbau_Winkelverteilung.png>
+Package pdftex.def Info: figures/Aufbau_Winkelverteilung.png  used on input line 189.
+(pdftex.def)             Requested size: 241.49895pt x 223.98781pt.
+
+LaTeX Warning: Citation 'Anleitung' on page 9 undefined on input line 190.
+
+
+LaTeX Warning: Citation 'Anleitung' on page 9 undefined on input line 190.
+
+
+Overfull \hbox (0.22385pt too wide) in paragraph at lines 196--198
+\OT1/cmr/m/n/10 Pro-gramm ge-schrie-ben, dass die Schwel-len-span-nun-gen von $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 50 []$ bis $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 200 []$
+ []
+
+
+
+[9 <./figures/Aufbau_Winkelverteilung.png>]
+
+LaTeX Warning: Reference `fig:LABView1' on page 10 undefined on input line 199.
+
+
+LaTeX Warning: Reference `fig:LABView4' on page 10 undefined on input line 199.
+
+
+LaTeX Warning: Reference `fig:AufbauWinkelverteilungLangzeit' on page 10 undefined on input line 216.
+
+<figures/SchematischWinkelverteilung.png, id=88, 526.96875pt x 388.45125pt>
+File: figures/SchematischWinkelverteilung.png Graphic file (type png)
+<use figures/SchematischWinkelverteilung.png>
+Package pdftex.def Info: figures/SchematischWinkelverteilung.png  used on input line 219.
+(pdftex.def)             Requested size: 345.0pt x 254.32776pt.
+
+
+[10]
+
+LaTeX Warning: Reference `fig:AufbauLebensdauer' on page 11 undefined on input line 230.
+
+
+LaTeX Warning: Reference `fig:AufbauLebensdauer' on page 11 undefined on input line 230.
+
+<figures/Aufbau_Lebensdauermessung.pdf, id=95, 603.19843pt x 298.75392pt>
+File: figures/Aufbau_Lebensdauermessung.pdf Graphic file (type pdf)
+<use figures/Aufbau_Lebensdauermessung.pdf>
+Package pdftex.def Info: figures/Aufbau_Lebensdauermessung.pdf  used on input line 233.
+(pdftex.def)             Requested size: 345.0pt x 170.875pt.
+
+
+[11 <./figures/SchematischWinkelverteilung.png>]
+
+LaTeX Warning: Reference `fig:AufbauZerfall' on page 12 undefined on input line 243.
+
+<figures/Aufbau_Zerfallsmessung.pdf, id=103, 318.67087pt x 128.0374pt>
+File: figures/Aufbau_Zerfallsmessung.pdf Graphic file (type pdf)
+<use figures/Aufbau_Zerfallsmessung.pdf>
+Package pdftex.def Info: figures/Aufbau_Zerfallsmessung.pdf  used on input line 246.
+(pdftex.def)             Requested size: 345.0pt x 138.6202pt.
+
+
+[12 <./figures/Aufbau_Lebensdauermessung.pdf> <./figures/Aufbau_Zerfallsmessung.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/Aufbau_Zerfallsmessung.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `tab:SchwellenspannungWinkelverteilung' on page 13 undefined on input line 264.
+
+
+LaTeX Warning: Reference `fig:SchwellenspannungWinkelverteilung' on page 13 undefined on input line 266.
+
+<figures/Schwellenspannung_Winkelverteilung.png, id=125, 462.528pt x 346.896pt>
+File: figures/Schwellenspannung_Winkelverteilung.png Graphic file (type png)
+<use figures/Schwellenspannung_Winkelverteilung.png>
+Package pdftex.def Info: figures/Schwellenspannung_Winkelverteilung.png  used on input line 269.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+
+
+[13]
+
+LaTeX Warning: Reference `tab:Winkelverteilung' on page 14 undefined on input line 274.
+
+
+LaTeX Warning: Reference `fig:WinkelverteilungCosinus' on page 14 undefined on input line 275.
+
+
+LaTeX Warning: Reference `fig:WinkelverteilungGauss' on page 14 undefined on input line 275.
+
+
+LaTeX Warning: Reference `eq:CosinusAnpassung' on page 14 undefined on input line 277.
+
+
+LaTeX Warning: Reference `eq:GaussAnpassung' on page 14 undefined on input line 277.
+
+<figures/cosAnpassung.png, id=134, 462.528pt x 346.896pt>
+File: figures/cosAnpassung.png Graphic file (type png)
+<use figures/cosAnpassung.png>
+Package pdftex.def Info: figures/cosAnpassung.png  used on input line 289.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+
+
+[14 <./figures/Schwellenspannung_Winkelverteilung.png>]
+<figures/gaussAnpassung.png, id=142, 462.528pt x 346.896pt>
+File: figures/gaussAnpassung.png Graphic file (type png)
+<use figures/gaussAnpassung.png>
+Package pdftex.def Info: figures/gaussAnpassung.png  used on input line 296.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+
+
+[15 <./figures/cosAnpassung.png>]
+
+LaTeX Warning: Reference `tab:CosinusAnpassungWinkelverteilung' on page 16 undefined on input line 300.
+
+
+LaTeX Warning: Reference `tab:GaussAnpassungWinkelverteilung' on page 16 undefined on input line 300.
+
+h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:308: Undefined control sequence.
+\radian ->\ERROR 
+                 
+l.308         $\phi$ / $\radian
+                               $ & 0,020(8) \\ \hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (12.79211pt too wide) in paragraph at lines 328--330
+[]\OT1/cmr/m/n/10 Wie zu er-war-ten war ist die Cosinus-Anpassung bes-ser als die Gauss-Anpassung,
+ []
+
+
+
+[16 <./figures/gaussAnpassung.png>]
+
+LaTeX Warning: Reference `fig:PulshoheWinkelverteilung' on page 17 undefined on input line 332.
+
+
+LaTeX Warning: Reference `PulshoheWinkelverteilung' on page 17 undefined on input line 335.
+
+
+LaTeX Warning: Reference `fig:PulshoheWinkelverteilungAndereGruppe' on page 17 undefined on input line 335.
+
+
+LaTeX Warning: Reference `fig:PulshoheWinkelverteilungLandauOhneFit' on page 17 undefined on input line 341.
+
+<figures/Pulshöhenspektrum_Landau_ohne_fit.png, id=157, 462.528pt x 346.896pt>
+File: figures/Pulshöhenspektrum_Landau_ohne_fit.png Graphic file (type png)
+<use figures/Pulshöhenspektrum_Landau_ohne_fit.png>
+Package pdftex.def Info: figures/Pulshöhenspektrum_Landau_ohne_fit.png  used on input line 344.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+
+LaTeX Warning: Reference `fig:PulshoheWinkelverteilungLandau' on page 17 undefined on input line 349.
+
+
+LaTeX Warning: Reference `eq:LandauAnpassung' on page 17 undefined on input line 350.
+
+
+LaTeX Warning: Reference `eq:GaussAnpassungPulshohe' on page 17 undefined on input line 350.
+
+
+LaTeX Warning: Reference `tab:LandauAnpassungPulshohe' on page 17 undefined on input line 359.
+
+
+LaTeX Warning: Reference `tab:GaussAnpassungPulshohe' on page 17 undefined on input line 359.
+
+
+
+[17]
+
+[18 <./figures/Pulshöhenspektrum_Landau_ohne_fit.png>]
+<figures/ProgrammScreen1.png, id=172, 574.39594pt x 680.5425pt>
+File: figures/ProgrammScreen1.png Graphic file (type png)
+<use figures/ProgrammScreen1.png>
+Package pdftex.def Info: figures/ProgrammScreen1.png  used on input line 397.
+(pdftex.def)             Requested size: 345.0pt x 408.76479pt.
+<figures/ProgrammScreen2.png, id=173, 1013.28563pt x 651.93562pt>
+File: figures/ProgrammScreen2.png Graphic file (type png)
+<use figures/ProgrammScreen2.png>
+Package pdftex.def Info: figures/ProgrammScreen2.png  used on input line 403.
+(pdftex.def)             Requested size: 345.0pt x 221.96355pt.
+<figures/ProgrammScreen3.png, id=174, 558.58687pt x 636.87938pt>
+File: figures/ProgrammScreen3.png Graphic file (type png)
+<use figures/ProgrammScreen3.png>
+Package pdftex.def Info: figures/ProgrammScreen3.png  used on input line 409.
+(pdftex.def)             Requested size: 345.0pt x 393.36456pt.
+<figures/ProgrammScreen4.png, id=175, 843.15pt x 654.19406pt>
+File: figures/ProgrammScreen4.png Graphic file (type png)
+<use figures/ProgrammScreen4.png>
+Package pdftex.def Info: figures/ProgrammScreen4.png  used on input line 415.
+(pdftex.def)             Requested size: 345.0pt x 267.68225pt.
+
+h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V518/Latex/V518.tex:451: Undefined control sequence.
+\degree ->\ERROR 
+                 
+l.451         Winkel / $\degree
+                               $ & $N_\mathrm{Koin.}$ & $\Delta (N_\mathrm{K...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<figures/Pulshöhenspektrum_Unser.png, id=176, 462.528pt x 346.896pt>
+File: figures/Pulshöhenspektrum_Unser.png Graphic file (type png)
+<use figures/Pulshöhenspektrum_Unser.png>
+Package pdftex.def Info: figures/Pulshöhenspektrum_Unser.png  used on input line 467.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+<figures/Pulshöhenspektrum_B109.png, id=177, 462.528pt x 346.896pt>
+File: figures/Pulshöhenspektrum_B109.png Graphic file (type png)
+<use figures/Pulshöhenspektrum_B109.png>
+Package pdftex.def Info: figures/Pulshöhenspektrum_B109.png  used on input line 473.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+
+
+[19]
+
+[20 <./figures/ProgrammScreen1.png>]
+
+[21 <./figures/ProgrammScreen2.png>]
+
+[22 <./figures/ProgrammScreen3.png>]
+
+[23 <./figures/ProgrammScreen4.png>]
+
+[24 <./figures/Pulshöhenspektrum_Unser.png>]
+
+[25 <./figures/Pulshöhenspektrum_B109.png>]
+
+LaTeX Warning: Empty bibliography on input line 479.
+
+(./V518.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-03-26>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `V518.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `V518.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  F828AD5B3FE39EA676BB296562951F81;2255.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                V518
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'V518.run.xml'.
+\openout1 = `V518.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 25796 strings out of 469626
+ 520275 string characters out of 5475183
+ 1330237 words of memory out of 5000000
+ 52279 multiletter control sequences out of 15000+600000
+ 633221 words of font info for 62 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 75i,10n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on V518.pdf (25 pages, 1678449 bytes).
+PDF statistics:
+ 309 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+
