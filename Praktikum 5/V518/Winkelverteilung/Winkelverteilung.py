@@ -39,8 +39,8 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 print(dir_path)
 data = np.loadtxt(dir_path + "/../Messdaten/Winkelverteilung.txt", delimiter=" ", skiprows=1).T
 
-Winkel = data[0]
-Winkel = np.deg2rad(Winkel)  # Grad in Radiant umwandeln
+Winkel_alt = data[0]
+Winkel = np.deg2rad(Winkel_alt)  # Grad in Radiant umwandeln
 Koinzidenzen = data[1] 
 Koinzidenzen_err = data[2] 
 Koinzidenzen_err[Koinzidenzen_err == 0] = 1e-6
@@ -58,12 +58,14 @@ plt.savefig(dir_path + "/../Latex/figures/WinkelverteilungPlot.png", dpi=300)
 ausschliessen = [2, 4, 5]
 
 Winkel_aus = Winkel[ausschliessen]
+Winkel_alt_aus = Winkel_alt[ausschliessen]
 Koinzidenzen_aus = Koinzidenzen[ausschliessen]
 Koinzidenzen_err_aus = Koinzidenzen_err[ausschliessen]
 
 Winkel = np.delete(Winkel, ausschliessen)
 Koinzidenzen = np.delete(Koinzidenzen, ausschliessen)
 Koinzidenzen_err = np.delete(Koinzidenzen_err, ausschliessen)
+Winkel_alt = np.delete(Winkel_alt, ausschliessen)
 
 plt.figure()
 plt.errorbar(Winkel, Koinzidenzen, yerr=Koinzidenzen_err, fmt='o', color='b', label='Messdaten')
@@ -88,11 +90,11 @@ fit_value_errors2 = np.sqrt(np.diag(pcov2))
 residuals2 = Koinzidenzen - gaussian(Winkel, *popt2)
 chi_squared2 = np.sum((residuals2 / Koinzidenzen_err) ** 2)
 
-header = [r"Winekel / $\degree$", r"$N_\mathrm{Koin.}$", r"$\Delta (N_\mathrm{Koin.})$"]
+header = [r"Winkel / $\degree$", r"$N_\mathrm{Koin.}$", r"$\Delta (N_\mathrm{Koin.})$"]
 colformats = ['.0f', '.0f', '.0f']
 write_latex_table(
     os.path.join(dir_path, "Winkelverteilung_Latex.txt"),
-    [Winkel, Koinzidenzen, Koinzidenzen_err],
+    [Winkel_alt, Koinzidenzen, Koinzidenzen_err],
     header=header,
     colformats=colformats
 )

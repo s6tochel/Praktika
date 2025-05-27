@@ -1,13 +1,13 @@
 \begin{tabular}{|c|c|c|}
 \hline
-Winekel / $\degree$ & $N_\mathrm{Koin.}$ & $\Delta (N_\mathrm{Koin.})$ \\ \hline
--1 & 405 & 20 \\ \hline
--1 & 1349 & 37 \\ \hline
--1 & 3372 & 58 \\ \hline
-0 & 4344 & 66 \\ \hline
-1 & 3037 & 55 \\ \hline
-1 & 2304 & 48 \\ \hline
-1 & 1111 & 33 \\ \hline
-1 & 351 & 19 \\ \hline
-2 & 0 & 0 \\ \hline
+Winkel / $\degree$ & $N_\mathrm{Koin.}$ & $\Delta (N_\mathrm{Koin.})$ \\ \hline
+-75 & 405 & 20 \\ \hline
+-60 & 1349 & 37 \\ \hline
+-30 & 3372 & 58 \\ \hline
+15 & 4344 & 66 \\ \hline
+30 & 3037 & 55 \\ \hline
+45 & 2304 & 48 \\ \hline
+60 & 1111 & 33 \\ \hline
+75 & 351 & 19 \\ \hline
+90 & 0 & 0 \\ \hline
 \end{tabular}
