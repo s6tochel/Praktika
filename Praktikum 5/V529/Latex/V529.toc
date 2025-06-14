@@ -1,0 +1,18 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {section}{\numberline {3}Durchführung}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dosimetrie}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Abstandsquadratgesetz}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Totzeit}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Abschirmung}{3}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Computertomogramm}{3}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Auswertung}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Winkelverteilung}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Dosimetrie}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Abstandsquadratgesetz}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Totzeit}{4}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Abschirmung}{4}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Computertomogramm}{4}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Fazit}{4}{section.5}%
+\contentsline {section}{\numberline {6}Anhang}{4}{section.6}%

@@ -47,7 +47,7 @@ E_lit_err = np.concatenate((E_lit_Cs_err, E_lit_Co_err, E_lit_Eu_err))
 
 popt, pcov = curve_fit(f=linear, xdata=E_lit, ydata=b, sigma=b_err, absolute_sigma=True)
 fit_values = popt
-fit_value_errors = np.diag(pcov)
+fit_value_errors = np.sqrt (np.diag(pcov) )
 residuals = b - linear(E_lit, *popt)
 chi_squared = np.sum((residuals / b_err) ** 2)
 
