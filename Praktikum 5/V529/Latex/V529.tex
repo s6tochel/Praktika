@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage{graphicx, amsmath, float, siunitx, hyperref, mathtools} % Required for inserting images
+\usepackage{graphicx, amsmath, float, siunitx, hyperref, mathtools, physics, bookmark} % Required for inserting images
 \usepackage[ngerman]{babel}
 \usepackage{biblatex, csquotes}
 \addbibresource{refs.bib}
@@ -49,17 +49,202 @@ Dann wird die Abschwäschung der Strahlung durch Abschirmung gemessen und als le
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Theorie}
 
+\subsection{Röntenstrahlung}
+
+Röntgenstrahlung ist eine hochenergetische Form elektromagnetischer Strahlung. 
+Ihr Wellenlängenbereich reicht ungefähr von \SI{1}{\nano\meter} am unteren Ende der Energie bis zu \SI{1}{\pico\meter} am hochenergetischen Ende \cite{RoentgenBereich}.
+Röntgenstrahlung kann durch zwei verschiedene physikalische Prozesse entstehen. 
+Wir unterteilen das Röntgenspektrum somit in das charakteristische und das kontinuierliche Röntgenspektrum.
+Das charakteristische Röntgenspektrum entsteht durch hochenergetische Übergänge von Elektronen in den inneren Atomhüllen.
+Das kontinuierliche Röntgenspektrum entsteht durch Bremsstrahlung.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/Röntgenstrahlung.png}
+    \caption{Charakteristisches und kontinuierliches Röntgenspektrum \cite{RoentgenRoehre}}
+    \label{fig:Roentgenspektrum}
+\end{figure}
+
+\subsubsection{Erzeugung}
+Möchte man Röntgenstrahlung erzeugen, verwendet man eine sogenannte Röntgenröhre.
+Sie besteht erstens aus einer Glühkathode an der eine Heizspannung anliegt, bzw. durch die ein Emissionsstrom $I$ fließt.
+Am anderen Ende der Röhre befindet sich eine Anode zu welcher die aus der Kathode gelösten Elektronen durch die Anoden- bzw. Röhrenspannung $U$ hinbeschleunigt werden.
+In der Anode lösen die Elektronen zum einen andere Elektronen aus den inneren Atomhüllen, was zu charakteristischer Röntenstrahlung führt.
+Zum anderen werden sie stark abgebremst, was zum kontinuierlichen Röntgenspektrum führt.
+Die Anode und Kathode befinden sich in einem evakuiertem Glaskolben.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Röntgenröhre.png}
+    \caption{Aufbau einer Röntgenröhre \cite{RoentgenRoehre}}
+    \label{fig:Roentgenroehre}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Dosimetrische Messgrößen}
+
+\subsubsection{Ionendosis}
+Die Ionendosis $J$ gibt die mittlere elektrische Ladung $Q$ gleichen Vorzeichens an, die durch ionisierende Strahlung in Materie der Masse $m$ entsteht.
+\begin{displaymath}
+    D = \dv{Q}{m}
+\end{displaymath}
+
+\subsubsection{Ionendosisleistung}
+Die Ionendosisleistung $j$ ist die Ionendosis $J$ die pro Zeitintervall $\Delta t$ erzeugt wird.
+\begin{displaymath}
+    j = \dv{J}{t}
+\end{displaymath}
+
+\subsubsection{Äquivalentdosis}
+Die Äquivalentdosis $H$ \textbf{\color{red} HIER TEXT EINFÜGEN...}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Messgeräte}
+
+Zum Nachweis der Röntgenstrahlung werden in dem Versuch drei verschiedene Messgeräte verwendet. 
+Dazu zählt das Geiger-Müller-Zählrohr, ein Kondensator über welchen man eine Spannungsänderung messen kann und ein Stabdosimeter.
+
+\subsubsection{Geiger-Müller-Zählrohr}
+Das Geiger-Müller-Zählrohr besteht aus einem Anodendraht in einer zylinderförmigen Metallrohr-Kathode.
+Der Zylinder ist gefüllt mit einem sogenanntem Zählgas, wie Xenon zum Beispiel. 
+Des weiteren wird ein sogenanntes Löschgas, wie zum Beispiel Ethanoldampf, zur Verkürzung der Totzeit beigemischt.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/GMZ Aufbau.png}
+    \caption{Aufbau des Geiger-Müller-Zählrohrs \cite{GMZ}}
+    \label{fig:GMZ}
+\end{figure}
+Trifft Röntgenstrahlung auf das Zählgas wird letzteres ionisiert und die freigesetzten Elektronen werden richtung Anode beschleunigt, wo sie sich sammeln.
+Dies erzeugt eine Spannungsänderung über dem Kondensator C, die gemessen werden kann.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/Arbeitsbereiche.png}
+    \caption{Arbeitsbereiche des Zählrohrs \cite{Arbeitsbereiche}}
+    \label{fig:Arbeitsbereiche}
+\end{figure}
+Zwischen Anodendraht und Kathode wird eine Betriebsspannung $U_B$ angelegt. 
+Je nach eingestellter Betriebsspannung arbeitet das Zählrohr in verschiedenen Arbeitsbereichen.
+Interessant für uns ist das Geiger-Müller-Bereich (Plateaubereich in Abbildung \ref{fig:Arbeitsbereiche}):
+Trifft hier Röntgenstrahlung auf das Zählgas, führt es zu einer vollständigen Entladung des Gases, was als ein Tick gezählt wird.
+
+Nach dieser Auslösung ist das Zählrohr für eine Zeit nicht empfänglich für ein weiteres Signal, bis der Anfangszustand des Gases widerhergestellt ist.
+Diese Zeit wird als Totzeit $\tau$ bezeichnet.
+
+\subsubsection{Kondensator}
+Trifft Röntgenstrahlung auf Atome des Mediums zwischen den Kondensatorplatten, werden freie Ladungsträger erzeugt, die zu den Platten hin beschleunigt werden.
+Diese Ladungsträger, Elektronen zum Beispiel, sammeln sich auf den Kondensatorplatten, was eine Spannungsänderung erzeugt, die gemssen werden kann.
+
+Auch bei dem Kondensator gibt es verschiedene Arbeitsbereiche. 
+Im Rekombinationsbereich reicht die Spannung nicht aus um in \SI{100}{\percent} der Fälle einfallender Röntgenstrahlung ein Ereignis zu messen. 
+Im Ionisationsbereich ist die Spannung ausreichend um jedes (nicht in der Totzeit) einfallende Röntenquant zu messen zu können.
+
+\subsubsection{Stabdosimeter}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Stabdosimeter.png}
+    \caption{Aufbau des Stabdosimeters \cite{Dosimeter}}
+    \label{fig:Stabdosimeter}
+\end{figure}
+Der Stabdosimeter funktioniert indem man eine Spannung zwischen Innen- und Außenelektrode (Abbildung \ref{fig:Stabdosimeter}) anlegt, sodass der Quarzfaden die Nullstellung annimmt.
+Trifft nun ionisierende Strahlung in den Gasraum, verringern die dabei entstehenden Ladungen die angelegte Spannung, was durch die neue Position des Quarzfadens abzulesen ist.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Relevante Gesetze}
+
+\subsubsection{Abstandsquadratgesetz}
+Das Abstandsquadratgesetz besagt, dass die Intensität $I$ eines sphärisch divergierenden Strahles invers proportinal zu dem Quadrat des Abstandes $r$ zu der Quelle ist.
+Dies ist intuitiv klar, da sich der Strahl auf die Sphäre mit Radius $r$ aufteilt, und die Fläche dieser Sphäre mit dem Quadrat des Radius $r$ skaliert.
+\begin{displaymath}
+    I \propto r^{-2}
+\end{displaymath}
+
+\subsubsection{Lambertsches Strahlungsgesetz}
+Das Lambertsche Strahlungsgesetz beschreibt welcher Anteil der Strahlung durch einen Absorber transmittiert wird. 
+Sei $T$ der Transmissionsgrad, $\mu$ die Absorbtionskoeffizient des Absorbermaterials und $d$ die Dicke des Absorbers.
+Desweiteren sei $I_0$ die Intensität des Strahles vor Durchgang des Absorbers und $I$ die Intensität nach Durchgang.
+\begin{displaymath}
+    T = e ^{- \mu d} \quad \text{und} \quad I = I_0 \cdot T
+\end{displaymath}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Computertomographie}
+Bei der Computertomographie wird Röntgenstrahlung verwendet um Schnittbilder eines Objektes zu erzeugen, ohne dieses zu beschädigen.
+Sie findet hauptsächlich in der Medizin ihren Gebrauch.
+Dabei wird ausgenutzt, dass verschiedene Bioelemente verschiedene Absorbtionskoeffizienten haben.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/Computertomographie.jpg}
+    \caption{Computertomographie Funktionsweise \cite{Computertomographie}}
+    \label{fig:Computertomographie}
+\end{figure}
+Wie in Abbildung \ref{fig:Computertomographie} zu sehen wird Röntgenstrahlung durch das zu untersuchende Objekt (hier Mensch) gestrahlt.
+Auf gegenüberliegender Seite befinden sich mehrere Detektoren, die zusammen ein Winkelverteilung der Transmissionsgrade messen.
+Dreht man nun diesen Aufbau um das Objekt und macht man eine Reihe dieser Aufnahmen, kann ein Computer diese Aufnahmen zusammensetzen und das Schnittbild rekonstruieren.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Durchführung}
 
 \subsection{Dosimetrie}
+In dem ersten Versuchsteil beschäftigen wir uns mit der Dosimetrie. 
+Hierbei messen wir die aus der Röntgenröhre austretende Röntgenstrahlung anhand eines Kondensators.
+Dabei variieren wir das Material der Anode der Röntgenröhre, die Röhrenspannung $U$ und den Emissionsstrom $I$. 
+Auch variieren wir die Kondensatorspannung $U_C$ und wir messen den Ionisationsstrom $I_C$.
+
+Dazu ist ein Elektrometerverstärker mit Widerstand $R$ in unserem Aufbau an den Kondensator geschalten, über dessen Ausgangsspannung $U_E$ wir den Ionisationsstrom durch
+\begin{displaymath}
+    I_C = \frac{U_E}{R}
+\end{displaymath}
+berechnen können.
+
+Hierbei wurden $U$ und $I$ an dem Röntengerät abgelesen und werden als Fehlerfrei betrachtet.
+$U_C$ und $U_E$ wurden mit einem Digitalmultimeter gemessen, wobei $U_C$ schwankungsfrei war während das Ablesen von $U_E$ komplizierter war.
+Daher bekommt $U_C$ einen absoluten Fehler von $\Delta U_C = \SI{1}{\volt}$ da wir die Werte auf $\SI{1}{\volt}$ genau abgelesen haben.
+Der Fehler auf $U_E$ wurde für jede Messung bestimmt durch das Schwanken der abzulesenden Werte auf dem DMM.
+
+Beim Arbeiten mit der Molybdän-Röntgenröhre haben wir einen Widerstand von $R = \SI{1}{\giga\ohm}$ und mit der Kupfer-Röntgenröhre einen Widerstand von $R = \SI{100}{\mega\ohm}$ verwendet.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/KondensatorDimensionen.png}
+    \caption{Dimensionen des Plattenkondensators \cite{Anleitung}}
+    \label{fig:KondensatorDimensionen}
+\end{figure}
+Die Dimensionen des Plattenkondensators sind mit Abbildung \ref{fig:KondensatorDimensionen} in Tabelle \ref{tab:KondensatorDimensionen} angegeben.
+\begin{table}[H]
+    \centering
+    \caption{Dimensionen des Plattenkondensators mit Bildbeschreibung der Größen in Abbildung \ref{fig:KondensatorDimensionen} \cite{Anleitung}}
+    \begin{tabular}{|c|c|}
+        \hline
+        Name & Länge / \si{\centi \meter} \\ \hline \hline
+        $s_0$ & 15,5 \\ \hline 
+        $a_0$ & 4,5 \\ \hline
+        $b_0$ & 0,6 \\ \hline
+        $d$ & 2,5 \\ \hline
+        $D$ & 16,0 \\ \hline
+    \end{tabular}
+    \label{tab:KondensatorDimensionen}
+\end{table}
+Während der Durchführung dieses Versuchsteils wurde mehrfach der Luftdruck $p$ und die Raumtemperatur $T$ gemessen. 
+Beide Werte blieben konstant auf $p = \SI{990}{\hecto\pascal}$ und $T = \SI{26}{\degreeCelsius} = \SI{299,15}{\kelvin}$.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Abstandsquadratgesetz}
-
+Als nächstes sollte das Abstandsquadratgesetz anhand eines Stabdosimeters verifiziert werden. 
+Dazu wurde der Kondensator aus dem Röntgengerät ausgebaut und mit einer Experimentierschiene mit eingezeichneter Zentimeter-Skala ersetzt.
+Der Nullpunkt der Zentimeter-Skala war dabei ca. \SI{110}{\milli\meter} von der Anode der Röntgenröhre entfernt.
+Nun wurde vor jeder Messung das Stabdosimeter geeicht, indem die Elektroden auf die korrekte Spannung gesetzt wurden.
+Dann haben wir das Stabdosimeter auf eine gewisse Position $x$ auf die Experimentierschiene gestellt und für eine bestimmte Zeitdauer $\Delta t$ bestrahlt.
+Danach haben wir auf der im Dosimeter eingebauten Skala die Äquivalentdosis abgelesen, die das Dosimeter in der Zeit $\Delta t$ abbekommen hat.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Abstand.pdf}
+    \caption{Aufbau zum Bestätigen des Abstandsquadratgesetzes}
+    \label{fig:AbstandAufbau}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Totzeit}
@@ -79,47 +264,8 @@ Dann wird die Abschwäschung der Strahlung durch Abschirmung gemessen und als le
 
 \subsection{Winkelverteilung}
 
-\begin{displaymath}
-   C(x) = A \cdot \cos( x + \phi )^n + c \cdot x + d
-\label{eq:CosinusAnpassung}
-\end{displaymath}
-\begin{displaymath}
-    G(x) = A \cdot e^{-\frac{(x - \mu)^2}{2\sigma^2}} + b
-\label{eq:GaussAnpassung}
-\end{displaymath}
 
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=1\textwidth]{figures/cosAnpassung.png}
-        \caption{Cosinus-Anpassung an die Winkelverteilung}
-        \label{fig:WinkelverteilungCosinus}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=1\textwidth]{figures/gaussAnpassung.png}
-        \caption{Gauss-Anpassung an die Winkelverteilung}
-        \label{fig:WinkelverteilungGauss}
-    \end{subfigure}
-    \label{fig:WinkelverteilungKomplett}
-\end{figure}
-
-\begin{table}[H]
-    \centering
-    \caption{Cosinus-Anpassung an die Winkelverteilung}
-    \begin{tabular}{|c|c|}
-        \hline
-        Parameter & Wert \\ \hline \hline
-        $A$ & 4378(50) \\ \hline 
-        $\phi$ & 0,020(8) \\ \hline
-        $n$ & 1.82(6) \\ \hline
-        $c$ & -08(35) \\ \hline
-        $d$ & 03(20) \\ \hline
-    \end{tabular}
-    \label{tab:CosinusAnpassungWinkelverteilung}
-\end{table}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Dosimetrie}
 
 

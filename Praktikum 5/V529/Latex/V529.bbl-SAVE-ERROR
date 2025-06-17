@@ -1,0 +1,166 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{RoentgenRoehre}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=458cebf1e611a2a7d3bd87321a95c464}{%
+           family={Göttingen},
+           familyi={G\bibinitperiod},
+           given={LP\bibnamedelima Georg-August-Universität},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinithyphendelim A\bibinithyphendelim U\bibinitperiod}}}%
+      }
+      \strng{namehash}{458cebf1e611a2a7d3bd87321a95c464}
+      \strng{fullhash}{458cebf1e611a2a7d3bd87321a95c464}
+      \strng{fullhashraw}{458cebf1e611a2a7d3bd87321a95c464}
+      \strng{bibnamehash}{458cebf1e611a2a7d3bd87321a95c464}
+      \strng{authorbibnamehash}{458cebf1e611a2a7d3bd87321a95c464}
+      \strng{authornamehash}{458cebf1e611a2a7d3bd87321a95c464}
+      \strng{authorfullhash}{458cebf1e611a2a7d3bd87321a95c464}
+      \strng{authorfullhashraw}{458cebf1e611a2a7d3bd87321a95c464}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{letzter Zugriff: 16.06.2025}
+      \field{title}{Röntgenröhre}
+      \verb{urlraw}
+      \verb https://lp.uni-goettingen.de/get/text/6639
+      \endverb
+      \verb{url}
+      \verb https://lp.uni-goettingen.de/get/text/6639
+      \endverb
+    \endentry
+    \entry{GMZ}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ea1b008f0cd208b3e88e911000b7686b}{%
+           family={Konrad},
+           familyi={K\bibinitperiod},
+           given={Ulf},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea1b008f0cd208b3e88e911000b7686b}
+      \strng{fullhash}{ea1b008f0cd208b3e88e911000b7686b}
+      \strng{fullhashraw}{ea1b008f0cd208b3e88e911000b7686b}
+      \strng{bibnamehash}{ea1b008f0cd208b3e88e911000b7686b}
+      \strng{authorbibnamehash}{ea1b008f0cd208b3e88e911000b7686b}
+      \strng{authornamehash}{ea1b008f0cd208b3e88e911000b7686b}
+      \strng{authorfullhash}{ea1b008f0cd208b3e88e911000b7686b}
+      \strng{authorfullhashraw}{ea1b008f0cd208b3e88e911000b7686b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{letzter Zugriff: 16.06.2025}
+      \field{title}{Geiger-Müller-Zählrohr}
+      \verb{urlraw}
+      \verb https://www.ulfkonrad.de/physik/geiger-mueller-zaehlrohr
+      \endverb
+      \verb{url}
+      \verb https://www.ulfkonrad.de/physik/geiger-mueller-zaehlrohr
+      \endverb
+    \endentry
+    \entry{Dosimeter}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3f2905e100c58490506192775130a31d}{%
+           family={LEIFIphysik},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f2905e100c58490506192775130a31d}
+      \strng{fullhash}{3f2905e100c58490506192775130a31d}
+      \strng{fullhashraw}{3f2905e100c58490506192775130a31d}
+      \strng{bibnamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authorbibnamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authornamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authorfullhash}{3f2905e100c58490506192775130a31d}
+      \strng{authorfullhashraw}{3f2905e100c58490506192775130a31d}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{letzter Zugriff: 16.06.2025}
+      \field{title}{Dosimeter}
+      \verb{urlraw}
+      \verb https://www.leifiphysik.de/kern-teilchenphysik/radioaktivitaet-einfuehrung/ausblick/dosimeter
+      \endverb
+      \verb{url}
+      \verb https://www.leifiphysik.de/kern-teilchenphysik/radioaktivitaet-einfuehrung/ausblick/dosimeter
+      \endverb
+    \endentry
+    \entry{RoentgenBereich}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3f2905e100c58490506192775130a31d}{%
+           family={LEIFIphysik},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f2905e100c58490506192775130a31d}
+      \strng{fullhash}{3f2905e100c58490506192775130a31d}
+      \strng{fullhashraw}{3f2905e100c58490506192775130a31d}
+      \strng{bibnamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authorbibnamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authornamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authorfullhash}{3f2905e100c58490506192775130a31d}
+      \strng{authorfullhashraw}{3f2905e100c58490506192775130a31d}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{letzter Zugriff: 14.06.2025}
+      \field{title}{RÖNTGEN-Strahlung}
+      \verb{urlraw}
+      \verb https://www.leifiphysik.de/atomphysik/roentgen-strahlung
+      \endverb
+      \verb{url}
+      \verb https://www.leifiphysik.de/atomphysik/roentgen-strahlung
+      \endverb
+    \endentry
+    \entry{Arbeitsbereiche}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{letzter Zugriff: 16.06.2025}
+      \field{title}{Zählrohr}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Zählrohr
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Z%C3%A4hlrohr
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
