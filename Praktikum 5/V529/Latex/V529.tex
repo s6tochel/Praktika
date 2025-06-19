@@ -156,17 +156,19 @@ Trifft nun ionisierende Strahlung in den Gasraum, verringern die dabei entstehen
 \subsubsection{Abstandsquadratgesetz}
 Das Abstandsquadratgesetz besagt, dass die Intensität $I$ eines sphärisch divergierenden Strahles invers proportinal zu dem Quadrat des Abstandes $r$ zu der Quelle ist.
 Dies ist intuitiv klar, da sich der Strahl auf die Sphäre mit Radius $r$ aufteilt, und die Fläche dieser Sphäre mit dem Quadrat des Radius $r$ skaliert.
-\begin{displaymath}
+\begin{equation}
     I \propto r^{-2}
-\end{displaymath}
+    \label{eq:Abstandsquadratgesetz}
+\end{equation}
 
 \subsubsection{Lambertsches Strahlungsgesetz}
 Das Lambertsche Strahlungsgesetz beschreibt welcher Anteil der Strahlung durch einen Absorber transmittiert wird. 
 Sei $T$ der Transmissionsgrad, $\mu$ die Absorbtionskoeffizient des Absorbermaterials und $d$ die Dicke des Absorbers.
 Desweiteren sei $I_0$ die Intensität des Strahles vor Durchgang des Absorbers und $I$ die Intensität nach Durchgang.
-\begin{displaymath}
+\begin{equation}
     T = e ^{- \mu d} \quad \text{und} \quad I = I_0 \cdot T
-\end{displaymath}
+    \label{eq:LambertschesStrahlungsgesetz}
+\end{equation}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -195,9 +197,10 @@ Dabei variieren wir das Material der Anode der Röntgenröhre, die Röhrenspannu
 Auch variieren wir die Kondensatorspannung $U_C$ und wir messen den Ionisationsstrom $I_C$.
 
 Dazu ist ein Elektrometerverstärker mit Widerstand $R$ in unserem Aufbau an den Kondensator geschalten, über dessen Ausgangsspannung $U_E$ wir den Ionisationsstrom durch
-\begin{displaymath}
+\begin{equation}
     I_C = \frac{U_E}{R}
-\end{displaymath}
+    \label{eq:UE_IC}
+\end{equation}
 berechnen können.
 
 Hierbei wurden $U$ und $I$ an dem Röntengerät abgelesen und werden als Fehlerfrei betrachtet.
@@ -209,13 +212,13 @@ Beim Arbeiten mit der Molybdän-Röntgenröhre haben wir einen Widerstand von $R
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/KondensatorDimensionen.png}
-    \caption{Dimensionen des Plattenkondensators \cite{Anleitung}}
+    \caption{Dimensionen des durchstrahlten Volumens im Plattenkondensators \cite{Anleitung}}
     \label{fig:KondensatorDimensionen}
 \end{figure}
-Die Dimensionen des Plattenkondensators sind mit Abbildung \ref{fig:KondensatorDimensionen} in Tabelle \ref{tab:KondensatorDimensionen} angegeben.
+Die Dimensionen des im Plattenkondensators von Röntegstrahlung durchströmten Volumens sind mit Abbildung \ref{fig:KondensatorDimensionen} in Tabelle \ref{tab:KondensatorDimensionen} angegeben.
 \begin{table}[H]
     \centering
-    \caption{Dimensionen des Plattenkondensators mit Bildbeschreibung der Größen in Abbildung \ref{fig:KondensatorDimensionen} \cite{Anleitung}}
+    \caption{Dimensionen des durchstrahlten Volumens im Plattenkondensators mit Bildbeschreibung der Größen in Abbildung \ref{fig:KondensatorDimensionen} \cite{Anleitung}}
     \begin{tabular}{|c|c|}
         \hline
         Name & Länge / \si{\centi \meter} \\ \hline \hline
@@ -228,8 +231,26 @@ Die Dimensionen des Plattenkondensators sind mit Abbildung \ref{fig:KondensatorD
     \label{tab:KondensatorDimensionen}
 \end{table}
 Während der Durchführung dieses Versuchsteils wurde mehrfach der Luftdruck $p$ und die Raumtemperatur $T$ gemessen. 
-Beide Werte blieben konstant auf $p = \SI{990}{\hecto\pascal}$ und $T = \SI{26}{\degreeCelsius} = \SI{299,15}{\kelvin}$.
+Beide Werte blieben konstant auf $p = \SI{990 \pm 3}{\hecto\pascal}$ und $T = \SI{26 \pm 1,5}{\degreeCelsius} = \SI{299,15 \pm 1,5}{\kelvin}$.
 
+Zuerst sollte ermittelt werden in welchem Spannungsbereich der Kondensator als Ionisationsdetektor arbeitet.
+Dazu wurde die Kondensatorspannung $U_C$ variiert und die Ausgangsspannung $U_E$ des Elektrometerverstärker gemessen.
+Dies wurde jeweils für die Kupfer- sowie für die Molybdän-Röhre für drei verschiedene Röhrenspannungen ($U \in \{10, 15, 25\}\si{\kilo\volt}$) durchgeführt.
+Dabei haben wir jeweils soviele Messwerte aufgenommen, wie es der Regler zum Einstellen der Kondensatorspannung erlaubte, oder bis der Wert von $U_E$ stagnierte.
+Die zugehörigen Messwerte sind im Anhang in Tabelle \ref{tab:MesswerteDosimetrie1a} bis Tabelle \ref{tab:MesswerteDosimetrie1f} eingetragen.
+
+Danach wurde die Ausgangsspannung $U_E$ des Elektrometerverstärker in Abhängigkeit des Emissionsstroms $I$ gemessen.
+Dabei wurde die Molybdän-Röhre verwendet und die Röhrenspannung betrug $U = \SI{35}{\kilo\volt}$.
+Die Messwerte sind in Tabelle \ref{tab:MesswerteDosimetrie2a} zu finden.
+
+Dann wurde noch die Ausgangsspannung $U_E$ des Elektrometerverstärker in Abhängigkeit der Röhrenspannung $U$ gemessen.
+Für diese Messung wurde die Kupfer-Röhre eingesetzt und der Emissionsstrom auf $I = \SI{1}{\milli\ampere}$ festgehalten.
+Man findet die zugehörigen Messwerte in Tabelle \ref{tab:MesswerteDosimetrie2b}.
+
+In der Versuchsanleitung stand, man solle die Messung in Abhängigkeit des Emissionsstrom, sowie die Messung in Abhängigkeit der Röhrenspannung jeweils für beide Röntenröhren durchführen.
+Leider haben wird dies falsch gelesen und es so verstanden als solle man die Strommessung mit der Molybdän-Röhre und die Spannungsmessung mit der Kupfer-Röhre machen.
+Deswegen haben wir zwei Messreihen zu wenig aufgenommen.
+In dem Auswertungsteil wird darauf eingegangen, was man bei diesen beiden Messungen erwarten würde.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Abstandsquadratgesetz}
@@ -245,41 +266,272 @@ Danach haben wir auf der im Dosimeter eingebauten Skala die Äquivalentdosis abg
     \caption{Aufbau zum Bestätigen des Abstandsquadratgesetzes}
     \label{fig:AbstandAufbau}
 \end{figure}
+Dies wurde zuerst für die Kupfer-Röhre bei einer Integrationszeit von $\Delta t = \SI{1}{\second}$ durchgeführt.
+Dabei betrug der Emissionsstrom $I = \SI{0,1}{\milli\ampere}$ und die Röhrenspannung $U = \SI{35}{\kilo\volt}$.
+Die Messwerte sind im Anhang in Tabelle \ref{tab:MesswerteAbstand1} zu finden.
+
+Danach wurde die Messung mit der Molybdän-Röhre mit $I = \SI{0,2}{\milli\ampere}$ und $\Delta t = \SI{2}{\second}$ wiederholt.
+Die Röhrenspannung blieb gleich und die Messwerte sind in Tabelle \ref{tab:MesswerteAbstand2} eingetragen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Totzeit}
+Im Versuchsteil zur Totzeit wollen wir die Totzeit des Geiger-Müller-Zählrohrs abschätzen. 
+Dazu wurde die Experimentierschiene wieder entfernt und ein Goniometer eingebaut.
+Des weiteren wurde auch ein Kollimator eingebaut, die Kupfer-Röhre eingesetzt und ein Zählrohr an das Goniometer angeschlossen.
 
+Nun konnte man die vertikale Position des Zählrohrs durch Einstellen des Winkels des Goniometers variieren.
+Zuerst wurde dieser Winkel so eingestellt, dass das Zählrohr auf der optischen Achse lag und die Zählrate somit maximal wurde.
+Dieser Winkel lag bei \SI{-0,6}{\degree} (Abbildung \ref{fig:TotzeitWinkel}) und wurde im Weiteren fest auf dieser Einstellung gehalten.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/TotzeitWinkel.png}
+    \caption{Bestimmung des Winkels $\beta$ der maximalen Zählrate $R$ für die Totzeitmessung (Messwerte: Tabelle \ref{tab:MesswerteTotzeitWinkel})}
+    \label{fig:TotzeitWinkel}
+\end{figure}
+
+Als nächstes wurde der Emissionsstrom $I$ variiert und die mittlere Zählrate $R$ jeweils über eine Integrationszeit von $\Delta t = \SI{30}{\second}$ aufgenommen.
+Die zugehörigen Messwerte sind im Anhang in Tabelle \ref{tab:MesswerteTotzeitStrom} abzulesen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Abschirmung}
+Als nächstes wird der Effekt von abschirmenden Materialien auf die Röntgenstrahlung betrachtet.
+Dabei blieb der Kollimator, sowie das Goniometer mit dem Zählrohr eingebaut und es wurde zusätzlich ein Targethalter zum Befestigen der Abschirmungen eingesetzt.
+Auch wurde die Kupfer-Röhre wieder mit der Molybdän-Röhre ersetzt.
 
+In den Targethalter können zwei verschiedene Absorbersätze eingesetzt werden.
+Der Absorbersatz I besteht aus einem Loch und sechs Absorbern aus gleichem Material aber mit verschiedener Dicke $d$.
+Der Absorbersatz II besteht aus einem Loch und sechs Absorbern gleicher Dicke $d_{II}$ aber verschiedener Materialien.
+Des weiteren konnte man einen Zirkoniumfilter auf den Kollimator stecken.
+
+Zuerst wurde wie im vorherigen Teil eine Winkelmessung durchgeführt um das Zählrohr in die optische Achse der Röntgenstrahlung zu positionieren.
+Der optimale Winkel wurde auf $\beta = \SI{-1,5}{\degree}$ festgelegt (Abbildung \ref{fig:AbschirmungWinkel}) und blieb im Folgenden fest bei diesem Wert.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/AbschirmungWinkel.png}
+    \caption{Bestimmung des Winkels $\beta$ der maximalen Zählrate $R$ für die Abschirmungsmessungen (Messwerte: Tabelle \ref{tab:MesswerteAbschirmungWinkel})}
+    \label{fig:AbschirmungWinkel}
+\end{figure}
+
+Dann wurde für die mittlere Zählrate $R$ für beide Absorbersätze jeweils einmal mit Zirkoniumfilter und einmal ohne Filter gemessen.
+Dies wurde wieder über eine Integrationszeit von $\Delta t = \SI{30}{\second}$ gemittelt.
+Dabei sollte versucht werden, dass die Zählrate nicht \SI{3000}{\per\second} überschreitet.
+Dies wurde erreicht indem der Emissionsstrom $I$ angepasst wurde.
+Die vier Werte der vier Messreihen sind im Anhang in Tabelle \ref{tab:MesswerteAbschirmungDicke} bis Tabelle \ref{tab:MesswerteAbschirmungMaterialFilter} eingetragen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Computertomogramm}
+\textbf{\color{red} HIER TEXT EINFÜGEN...}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Auswertung}
 
-\subsection{Winkelverteilung}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Dosimetrie}
+Nach Gleichung \ref{eq:UE_IC} kann die Ausgangsspannung des Elektrometerverstärker $U_E$ direkt in den Ionisationsstrom $I_C$ umgerechent werden.
+Da für die Molybdän-Röhre ein Widerstand $R$ von $\SI{1}{\giga\ohm}$ verwendet wurde, ergibt sich der direkte Zusammenhang:
+\begin{displaymath}
+    \SI{1}{\volt} \,\widehat{=}\, \SI{1}{\nano\ampere} \quad \text{(Molybdän-Röhre)}
+\end{displaymath}
+Und mit einem Widerstand von $R = \SI{100}{\mega\ohm}$ ergibt sich für die Kupfer-Röhre:
+\begin{displaymath}
+    \SI{1}{\volt} \,\widehat{=}\, \SI{10}{\nano\ampere} \quad \text{(Kupfer-Röhre)}
+\end{displaymath}
+
+Somit können wir den Ionisationsstrom $I_C$ gegen die Kondensatorspannung $U_C$ auftragen.
+In Abbildung \ref{fig:Dosimetrie1MoU15} ist dies für die Molybdaän-Röhre bei einer Röhrenspannung von $U = \SI{15}{\kilo\volt}$ abgebildet.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie1MoU15.png}
+    \caption{Ionisationsstrom $I_C$ des Kondensators in Abhängigkeit der Kondensatorspannung $U_C$ für Röhrenspannung $U = \SI{15}{\kilo\volt}$ (Molybdän-Röhre, $I = \SI{1}{\milli\ampere}$)}
+    \label{fig:Dosimetrie1MoU15}
+\end{figure}
+
+Man erkennt, dass ohne Kondensatorspannung auch kein Ionisationsstrom fließt.
+Dies ist natürlich klar, da in diesem Fall auch keine freien Ladungen an den Elektroden sammeln.
+Zusätzlich sieht man, dass der Ionisationsstrom unterhalb von $U_C = \SI{100}{\volt}$ rasch ansteigt.
+Dies ist der Rekombinationsbereich, in dem noch nicht alle durch die Röntgenstrahlung entstandenen Ladungen die Elektroden erreichen.
+Bis eine Kondensatorspannung von ungefähr $U_C = \SI{300}{\volt}$ scheint die Kurve dann langsamer zu steigen.
+Über $U_C = \SI{300}{\volt}$ steigt die Kurve dann wieder schneller an.
+
+Erwarten würde man einen raschen Anstieg im Rekombinationsbereich und dann eine Abflachung im Ionisationsbereich.
+Diese Kurve entsteht dadurch, dass ab einer gewissen Spannung quasi jede durch die Röntgenstrahlung erzeugte freie Ladung zwischen den Kondensatorplatten auch diese Platten erreicht.
+
+Wieso wir keine solche Abflachung sehen könnte daran liegen, dass sich die freien Ladungen wegen der Impulserhaltung von der Röntgen-Röhre wegbewegen.
+Am hinteren Ende des Kondensators erreichen somit nicht alle Ladungen noch eine Kondensatorplatte.
+Bei steigender Kondensatorspannung können immer weniger Ladungen dem Kondensator entkommen.
+Der rasche Anstieg überhalb von $U_C = \SI{300}{\volt}$ könnte daran liegen, dass ab einer gewissen Spannung die Photonen die durch die Comptopn-Streuung auf die negativ geladene Platte treffen die Elektronen direkt herauslösen, sodass diese auf die positiv geladene Platte treffen.
+
+In Abbildung \ref{fig:Dosimetrie1Mo} erkennt man, wie die Kurve sich für verschiedene Röhrenspannungen $U$ verändert.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie1Mo.png}
+    \caption{Ionisationsstrom $I_C$ des Kondensators in Abhängigkeit der Kondensatorspannung $U_C$ für drei verschiedene Röhrenspannungen (Molybdän-Röhre, $I = \SI{1}{\milli\ampere}$)}
+    \label{fig:Dosimetrie1Mo}
+\end{figure}
+
+Wir sehen, dass bei höherer Röhrenspannung $U$ der Ionisationsstrom $I_C$ höher für gleiche Kondensatorspannung $U_C$ ist.
+Dies liegt daran, dass die Röntgen-Photonen bei höherer Röhrenspannung mehr Energie besitzen uns somit mehr freie Ladungen erzeugen können.
+Jedoch sieht der Verlauf der Kurve außer der vertikalen Skalierung ähnlich aus.
+Die Kurve steigt in allen Fällen rascher an unterhalb von $U_C = \SI{100}{\volt}$.
+Dies macht Sinn, da die Breite des Rekombinationsbereichs nicht abhängig von der Röhrenspannung ist.
+Für eine Röhrenspannung von $U = \SI{25}{\kilo\volt}$ ist die Abflachung deutlicher zu erkennen.
+Die $U = \SI{10}{\kilo\volt}$-Kurve sieht der $U = \SI{15}{\kilo\volt}$-Kurve sehr ähnlich.
+
+In Abbildung \ref{fig:Dosimetrie1CuU15} ist die $U = \SI{15}{\kilo\volt}$-Kurve für die Kupfer-Röhre abgebildet.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie1CuU15.png}
+    \caption{Ionisationsstrom $I_C$ des Kondensators in Abhängigkeit der Kondensatorspannung $U_C$ für Röhrenspannung $U = \SI{15}{\kilo\volt}$ (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
+    \label{fig:Dosimetrie1CuU15}
+\end{figure}
+
+Wir erkennen, dass die Kurve für die Kupfer-Röhre deutlich klarer unserer Erwartung folgt.
+Hier haben wir einen klaren Anstieg bis ungefähr $U_C = \SI{150}{\volt}$, wo die Kurve dann abflacht.
+
+In Abbildung \ref{fig:Dosimetrie1Cu} ist der Verlauf des Ionisationsstroms $I_C$ gegen die Kondensatorspannung $U_C$ für drei verschiedene Röhrenspannungen $U$ mit der Kupfer-Röhre zu sehen.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie1Cu.png}
+    \caption{Ionisationsstrom $I_C$ des Kondensators in Abhängigkeit der Kondensatorspannung $U_C$ für drei verschiedene Röhrenspannungen (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
+    \label{fig:Dosimetrie1Cu}
+\end{figure}
+
+Hier sehen wir wieder, dass bei höherer Röhrenspannung $U$ der maximale Ionisationsstrom höher liegt.
+Auch erkennen wir diesmal deutlich, dass die Kurve bei höherer Röhrenspannung erst bei einer höheren Kondensatorspannung abflacht.
+Dies bedeutet, dass der Rekombinationsbereich größer für höhere Röhrenspannung ist.
+Der Grund dafür könnte wieder sein, dass die freien Ladungen mehr kinetische Energie bei höherer Röhrenspannung bekommen.
+Dann braucht man wieder eine höhere Kondensatorspannung um alle freie Ladungen auf den Elektroden zu sammeln, bevor sie dem Kondensator entkommen.
+
+Aus diesen Messungen haben wir uns überlegt, dass in jedem Fall der Ionisationsstrom maximal wird bei der maximalen Kondensatorspannung.
+Deswegen haben wir im folgenden die Kondensatorspannung bei maximaler Einstellung gehalten.
+
+Nun wollen wir uns ansehen, wie sich die mittlere Ionendosisleistung $\langle j \rangle$ unter Variation des Emissionsstroms $I$ und der Röhrenspannung $U$ verhält.
+Die mittlere Ionendosisleistung lässt sich hier berechnen durch
+\begin{displaymath}
+    \langle j \rangle = \frac{I_C}{m}
+\end{displaymath}
+, wobei $I_C$ der Ionisationsstrom zwischen den Kondensatorplatten und $m$ die Masse der durchstrahlten Materie im Kondensator ist.
+Der Ionisationsstrom $I_C$ wurde wie im Vorherigen bestimmt. 
+Im verwendeten Versuchsaufbau war der Innenraum des Kondensators nicht abgeschirmt und somit muss die Masse der Luft im Volumen des Kondensators bestimmt werden.
+Die Masse der Luft $m$ wird berechnet durch $m = \rho \cdot V$, wobei $\rho$ die Dichte der Luft und $V$ das im Kondensator durchstrahlte Volumen ist.
+
+Die Luftdichte hängt von der Temperatur $T$ und dem Luftdruck $p$ an dem Versuchszeitpunkt ab.
+Sie berechnet sich als:
+\begin{displaymath}
+    \rho = \rho_0 \cdot \frac{T_0}{T} \cdot \frac{p}{p_0}
+\end{displaymath}
+, wobei gilt: $\rho_0 = \SI{1,293}{\kilo\gram\per\meter\cubed}$, $T_0 = \SI{273}{\kelvin}$, $p_0 = \SI{1013}{\hecto\pascal}$.
+Die Temperatur am Versuchstag wurde als $T = \SI{299,15 \pm 1,5}{\kelvin}$ und der Luftdruck als $p = \SI{990 \pm 3}{\hecto\pascal}$ gemessen.
+Damit erhalten wir:
+\begin{displaymath}
+    \rho = \SI{1,154 \pm 0,066}{\kilo\gram\per\meter\cubed}
+\end{displaymath}
+
+Das durchstrahlte Volumen im Kondensator lässt sich mit Abbildung \ref{fig:KondensatorDimensionen} und den Werten in Tabelle \ref{tab:KondensatorDimensionen} berechnen.
+Die x-Achse sei die Verbindungsachse der Quelle und der Mitte des Fensters mit dem $x=0$-Punkt im Fenster und positiver Richtung zum Kondensator hin.
+Dann erkennen wir durch den Strahlensatz folgenden Zusammenhang für $a$:
+\begin{displaymath}
+    \frac{a_0}{s_0} = \frac{a(x)}{s_0 + x} \quad \Rightarrow \quad a(x) = a_0 \left( 1 + \frac{x}{s_0}\right)
+\end{displaymath}
+und identisch für $b(x)$.
+
+Das durchstrahlte Volumen berechnet sich dann als das folgende Integral:
+\begin{displaymath}
+    V = \int_{d}^{d+D} a(x) \cdot b(x) \,dx
+\end{displaymath}
+Die Lösung dieses Integrals ist folgende:
+\begin{displaymath}
+    V = \frac{a_0 b_0}{3 s_0^2} \left[ (s_0 + d + D)^3 - (s_0 + d)^3\right]
+\end{displaymath}
+und setzt man die Werte aus Tabelle \ref{tab:KondensatorDimensionen} ein findet man ein Volumen von:
+\begin{displaymath}
+    V = \SI{125,39}{\centi\meter\cubed}
+\end{displaymath}
+
+Nun kann man die Masse $m$ der im Kondensator von Röntgenstrahlung durchströmten Luft berechnen und man findet:
+\begin{displaymath}
+    m = \SI{144,7 \pm 8,3}{\milli\gram}
+\end{displaymath}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie2I.png}
+    \caption{mittlere Ionendosisleistung $\langle j \rangle$ in Abhängigkeit des Emissionsstroms $I$ (Molybdän-Röhre, $I = \SI{35}{\kilo\volt}$)}
+    \label{fig:Dosimetrie2I}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie2U.png}
+    \caption{mittlere Ionendosisleistung $\langle j \rangle$ in Abhängigkeit der Röhrenspannung $U$ (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
+    \label{fig:Dosimetrie2U}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie2I2.png}
+    \caption{Äquivaltentdosis $H$ pro Jahr in Abhängigkeit des Emissionsstroms $I$ (Molybdän-Röhre, $U = \SI{35}{\kilo\volt}$)}
+    \label{fig:Dosimetrie2I2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie2U2.png}
+    \caption{Äquivaltentdosis $H$ pro Jahr in Abhängigkeit der Röhrenspannung $U$ (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
+    \label{fig:Dosimetrie2U2}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Abstandsquadratgesetz}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/AbstandCu.png}
+    \caption{Linearer Fit der Äquivalentdosis $H$ über Integrationszeit $\Delta t = \SI{1}{\second}$ gegen inverses Abstandsquadrat $s^{-2}$ (Kupfer-Röhre, $I = \SI{0,1}{\milli\ampere}$, $U = \SI{35}{\kilo\volt}$)}
+    \label{fig:AbstandCu}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/AbstandMo.png}
+    \caption{Linearer Fit der Äquivalentdosis $H$ über Integrationszeit $\Delta t = \SI{2}{\second}$ gegen inverses Abstandsquadrat $s^{-2}$ (Molybdän-Röhre, $I = \SI{0,2}{\milli\ampere}$, $U = \SI{35}{\kilo\volt}$)}
+    \label{fig:AbstandMo}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Totzeit}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/TotzeitStrom.png}
+    \caption{Zählrate $R$ gegen Emissionsstrom $I$ (Kupfer-Röhre, $U = \SI{35}{\kilo\volt}$)}
+    \label{fig:TotzeitStrom}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Abschirmung}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/AbschirmungDicke.png}
+    \caption{Linearer Fit des Transmissionsgrads $T$ gegen Absorberdicke $d$ (Molybdän-Röhre,$U = \SI{35}{\kilo\volt}$, ohne Zirkoniumfilter)}
+    \label{fig:AbschirmungDicke}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/AbschirmungDickeFilter.png}
+    \caption{Transmissionsgrad $T$ gegen Absorberdicke $d$ (Molybdän-Röhre,$U = \SI{35}{\kilo\volt}$, mit Zirkoniumfilter)}
+    \label{fig:AbschirmungDickeFilter}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Computertomogramm}
@@ -293,6 +545,358 @@ Danach haben wir auf der im Dosimeter eingebauten Skala die Äquivalentdosis abg
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Anhang}
+
+\subsection{Messwerte}
+
+\subsubsection{Dosimetrie}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zum Spannungsbereich mit Kondensatorspannung $U_C$ und Ausgangsspannung des Elektrometerverstärker $U_E$ (Molybdän-Röhre, $U = \SI{15}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $U_C$ / \si{\volt} & $U_E$ / \si{\milli\volt} & $\Delta U_E$ / \si{\milli\volt} \\ \hline \hline
+         0 & 0 & 1 \\ \hline
+         35 & 160 & 1 \\ \hline
+         68 & 205 & 5 \\ \hline
+         102 & 230 & 5 \\ \hline
+         139 & 245 & 5 \\ \hline
+         176 & 257 & 5 \\ \hline
+         212 & 290 & 10 \\ \hline
+         249 & 317 & 5 \\ \hline
+         275 & 310 & 5 \\ \hline
+         339 & 370 & 10 \\ \hline
+         374 & 420 & 10 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteDosimetrie1a}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zum Spannungsbereich mit Kondensatorspannung $U_C$ und Ausgangsspannung des Elektrometerverstärker $U_E$ (Molybdän-Röhre, $U = \SI{10}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $U_C$ / \si{\volt} & $U_E$ / \si{\milli\volt} & $\Delta U_E$ / \si{\milli\volt} \\ \hline \hline
+         0 & 13 & 1 \\ \hline
+         34 & 36 & 2 \\ \hline
+         70 & 60 & 5 \\ \hline
+         104 & 90 & 10 \\ \hline
+         140 & 93 & 2 \\ \hline
+         175 & 105 & 5 \\ \hline
+         212 & 126 & 3 \\ \hline
+         246 & 155 & 5 \\ \hline
+         279 & 158 & 5 \\ \hline
+         317 & 190 & 10 \\ \hline
+         373 & 205 & 5 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteDosimetrie1b}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zum Spannungsbereich mit Kondensatorspannung $U_C$ und Ausgangsspannung des Elektrometerverstärker $U_E$ (Molybdän-Röhre, $U = \SI{25}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $U_C$ / \si{\volt} & $U_E$ / \si{\milli\volt} & $\Delta U_E$ / \si{\milli\volt} \\ \hline \hline
+         0 & 0 & 1 \\ \hline
+         14 & 450 & 40 \\ \hline
+         25 & 780 & 40 \\ \hline
+         34 & 950 & 30 \\ \hline
+         49 & 1130 & 30 \\ \hline
+         50 & 1200 & 50 \\ \hline
+         68 & 1200 & 50 \\ \hline
+         104 & 1250 & 50 \\ \hline
+         143 & 1250 & 50 \\ \hline
+         175 & 1250 & 50 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteDosimetrie1c}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zum Spannungsbereich mit Kondensatorspannung $U_C$ und Ausgangsspannung des Elektrometerverstärker $U_E$ (Kupfer-Röhre, $U = \SI{15}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $U_C$ / \si{\volt} & $U_E$ / \si{\milli\volt} & $\Delta U_E$ / \si{\milli\volt} \\ \hline \hline
+         0 & 10 & 1 \\ \hline
+         14 & 99 & 5 \\ \hline
+         30 & 215 & 5 \\ \hline
+         46 & 370 & 5 \\ \hline
+         62 & 530 & 10 \\ \hline
+         76 & 650 & 10 \\ \hline
+         93 & 760 & 10 \\ \hline
+         108 & 820 & 10 \\ \hline
+         120 & 860 & 10 \\ \hline
+         150 & 900 & 10 \\ \hline
+         190 & 920 & 10 \\ \hline
+         257 & 930 & 10 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteDosimetrie1d}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zum Spannungsbereich mit Kondensatorspannung $U_C$ und Ausgangsspannung des Elektrometerverstärker $U_E$ (Kupfer-Röhre, $U = \SI{25}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $U_C$ / \si{\volt} & $U_E$ / \si{\milli\volt} & $\Delta U_E$ / \si{\milli\volt} \\ \hline \hline
+         0 & 10 & 1 \\ \hline
+         15 & 135 & 2 \\ \hline
+         34 & 340 & 5 \\ \hline
+         50 & 570 & 10 \\ \hline
+         67 & 870 & 10 \\ \hline
+         91 & 1300 & 20 \\ \hline
+         108 & 1600 & 30 \\ \hline
+         133 & 2100 & 50 \\ \hline
+         182 & 2800 & 100 \\ \hline
+         211 & 3000 & 100 \\ \hline
+         248 & 3150 & 100 \\ \hline
+         308 & 3350 & 100 \\ \hline
+         352 & 3360 & 100 \\ \hline
+         374 & 3400 & 100 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteDosimetrie1e}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zum Spannungsbereich mit Kondensatorspannung $U_C$ und Ausgangsspannung des Elektrometerverstärker $U_E$ (Kupfer-Röhre, $U = \SI{10}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $U_C$ / \si{\volt} & $U_E$ / \si{\milli\volt} & $\Delta U_E$ / \si{\milli\volt} \\ \hline \hline
+         0 & 8 & 1 \\ \hline
+         15 & 66 & 2 \\ \hline
+         31 & 125 & 2 \\ \hline
+         47 & 170 & 5 \\ \hline
+         60 & 190 & 5 \\ \hline
+         76 & 200 & 5 \\ \hline
+         90 & 205 & 5 \\ \hline
+         106 & 205 & 10 \\ \hline
+         121 & 205 & 10 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteDosimetrie1f}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Ausgangsspannung des Elektrometerverstärker $U_E$ in Abhängigkeit des Emissionsstroms $I$ (Molybdän-Röhre, $U = \SI{35}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $I$ / \si{\milli\ampere} & $U_E$ / \si{\volt} & $\Delta U_E$ / \si{\volt} \\ \hline \hline
+         0,0 & 0,053 & 0,002 \\ \hline
+         0,1 & 0,42 & 0,02 \\ \hline
+         0,2 & 0,76 & 0,01 \\ \hline
+         0,3 & 1,09 & 0,02 \\ \hline
+         0,4 & 1,44 & 0,02 \\ \hline
+         0,5 & 1,78 & 0,02 \\ \hline
+         0,6 & 2,11 & 0,02 \\ \hline
+         0,7 & 2,45 & 0,05 \\ \hline
+         0,8 & 2,8 & 0,02 \\ \hline
+         0,9 & 3,14 & 0,04 \\ \hline
+         1,0 & 3,48 & 0,03 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteDosimetrie2a}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Ausgangsspannung des Elektrometerverstärker $U_E$ in Abhängigkeit der Röhrenspannung $U$ (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $U$ / \si{\kilo\volt} & $U_E$ / \si{\volt} & $\Delta U_E$ / \si{\volt} \\ \hline \hline
+         0,0 & 0,0115 & 0,0002 \\ \hline
+         2,5 & 0,0113 & 0,0002 \\ \hline
+         5,0 & 0,0124 & 0,0002 \\ \hline
+         7,5 & 0,053 & 0,0001 \\ \hline
+         10,0 & 0,188 & 0,002 \\ \hline
+         12,5 & 0,49 & 0,01 \\ \hline
+         15,0 & 0,94 & 0,02 \\ \hline
+         17,5 & 1,48 & 0,01 \\ \hline
+         20,0 & 2,1 & 0,05 \\ \hline
+         22,5 & 2,77 & 0,05 \\ \hline
+         25,0 & 3,45 & 0,05 \\ \hline
+         27,5 & 4,16 & 0,03 \\ \hline
+         30,0 & 4,87 & 0,02 \\ \hline
+         32,5 & 5,6 & 0,03 \\ \hline
+         35,0 & 6,3 & 0,03 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteDosimetrie2b}
+\end{table}
+
+\subsubsection{Abstand}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Äquivalentdosis $H$ in Abhängigkeit der Position $x$ des Stabdosimeters (Kupfer-Röhre, $I = \SI{0,1}{\milli\ampere}$, $U = \SI{35}{\kilo\volt}$, $\Delta t = \SI{1}{\second}$)}
+    \begin{tabular}{|c|c|}
+        \hline
+        $x$ / \si{\centi\meter} & $H$ / \si{\milli\sievert} \\ \hline \hline
+         3 & 1,3 \\ \hline
+         6 & 1,1 \\ \hline
+         9 & 0,8 \\ \hline
+         12 & 0,6 \\ \hline
+         15 & 0,4 \\ \hline
+         18 & 0,3 \\ \hline
+         21 & 0,3 \\ \hline
+         24 & 0,1 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteAbstand1}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Äquivalentdosis $H$ in Abhängigkeit der Position $x$ des Stabdosimeters (Molybdän-Röhre, $I = \SI{0,2}{\milli\ampere}$, $U = \SI{35}{\kilo\volt}$, $\Delta t = \SI{2}{\second}$)}
+    \begin{tabular}{|c|c|}
+        \hline
+        $x$ / \si{\centi\meter} & $H$ / \si{\milli\sievert} \\ \hline \hline
+         3 & 1,1 \\ \hline
+         6 & 0,7 \\ \hline
+         9 & 0,5 \\ \hline
+         12 & 0,3 \\ \hline
+         15 & 0,3 \\ \hline
+         18 & 0,2 \\ \hline
+         21 & 0,1 \\ \hline
+         24 & 0,0 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteAbstand2}
+\end{table}
+
+\subsubsection{Totzeit}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zur Bestimmung des Winkel $\beta$ der maximalen Zählrate $R$ für die Totzeitmessung (Kupfer-Röhre, $I = \SI{0,5}{\milli\ampere}$, $U = \SI{35}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|}
+        \hline
+        $\beta$ / \si{\degree} & $R$ / \si{\second \tothe{-1}} \\ \hline \hline
+         0,0 & 3695 \\ \hline
+         -3,0 & 75,7 \\ \hline
+         -2,5 & 741,3 \\ \hline
+         -2,0 & 2661 \\ \hline
+         -1,5 & 7700 \\ \hline
+         -1,0 & 8639 \\ \hline
+         -0,8 & 8810 \\ \hline
+         -0,7 & 8831 \\ \hline
+         -0,6 & 8877 \\ \hline
+         -0,5 & 8829 \\ \hline
+         -0,3 & 8198 \\ \hline
+         0,0 & 3441 \\ \hline
+         0,5 & 3 \\ \hline
+         1,0 & 1,7 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteTotzeitWinkel}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Zählrate $R$ in Abhängigkeit des Emissionsstroms $I$ (Kupfer-Röhre, $U = \SI{35}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|}
+        \hline
+        $I$ / \si{\micro \ampere} & $R$ / \si{\second \tothe{-1}} \\ \hline \hline
+         0 & 0,23 \\ \hline
+         10 & 4197 \\ \hline
+         20 & 6392 \\ \hline
+         30 & 7860 \\ \hline
+         40 & 8503 \\ \hline
+         50 & 8866 \\ \hline
+         60 & 9061 \\ \hline
+         70 & 9155 \\ \hline
+         80 & 9164 \\ \hline
+         90 & 9136 \\ \hline
+         100 & 9067 \\ \hline
+         120 & 8908 \\ \hline
+         140 & 8724 \\ \hline
+         160 & 8560 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteTotzeitStrom}
+\end{table}
+
+\subsubsection{Abschirmung}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zur Bestimmung des Winkel $\beta$ der maximalen Zählrate $R$ für die Abschirmungsmessungen (Molybdän-Röhre, $I = \SI{0,6}{\milli\ampere}$, $U = \SI{35}{\kilo\volt}$)}
+    \begin{tabular}{|c|c|}
+        \hline
+        $\beta$ / \si{\degree} & $R$ / \si{\second \tothe{-1}} \\ \hline \hline
+         0,0 & 584 \\ \hline
+         -0,5 & 2198 \\ \hline
+         -1,0 & 8932 \\ \hline
+         -1,3 & 9186 \\ \hline
+         -1,4 & 9185 \\ \hline
+         -1,5 & 9246 \\ \hline
+         -1,6 & 9194 \\ \hline
+         -1,7 & 9188 \\ \hline
+         -2,0 & 9144 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteAbschirmungWinkel}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Zählrate $R$ in Abhängigkeit der Dicke $d$ des Absorbers und des Emissionsstrom $I$ (Molybdän-Röhre, $U = \SI{35}{\kilo\volt}$, ohne Filter)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $d$ / \si{\milli\meter} & $R$ / \si{\second \tothe{-1}} & $I$ / \si{\milli \ampere} \\ \hline \hline
+         0 & 2907 & 0,05 \\ \hline
+         0,5 & 2747 & 0,08 \\ \hline
+         1,0 & 2838 & 0,13 \\ \hline
+         1,5 & 2812 & 0,18 \\ \hline
+         2,0 & 2715 & 0,25 \\ \hline
+         2,5 & 2846 & 0,35 \\ \hline
+         3,0 & 2769 & 0,46 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteAbschirmungDicke}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Zählrate $R$ in Abhängigkeit des Absorbermaterials und des Emissionsstrom $I$ (Molybdän-Röhre, $U = \SI{35}{\kilo\volt}$, ohne Filter)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Material & $R$ / \si{\second \tothe{-1}} & $I$ / \si{\milli \ampere} \\ \hline \hline
+         C & 3133 & 0,02 \\ \hline
+         Al & 2728 & 0,60 \\ \hline
+         Fe & 52,27 & 1,00 \\ \hline
+         Cu & 12,8 & 1,00 \\ \hline
+         Zr & 17,13 & 1,00 \\ \hline
+         Ag & 12,3 & 1,00 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteAbschirmungMaterial}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Zählrate $R$ in Abhängigkeit der Dicke $d$ des Absorbers und des Emissionsstrom $I$ (Molybdän-Röhre, $U = \SI{35}{\kilo\volt}$, mit Filter)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $d$ / \si{\milli\meter} & $R$ / \si{\second \tothe{-1}} & $I$ / \si{\milli \ampere} \\ \hline \hline
+         0 & 2950 & 0,15 \\ \hline
+         0,5 & 2798 & 0,25 \\ \hline
+         1,0 & 3023 & 0,45 \\ \hline
+         1,5 & 3000 & 0,63 \\ \hline
+         2,0 & 2692 & 0,80 \\ \hline
+         2,5 & 2635 & 1,00 \\ \hline
+         3,0 & 2144 & 1,00 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteAbschirmungDickeFilter}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte der Zählrate $R$ in Abhängigkeit des Absorbermaterials und des Emissionsstrom $I$ (Molybdän-Röhre, $U = \SI{35}{\kilo\volt}$, mit Filter)}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Material & $R$ / \si{\second \tothe{-1}} & $I$ / \si{\milli \ampere} \\ \hline \hline
+         C & 2731 & 0,15 \\ \hline
+         Al & 2940 & 0,40 \\ \hline
+         Fe & 92,73 & 1,00 \\ \hline
+         Cu & 18,37 & 1,00 \\ \hline
+         Zr & 23,93 & 1,00 \\ \hline
+         Ag & 3,83 & 1,00 \\ \hline
+    \end{tabular}
+    \label{tab:MesswerteAbschirmungMaterialFilter}
+\end{table}
 
 \newpage
 \printbibliography[heading=bibintoc]

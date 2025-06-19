@@ -18,21 +18,22 @@ datadict = {namedict[filename] : np.loadtxt(data_path + filename, delimiter=",")
 
 ################################################################################################
 
-data1 = datadict["d"]
-data2 = datadict["e"]
-data3 = datadict["f"]
+data1 = datadict["a"]
+data2 = datadict["b"]
+data3 = datadict["c"]
 
-filename = "Cu"
+filename = "Mo"
 
 ################################################################################################
 
 plt.figure()
 plt.grid()
-plt.errorbar(data1[0], data1[1], xerr=data1[0]*0.01, yerr=data1[2], fmt='o', label="Cu U=15kV", color='b', ms=2, zorder=10, alpha=1)
-plt.errorbar(data2[0], data2[1], xerr=data2[0]*0.01, yerr=data2[2], fmt='o', label="Cu U=25kV", color='r', ms=2, zorder=9, alpha=1)
-plt.errorbar(data3[0], data3[1], xerr=data3[0]*0.01, yerr=data3[2], fmt='o', label="Cu U=10kV", color='g', ms=2, zorder=8, alpha=1)
+plt.errorbar(data1[0], data1[1], xerr=data1[0]*0.01, yerr=data1[2], fmt='o', label="Mo U=15kV", color='b', ms=2, zorder=10, alpha=1)
+plt.errorbar(data2[0], data2[1], xerr=data2[0]*0.01, yerr=data2[2], fmt='o', label="Mo U=10kV", color='g', ms=2, zorder=9, alpha=1)
+plt.errorbar(data3[0], data3[1], xerr=data3[0]*0.01, yerr=data3[2], fmt='o', label="Mo U=25kV", color='r', ms=2, zorder=8, alpha=1)
 plt.title("Ionisationsstrom gegen Kondensatorspannung")
 plt.xlabel(r"Kondensatorspannung $U_c$ / V")
 plt.ylabel(r"Ionisationsstrom $I_c$ / nA")
 plt.legend()
 plt.savefig(figure_path + filename_filter + filename + ".png", dpi=300)
+

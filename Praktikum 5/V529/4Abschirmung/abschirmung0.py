@@ -59,7 +59,7 @@ plt.errorbar(xdata, ydata, xerr=xerr, yerr=yerr, fmt='o', label="Messdaten", col
 plt.plot(np.ones(20)*(-1.5), np.linspace(0, 9246, 20), color="g", label="Winkel maximaler Zählrate")
 plt.legend()
 
-plt.title("Winkeleinstellung für die Totzeitmessung")
+plt.title("Winkeleinstellung für die Abschirmungsmessungen")
 plt.xlabel(r"Winkel $\beta$ / $\degree$")
 plt.ylabel(r"Zählrate $R$ / $s^{-1}$")
 
