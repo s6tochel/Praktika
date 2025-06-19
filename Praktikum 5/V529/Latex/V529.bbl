@@ -77,7 +77,7 @@
       \verb https://www.ulfkonrad.de/physik/geiger-mueller-zaehlrohr
       \endverb
     \endentry
-    \entry{Dosimeter}{online}{}{}
+    \entry{CharakteristischeStrahlung}{online}{}{}
       \name{author}{1}{}{%
         {{hash=3f2905e100c58490506192775130a31d}{%
            family={LEIFIphysik},
@@ -92,6 +92,34 @@
       \strng{authorfullhash}{3f2905e100c58490506192775130a31d}
       \strng{authorfullhashraw}{3f2905e100c58490506192775130a31d}
       \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{letzter Zugriff: 19.06.2025}
+      \field{title}{Charakteristische Strahlung}
+      \verb{urlraw}
+      \verb https://www.leifiphysik.de/atomphysik/roentgen-strahlung/grundwissen/charakteristische-strahlung
+      \endverb
+      \verb{url}
+      \verb https://www.leifiphysik.de/atomphysik/roentgen-strahlung/grundwissen/charakteristische-strahlung
+      \endverb
+    \endentry
+    \entry{Dosimeter}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3f2905e100c58490506192775130a31d}{%
+           family={LEIFIphysik},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f2905e100c58490506192775130a31d}
+      \strng{fullhash}{3f2905e100c58490506192775130a31d}
+      \strng{fullhashraw}{3f2905e100c58490506192775130a31d}
+      \strng{bibnamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authorbibnamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authornamehash}{3f2905e100c58490506192775130a31d}
+      \strng{authorfullhash}{3f2905e100c58490506192775130a31d}
+      \strng{authorfullhashraw}{3f2905e100c58490506192775130a31d}
+      \field{extraname}{2}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -119,7 +147,7 @@
       \strng{authornamehash}{3f2905e100c58490506192775130a31d}
       \strng{authorfullhash}{3f2905e100c58490506192775130a31d}
       \strng{authorfullhashraw}{3f2905e100c58490506192775130a31d}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -147,7 +175,7 @@
       \strng{authornamehash}{3f2905e100c58490506192775130a31d}
       \strng{authorfullhash}{3f2905e100c58490506192775130a31d}
       \strng{authorfullhashraw}{3f2905e100c58490506192775130a31d}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}

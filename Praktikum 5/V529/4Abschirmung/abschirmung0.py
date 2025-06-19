@@ -56,6 +56,7 @@ plt.figure()
 plt.grid()
 plt.errorbar(xdata, ydata, xerr=xerr, yerr=yerr, fmt='o', label="Messdaten", color='b', ms=2, zorder=10, alpha=1)
 # plt.plot(fit_vals, curve_func(fit_vals, *popt), label=r"Linearer Fit ($\chi^2 \approx $" + f"{np.round(chi_squared,1)}" + ")", color="black", linewidth=1, zorder=3, alpha=0.8)
+plt.plot(np.linspace(0, -1.5, 20), np.ones(20)*(9246), color="g")
 plt.plot(np.ones(20)*(-1.5), np.linspace(0, 9246, 20), color="g", label="Winkel maximaler Zählrate")
 plt.legend()
 

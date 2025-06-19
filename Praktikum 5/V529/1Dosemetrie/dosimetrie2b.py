@@ -26,7 +26,7 @@ drho = rho * np.sqrt((3 / 990)**2 + (1.5/26)**2)
 m = V * rho
 dm = V* drho
 
-umrechnungsfaktor = 32.4 * 31556736 * 10**(-9) * 10**(-3)
+umrechnungsfaktor = 32.4 * 31556736 * 10**(-9)
 
 
 ################################################################################################
@@ -35,7 +35,7 @@ data = datadict["b"]
 
 filename = "U2"
 
-R = 0.1
+R = 100
 
 ################################################################################################
 
@@ -66,13 +66,13 @@ fit_vals = np.linspace(0, np.max(xdata)*1.03, 300)
 plt.figure()
 
 plt.grid()
-plt.errorbar(xdata, ydata, xerr=xerr, yerr=yerr, fmt='o', label="Mo U=35kV", color='b', ms=2, zorder=10, alpha=1)
-plt.plot(fit_vals, curve_func(fit_vals, *popt), label=r"Linearer Fit ($\chi^2 \approx $" + f"{np.round(chi_squared,1)}" + ")", color="black", linewidth=1, zorder=3, alpha=0.8)
+plt.errorbar(xdata, ydata, xerr=xerr, yerr=yerr, fmt='o', label="Cu I=1mA", color='b', ms=2, zorder=10, alpha=1)
+# plt.plot(fit_vals, curve_func(fit_vals, *popt), label=r"Linearer Fit ($\chi^2 \approx $" + f"{np.round(chi_squared,1)}" + ")", color="black", linewidth=1, zorder=3, alpha=0.8)
 plt.legend(loc="upper left")
 
 plt.title("Äquivalentdosis gegen Röhrenspannung")
-plt.xlabel(r"Emissionsstrom $I$ / mA")
-plt.ylabel(r"Äquivalentdosis $H$ / kSv a$^{-1}$")
+plt.xlabel(r"Röhrenspannung $U$ / kV")
+plt.ylabel(r"Äquivalentdosis $H$ / Sv a$^{-1}$")
 
 plt.tight_layout()
 plt.savefig(figure_path + filename_filter + filename + ".png", dpi=300)

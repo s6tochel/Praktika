@@ -36,9 +36,9 @@ filename = "Mo"
 
 x = (data[0] - data[2] + 11)
 xdata = 1 / x**2
-ydata = data[1]
+ydata = data[1] /2
 xerr = 1 / x**3
-yerr = np.ones(len(ydata)) * 0.1
+yerr = np.ones(len(ydata)) * 0.1 /2
 
 ################################################################################################
 
@@ -68,6 +68,6 @@ plt.legend()
 
 plt.title("Äquivalentdosis gegen Abstand")
 plt.xlabel(r"inverses Abstandsquadrat $s^{-2}$ / cm$^{-2}$")
-plt.ylabel(r"Äquivalentdosis $H$ / mSv")
+plt.ylabel(r"Dosisleistung $\dot H$ / mSv s$^{-1}$")
 
 plt.savefig(figure_path + filename_filter + filename + ".png", dpi=300)
