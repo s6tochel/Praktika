@@ -1,51 +1,42 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
-\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Röntenstrahlung}{3}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Erzeugung}{3}{subsubsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.2}Dosimetrische Messgrößen}{4}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Ionendosis}{4}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Ionendosisleistung}{4}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Äquivalentdosis}{4}{subsubsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}Messgeräte}{4}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Geiger-Müller-Zählrohr}{5}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Kondensator}{6}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Stabdosimeter}{6}{subsubsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.4}Relevante Gesetze}{6}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Abstandsquadratgesetz}{6}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Lambertsches Strahlungsgesetz}{7}{subsubsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.5}Computertomographie}{7}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Dosimetrie}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Durchführung}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Auswertung}{9}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Abstandsquadratgesetz}{18}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Durchführung}{18}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Auswertung}{18}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Totzeit}{18}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Durchführung}{18}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Auswertung}{18}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Abschirmung}{18}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Durchführung}{18}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Auswertung}{18}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Computertomographie}{18}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Durchführung}{18}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Auswertung}{18}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Durchführung}{18}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Abstandsquadratgesetz}{18}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Totzeit}{19}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Abschirmung}{20}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Computertomogramm}{21}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Auswertung}{21}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Dosimetrie}{21}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Abstandsquadratgesetz}{30}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Totzeit}{32}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Abschirmung}{33}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Computertomogramm}{38}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Fazit}{38}{section.10}%
-\contentsline {section}{\numberline {11}Anhang}{38}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Messwerte}{38}{subsection.11.1}%
-\contentsline {subsubsection}{\numberline {11.1.1}Dosimetrie}{38}{subsubsection.11.1.1}%
-\contentsline {subsubsection}{\numberline {11.1.2}Abstand}{42}{subsubsection.11.1.2}%
-\contentsline {subsubsection}{\numberline {11.1.3}Totzeit}{43}{subsubsection.11.1.3}%
-\contentsline {subsubsection}{\numberline {11.1.4}Abschirmung}{44}{subsubsection.11.1.4}%
-\contentsline {section}{Literatur}{47}{section*.59}%
+\contentsline {section}{\numberline {1}Einleitung}{4}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Röntenstrahlung}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Erzeugung}{4}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Dosimetrische Messgrößen}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Ionendosis}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Ionendosisleistung}{5}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Energiedosis}{5}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Dosisleistung}{5}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Äquivalentdosis}{6}{subsubsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.3}Messgeräte}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Geiger-Müller-Zählrohr}{6}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Kondensator}{7}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Stabdosimeter}{8}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}Relevante Gesetze}{8}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Abstandsquadratgesetz}{8}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Lambertsches Strahlungsgesetz}{8}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Computertomographie}{8}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Dosimetrie}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Durchführung}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Auswertung}{11}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Abstandsquadratgesetz}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Durchführung}{19}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Auswertung}{20}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Totzeit}{23}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Durchführung}{23}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Auswertung}{24}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Abschirmung}{25}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Durchführung}{25}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Auswertung}{26}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Computertomographie}{31}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Durchführung}{31}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Auswertung}{31}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Fazit}{31}{section.8}%
+\contentsline {section}{\numberline {9}Anhang}{31}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Messwerte}{31}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Dosimetrie}{31}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Abstand}{35}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Totzeit}{36}{subsubsection.9.1.3}%
+\contentsline {subsubsection}{\numberline {9.1.4}Abschirmung}{37}{subsubsection.9.1.4}%
+\contentsline {section}{Literatur}{40}{section*.51}%

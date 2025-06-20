@@ -95,8 +95,21 @@ Die Ionendosisleistung $j$ ist die Ionendosis $J$ die pro Zeitintervall $\Delta 
     j = \dv{J}{t}
 \end{displaymath}
 
+\subsubsection{Energiedosis}
+Die Energiedosis $D$ gibt die mittlere Energie $E$ an die von ionisierender Strahlung an Materie der Masse $m$ abgegeben wird.
+\begin{displaymath}
+    D = \dv{E}{m}
+\end{displaymath}
+
+\subsubsection{Dosisleistung}
+Die Dosisleistung $\dot D$ beschreibt die wieviel Energiedosis $D$ pro Zeit abgegeben wird.
+\begin{displaymath}
+    \dot D = \dv{D}{t}
+\end{displaymath}
+
 \subsubsection{Äquivalentdosis}
-Die Äquivalentdosis $H$ \textbf{\color{red} HIER TEXT EINFÜGEN...}
+Die Äquivalentdosis $H$ bezieht die biologische Wirkung von ionisierender Strahlung mit ein.
+Sie berechnet sich aus der Energiedosis über dimensionslose Gewichtungsfaktoren.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -482,49 +495,6 @@ Nur bei einer Röhrenspannung von unter $U = \SI{10}{\kilo\volt}$ ist die Äquiv
 
 \subsection{Durchführung}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Auswertung}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Totzeit}
-
-\subsection{Durchführung}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Auswertung}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Abschirmung}
-
-\subsection{Durchführung}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Auswertung}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Computertomographie}
-
-\subsection{Durchführung}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Auswertung}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Durchführung}
-
-\subsection{Abstandsquadratgesetz}
 Als nächstes sollte das Abstandsquadratgesetz anhand eines Stabdosimeters verifiziert werden. 
 Dazu wurde der Kondensator aus dem Röntgengerät ausgebaut und mit einer Experimentierschiene mit eingezeichneter Zentimeter-Skala ersetzt.
 Der Nullpunkt der Zentimeter-Skala war dabei ca. \SI{110}{\milli\meter} von der Anode der Röntgenröhre entfernt.
@@ -545,281 +515,7 @@ Danach wurde die Messung mit der Molybdän-Röhre mit $I = \SI{0,2}{\milli\amper
 Die Röhrenspannung blieb gleich und die Messwerte sind in Tabelle \ref{tab:MesswerteAbstand2} eingetragen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Totzeit}
-Im Versuchsteil zur Totzeit wollen wir die Totzeit des Geiger-Müller-Zählrohrs abschätzen. 
-Dazu wurde die Experimentierschiene wieder entfernt und ein Goniometer eingebaut.
-Des weiteren wurde auch ein Kollimator eingebaut, die Kupfer-Röhre eingesetzt und ein Zählrohr an das Goniometer angeschlossen.
-
-Nun konnte man die vertikale Position des Zählrohrs durch Einstellen des Winkels des Goniometers variieren.
-Zuerst wurde dieser Winkel so eingestellt, dass das Zählrohr auf der optischen Achse lag und die Zählrate somit maximal wurde.
-Dieser Winkel lag bei \SI{-0,6}{\degree} (Abbildung \ref{fig:TotzeitWinkel}) und wurde im Weiteren fest auf dieser Einstellung gehalten.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/TotzeitWinkel.png}
-    \caption{Bestimmung des Winkels $\beta$ der maximalen Zählrate $R$ für die Totzeitmessung (Messwerte: Tabelle \ref{tab:MesswerteTotzeitWinkel})}
-    \label{fig:TotzeitWinkel}
-\end{figure}
-
-Als nächstes wurde der Emissionsstrom $I$ variiert und die mittlere Zählrate $R$ jeweils über eine Integrationszeit von $\Delta t = \SI{30}{\second}$ aufgenommen.
-Die zugehörigen Messwerte sind im Anhang in Tabelle \ref{tab:MesswerteTotzeitStrom} abzulesen.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Abschirmung}
-Als nächstes wird der Effekt von abschirmenden Materialien auf die Röntgenstrahlung betrachtet.
-Dabei blieb der Kollimator, sowie das Goniometer mit dem Zählrohr eingebaut und es wurde zusätzlich ein Targethalter zum Befestigen der Abschirmungen eingesetzt.
-Auch wurde die Kupfer-Röhre wieder mit der Molybdän-Röhre ersetzt.
-
-In den Targethalter können zwei verschiedene Absorbersätze eingesetzt werden.
-Der Absorbersatz I besteht aus einem Loch und sechs Absorbern aus gleichem Material (Aluminium) aber mit verschiedener Dicke $d$.
-Der Absorbersatz II besteht aus einem Loch und sechs Absorbern gleicher Dicke $d_\text{II}$ aber verschiedener Materialien.
-Des weiteren konnte man einen Zirkoniumfilter auf den Kollimator stecken.
-
-Zuerst wurde wie im vorherigen Teil eine Winkelmessung durchgeführt um das Zählrohr in die optische Achse der Röntgenstrahlung zu positionieren.
-Der optimale Winkel wurde auf $\beta = \SI{-1,5}{\degree}$ festgelegt (Abbildung \ref{fig:AbschirmungWinkel}) und blieb im Folgenden fest bei diesem Wert.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/AbschirmungWinkel.png}
-    \caption{Bestimmung des Winkels $\beta$ der maximalen Zählrate $R$ für die Abschirmungsmessungen (Messwerte: Tabelle \ref{tab:MesswerteAbschirmungWinkel})}
-    \label{fig:AbschirmungWinkel}
-\end{figure}
-
-Dann wurde für die mittlere Zählrate $R$ für beide Absorbersätze jeweils einmal mit Zirkoniumfilter und einmal ohne Filter gemessen.
-Dies wurde wieder über eine Integrationszeit von $\Delta t = \SI{30}{\second}$ gemittelt.
-Dabei sollte versucht werden, dass die Zählrate nicht \SI{3000}{\per\second} überschreitet.
-Dies wurde erreicht indem der Emissionsstrom $I$ angepasst wurde.
-Die vier Werte der vier Messreihen sind im Anhang in Tabelle \ref{tab:MesswerteAbschirmungDicke} bis Tabelle \ref{tab:MesswerteAbschirmungMaterialFilter} eingetragen.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Computertomogramm}
-\textbf{\color{red} HIER TEXT EINFÜGEN...}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Auswertung}
-
-\subsection{Dosimetrie}
-Nach Gleichung \ref{eq:UE_IC} kann die Ausgangsspannung des Elektrometerverstärker $U_E$ direkt in den Ionisationsstrom $I_C$ umgerechent werden.
-Da für die Molybdän-Röhre ein Widerstand $R$ von $\SI{1}{\giga\ohm}$ verwendet wurde, ergibt sich der direkte Zusammenhang:
-\begin{displaymath}
-    \SI{1}{\volt} \,\widehat{=}\, \SI{1}{\nano\ampere} \quad \text{(Molybdän-Röhre)}
-\end{displaymath}
-Und mit einem Widerstand von $R = \SI{100}{\mega\ohm}$ ergibt sich für die Kupfer-Röhre:
-\begin{displaymath}
-    \SI{1}{\volt} \,\widehat{=}\, \SI{10}{\nano\ampere} \quad \text{(Kupfer-Röhre)}
-\end{displaymath}
-
-Somit können wir den Ionisationsstrom $I_C$ gegen die Kondensatorspannung $U_C$ auftragen.
-In Abbildung \ref{fig:Dosimetrie1MoU15} ist dies für die Molybdän-Röhre bei einer Röhrenspannung von $U = \SI{15}{\kilo\volt}$ abgebildet.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie1MoU15.png}
-    \caption{Ionisationsstrom $I_C$ des Kondensators in Abhängigkeit der Kondensatorspannung $U_C$ für Röhrenspannung $U = \SI{15}{\kilo\volt}$ (Molybdän-Röhre, $I = \SI{1}{\milli\ampere}$)}
-    \label{fig:Dosimetrie1MoU15}
-\end{figure}
-
-Man erkennt, dass ohne Kondensatorspannung auch kein Ionisationsstrom fließt.
-Dies ist natürlich klar, da in diesem Fall auch keine freien Ladungen an den Elektroden sammeln.
-Zusätzlich sieht man, dass der Ionisationsstrom unterhalb von $U_C = \SI{100}{\volt}$ rasch ansteigt.
-Dies ist der Rekombinationsbereich, in dem noch nicht alle durch die Röntgenstrahlung entstandenen Ladungen die Elektroden erreichen.
-Bis eine Kondensatorspannung von ungefähr $U_C = \SI{300}{\volt}$ scheint die Kurve dann langsamer zu steigen.
-Über $U_C = \SI{300}{\volt}$ steigt die Kurve dann wieder schneller an.
-
-Erwarten würde man einen raschen Anstieg im Rekombinationsbereich und dann eine Abflachung im Ionisationsbereich.
-Diese Kurve entsteht dadurch, dass ab einer gewissen Spannung quasi jede durch die Röntgenstrahlung erzeugte freie Ladung zwischen den Kondensatorplatten auch diese Platten erreicht.
-
-Wieso wir keine solche Abflachung sehen könnte daran liegen, dass sich die freien Ladungen wegen der Impulserhaltung von der Röntgen-Röhre wegbewegen.
-Am hinteren Ende des Kondensators erreichen somit nicht alle Ladungen noch eine Kondensatorplatte.
-Bei steigender Kondensatorspannung können immer weniger Ladungen dem Kondensator entkommen.
-Der rasche Anstieg überhalb von $U_C = \SI{300}{\volt}$ könnte daran liegen, dass ab einer gewissen Spannung die Photonen die durch die Comptopn-Streuung auf die negativ geladene Platte treffen die Elektronen direkt herauslösen, sodass diese auf die positiv geladene Platte treffen.
-
-In Abbildung \ref{fig:Dosimetrie1Mo} erkennt man, wie die Kurve sich für verschiedene Röhrenspannungen $U$ verändert.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie1Mo.png}
-    \caption{Ionisationsstrom $I_C$ des Kondensators in Abhängigkeit der Kondensatorspannung $U_C$ für drei verschiedene Röhrenspannungen (Molybdän-Röhre, $I = \SI{1}{\milli\ampere}$)}
-    \label{fig:Dosimetrie1Mo}
-\end{figure}
-
-Wir sehen, dass bei höherer Röhrenspannung $U$ der Ionisationsstrom $I_C$ höher für gleiche Kondensatorspannung $U_C$ ist.
-Dies liegt daran, dass die Röntgen-Photonen bei höherer Röhrenspannung mehr Energie besitzen uns somit mehr freie Ladungen erzeugen können.
-Jedoch sieht der Verlauf der Kurve außer der vertikalen Skalierung ähnlich aus.
-Die Kurve steigt in allen Fällen rascher an unterhalb von $U_C = \SI{100}{\volt}$.
-Dies macht Sinn, da die Breite des Rekombinationsbereichs nicht abhängig von der Röhrenspannung ist.
-Für eine Röhrenspannung von $U = \SI{25}{\kilo\volt}$ ist die Abflachung deutlicher zu erkennen.
-Die $U = \SI{10}{\kilo\volt}$-Kurve sieht der $U = \SI{15}{\kilo\volt}$-Kurve sehr ähnlich.
-
-In Abbildung \ref{fig:Dosimetrie1CuU15} ist die $U = \SI{15}{\kilo\volt}$-Kurve für die Kupfer-Röhre abgebildet.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie1CuU15.png}
-    \caption{Ionisationsstrom $I_C$ des Kondensators in Abhängigkeit der Kondensatorspannung $U_C$ für Röhrenspannung $U = \SI{15}{\kilo\volt}$ (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
-    \label{fig:Dosimetrie1CuU15}
-\end{figure}
-
-Wir erkennen, dass die Kurve für die Kupfer-Röhre deutlich klarer unserer Erwartung folgt.
-Hier haben wir einen klaren Anstieg bis ungefähr $U_C = \SI{150}{\volt}$, wo die Kurve dann abflacht.
-
-In Abbildung \ref{fig:Dosimetrie1Cu} ist der Verlauf des Ionisationsstroms $I_C$ gegen die Kondensatorspannung $U_C$ für drei verschiedene Röhrenspannungen $U$ mit der Kupfer-Röhre zu sehen.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie1Cu.png}
-    \caption{Ionisationsstrom $I_C$ des Kondensators in Abhängigkeit der Kondensatorspannung $U_C$ für drei verschiedene Röhrenspannungen (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
-    \label{fig:Dosimetrie1Cu}
-\end{figure}
-
-Hier sehen wir wieder, dass bei höherer Röhrenspannung $U$ der maximale Ionisationsstrom höher liegt.
-Auch erkennen wir diesmal deutlich, dass die Kurve bei höherer Röhrenspannung erst bei einer höheren Kondensatorspannung abflacht.
-Dies bedeutet, dass der Rekombinationsbereich größer für höhere Röhrenspannung ist.
-Der Grund dafür könnte wieder sein, dass die freien Ladungen mehr kinetische Energie bei höherer Röhrenspannung bekommen.
-Dann braucht man wieder eine höhere Kondensatorspannung um alle freie Ladungen auf den Elektroden zu sammeln, bevor sie dem Kondensator entkommen.
-
-Vergleicht man den Ionisationsstrom $I_C$ für eine Röhrenspannung von $U = \SI{15}{\kilo\volt}$ bei den beiden Anodenmaterialien, ist ein Unterschied in der Größenordnung zu erkennen.
-Der Ionisationsstrom ist bei gleicher Kondensatorspannung $U_C$ ungefähr zwanzig bis dreißig mal größer für die Kupfer-Röhre als für die Molybdän-Röhre.
-Dies kommt daher, dass die K$_\alpha$-Linie von Kupfer bei \SI{8,04}{\kilo\eV} und die von Molybdän bei \SI{17,4}{\kilo\eV} liegt \cite{CharakteristischeStrahlung}.
-Die Röntgenstrahlung gibt ihre Energie durch den Compton- und den Photoeffekt an die Moleküle in der Luft ab.
-Der Wirkungsquerschnitt dieser beiden Effekte wird kleiner, wenn die Photonenenergie größer wird.
-Deshalb kann die Röntgenstrahlung der Kupfer-Anode mehr Energie an die Luft abgeben und diese wird in diesem Fall stärker ionisiert als im Fall der Molybdän-Anode.
-
-Aus diesen Messungen haben wir uns überlegt, dass in jedem Fall der Ionisationsstrom maximal wird bei der maximalen Kondensatorspannung.
-Deswegen haben wir im folgenden die Kondensatorspannung bei maximaler Einstellung gehalten.
-
-Nun wollen wir uns ansehen, wie sich die mittlere Ionendosisleistung $\langle j \rangle$ unter Variation des Emissionsstroms $I$ und der Röhrenspannung $U$ verhält.
-Die mittlere Ionendosisleistung lässt sich hier berechnen durch
-\begin{displaymath}
-    \langle j \rangle = \frac{I_C}{m}
-\end{displaymath}
-, wobei $I_C$ der Ionisationsstrom zwischen den Kondensatorplatten und $m$ die Masse der durchstrahlten Materie im Kondensator ist.
-Der Ionisationsstrom $I_C$ wurde wie im Vorherigen bestimmt. 
-Im verwendeten Versuchsaufbau war der Innenraum des Kondensators nicht abgeschirmt und somit muss die Masse der Luft im Volumen des Kondensators bestimmt werden.
-Die Masse der Luft $m$ wird berechnet durch $m = \rho \cdot V$, wobei $\rho$ die Dichte der Luft und $V$ das im Kondensator durchstrahlte Volumen ist.
-
-Die Luftdichte hängt von der Temperatur $T$ und dem Luftdruck $p$ an dem Versuchszeitpunkt ab.
-Sie berechnet sich als:
-\begin{displaymath}
-    \rho = \rho_0 \cdot \frac{T_0}{T} \cdot \frac{p}{p_0}
-\end{displaymath}
-, wobei gilt: $\rho_0 = \SI{1,293}{\kilo\gram\per\meter\cubed}$, $T_0 = \SI{273}{\kelvin}$, $p_0 = \SI{1013}{\hecto\pascal}$.
-Die Temperatur am Versuchstag wurde als $T = \SI{299,15 \pm 1,5}{\kelvin}$ und der Luftdruck als $p = \SI{990 \pm 3}{\hecto\pascal}$ gemessen.
-Damit erhalten wir:
-\begin{displaymath}
-    \rho = \SI{1,154 \pm 0,066}{\kilo\gram\per\meter\cubed}
-\end{displaymath}
-
-Das durchstrahlte Volumen im Kondensator lässt sich mit Abbildung \ref{fig:KondensatorDimensionen} und den Werten in Tabelle \ref{tab:KondensatorDimensionen} berechnen.
-Die x-Achse sei die Verbindungsachse der Quelle und der Mitte des Fensters mit dem $x=0$-Punkt im Fenster und positiver Richtung zum Kondensator hin.
-Dann erkennen wir durch den Strahlensatz folgenden Zusammenhang für $a$:
-\begin{displaymath}
-    \frac{a_0}{s_0} = \frac{a(x)}{s_0 + x} \quad \Rightarrow \quad a(x) = a_0 \left( 1 + \frac{x}{s_0}\right)
-\end{displaymath}
-und identisch für $b(x)$.
-
-Das durchstrahlte Volumen berechnet sich dann als das folgende Integral:
-\begin{displaymath}
-    V = \int_{d}^{d+D} a(x) \cdot b(x) \,dx
-\end{displaymath}
-Die Lösung dieses Integrals ist folgende:
-\begin{displaymath}
-    V = \frac{a_0 b_0}{3 s_0^2} \left[ (s_0 + d + D)^3 - (s_0 + d)^3\right]
-\end{displaymath}
-und setzt man die Werte aus Tabelle \ref{tab:KondensatorDimensionen} ein findet man ein Volumen von:
-\begin{displaymath}
-    V = \SI{125,39}{\centi\meter\cubed}
-\end{displaymath}
-
-Nun kann man die Masse $m$ der im Kondensator von Röntgenstrahlung durchströmten Luft berechnen und man findet:
-\begin{displaymath}
-    m = \SI{144,7 \pm 8,3}{\milli\gram}
-\end{displaymath}
-Im Folgenden wird die mittlere Ionendosisleistung $\langle j /rangle$ einfach durch Teilen des Ionisationsstroms $I_C$ durch diese Masse $m$ berechnet.
-
-Zuerst wurde die Abhängigkeit der mittleren Ionendosisleistung $\langle j /rangle$ vom Emissionsstrom $I$ analysiert.
-Dabei wurde die Röhrenspannung konstant auf $U = \SI{35}{\kilo\volt}$ gehalten und die Molybdän-Röhre verwendet.
-Dies ist in Abbildung \ref{fig:Dosimetrie2I} mit einem linearen Fit dargestellt.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie2I.png}
-    \caption{mittlere Ionendosisleistung $\langle j \rangle$ in Abhängigkeit des Emissionsstroms $I$ (Molybdän-Röhre, $I = \SI{35}{\kilo\volt}$)}
-    \label{fig:Dosimetrie2I}
-\end{figure}
-
-Man erkennt, dass die Fit-Gerade die Messwerte sehr gut mit einem $\chi ^2$-Wert von ungefähr \SI{0,7}{} schneidet.
-Der $\chi ^2$-Wert liegt unter 1, was auf einen sehr akkuraten Fit hindeutet.
-Da die Fit-Gerade auch die y-Achse sehr nah am Ursprung schneidet bestätigt dies einen proportionalen Zusammenhang zwischen der mittleren Ionendosisleistung $\langle j \rangle$ und dem Emissionsstrom $I$.
-
-Dieser Zusammenhang macht intuitiv Sinn, da die Anzahl Elektronen die aus der Glühkathode in der Röntgenröhre gelöst werden direkt proportional zum Emissionsstrom $I$ ist.
-Die Intensität des Röntgenstrahls ist proportional zu der Anzahl der herausgelösten Elektronen und die mittlere Ionendosisleistung ist natürlich proportional zu der Intensität des Strahls.
-
-Nun haben wir leider die Abhängigkeit der mitteren Ionendosisleistung $\langle j \rangle$ vom Emissionsstrom $I$ nur mit der Molybdän-Röhre und nicht mit der Kupfer-Röhre gemessen.
-Im vorherigen Teil erkennt man, dass der Ionisationsstrom $I_C$ bei maximaler Kondensatorspannung $U_C$ für die Kupfer-Röhre ungefähr zwanzig mal so hoch wie bei der Molybdän-Röhre ist.
-Desweiteren dürfte der funktionale Zusammenhang zwischen der mitteren Ionendosisleistung und dem Emissionsstrom nicht von dem Anodenmaterial abhängen.
-Da die mittlere Ionendosisleistung $\langle j \rangle$ direkt proportional zu dem Ionisationsstrom $I_C$ ist erwarten wir für die Kupfer-Röhre wieder einen proportional Zusammenhang, jedoch mit einer Steigung die ungefähr zwanzig mal größer wie bei der Molybdän-Röhre ist.
-
-Zunächst wird die Abhängigkeit von $\langle j \rangle$ von der Röhrenspannung $U$ ermittelt.
-Dazu wurde der Emissionsstrom konstant auf einem Wert von $I = \SI{1}{\milli\ampere}$ gehalten und die Kupfer-Röhre verwendet.
-In Abbildung \ref{fig:Dosimetrie2U} ist dieser Verlauf zu erkennen.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie2U.png}
-    \caption{mittlere Ionendosisleistung $\langle j \rangle$ in Abhängigkeit der Röhrenspannung $U$ (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
-    \label{fig:Dosimetrie2U}
-\end{figure}
-
-Man sieht, dass der Verlauf in diesem Fall nicht mehr linear ist. Unterhalb einer Röhrenspannung von $U = \SI{10}{\kilo\volt}$ sieht die Kurve flach aus.
-An dieser Schwelle fängt sie dann an anzusteigen und ab $U = \SI{15}{\kilo\volt}$ sieht der Anstieg wieder fast linear aus.
-
-Die Röhrenspannung $U$ beeinflusst, welche kinetische Energie die Elektronen beim Aufprall auf die Anode der Röntgenröhre haben.
-Erst ab einer gewissen kinetischen Energie können die Elektronen andere Elektronen aus den inneren Atomschichten herausschlagen.
-Somit wird die charakteristische Röntgenstrahlung erst ab einer gewissen Beschleunigungsspannung erzeugt.
-Das kontinuierliche Spektrum (Bremsstrahlung) hat keine untere Grenze, jedoch spricht man unterhalb einer gewissen Energie nich mehr von Röntgenstrahlung.
-Auch können diese niederenergetischen Photonen keine freien Ladungen im Kondensator erzeugen, da die Bindungsenergie der Elektronen überwunden werden muss.
-
-Diesen Effekt erkennen wir direkt in Abbildung \ref{fig:Dosimetrie2U}.
-Unterhalb von ungefähr $U = \SI{10}{\kilo\volt}$ wird keine Röntgenstrahlung erzeugt.
-Ab dieser Schwelle haben die Elektronen in der Röntgenröhre dann ausreichend Energie um Röntgenstrahlung zu erzeugen, die die Luft im Kondensator ionisieren kann.
-Danach steigt die Ionendosisleistung dann linear mit der Röhrenspannung an.
-
-Wir haben diesen Zusammenhang nur für die Kupfer-Röhre und nicht für die Molybdän-Röhre gemessen.
-Für die Molybdän-Röhre würden wir uns wieder Anstieg erwarten, der ungefähr zwanzig mal geringer als der Anstieg bei der Kupfer-Röhre ist.
-
-Nun wollen wir uns noch die Äquivalentdosis $H$ in Abhängigkeit des Emissionsstroms $I$ und der Röhrenspannung $U$ ansehen.
-Dazu wird für die Umrechnung folgender Zusammenhang verwendet \cite{Anleitung}:
-\begin{displaymath}
-    \SI{1}{\ampere \per \kilo\gram} \,\widehat{=}\, \SI{32,4}{\sievert \per \second}
-\end{displaymath}
-In Abbildungen \ref{fig:Dosimetrie2I2} ist die Äquivalentdosis $H$ pro Jahr in Abhängigkeit des Emissionsstrom $I$ dargestellt.
-In Abbildung \ref{fig:Dosimetrie2U2} ist sie in Abhängigkeit der Röhrenspannung $U$ abgebildet.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie2I2.png}
-    \caption{Äquivaltentdosis $H$ pro Jahr in Abhängigkeit des Emissionsstroms $I$ (Molybdän-Röhre, $U = \SI{35}{\kilo\volt}$)}
-    \label{fig:Dosimetrie2I2}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/Dosimetrie2U2.png}
-    \caption{Äquivaltentdosis $H$ pro Jahr in Abhängigkeit der Röhrenspannung $U$ (Kupfer-Röhre, $I = \SI{1}{\milli\ampere}$)}
-    \label{fig:Dosimetrie2U2}
-\end{figure}
-
-Laut Strahlenschutzverordnung muss ein Überwachungsbereich ab einer Organ-Äquivalentdosis von \SI{50}{\milli\sievert} pro Jahr eingerichtet werden.
-Ab einer Organ-Äquivalentdosis von \SI{150}{\milli\sievert} muss ein Kontrollbereich eingerichtet werden.
-Ab einer Organ-Äquivalentdosis von ungefähr \SI{26}{\sievert} pro Jahr (Ortsdosisleistung mehr als \SI{3}{\milli\sievert} pro Stunde) gilt das Gebiet als Sperrbereich.
-In dem Kondensator entspricht die Äquivalentdosis somit für die Molybdän-Röhre einem Kontrollbereich.
-Bei maximalem Emissionsstrom liegt die Äquivalentdosis jedoch fast an der Grenze zum Sperrbereich.
-Für die Kupfer-Röhre der Kondensator ein Sperrbereich. 
-Nur bei einer Röhrenspannung von unter $U = \SI{10}{\kilo\volt}$ ist die Äquivalentdosis unterhalb der Sperrbereich-Schwelle.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Abstandsquadratgesetz}
+\subsection{Auswertung}
 
 Zur Verifizierung des Abstandsquadratgesetzes wurde die Dosisleistung $\dot H$ gegen das inverse Abstandsquadrat $s^{-2}$ aufgetragen.
 Dabei berechnet sich der Abstand $s$ aus:
@@ -902,7 +598,30 @@ Damit sehen wir das Abstandsquadratgesetz als verifiziert.
 \textbf{\color{red} HIER VERGLEICH DOSIS}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Totzeit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Totzeit}
+
+\subsection{Durchführung}
+
+Im Versuchsteil zur Totzeit wollen wir die Totzeit des Geiger-Müller-Zählrohrs abschätzen. 
+Dazu wurde die Experimentierschiene wieder entfernt und ein Goniometer eingebaut.
+Des weiteren wurde auch ein Kollimator eingebaut, die Kupfer-Röhre eingesetzt und ein Zählrohr an das Goniometer angeschlossen.
+
+Nun konnte man die vertikale Position des Zählrohrs durch Einstellen des Winkels des Goniometers variieren.
+Zuerst wurde dieser Winkel so eingestellt, dass das Zählrohr auf der optischen Achse lag und die Zählrate somit maximal wurde.
+Dieser Winkel lag bei \SI{-0,6}{\degree} (Abbildung \ref{fig:TotzeitWinkel}) und wurde im Weiteren fest auf dieser Einstellung gehalten.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/TotzeitWinkel.png}
+    \caption{Bestimmung des Winkels $\beta$ der maximalen Zählrate $R$ für die Totzeitmessung (Messwerte: Tabelle \ref{tab:MesswerteTotzeitWinkel})}
+    \label{fig:TotzeitWinkel}
+\end{figure}
+
+Als nächstes wurde der Emissionsstrom $I$ variiert und die mittlere Zählrate $R$ jeweils über eine Integrationszeit von $\Delta t = \SI{30}{\second}$ aufgenommen.
+Die zugehörigen Messwerte sind im Anhang in Tabelle \ref{tab:MesswerteTotzeitStrom} abzulesen.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Auswertung}
 
 Um die Totzeit $\tau$ des Geiger-Müller-Zählrohrs zu bestimmen, kann man sich folgende Überlegung machen.
 Angenommen es handle sich um ein paralysierendes System.
@@ -934,7 +653,37 @@ Nach dem Wikipedia-Artikel zu dem Zählrohr \cite{Arbeitsbereiche}, soll die Tot
 Der von uns ermittelte Wert stimmt sehr gut mit diesem Literaturwert überein.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Abschirmung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Abschirmung}
+
+\subsection{Durchführung}
+
+Als nächstes wird der Effekt von abschirmenden Materialien auf die Röntgenstrahlung betrachtet.
+Dabei blieb der Kollimator, sowie das Goniometer mit dem Zählrohr eingebaut und es wurde zusätzlich ein Targethalter zum Befestigen der Abschirmungen eingesetzt.
+Auch wurde die Kupfer-Röhre wieder mit der Molybdän-Röhre ersetzt.
+
+In den Targethalter können zwei verschiedene Absorbersätze eingesetzt werden.
+Der Absorbersatz I besteht aus einem Loch und sechs Absorbern aus gleichem Material (Aluminium) aber mit verschiedener Dicke $d$.
+Der Absorbersatz II besteht aus einem Loch und sechs Absorbern gleicher Dicke $d_\text{II}$ aber verschiedener Materialien.
+Des weiteren konnte man einen Zirkoniumfilter auf den Kollimator stecken.
+
+Zuerst wurde wie im vorherigen Teil eine Winkelmessung durchgeführt um das Zählrohr in die optische Achse der Röntgenstrahlung zu positionieren.
+Der optimale Winkel wurde auf $\beta = \SI{-1,5}{\degree}$ festgelegt (Abbildung \ref{fig:AbschirmungWinkel}) und blieb im Folgenden fest bei diesem Wert.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/AbschirmungWinkel.png}
+    \caption{Bestimmung des Winkels $\beta$ der maximalen Zählrate $R$ für die Abschirmungsmessungen (Messwerte: Tabelle \ref{tab:MesswerteAbschirmungWinkel})}
+    \label{fig:AbschirmungWinkel}
+\end{figure}
+
+Dann wurde für die mittlere Zählrate $R$ für beide Absorbersätze jeweils einmal mit Zirkoniumfilter und einmal ohne Filter gemessen.
+Dies wurde wieder über eine Integrationszeit von $\Delta t = \SI{30}{\second}$ gemittelt.
+Dabei sollte versucht werden, dass die Zählrate nicht \SI{3000}{\per\second} überschreitet.
+Dies wurde erreicht indem der Emissionsstrom $I$ angepasst wurde.
+Die vier Werte der vier Messreihen sind im Anhang in Tabelle \ref{tab:MesswerteAbschirmungDicke} bis Tabelle \ref{tab:MesswerteAbschirmungMaterialFilter} eingetragen.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Auswertung}
 
 Wir wollen den Transmissionsgrad $T$ der Absorber bestimmen.
 Dazu wird Gleichung \ref{eq:LambertschesStrahlungsgesetz} verwendet.
@@ -985,11 +734,7 @@ Dabei ist eine Gerade durch die Messwerte gefittet, wobei der erste Wert ausgela
 Der erste Wert ist der bei einer Dicke von $d = 0$, also ohne Absorber.
 Da alle Zählraten durch die Zählrate dieses Messpunktes geteilt wurden ist klar, dass der Logarithmus des Transmissionsgrades für diesen Punkt bei 0 liegt.
 
-Nach Gleichung \ref{eq:Transmissionsgrad} würden wir einen proportionalen Zusammenhang zwischen dem Logarithmus des Transmissionsgrads $\log T$ und der Absorberdicke $d$ erwarten.
-Augenscheinlich ist der Zusammenhang allerdings nur linear und die Fit-Gerade schneidet die y-Achse nicht im Ursprung.
-\textbf{\color{red} WIESO IST DAS DER FALL?}
-
-Die Steigung $m$ der Fit-Gerade beträgt hier (o.F. steht für "ohne Filter"):
+Die Steigung $m$ der Fit-Gerade beträgt hier (o.F. steht für ``ohne Filter''):
 \begin{displaymath}
     m_\text{o.F.} = - \mu_\text{Al, o.F.} = \SI{- 0,687 \pm 0,014}{\per \milli\meter}
 \end{displaymath}
@@ -1067,7 +812,7 @@ Die aufgetragenen Werte sind in Tabelle \ref{tab:Transmission2Figvals} eingetrag
 \end{table}
 
 Für die Messungen mit Zirkoniumfilter erkennt man wieder ein sehr ähnliches Ergebnis.
-Hier erhalten wir eine Steigung der Fit-Gerade von (m.F. steht für "mit Filter"):
+Hier erhalten wir eine Steigung der Fit-Gerade von (m.F. steht für ``mit Filter''):
 \begin{displaymath}
     m_\text{m.F.} = - \mu_\text{Al, m.F.} = \SI{- 0,655 \pm 0,015}{\per \milli\meter}
 \end{displaymath}
@@ -1098,7 +843,15 @@ Mit dem Transmissionsgrad von Aluminium kann man wieder die Dicke $d_\text{II, m
 Hier erkennen wir eine strake Abweichung zum vorherigen Ergebnis.
 Das Resultat für die Dicke $d_\text{II}$ müsste für die Messreihen mit und ohne Zirkonium gleich sein.
 Jedoch ist die Dicke $d_\text{II, o.F.}$ mehr als doppelt so groß wie die Dicke $d_\text{II, m.F.}$.
-\textbf{\color{red} WIESO IST DAS DER FALL?}
+Nach längerem Überprüfen unserer Messwerte konnten wir keinen Fehler in diesen finden.
+Woher diese Diskrepanz kommt ist uns nicht klar.
+Beide Berechnungen wurden identisch und separat durchgeführt und ein solch großer Unterschied in den Ergebnissen für die Dicke deutet auf einen ungenauen Mess- bzw. Rechenvorgang hin.
+Vielleicht liegt das Problem in der Korrektur auf den maximalen Emissionsstrom $I$.
+Dies ist reine Spekulation und eine genauere Begründung fällt uns nicht ein.
+
+Der Zirkoniumfilter filtert niederenergetische Strahlung heraus.
+Man könnte annehmen, dass Aluminium Strahlung bei verschiedenen Energien verschieden stark absorbiert, was zu dieser Diskrepanz führen könnte.
+Allerdings stimmen die Messreihen mit dem Absorbersatz I sehr gut überein, jedoch der Messwert mit Aluminium im Absorbersatz II nicht.
 
 Mit dieser Dicke lassen sich nun wieder die Absorbtionskoeffizienten der Materialien berechnen.
 Die Resultate für die Messreihe mit Zirkoniumfilter sind in Tabelle \ref{tab:Absorbtionskoeffizienten2} gegeben.
@@ -1120,10 +873,19 @@ Die Resultate für die Messreihe mit Zirkoniumfilter sind in Tabelle \ref{tab:Ab
 \end{table}
 
 Vergleicht man die Werte in Tabelle \ref{tab:Absorbtionskoeffizienten1} mit denen in Tabelle \ref{tab:Absorbtionskoeffizienten2}, sieht man, dass die Werte nicht gut übereinander stimmen.
-\textbf{\color{red} WIESO IST DAS DER FALL?}
+Dies ist nicht verwundernd, da die Dicke $d_\text{II}$ bereits unterschiedlich für beide Messreihen war.
+Da der Zirkoniumfilter niederenergetische Strahlung herausfiltert, kommt es auch zu verschiedenen gemessenen Absorbtionskoeffizienten bei gleichem Material.
+Jedoch ist es schwer die Werte zu vergleichen, da das Problem mit der unterschiedlichen Dicke $d_\text{II}$ besteht.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Computertomogramm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Computertomographie}
+
+\subsection{Durchführung}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Auswertung}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

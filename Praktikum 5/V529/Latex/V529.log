@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.14)  20 JUN 2025 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.14)  20 JUN 2025 13:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -730,13 +730,15 @@ Package caption Info: End \AtBeginDocument code.
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./V529.toc)
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./V529.toc
+
+[2])
 \tf@toc=\write6
 \openout6 = `V529.toc'.
 
 
 
-[2]
+[3]
 Overfull \hbox (45.25072pt too wide) in paragraph at lines 54--60
 \OT1/cmr/m/n/10 R[]ontgenspektrum so-mit in das cha-rak-te-ris-ti-sche und das kon-ti-nu-ier-li-che R[]ontgenspektrum.
  []
@@ -751,7 +753,7 @@ Overfull \hbox (3.97952pt too wide) in paragraph at lines 54--60
 \OT1/cmr/m/n/10 von Elek-tro-nen in den in-ne-ren Atomh[]ullen. Das kon-ti-nu-ier-li-che R[]ontgenspektrum
  []
 
-<figures/Röntgenstrahlung.png, id=92, 321.2pt x 248.93pt>
+<figures/Röntgenstrahlung.png, id=106, 321.2pt x 248.93pt>
 File: figures/Röntgenstrahlung.png Graphic file (type png)
 <use figures/Röntgenstrahlung.png>
 Package pdftex.def Info: figures/Röntgenstrahlung.png  used on input line 63.
@@ -763,501 +765,336 @@ Overfull \hbox (32.47395pt too wide) in paragraph at lines 69--75
 
 
 
-[3 <./figures/Röntgenstrahlung.png>]
-<figures/Röntgenröhre.png, id=105, 321.2pt x 192.72pt>
+[4 <./figures/Röntgenstrahlung.png>]
+<figures/Röntgenröhre.png, id=119, 321.2pt x 192.72pt>
 File: figures/Röntgenröhre.png Graphic file (type png)
 <use figures/Röntgenröhre.png>
 Package pdftex.def Info: figures/Röntgenröhre.png  used on input line 78.
 (pdftex.def)             Requested size: 241.49895pt x 144.90427pt.
 
-Overfull \hbox (22.5423pt too wide) in paragraph at lines 109--112
+
+[5 <./figures/Röntgenröhre.png>]
+Overfull \hbox (22.5423pt too wide) in paragraph at lines 122--125
 \OT1/cmr/m/n/10 Das Geiger-M[]uller-Z[]ahlrohr be-steht aus ei-nem An-oden-draht in ei-ner zy-lin-derf[]ormigen
  []
 
-
-
-[4 <./figures/Röntgenröhre.png>]
-<figures/GMZ Aufbau.png, id=114, 301.125pt x 113.223pt>
+<figures/GMZ Aufbau.png, id=128, 301.125pt x 113.223pt>
 File: figures/GMZ Aufbau.png Graphic file (type png)
 <use figures/GMZ Aufbau.png>
-Package pdftex.def Info: figures/GMZ Aufbau.png  used on input line 115.
+Package pdftex.def Info: figures/GMZ Aufbau.png  used on input line 128.
 (pdftex.def)             Requested size: 241.49895pt x 90.80656pt.
-<figures/Arbeitsbereiche.png, id=117, 1927.2pt x 1820.8025pt>
+<figures/Arbeitsbereiche.png, id=131, 1927.2pt x 1820.8025pt>
 File: figures/Arbeitsbereiche.png Graphic file (type png)
 <use figures/Arbeitsbereiche.png>
-Package pdftex.def Info: figures/Arbeitsbereiche.png  used on input line 123.
+Package pdftex.def Info: figures/Arbeitsbereiche.png  used on input line 136.
 (pdftex.def)             Requested size: 172.5pt x 162.97609pt.
 
 
-[5 <./figures/GMZ Aufbau.png> <./figures/Arbeitsbereiche.png>]
-<figures/Stabdosimeter.png, id=132, 619.31375pt x 325.215pt>
+[6 <./figures/GMZ Aufbau.png>]
+<figures/Stabdosimeter.png, id=142, 619.31375pt x 325.215pt>
 File: figures/Stabdosimeter.png Graphic file (type png)
 <use figures/Stabdosimeter.png>
-Package pdftex.def Info: figures/Stabdosimeter.png  used on input line 146.
+Package pdftex.def Info: figures/Stabdosimeter.png  used on input line 159.
 (pdftex.def)             Requested size: 241.49895pt x 126.81845pt.
 
-Overfull \hbox (2.69496pt too wide) in paragraph at lines 165--168
+
+[7 <./figures/Arbeitsbereiche.png>]
+Overfull \hbox (2.69496pt too wide) in paragraph at lines 178--181
 \OT1/cmr/m/n/10 Das Lam-bert-sche Strah-lungs-ge-setz be-schreibt wel-cher An-teil der Strah-lung durch
  []
 
-
-
-[6 <./figures/Stabdosimeter.png>]
-<figures/Computertomographie.jpg, id=147, 337.26pt x 254.9525pt>
+<figures/Computertomographie.jpg, id=155, 337.26pt x 254.9525pt>
 File: figures/Computertomographie.jpg Graphic file (type jpg)
 <use figures/Computertomographie.jpg>
-Package pdftex.def Info: figures/Computertomographie.jpg  used on input line 181.
+Package pdftex.def Info: figures/Computertomographie.jpg  used on input line 194.
 (pdftex.def)             Requested size: 172.5pt x 130.40529pt.
 
-Overfull \hbox (12.0638pt too wide) in paragraph at lines 176--184
+Overfull \hbox (12.0638pt too wide) in paragraph at lines 189--197
 \OT1/cmr/m/n/10 der ei-nes Ob-jek-tes zu er-zeu-gen, oh-ne die-ses zu besch[]adigen. Sie fin-det haupts[]achlich
  []
 
 
 
-[7 <./figures/Computertomographie.jpg>]
-<figures/KondensatorDimensionen.png, id=159, 706.64pt x 365.365pt>
+[8 <./figures/Stabdosimeter.png>]
+<figures/KondensatorDimensionen.png, id=172, 706.64pt x 365.365pt>
 File: figures/KondensatorDimensionen.png Graphic file (type png)
 <use figures/KondensatorDimensionen.png>
-Package pdftex.def Info: figures/KondensatorDimensionen.png  used on input line 216.
+Package pdftex.def Info: figures/KondensatorDimensionen.png  used on input line 229.
 (pdftex.def)             Requested size: 241.49895pt x 124.86357pt.
 
 
-[8 <./figures/KondensatorDimensionen.png>]
-Overfull \hbox (37.63954pt too wide) in paragraph at lines 244--247
+[9 <./figures/Computertomographie.jpg>]
+Overfull \hbox (37.63954pt too wide) in paragraph at lines 257--260
 []\OT1/cmr/m/n/10 Danach wur-de die Aus-gangs-span-nung $\OML/cmm/m/it/10 U[]$ \OT1/cmr/m/n/10 des Elek-tro-me-ter-verst[]arker in Abh[]angigkeit
  []
 
 
-Overfull \hbox (38.3111pt too wide) in paragraph at lines 270--272
-\OML/cmm/m/it/10 U[]$ \OT1/cmr/m/n/10 auf-tra-gen. In Ab-bil-dung []11[] ist dies f[]ur die Mo-lybd[]an-R[]ohre bei ei-ner R[]ohrenspannung
+
+[10 <./figures/KondensatorDimensionen.png>]
+Overfull \hbox (33.31108pt too wide) in paragraph at lines 283--285
+\OML/cmm/m/it/10 U[]$ \OT1/cmr/m/n/10 auf-tra-gen. In Ab-bil-dung []8[] ist dies f[]ur die Mo-lybd[]an-R[]ohre bei ei-ner R[]ohrenspannung
  []
 
-<figures/Dosimetrie1MoU15.png, id=184, 462.528pt x 346.896pt>
+<figures/Dosimetrie1MoU15.png, id=205, 462.528pt x 346.896pt>
 File: figures/Dosimetrie1MoU15.png Graphic file (type png)
 <use figures/Dosimetrie1MoU15.png>
-Package pdftex.def Info: figures/Dosimetrie1MoU15.png  used on input line 275.
+Package pdftex.def Info: figures/Dosimetrie1MoU15.png  used on input line 288.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
 
-[9]
-Overfull \hbox (34.05727pt too wide) in paragraph at lines 295--296
-[]\OT1/cmr/m/n/10 In Ab-bil-dung []12[] er-kennt man, wie die Kur-ve sich f[]ur ver-schie-de-ne R[]ohrenspannungen
+[11 <./figures/Dosimetrie1MoU15.png>]
+Overfull \hbox (29.05725pt too wide) in paragraph at lines 308--309
+[]\OT1/cmr/m/n/10 In Ab-bil-dung []9[] er-kennt man, wie die Kur-ve sich f[]ur ver-schie-de-ne R[]ohrenspannungen
  []
 
-<figures/Dosimetrie1Mo.png, id=196, 462.528pt x 346.896pt>
+<figures/Dosimetrie1Mo.png, id=215, 462.528pt x 346.896pt>
 File: figures/Dosimetrie1Mo.png Graphic file (type png)
 <use figures/Dosimetrie1Mo.png>
-Package pdftex.def Info: figures/Dosimetrie1Mo.png  used on input line 299.
+Package pdftex.def Info: figures/Dosimetrie1Mo.png  used on input line 312.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
-
-[10 <./figures/Dosimetrie1MoU15.png>]
-Overfull \hbox (6.22873pt too wide) in paragraph at lines 304--311
+Overfull \hbox (6.22873pt too wide) in paragraph at lines 317--324
 \OT1/cmr/m/n/10 h[]oher f[]ur glei-che Kon-den-sa-tor-span-nung $\OML/cmm/m/it/10 U[]$ \OT1/cmr/m/n/10 ist. Dies liegt dar-an, dass die R[]ontgen-
  []
 
-<figures/Dosimetrie1CuU15.png, id=205, 462.528pt x 346.896pt>
+
+
+[12 <./figures/Dosimetrie1Mo.png>]
+<figures/Dosimetrie1CuU15.png, id=223, 462.528pt x 346.896pt>
 File: figures/Dosimetrie1CuU15.png Graphic file (type png)
 <use figures/Dosimetrie1CuU15.png>
-Package pdftex.def Info: figures/Dosimetrie1CuU15.png  used on input line 316.
+Package pdftex.def Info: figures/Dosimetrie1CuU15.png  used on input line 329.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-
-[11 <./figures/Dosimetrie1Mo.png>]
-<figures/Dosimetrie1Cu.png, id=214, 462.528pt x 346.896pt>
+<figures/Dosimetrie1Cu.png, id=225, 462.528pt x 346.896pt>
 File: figures/Dosimetrie1Cu.png Graphic file (type png)
 <use figures/Dosimetrie1Cu.png>
-Package pdftex.def Info: figures/Dosimetrie1Cu.png  used on input line 328.
+Package pdftex.def Info: figures/Dosimetrie1Cu.png  used on input line 341.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
 
-[12 <./figures/Dosimetrie1CuU15.png> <./figures/Dosimetrie1Cu.png>]
-Overfull \hbox (9.3489pt too wide) in paragraph at lines 339--345
+[13 <./figures/Dosimetrie1CuU15.png>]
+Overfull \hbox (9.3489pt too wide) in paragraph at lines 352--358
 \OT1/cmr/m/n/10 15 []$ bei den bei-den An-oden-ma-te-ria-li-en, ist ein Un-ter-schied in der Gr[]o^^Yenordnung
  []
 
 
 
-[13]
-<figures/Dosimetrie2I.png, id=234, 462.528pt x 346.896pt>
+[14 <./figures/Dosimetrie1Cu.png>]
+
+[15]
+<figures/Dosimetrie2I.png, id=249, 462.528pt x 346.896pt>
 File: figures/Dosimetrie2I.png Graphic file (type png)
 <use figures/Dosimetrie2I.png>
-Package pdftex.def Info: figures/Dosimetrie2I.png  used on input line 404.
+Package pdftex.def Info: figures/Dosimetrie2I.png  used on input line 417.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
 
-[14]
-<figures/Dosimetrie2U.png, id=241, 462.528pt x 346.896pt>
+[16 <./figures/Dosimetrie2I.png>]
+<figures/Dosimetrie2U.png, id=257, 462.528pt x 346.896pt>
 File: figures/Dosimetrie2U.png Graphic file (type png)
 <use figures/Dosimetrie2U.png>
-Package pdftex.def Info: figures/Dosimetrie2U.png  used on input line 427.
+Package pdftex.def Info: figures/Dosimetrie2U.png  used on input line 440.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--428
+Underfull \hbox (badness 10000) in paragraph at lines 441--441
 []\OT1/cmr/m/n/10 Abbildung 13: |mitt-le-re Io-nen-do-sis-leis-tung $\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 j\OMS/cmsy/m/n/10 i$ \OT1/cmr/m/n/10 in Abh[]angigkeit der
  []
 
 
-
-[15 <./figures/Dosimetrie2I.png>]
-Overfull \hbox (8.39612pt too wide) in paragraph at lines 435--440
+Overfull \hbox (8.39612pt too wide) in paragraph at lines 448--453
 \OT1/cmr/m/n/10 Atom-schich-ten her-aus-schla-gen. So-mit wird die cha-rak-te-ris-ti-sche R[]ontgenstrahlung
  []
 
 
-Overfull \hbox (19.71562pt too wide) in paragraph at lines 453--456
-\OT1/cmr/m/n/10 si-onss-trom $\OML/cmm/m/it/10 I$ \OT1/cmr/m/n/10 dar-ge-stellt. In Ab-bil-dung []18[] ist sie in Abh[]angigkeit der R[]ohrenspannung
+
+[17 <./figures/Dosimetrie2U.png>]
+Overfull \hbox (19.71562pt too wide) in paragraph at lines 466--469
+\OT1/cmr/m/n/10 si-onss-trom $\OML/cmm/m/it/10 I$ \OT1/cmr/m/n/10 dar-ge-stellt. In Ab-bil-dung []15[] ist sie in Abh[]angigkeit der R[]ohrenspannung
  []
 
-
-
-[16 <./figures/Dosimetrie2U.png>]
-<figures/Dosimetrie2I2.png, id=257, 462.528pt x 346.896pt>
+<figures/Dosimetrie2I2.png, id=268, 462.528pt x 346.896pt>
 File: figures/Dosimetrie2I2.png Graphic file (type png)
 <use figures/Dosimetrie2I2.png>
-Package pdftex.def Info: figures/Dosimetrie2I2.png  used on input line 459.
+Package pdftex.def Info: figures/Dosimetrie2I2.png  used on input line 472.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-<figures/Dosimetrie2U2.png, id=258, 462.528pt x 346.896pt>
+<figures/Dosimetrie2U2.png, id=269, 462.528pt x 346.896pt>
 File: figures/Dosimetrie2U2.png Graphic file (type png)
 <use figures/Dosimetrie2U2.png>
-Package pdftex.def Info: figures/Dosimetrie2U2.png  used on input line 466.
+Package pdftex.def Info: figures/Dosimetrie2U2.png  used on input line 479.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--467
+Underfull \hbox (badness 10000) in paragraph at lines 480--480
 []\OT1/cmr/m/n/10 Abbildung 15: |[]Aquivaltentdosis $\OML/cmm/m/it/10 H$ \OT1/cmr/m/n/10 pro Jahr in Abh[]angigkeit der
  []
 
 
-Overfull \hbox (10.27834pt too wide) in paragraph at lines 471--478
+
+[18 <./figures/Dosimetrie2I2.png>]
+Overfull \hbox (10.27834pt too wide) in paragraph at lines 484--491
 []\OT1/cmr/m/n/10 Laut Strah-len-schutz-ver-ord-nung muss ein []Uberwachungsbereich ab ei-ner Organ-
  []
 
-
-
-[17 <./figures/Dosimetrie2I2.png> <./figures/Dosimetrie2U2.png>]
-<figures/Abstand.pdf, id=267, 845.07718pt x 597.432pt>
+<figures/Abstand.pdf, id=277, 845.07718pt x 597.432pt>
 File: figures/Abstand.pdf Graphic file (type pdf)
 <use figures/Abstand.pdf>
-Package pdftex.def Info: figures/Abstand.pdf  used on input line 536.
+Package pdftex.def Info: figures/Abstand.pdf  used on input line 506.
 (pdftex.def)             Requested size: 345.0pt x 243.90036pt.
 
 
-[18]
-Overfull \hbox (32.49323pt too wide) in paragraph at lines 540--543
+[19 <./figures/Dosimetrie2U2.png>]
+Overfull \hbox (32.49323pt too wide) in paragraph at lines 510--513
 \OT1/cmr/m/n/10 1 s$ durch-gef[]uhrt. Da-bei be-trug der Emis-si-onss-trom $\OML/cmm/m/it/10 I \OT1/cmr/m/n/10 = 0[]1 []$ und die R[]ohrenspannung
  []
 
-<figures/TotzeitWinkel.png, id=283, 462.528pt x 346.896pt>
-File: figures/TotzeitWinkel.png Graphic file (type png)
-<use figures/TotzeitWinkel.png>
-Package pdftex.def Info: figures/TotzeitWinkel.png  used on input line 558.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-
-[19 <./figures/Abstand.pdf>]
-Overfull \hbox (21.8062pt too wide) in paragraph at lines 568--571
-\OT1/cmr/m/n/10 Als n[]achstes wird der Ef-fekt von ab-schir-men-den Ma-te-ria-li-en auf die R[]ontgenstrahlung
- []
-
-<figures/AbschirmungWinkel.png, id=309, 462.528pt x 346.896pt>
-File: figures/AbschirmungWinkel.png Graphic file (type png)
-<use figures/AbschirmungWinkel.png>
-Package pdftex.def Info: figures/AbschirmungWinkel.png  used on input line 581.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-
-[20 <./figures/TotzeitWinkel.png>]
-Overfull \hbox (38.3111pt too wide) in paragraph at lines 612--614
-\OML/cmm/m/it/10 U[]$ \OT1/cmr/m/n/10 auf-tra-gen. In Ab-bil-dung []11[] ist dies f[]ur die Mo-lybd[]an-R[]ohre bei ei-ner R[]ohrenspannung
- []
-
-File: figures/Dosimetrie1MoU15.png Graphic file (type png)
-<use figures/Dosimetrie1MoU15.png>
-Package pdftex.def Info: figures/Dosimetrie1MoU15.png  used on input line 617.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-
-[21 <./figures/AbschirmungWinkel.png>]
-Overfull \hbox (34.05727pt too wide) in paragraph at lines 637--638
-[]\OT1/cmr/m/n/10 In Ab-bil-dung []12[] er-kennt man, wie die Kur-ve sich f[]ur ver-schie-de-ne R[]ohrenspannungen
- []
-
-File: figures/Dosimetrie1Mo.png Graphic file (type png)
-<use figures/Dosimetrie1Mo.png>
-Package pdftex.def Info: figures/Dosimetrie1Mo.png  used on input line 641.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-
-[22]
-Overfull \hbox (6.22873pt too wide) in paragraph at lines 646--653
-\OT1/cmr/m/n/10 h[]oher f[]ur glei-che Kon-den-sa-tor-span-nung $\OML/cmm/m/it/10 U[]$ \OT1/cmr/m/n/10 ist. Dies liegt dar-an, dass die R[]ontgen-
- []
-
-File: figures/Dosimetrie1CuU15.png Graphic file (type png)
-<use figures/Dosimetrie1CuU15.png>
-Package pdftex.def Info: figures/Dosimetrie1CuU15.png  used on input line 658.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-
-[23]
-File: figures/Dosimetrie1Cu.png Graphic file (type png)
-<use figures/Dosimetrie1Cu.png>
-Package pdftex.def Info: figures/Dosimetrie1Cu.png  used on input line 670.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-
-[24]
-Overfull \hbox (9.3489pt too wide) in paragraph at lines 681--687
-\OT1/cmr/m/n/10 15 []$ bei den bei-den An-oden-ma-te-ria-li-en, ist ein Un-ter-schied in der Gr[]o^^Yenordnung
- []
-
-
-
-[25]
-File: figures/Dosimetrie2I.png Graphic file (type png)
-<use figures/Dosimetrie2I.png>
-Package pdftex.def Info: figures/Dosimetrie2I.png  used on input line 746.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-
-[26]
-File: figures/Dosimetrie2U.png Graphic file (type png)
-<use figures/Dosimetrie2U.png>
-Package pdftex.def Info: figures/Dosimetrie2U.png  used on input line 769.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 770--770
-[]\OT1/cmr/m/n/10 Abbildung 24: |mitt-le-re Io-nen-do-sis-leis-tung $\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 j\OMS/cmsy/m/n/10 i$ \OT1/cmr/m/n/10 in Abh[]angigkeit der
- []
-
-
-
-[27]
-Overfull \hbox (8.39612pt too wide) in paragraph at lines 777--782
-\OT1/cmr/m/n/10 Atom-schich-ten her-aus-schla-gen. So-mit wird die cha-rak-te-ris-ti-sche R[]ontgenstrahlung
- []
-
-
-Overfull \hbox (19.71562pt too wide) in paragraph at lines 795--798
-\OT1/cmr/m/n/10 si-onss-trom $\OML/cmm/m/it/10 I$ \OT1/cmr/m/n/10 dar-ge-stellt. In Ab-bil-dung []18[] ist sie in Abh[]angigkeit der R[]ohrenspannung
- []
-
-
-
-[28]
-File: figures/Dosimetrie2I2.png Graphic file (type png)
-<use figures/Dosimetrie2I2.png>
-Package pdftex.def Info: figures/Dosimetrie2I2.png  used on input line 801.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-File: figures/Dosimetrie2U2.png Graphic file (type png)
-<use figures/Dosimetrie2U2.png>
-Package pdftex.def Info: figures/Dosimetrie2U2.png  used on input line 808.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 809--809
-[]\OT1/cmr/m/n/10 Abbildung 26: |[]Aquivaltentdosis $\OML/cmm/m/it/10 H$ \OT1/cmr/m/n/10 pro Jahr in Abh[]angigkeit der
- []
-
-
-Overfull \hbox (10.27834pt too wide) in paragraph at lines 813--820
-[]\OT1/cmr/m/n/10 Laut Strah-len-schutz-ver-ord-nung muss ein []Uberwachungsbereich ab ei-ner Organ-
- []
-
-
-
-[29]
-<figures/AbstandCu.png, id=394, 462.528pt x 346.896pt>
+<figures/AbstandCu.png, id=290, 462.528pt x 346.896pt>
 File: figures/AbstandCu.png Graphic file (type png)
 <use figures/AbstandCu.png>
-Package pdftex.def Info: figures/AbstandCu.png  used on input line 839.
+Package pdftex.def Info: figures/AbstandCu.png  used on input line 535.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
 
-[30 <./figures/AbstandCu.png>]
-<figures/AbstandMo.png, id=404, 462.528pt x 346.896pt>
+[20 <./figures/Abstand.pdf>]
+<figures/AbstandMo.png, id=315, 462.528pt x 346.896pt>
 File: figures/AbstandMo.png Graphic file (type png)
 <use figures/AbstandMo.png>
-Package pdftex.def Info: figures/AbstandMo.png  used on input line 864.
+Package pdftex.def Info: figures/AbstandMo.png  used on input line 560.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
 
-[31 <./figures/AbstandMo.png>]
-Overfull \hbox (23.77829pt too wide) in paragraph at lines 887--891
+[21 <./figures/AbstandCu.png>]
+Overfull \hbox (23.77829pt too wide) in paragraph at lines 583--587
 []\OT1/cmr/m/n/10 In dem Fit f[]ur die Kupfer-R[]ohre wur-de ein Aus-reis-ser-wert nicht mit ber[]ucksichtigt.
  []
 
 
-Overfull \hbox (3.16714pt too wide) in paragraph at lines 887--891
+Overfull \hbox (3.16714pt too wide) in paragraph at lines 583--587
 \OT1/cmr/m/n/10 Die-ser Aus-reis-ser-wert kommt durch die un-ge-naue Ska-la was sich bei dem gr[]o^^Yeren
  []
 
 
 
-[32]
-<figures/TotzeitStrom.png, id=421, 462.528pt x 346.896pt>
+[22 <./figures/AbstandMo.png>]
+<figures/TotzeitWinkel.png, id=329, 462.528pt x 346.896pt>
+File: figures/TotzeitWinkel.png Graphic file (type png)
+<use figures/TotzeitWinkel.png>
+Package pdftex.def Info: figures/TotzeitWinkel.png  used on input line 615.
+(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
+
+
+[23 <./figures/TotzeitWinkel.png>]
+<figures/TotzeitStrom.png, id=342, 462.528pt x 346.896pt>
 File: figures/TotzeitStrom.png Graphic file (type png)
 <use figures/TotzeitStrom.png>
-Package pdftex.def Info: figures/TotzeitStrom.png  used on input line 924.
+Package pdftex.def Info: figures/TotzeitStrom.png  used on input line 643.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
 
-[33{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./figures/TotzeitStrom.png>]
-<figures/AbschirmungDicke.png, id=436, 462.528pt x 346.896pt>
+[24 <./figures/TotzeitStrom.png>]
+Overfull \hbox (21.8062pt too wide) in paragraph at lines 661--664
+\OT1/cmr/m/n/10 Als n[]achstes wird der Ef-fekt von ab-schir-men-den Ma-te-ria-li-en auf die R[]ontgenstrahlung
+ []
+
+<figures/AbschirmungWinkel.png, id=351, 462.528pt x 346.896pt>
+File: figures/AbschirmungWinkel.png Graphic file (type png)
+<use figures/AbschirmungWinkel.png>
+Package pdftex.def Info: figures/AbschirmungWinkel.png  used on input line 674.
+(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
+
+
+[25{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./figures/AbschirmungWinkel.png>]
+<figures/AbschirmungDicke.png, id=369, 462.528pt x 346.896pt>
 File: figures/AbschirmungDicke.png Graphic file (type png)
 <use figures/AbschirmungDicke.png>
-Package pdftex.def Info: figures/AbschirmungDicke.png  used on input line 962.
+Package pdftex.def Info: figures/AbschirmungDicke.png  used on input line 711.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
 
-[34 <./figures/AbschirmungDicke.png>]
+[26 <./figures/AbschirmungDicke.png>]
 
-[35]
-<figures/AbschirmungDickeFilter.png, id=462, 462.528pt x 346.896pt>
+[27]
+<figures/AbschirmungDickeFilter.png, id=393, 462.528pt x 346.896pt>
 File: figures/AbschirmungDickeFilter.png Graphic file (type png)
 <use figures/AbschirmungDickeFilter.png>
-Package pdftex.def Info: figures/AbschirmungDickeFilter.png  used on input line 1047.
+Package pdftex.def Info: figures/AbschirmungDickeFilter.png  used on input line 792.
 (pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
 
 
-[36 <./figures/AbschirmungDickeFilter.png>]
+[28 <./figures/AbschirmungDickeFilter.png>]
+
+[29]
+
+[30]
+
+[31]
+
+[32]
+
+[33]
+
+[34]
+
+[35]
+
+[36]
 
 [37]
 
 [38]
 
 [39]
-
-[40]
-
-[41]
-
-[42]
-
-[43]
-
-[44]
-
-[45]
-
-[46]
-Overfull \hbox (31.519pt too wide) in paragraph at lines 1491--1491
+Overfull \hbox (31.519pt too wide) in paragraph at lines 1253--1253
 []\OT1/cmr/m/n/10 LP Georg-August-Universit[]at G[]ottingen. \OT1/cmr/m/it/10 R[]ontgenr[]ohre\OT1/cmr/m/n/10 . letz-ter Zu-griff: 16.06.2025.
  []
 
 
-Overfull \hbox (4.31642pt too wide) in paragraph at lines 1491--1491
+Overfull \hbox (4.31642pt too wide) in paragraph at lines 1253--1253
 []\OT1/cmr/m/n/10 Ulf Kon-rad. \OT1/cmr/m/it/10 Geiger-M[]uller-Z[]ahlrohr\OT1/cmr/m/n/10 . letz-ter Zu-griff: 16.06.2025. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https :
  []
 
 
-Overfull \hbox (7.3027pt too wide) in paragraph at lines 1491--1491
+Overfull \hbox (7.3027pt too wide) in paragraph at lines 1253--1253
 \OT1/cmtt/m/n/10 leifiphysik . de / kern -[] teilchenphysik / radioaktivitaet -[] einfuehrung /
  []
 
 
-Overfull \hbox (3.70435pt too wide) in paragraph at lines 1491--1491
+Overfull \hbox (3.70435pt too wide) in paragraph at lines 1253--1253
 []\OT1/cmr/m/n/10 LEIFIphysik. \OT1/cmr/m/it/10 R[]ONTGEN-Computertomographie\OT1/cmr/m/n/10 . letz-ter Zu-griff: 16.06.2025.
  []
 
 
-Overfull \hbox (5.16655pt too wide) in paragraph at lines 1491--1491
+Overfull \hbox (5.16655pt too wide) in paragraph at lines 1253--1253
 []\OT1/cmr/m/n/10 LEIFIphysik. \OT1/cmr/m/it/10 R[]ONTGEN-Strahlung\OT1/cmr/m/n/10 . letz-ter Zu-griff: 14.06.2025. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https :
  []
 
 
-Overfull \hbox (14.6801pt too wide) in paragraph at lines 1491--1491
+Overfull \hbox (14.6801pt too wide) in paragraph at lines 1253--1253
 []\OT1/cmr/m/n/10 Wikipedia. \OT1/cmr/m/it/10 Z[]ahlrohr\OT1/cmr/m/n/10 . letz-ter Zu-griff: 16.06.2025. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https : / / de . wikipedia .
  []
 
 
 
-[47] (./V529.aux)
+[40] (./V529.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'V529.run.xml'.
 \openout1 = `V529.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26833 strings out of 473190
- 535982 string characters out of 5715800
- 1364925 words of memory out of 5000000
- 49620 multiletter control sequences out of 15000+600000
+ 26773 strings out of 473190
+ 535221 string characters out of 5715800
+ 1364928 words of memory out of 5000000
+ 49604 multiletter control sequences out of 15000+600000
  566048 words of font info for 61 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 79i,13n,93p,762b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{table.caption.33} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.31} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.29} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.28} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.27} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.24} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.22} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.34} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section*.51} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.6.1.4} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.6.1.3} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.6.1.2} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.6.1.1} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.4.5} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.4.4} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.4.3} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.5} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.4} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not exist, replaced by a fixed one
-
+ 79i,13n,93p,762b,2750s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on V529.pdf (47 pages, 2013430 bytes).
+Output written on V529.pdf (40 pages, 1994896 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 189 named destinations out of 1000 (max. 500000)
- 516 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 706 PDF objects out of 1000 (max. 8388607)
+ 566 compressed objects within 6 object streams
+ 145 named destinations out of 1000 (max. 500000)
+ 444 words of extra memory for PDF output out of 10000 (max. 10000000)
 
