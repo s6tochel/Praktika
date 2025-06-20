@@ -19,7 +19,7 @@ datadict = {namedict[filename] : np.loadtxt(data_path + filename, delimiter=",")
 
 ################################################################################################
 
-selector = "2"
+selector = "1"
 
 round_to = [0, 1]
 

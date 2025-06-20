@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 from scipy.optimize import curve_fit
+from np_to_latex import to_latex_table
 
 filename_filter = "Abschirmung"
 
@@ -9,6 +10,7 @@ current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
 parent_dir_path = os.path.abspath(os.path.join(current_path, os.pardir)) + "/"
 data_path = parent_dir_path + "Daten/Data_Files/"
 figure_path = current_path + "Abbildungen/"
+table_path = current_path + "LatexTabellen/"
 
 filelist = [filename for filename in os.listdir(data_path) if  filename_filter in filename]
 namedict = {filename : filename[len(filename_filter):-4] for filename in filelist}
@@ -37,6 +39,9 @@ ydata = np.log(R*I0 / (I*R0))
 xerr = np.zeros(len(xdata))
 yerr = np.sqrt( 1/R + 0.01**2 + 1/R0 + 0.01**2 )
 yerr[0] = 0.00001
+
+to_latex_table([xdata, ydata, yerr], table_path+"abschirmung1a_figvals.txt", round_to=[1,3,3])
+
 
 ################################################################################################
 

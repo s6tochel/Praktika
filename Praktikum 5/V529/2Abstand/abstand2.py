@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 from scipy.optimize import curve_fit
+from np_to_latex import to_latex_table
 
 filename_filter = "Abstand"
 
@@ -9,6 +10,7 @@ current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
 parent_dir_path = os.path.abspath(os.path.join(current_path, os.pardir)) + "/"
 data_path = parent_dir_path + "Daten/Data_Files/"
 figure_path = current_path + "Abbildungen/"
+table_path = current_path + "LatexTabellen/"
 
 filelist = [filename for filename in os.listdir(data_path) if  filename_filter in filename]
 namedict = {filename : filename[len(filename_filter):-4] for filename in filelist}
@@ -39,6 +41,9 @@ xdata = 1 / x**2
 ydata = data[1] /2
 xerr = 1 / x**3
 yerr = np.ones(len(ydata)) * 0.1 /2
+
+to_latex_table([xdata*10000, xerr*10000, ydata, yerr], table_path+"abstand2_figvals.txt", round_to=[2, 2, 2, 2])
+
 
 ################################################################################################
 
