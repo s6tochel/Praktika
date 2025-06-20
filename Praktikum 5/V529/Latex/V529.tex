@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage{graphicx, amsmath, float, siunitx, hyperref, mathtools, physics, bookmark} % Required for inserting images
+\usepackage{graphicx, amsmath, float, siunitx, hyperref, mathtools, physics, bookmark, subcaption} % Required for inserting images
 \usepackage[ngerman]{babel}
 \usepackage{biblatex, csquotes}
 \addbibresource{refs.bib}
@@ -595,8 +595,6 @@ Optisch erkennen wir in diesem Fall, dass die Fit-Gerade noch näher an den Mess
 Die Abweichungen von der Fit-Gerade kommen wie erwähnt wahrscheinlich von der ungenauen Dosimeterskala, die nur 21 abzulesende Unterteilungen besitzt.
 Damit sehen wir das Abstandsquadratgesetz als verifiziert.
 
-\textbf{\color{red} HIER VERGLEICH DOSIS}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Totzeit}
@@ -881,16 +879,121 @@ Jedoch ist es schwer die Werte zu vergleichen, da das Problem mit der unterschie
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computertomographie}
 
-\subsection{Durchführung}
+Im letzten Versuchsteil wird sich mit der Computertomographie beschäftigt.
+Dazu wurde ein Computertomogramm eines Frosches erstellt.
+Hierzu wurde das Goniometer in der Apperatur eingebaut gelassen.
+Der Targethalter wurde durch einen Objekthalter mit Frosch in einer Styroporkugel ersetzt.
+Der Objekthalter konnte um seine eigene Achse drehen.
+Der Frosch war mit bloßem Auge nicht zu erkennen und um ihn bertachten zu können musste die Computertomographie verwendet werden.
 
+Hierzu wurde ein Computerprogramm aufgerufen indem verschiedene Parameter festgelegt werden konnten und das in Echtzeit die Berechnungen zum Erstellen eines dreidimensionalen Bild des Frosches gemacht hat.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Auswertung}
+Zuerst wurde ein Scan des Frosches mit geringer Belichtungszeit gemacht.
+Dann wurden eine Korrekturen der Ausrichtung der Detektoren getätigt.
+Dies wurde drei mal wiederholt um ein schärferes Bild erstellen zu können.
+Danach wurde über Nacht ein Scan des Frosches mit hoher Belichtungszeit erstellt.
+Dieser ist in Abbildung \ref{fig:Frosch3D} zu sehen.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.90\textwidth]{figures/Frosch3D1.png}
+        \caption{Vorderseite}
+        \label{fig:Frosch3D1}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.90\textwidth]{figures/Frosch3D2.png}
+        \caption{Rückseite}
+        \label{fig:Frosch3D2}
+    \end{subfigure}
+    \caption{Computertomogramm eines Frosches}
+    \label{fig:Frosch3D}
+\end{figure}
+Man erkennt, dass der Scan erfolgreich war und ein scharfes Bild vom Frosch erstellt werden konnte.
 
+Als nächstes wurde die Röhrenspannung $U$ und der Emissionsstrom $I$ variiert um zu betrachten, welchen Einfluss das auf resultierende Bild hat.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.7\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{figures/FroschU30I07.png}
+        \caption{$U = \SI{30}{\kilo\volt}$, $I = \SI{0.7}{\milli\ampere}$}
+        \label{fig:FroschU30I07}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{figures/FroschU25.png}
+        \caption{$U = \SI{25}{\kilo\volt}$, $I = \SI{0.7}{\milli\ampere}$}
+        \label{fig:FroschU25}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{figures/FroschI05.png}
+        \caption{$U = \SI{30}{\kilo\volt}$, $I = \SI{0.5}{\milli\ampere}$}
+        \label{fig:FroschI05}
+    \end{subfigure}
+    \caption{}
+    \label{fig:Frosch3D}
+\end{figure}
+
+Wir erkennen, dass bei reduzierter Röhrenspannung $U$ (Abbildung \ref{fig:FroschU25}) das Bild des Frosches dunkler wird.
+Wenn der Emissionsstrom $I$ kleiner wird (Abbildung \ref{fig:FroschI05}), das resultierende Bild an Schärfe verliert.
+
+Dies kann man sich dadurch erklären, dass die Anzahl an Röntgenquanten von dem Emissionstrom $I$ abhängt. 
+Bei höherer Stromstärke schießen mehr Photonen durch Objekt, was die Auflösung besser macht.
+Die Energie der Photonen hängt von der Röhrenspannung $U$ (und dem Anodenmaterial) ab.
+Somit wird das Bild im Allgemeinen heller wenn die Röhrenspannung steigt.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Fazit}
+
+Im ersten Versuchsteil wurde sich mit der Dosimetrie beschäftigt.
+Wir haben uns angeschaut wie der Ionisationsstrom $_C$ in einem Kondensator von der Kondensatorspannung $U_C$ abhängt.
+Für eine Molybdän-Röhre bei Röhrenspannung $U = \SI{15}{\kilo\volt}$ steigt der Ionisationsstrom stark bis ungefähr $U_C = \SI{100}{\volt}$ an, flacht dann tendenziell ab bis $U_C = \SI{200}{\volt}$ und steigt dann wieder an.
+Für eine Kupfer-Röhre bei gleicher Röhrenspannung sah das Verhalten einfacher aus.
+Der Ionisationsstrom stieg bis ungefähr $U_C = \SI{150}{\volt}$ stark an, ab wo er dann stagnierte.
+Hat man die Röhrenspannung erhöht, wurde auch der maximale Ionisationsstrom höher und umgekehrt.
+Bei der Kupfer-Röhre hat man erkannt, dass Kondensatorspannung ab welcher der Ionisationsstrom stagnierte auch höher mit wachsender Röhrenspannung wurde.
+
+Dann haben wir uns angesehen, wie die mittlere Ionendosisleistung $\langle j \rangle$ von dem Emissionsstrom $I$ und von der Röhrenspannung $U$ abhängt.
+Wir fanden einen proportionalen Zusammenhang zwischen $\langle j \rangle$ und $I$.
+Die mittlere Ionendosisleistung $\langle j \rangle$ blieb bei niedrigen Röhrenspannungen $U$ sehr klein, bis sie bei einer Röhrenspannung von ungefähr $U = \SI{10}{\kilo\volt}$ fast linear anstieg.
+Dann haben wir noch erkannt, dass der Kondensator laut Strahlenschutzverordnung für die Kupfer-Röhre als Sperrbereich gelten müsste. Für die Molybdän-Röhre müsste er knapp noch nicht als Sperrbereich sondern noch als Kontrollbereich gelten.
+
+Als nächstes haben wir das Abstandsquadratgesetz anhand eines Stabdosimeters verifiziert.
+Dazu haben wir die gemessene Dosisleistung gegen das inverse Abstandsquadrat aufgetragen.
+Für die Kupfer-Röhre haben wir einen linearen Fit mit $\chi^2 \approx 2,3$ erstellen können.
+Für die Molybdän-Röhre lag lineare Fit bei $\chi^2 \approx 1,3$.
+Das Abstandsquadratgesetz konnte also verifiziert werden, wobei die Messungen für die Molybdän-Röhre etwas besser waren.
+
+Danach wurde die Totzeit eines Geiger-Müller-Zählrohrs bestimmt.
+Diese wurde auf $\tau = \SI{109,12 \pm 0,20}{\micro\second}$ ermittelt.
+Laut Literaturquelle \cite{Arbeitsbereiche} soll die Totzeit bei ungefähr $\SI{100}{\micro\second}$ liegen.
+Somit ist unsere Messung also gelungen.
+
+Dann haben wir uns die Auswirkung von Absorbern auf die Röntgenstrahlung angesehen.
+Dazu haben wir für einen Absorbersatz I aus Aluminium verschiedener Dicken den Absorbtionskoeffizient $\mu$ bestimmt.
+Danach haben wir aus diesem Absorbtionskoeffizienten die Dicke $d_\text{II}$ der Absorber eines anderen Absorbersatzes II verschiedener Materialen und gleicher Dicke bestimmt.
+Dies wurde für einmal ohne und einmal mit Zirkoniumfilter in der optischen Achse durchgeführt.
+Ohne Filter haben wir einen Absorbtionskoeffizienten von $\mu_\text{Al, o.F.} = \SI{0,687 \pm 0,014}{\per \milli\meter}$ gemessen. 
+Mit Filter haben wir einen Wert von $\mu_\text{Al, m.F.} = \SI{0,655 \pm 0,015}{\per \milli\meter}$ erhalten. 
+Beide Werte stimmen gut übereinander.
+Für die Dicke $d_\text{II}$ haben wir ohne Filter einen Wert von \SI{3,70 \pm 0,09}{\milli\meter} und mit Filter einen Wert von \SI{1,50 \pm 0,06}{\milli\meter} erhalten.
+Der Wert ohne Filter ist mehr als doppelt so groß wie der mit Filter.
+Dies sollte nicht der Fall sein und bei unseren Messungen muss irgendetwas schief gelaufen sein.
+
+Mit der Dicke $d_\text{II}$ konnten wir nun die Absorbtionskoeffizienten der anderen Materialien des Absorbersatz II berechnen. 
+Die Resultate aus der Messreihe ohne Filter sind in Tabelle \ref{tab:Absorbtionskoeffizienten1} und die mit Filter in Tabelle \ref{tab:Absorbtionskoeffizienten2}.
+Wie bei der Dicke $d_\text{II}$ stimmen die Werte nicht gut übereinander.
+Das kommt zum Einen daher, dass die der Fehler der Dicke sich auf die Absorbtionskoeffizienten überträgt.
+Zum anderen absorbiert der Zirkoniumfilter niederenergetische Photonen, was die gemessenen Einwirkungen auf die gemessenen Absorbtionskoeffizienten bei verschiedenen Materialien haben kann.
+
+Als letztes haben wir ein Computertomogramm eines Frosches erstellt, was in Abbildung \ref{fig:Frosch3D} zu erkennen ist.
+Dies hat gut funktioniert und danach haben wir observiert, dass die Helligkeit des Röntgenbildes mit der Röhrenspannung $U$ wächt.
+Wenn man den Emissionstrom $I$ erhöht, wird das Bild schärfer.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
