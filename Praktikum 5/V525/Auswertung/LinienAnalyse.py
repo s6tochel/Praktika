@@ -76,7 +76,7 @@ sigma_o = [np.inf, np.inf, np.inf, np.inf, np.inf, np.inf, np.inf]
 current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
 parent_dir_path = os.path.abspath(os.path.join(current_path, os.pardir)) + "/"
 data_path = parent_dir_path + "Daten/"
-figure_path = parent_dir_path + "Abbildungen/"
+figure_path = parent_dir_path + "Abbildungen/Spektren/"
 fit_data_path = current_path + "Fit_data/"
 data = np.loadtxt(data_path + txtfile_title, delimiter="\t", dtype=int).T
 
