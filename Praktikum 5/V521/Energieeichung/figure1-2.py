@@ -2,9 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import os
+from np_to_latex import to_latex_table
 
 E_lit = [661.7, 1173.2, 1332.5, 121.7817, 244.6974, 344.2785, 778.9045, 867.380, 964.057, 1085.837, 1112.076, 1408.013]
 E_lit_err = [0, 0, 0, 0.0003, 0.0008, 0.0012, 0.0024, 0.003, 0.005, 0.010, 0.003, 0.003]
+
+I = [28.53, 7.55, 26.59, 12.93, 4]
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 

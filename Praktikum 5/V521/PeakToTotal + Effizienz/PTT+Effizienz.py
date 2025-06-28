@@ -33,8 +33,6 @@ nai_Cs_peak = np.sum(nai_Cs[5600-3*165:5600+1+3*165])
 nai_Co_peak1 = np.sum(nai_Co[9711-3*211:9711+1+3*211])
 nai_Co_peak2 = np.sum(nai_Co[11011-3*249:11011+1+3*249])
 
-print(hpge_Co[13823-3*8:13823+1+3*8])
-
 
 Eu_peak1 = np.sum(Eu[1262-3*5:1262+1+3*5])
 Eu_peak2 = np.sum(Eu[2537-3*5:2537+1+3*5])
