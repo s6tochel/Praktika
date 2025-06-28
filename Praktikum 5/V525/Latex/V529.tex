@@ -48,21 +48,30 @@ die einzelnen nuklearen elektronik Komponenten sollen untersucht werden. Es soll
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Theorie}
 \subsection*{Szintillationszähler}
-Ein Szintillationszähler ist ein Detektor, der ionisierende Strahlung misst, indem er die von der Strahlung erzeugte Szintillation in Photonen umwandelt. Dieses Photon wird dann von einem Photomultiplier verstärkt und in ein elektrisches Signal umgewandelt. Der Szintillator besteht aus NaI(Ti), das bei Wechselwirkung mit ionisierender Strahlung durch lumineszenzentren Photonen emittiert, typischerweise in Form von ultraviolettem oder sichtbarem Licht.
+Ein Szintillationszähler ist ein Detektor, der ionisierende Strahlung misst, indem er die von der Strahlung erzeugte Szintillation in Photonen umwandelt.
+Dieses Photon wird dann von einem Photomultiplier verstärkt und in ein elektrisches Signal umgewandelt.
+Der Szintillator besteht aus NaI(Ti), das bei Wechselwirkung mit ionisierender Strahlung durch lumineszenzentren Photonen emittiert, typischerweise in Form von ultraviolettem oder sichtbarem Licht.
 \subsection*{Photomultiplier}
-Ein Photomultiplier (PMT) ist ein lichtempfindliches Gerät, das schwaches Licht in ein elektrisches Signal umwandelt. Es besteht aus einer Photokathode, die Photonen in Elektronen umwandelt, und mehreren Dynoden, die ein Lawineneffekt auslösen und somit eine Verstärkung des Signals erreicht. Das resultierende Signal kann dann zur Messung der Intensität des Lichts verwendet werden.
+Ein Photomultiplier (PMT) ist ein lichtempfindliches Gerät, das schwaches Licht in ein elektrisches Signal umwandelt. 
+Es besteht aus einer Photokathode, die Photonen in Elektronen umwandelt, und mehreren Dynoden, die ein Lawineneffekt auslösen und somit eine Verstärkung des Signals erreicht. 
+Das resultierende Signal kann dann zur Messung der Intensität des Lichts verwendet werden.
 \subsection*{Elektronische Komponenten}
 Im folgenden werden die einzelnen elektronischen Komponenten kurz beschrieben.
 \subsubsection*{Signal-Verteiler(Splitter)}
-Der Splitter erzeugt aus einem Signal 2 identische Signale, deren Amplitude wird halbiert. Realisiert wird das ganze durch einen Spannungsteiler.
+Der Splitter erzeugt aus einem Signal 2 identische Signale, deren Amplitude wird halbiert. 
+Realisiert wird das ganze durch einen Spannungsteiler.
 \subsubsection*{Verstärker}
 Diese Komponente verstärkt ein vorhandenes Signal, dabei wird in diesem Versuch ein besonderer Verstärker benutzt, dieser verstärkt das Signal nicht nur sonder es gibt ein Gausförmiges Signal aus.
 \subsubsection*{Einkanalanalysator (SCA)}
 Der Einkanalanalysator wird dazu verwendet um Signale in einem bestimmten Bereich zu filtern, dies geschieht indem ein Tief- und ein Hochpassfilter genutzt werden. 
 \subsubsection*{Vielkanalanalysator (MCA)}
-Im Gegensatz zum Einkanalanalysator nimmt ein Vielkanalanalysator alle Signale auf, dies wird realisiert, indem viele Einkanalanalysatoren mit bestimmten Intervallen genutzt werden um den gesamten Bereich abzudecken. In unserem Fall hat der MCA auch ein Gate Signal, dieses gibt vor, wann die Signale in den MCA geschrieben werden sollen.
+Im Gegensatz zum Einkanalanalysator nimmt ein Vielkanalanalysator alle Signale auf, dies wird realisiert, indem viele Einkanalanalysatoren mit bestimmten Intervallen genutzt werden um den gesamten Bereich abzudecken. 
+In unserem Fall hat der MCA auch ein Gate Signal, dieses gibt vor, wann die Signale in den MCA geschrieben werden sollen.
 \subsubsection*{Constant Fraction Diskriminator (CFD)}
-Wenn Signale getriggert werden geschieht das im Normalfall mit einem leadingedge, also wenn die Amplitude des Signals ein bestimmten Schwellenwert erreicht. Wenn aber zwei Signale in der selben Zeit 2 verschieden große Maxima erreicht, dann erreicht das eine Signal diesen Schwellenwert früher und die Signale würden zu verschiedenen Zeitpunkten triggern. Damit die Signale immer zum selben Zeitpunkt triggern unabhängig von ihrer Amplitude wird bei einem bestimmten Anteil der maximalen Amplitude getriggert. Dies realisiert der CFD, indem er das Signal in zwei teilt und den einen Teil invertiert und verzögert auf den anderen Teil des Signals addiert, somit kann an einem bestimmten Punkt ein Nullpunkt erzeugt werden, welcher als Triggerpunkt verwendet wird, dieser prozess ist in Abbildung \ref{cfd1} dargestellt. Schlussendlich sieht man in Abbildung \ref{cfd2}, dass es dadurch zu gleichzeitigem triggern kommt unabhängig von der Amplitude.
+Wenn Signale getriggert werden geschieht das im Normalfall mit einem leadingedge, also wenn die Amplitude des Signals ein bestimmten Schwellenwert erreicht. 
+Wenn aber zwei Signale in der selben Zeit 2 verschieden große Maxima erreicht, dann erreicht das eine Signal diesen Schwellenwert früher und die Signale würden zu verschiedenen Zeitpunkten triggern. 
+Damit die Signale immer zum selben Zeitpunkt triggern unabhängig von ihrer Amplitude wird bei einem bestimmten Anteil der maximalen Amplitude getriggert. 
+Dies realisiert der CFD, indem er das Signal in zwei teilt und den einen Teil invertiert und verzögert auf den anderen Teil des Signals addiert, somit kann an einem bestimmten Punkt ein Nullpunkt erzeugt werden, welcher als Triggerpunkt verwendet wird, dieser prozess ist in Abbildung \ref{cfd1} dargestellt. Schlussendlich sieht man in Abbildung \ref{cfd2}, dass es dadurch zu gleichzeitigem triggern kommt unabhängig von der Amplitude.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{cfd1.png}
@@ -76,7 +85,8 @@ Wenn Signale getriggert werden geschieht das im Normalfall mit einem leadingedge
 \label{fig:cfd2}
 \end{figure}
 \subsection*{Koinzidenzeinheit}
-Die Koinzidenzeinheit ermöglicht es, Signale von zwei oder mehr Quellen zu vergleichen und ein logisches Und zu erzeugen. Wenn die Signale gleichzeitig ankommen, wird eine logische 1 ausgegeben. 
+Die Koinzidenzeinheit ermöglicht es, Signale von zwei oder mehr Quellen zu vergleichen und ein logisches Und zu erzeugen. 
+Wenn die Signale gleichzeitig ankommen, wird eine logische 1 ausgegeben. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
