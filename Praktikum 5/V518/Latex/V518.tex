@@ -104,10 +104,10 @@ Da aber der Energieverlust von Teilchen in Materie ein statistischer Prozess ist
     f(x) = \frac{1}{\sqrt{2\pi}} \cdot e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}\right)^2}    
 \end{equation*}
 Dabei ist $\mu$ der Mittelwert und $\sigma$ die Standardabweichung der Verteilung.
-Wie in der Abbildung \ref{fig:Landau} zu erkennen ist der Verlauf der Landau-Verteilung nicht symmetrisch, sondern hat einen langen Schwanz in Richtung höherer Energieverluste.
+Wie in der Abbildung \ref{fig:Landau} zu erkennen ist, ist der Verlauf der Landau-Verteilung nicht symmetrisch, sondern hat einen langen Schwanz in Richtung höherer Energieverluste.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{figures/Landau.png}
+    \includegraphics[width=0.8\textwidth]{figures/Landau.png}
     \caption{Landau-Verteilung \cite{Landau}}
     \label{fig:Landau}
 \end{figure}
@@ -136,7 +136,7 @@ Der beschriebene Prozess ist auch nochmal in der Abbildung \ref{fig:Szintillator
 
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{figures/Szintillator_Bändermodell.png}
+    \includegraphics[width=0.8\linewidth]{figures/Szintillator_Bändermodell.png}
     \caption{Darstellung des Bändermodell eines Szintillators \cite{Wer}}
     \label{fig:SzintillatorBandlücke}
 \end{figure}
@@ -145,7 +145,7 @@ In dem Photomultiplier lösen die Photonen dann Elektronen aus der Photokathode.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{figures/SzintillatorAufbau.png}
+    \includegraphics[width=0.8\linewidth]{figures/SzintillatorAufbau.png}
     \caption{Aufbau eines Szintillator \cite{Wer}}
     \label{fig:AufbauSzinti}
 \end{figure}
@@ -186,7 +186,7 @@ Alle Szintillatoren sind mit einem Diskriminator verbunden, der die Signale in d
 Dieser Aufbau ist in der Abbildung \ref{fig:AufbauWinkelverteilung} dargestellt.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/Aufbau_Winkelverteilung.png}
+    \includegraphics[width=0.8\textwidth]{figures/Aufbau_Winkelverteilung.png}
     \caption{Aufbau der Winkelverteilungsmessung\cite{Anleitung}}
     \label{fig:AufbauWinkelverteilung}
 \end{figure}
@@ -203,8 +203,8 @@ Nun werden folgende Signale gezählt:
 \begin{itemize}
     \item \textbf{Z25}
     \item \textbf{Z12}
-    \item ODER Signal von \textbf{D24}, \textbf{D23}, \textbf{D1} und \textbf{D2} gebildet	
-    \item Koinzidenzsignal von \textbf{D12} und \textbf{ODER Signal}  	
+    \item \textbf{ODER} Signal von \textbf{D24}, \textbf{D23}, \textbf{D1} und \textbf{D2}
+    \item Koinzidenzsignal von \textbf{D12} und \textbf{ODER} Signal  	
 \end{itemize}
 Dann wird in einer Schleife die Schwellenspannung von D12 von $\SI{-50}{\milli\volt}$ bis $\SI{-200}{\milli\volt}$ in Schritten von $\SI{-10}{\milli\volt}$ variiert.
 Im letzten Schritt werden die gemessenen Zählwerte in ein Array geschrieben und in eine Txt-Datei gespeichert.
@@ -225,22 +225,22 @@ Man kann erkennen, dass das Diskriminatorsignal, hier in Gelb, das analoge Signa
 Für die Langzeitmessung wurde ein Programm zur Winkelverteilungsmessung vorgegeben. Dieser funktioniert nach dem Prinzip der Koinzidenzmessung, der genaue Aufbau ist in der Abbildung \ref{fig:AufbauWinkelverteilungLangzeit} schmematisch dargestellt.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/SchematischWinkelverteilung.png}
+    \includegraphics[width=0.8\textwidth]{figures/SchematischWinkelverteilung.png}
     \caption{Schematischer Aufbau der Winkelverteilungsmessung}
     \label{fig:AufbauWinkelverteilungLangzeit}
 \end{figure}
-Es werden also je 2 Detektoren die sich gegenüberliegende Detektoren mit dem mittleren Szintillator Z25 durch Diskriminatoren in ein Kooinzidenzmodul geschickt und dort von einem Stichzähler gezählt.
+Es werden also je 2 Detektoren, welche sich gegenüberliegen mit dem mittleren Detektor Z25 durch Diskriminatoren in ein Kooinzidenzmodul geschickt und dort von einem Stichzähler gezählt.
 
 Diese Messung wurde mit einer Dauer von $\SI{598215}{\second}$ durchgeführt, dies entspricht etwa einer Messzeit von einer Woche.
 
 
-\subsection{Lebensdauer}
+\subsection{Lebensdauer des Myon}
 Auch bei der Lebensdauermessung der Myonen müssen erst die Schwellenspannungen der Diskriminatoren eingestellt werden.
 Dabei wurde ein anderes Verfahren verwendet, als bei der Winkelverteilungsmessung.
 Bei dieser Methode wurde jeder Szintillator an 2 Diskriminatoren angeschlossen, diese Bilden den Messkreis (in Abbildung \ref{fig:AufbauLebensdauer} dunkel Blau) und den Monitorkreis (in Abbildung \ref{fig:AufbauLebensdauer} Rot).
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/Aufbau_Lebensdauermessung.pdf}
+    \includegraphics[width=0.8\textwidth]{figures/Aufbau_Lebensdauermessung.pdf}
     \caption{Schmatischer Aufbau für die Bestimmung der Schwellenspannung bei der Lebensdauermessung}
     \label{fig:AufbauLebensdauer}
 \end{figure}
@@ -253,13 +253,13 @@ Daher konnten wir auch nicht die Messung zur Lebensdauer der Myonen durchführen
 Nachdem die Schwellenspannungen eingestellt wurden, kann mit der Schaltung aus der Abbildung \ref{fig:AufbauZerfall} die Lebensdauer der Myonen bestimmt werden.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/Aufbau_Zerfallsmessung.pdf}
+    \includegraphics[width=0.8\textwidth]{figures/Aufbau_Zerfallsmessung.pdf}
     \caption{Aufbau der Lebensdauermessung mit Start- und Stop-Signal}
     \label{fig:AufbauZerfall} 
 \end{figure}
 Hierzu wird ein Start Signal ausgelöst, wenn ein Myon durch beide Szintillatoren fliegt und somit das Koinzidenzmodul auslöst. 
-Wenn dies geschehen ist wird durch ein Schalt-Flip-Flop ein Gate geöffnet. Durch dieses Gate gelangt eine $\SI{20}{\mega\hertz}$-Pulsfrequenz auf zahn kaskadierte 1:20-Untersetzer mit
-zugeordneten Sichtzählern. Nun kann es zu zwei Szenarien kommen, Ein Myon fliegt durch den Szintillator und löst das Koinzidenzmodul aus. Das Gate öffnet sich und die Zählrate wird gezählt, wenn:
+Wenn dies geschehen ist wird durch ein Schalt-Flip-Flop ein Gate geöffnet. Durch dieses Gate gelangt eine $\SI{20}{\mega\hertz}$-Pulsfrequenz, dass auf ein zahn kaskadierten 1:20-Untersetzer mit
+zugeordneten Sichtzählern wirkt. Nun kann es zu zwei Szenarien kommen, Ein Myon fliegt durch den Szintillator und löst das Koinzidenzmodul aus. Das Gate öffnet sich und die Zählrate wird gezählt, wenn:
 \begin{itemize}
     \item ein Stop Signal innerhalb von $\SI{10}{\micro\second}$ ausgelöst wird, wird das Gate geschlossen und der Sichtzähler bleibt bei der Kodierung stehen. In dieser Zeit wird eine Totzeit-Generator gestartet
     und es kann für eine gewisse Zeit kein weiteres Start-Signal ausgelöst werden. Wenn die Totzeit abgelaufen ist, wird ein Reset-Impuls erzeugt und der Untersetzer auf Null zurückgesetzt.
@@ -284,7 +284,7 @@ Dieser wurde ermittelt, indem der erste Sattelwert aus der Auftragung von $N_\te
 dies ist zu sehen in der Abbildung \ref{fig:SchwellenspannungWinkelverteilung}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/Schwellenspannung_Winkelverteilung.png}
+    \includegraphics[width=0.8\textwidth]{figures/Schwellenspannung_Winkelverteilung.png}
     \caption{Auftragung zur Bestimmung der Schwellenspannung des Szintillators D12}
     \label{fig:SchwellenspannungWinkelverteilung}
 \end{figure}
@@ -292,15 +292,16 @@ dies ist zu sehen in der Abbildung \ref{fig:SchwellenspannungWinkelverteilung}.
 Nachdem die Schwellenspannung bestimmt und eingestellt wurde, wurde die Langzeitmessung durchgeführt, die gemessenen Werte sind im Anhang in der Tabelle \ref{tab:Winkelverteilung} hinterlegt.
 An diese Werte wurde eine Cosinus und eine Gaussanpassung durchgeführt, diese sind in den Abbildungen \ref{fig:WinkelverteilungCosinus} und \ref{fig:WinkelverteilungGauss} dargestellt.
 Bei den Anpassungen wurden die Rot markierten Werte nicht berücksichtigt, da diese offensichtlich ausreißer sind, wie diese Zustande kommen wird nachher im Abschnitt \enquote{Pulshöhenspektrum} genauer erklärt.
+Für eine bessere Sichtbarkeit wurden die Fehler in diesen Abbildungen wurden doppelt so groß dargestellt.
 Die Anpassungsfunktionen sind zu sehen in den Gleichungen für die Cosinusfunktion \ref{eq:CosinusAnpassung} und die Gaussfunktion \ref{eq:GaussAnpassung}.
-\begin{displaymath}
+\begin{equation}
    C(x) = A \cdot \cos( x + \phi )^n + c \cdot x + d
 \label{eq:CosinusAnpassung}
-\end{displaymath}
-\begin{displaymath}
+\end{equation}
+\begin{equation}
     G(x) = A \cdot e^{-\frac{(x - \mu)^2}{2\sigma^2}} + b
 \label{eq:GaussAnpassung}
-\end{displaymath}
+\end{equation}
 
 
 \begin{figure}[H]
@@ -339,9 +340,10 @@ Die Parameter der Cosinus-Anpassung sind in der Tabelle \ref{tab:CosinusAnpassun
         Parameter & Wert \\ \hline \hline
         $A$ & 4378(50) \\ \hline 
         $\phi$ & 0,020(8) \\ \hline
-        $n$ & 1.82(6) \\ \hline
+        $n$ & 1,82(6) \\ \hline
         $c$ & -08(35) \\ \hline
         $d$ & 03(20) \\ \hline
+        $\chi^2$ & 48,6 \\ \hline
     \end{tabular}
     \label{tab:CosinusAnpassungWinkelverteilung}
 \end{table}
@@ -355,6 +357,7 @@ Die Parameter der Cosinus-Anpassung sind in der Tabelle \ref{tab:CosinusAnpassun
         $\mu$ & -0,016(4) \\ \hline
         $\sigma$ & -0,667(6) \\ \hline
         $b$ & -291(16) \\ \hline
+        $\chi^2$ & 67,0 \\ \hline
     \end{tabular}
     \label{tab:GaussAnpassungWinkelverteilung}
 \end{table}
@@ -375,9 +378,9 @@ Dies kann auch der Grund sein, warum bei der Winkelverteilung einige Detektoren 
 Bei der weiteren Auswertung wurde der Datensatz der anderen Gruppe verwendet.
 
 Das Pulshöhenspektrum ohne den Rauschanteil ist in der Abbildung \ref{fig:PulshoheWinkelverteilungLandauOhneFit} zu sehen.
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/Pulshöhenspektrum_Landau_ohne_fit.png}
+    \includegraphics[width=0.8\textwidth]{figures/Pulshöhenspektrum_Landau_ohne_fit.png}
     \caption{Pulshöhenspektrum gezoomt auf den Landauanteil}
     \label{fig:PulshoheWinkelverteilungLandauOhneFit}
 \end{figure}
@@ -389,16 +392,16 @@ Das Pulshöhenspektrum ohne den Rauschanteil ist in der Abbildung \ref{fig:Pulsh
 \end{figure}
 
 Hier wurde ein Bereich von Kanal $100$ bis $800$ betrachtet.
-In der Abbildung \ref{fig:PulshoheWinkelverteilungLandau} ist das Pulshöhenspektrum mit der Landau- und Gauss-Anpassung zu sehen.
+In der Abbildung \ref{fig:PulshoheWinkelverteilungmitFit} ist das Pulshöhenspektrum mit der Landau- und Gauss-Anpassung zu sehen.
 Die Angepassten Funktionen sind in den Gleichungen \ref{eq:LandauAnpassung} und \ref{eq:GaussAnpassungPulshohe} zu finden.
-\begin{displaymath}
+\begin{equation}
     L(x) = A \cdot exp\left[ -\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right) + exp\left( -\frac{x - \mu }{\sigma} \right) \right] 
 \label{eq:LandauAnpassung}
-\end{displaymath}
-\begin{displaymath}
+\end{equation}
+\begin{equation}
     G(x) = A \cdot e^{-\frac{(x - \mu)^2}{2\sigma^2}} + b
 \label{eq:GaussAnpassungPulshohe}
-\end{displaymath}
+\end{equation}
 Die Parameter der Anpassungen sind in den Tabellen \ref{tab:LandauAnpassungPulshohe} und \ref{tab:GaussAnpassungPulshohe} zu finden.
 \begin{table}[H]
     \centering
@@ -407,8 +410,9 @@ Die Parameter der Anpassungen sind in den Tabellen \ref{tab:LandauAnpassungPulsh
         \hline
         Parameter & Wert \\ \hline \hline
         $\mu$ & 257,54(83) \\ \hline
-        $\sigma$ & 38.78(52) \\ \hline
+        $\sigma$ & 38,78(52) \\ \hline
         $A$ & 62,6(11) \\ \hline
+        $\chi^2$ & 698 \\ \hline
     \end{tabular}
     \label{tab:LandauAnpassungPulshohe}
 \end{table}
@@ -421,8 +425,9 @@ Die Parameter der Anpassungen sind in den Tabellen \ref{tab:LandauAnpassungPulsh
         $\mu$ & 260,47(83) \\ \hline
         $\sigma$ & 41,5(5) \\ \hline
         $A$ & 59(1) \\ \hline
+        $\chi^2$ & 1168 \\ \hline
     \end{tabular}
-    \label{tab:LandauAnpassungPulshohe}
+    \label{tab:GaussAnpassungPulshohe}
 \end{table}
 
 Durch die Anpassungen ist zu erkennen, dass die Landauverteilung besser passt als die Gaussverteilung, da die $\chi^2$-Werte der Anpassungen deutlich kleiner sind.
@@ -430,7 +435,7 @@ Dies deutet wie erwartet darauf hin, dass es sich um ein dünnes Szintillationsm
 
 
 \subsubsection*{Zufallskoinzidenz}
-Wie im Abschnitt \enquote{Zufallskoinzidenz} beschrieben, wurde die Zufallskoinzidenzrate auf 2 Arten bestimmt.
+Wie im Abschnitt \enquote{Zufallskoinzidenz} beschrieben, wurde die Zufallskoinzidenzrate auf 2 Arten gemessen.
 Für die zeitliche Zufallskoinzidenzrate wurde eine Zeitverzögerung von $\SI{20}{\micro\second}$ für den Diskriminator D25, $\SI{90}{\micro\second}$ für den Diskriminator D14 und 
 $\SI{165}{\micro\second}$ für den Diskriminator D2 gewählt, dabei kommen je $\SI{5}{\micro\second}$ durch die minimal Verzögerungszeit \cite{Anleitung}.
 Die räumliche Zufallskoinzidenz war für die Verteilung der Detektoren vorausgewählt, diese waren in einem rechtwinkligen Dreieck angeordnet (D11, D14 und D25), sodass ein einzelnes Teilchen keine Koinzidenz erzeugen kann.
@@ -468,14 +473,14 @@ Da für die räumlichen Zufallskoinzidenzrate auch bei 2 gleichzeitige Signale e
 \end{displaymath}
 Gemessen wurde eine Rate von $N_\text{Koin,Zeit}=3$ und $N_\text{Koin,Raum}=2569$.
 Wie durch Vergleich mit den theoretischen Werten zu sehen ist, hat die niedrige Schwellenspannung auch hier einen Einfluss, da die Anzahl an Zufallskoinzidenzen deutlich höher sind als die theoretischen Zufallskoinzidenzen.
-Aber qualitativ entspricht das schon noch unseren Erwartungen, da die zeitliche Zufallskoinzidenz fast bei 0 ist und die räumliche im gegensatz zu Theorie eine viel höhere Rate hat, dass folgt dadurch, dass
+Aber qualitativ entspricht das schon noch unseren Erwartungen, da die zeitliche Zufallskoinzidenz fast bei 0 ist und die räumliche im Gegensatz zur Theorie eine viel höhere Rate hat, dass folgt dadurch, dass
 die räumliche Zufallskonzidenz nicht nur für 3 koinizdierten sondern auch für 2 koinzidierten Signale schon auslöst. Abgesehen davon sind erneut wieder viele Ereignisse gemessen worden,
 die wahrscheinlich durch Rauschen in den Detektoren ausgelößt wurden.
 
 \subsection{Lebensdauer des Myon}
 Wie vorher schon erwähnt konnte nur die Schwellspannung für $Z_1$ von uns bestimmt werden, da der Dicke Szintillator Defekt war.
 Die weitere Auswertung wurde anhand der von der Tutorin zur Verfügung gestellten Daten ausgeführt.
-Diese sind in der Tabelle \ref{tab:LebensdauerRohdaten} zu finden und wurden über eine Gesamtmesszeit von $T=\SI{598756}{\second}$
+Diese sind in der Tabelle \ref{tab:ZahlrateLebensdauer} zu finden und wurden über eine Gesamtmesszeit von $T=\SI{598756}{\second}$
 und bei Schwellenspannungen von $Z_1=\SI{-115}{\milli\volt}$ $Z_2=\SI{-105}{\milli\volt}$ aufgenommen.
 
 \subsubsection*{Schwellenspannung}
@@ -488,7 +493,7 @@ Sattelpunkt entspricht.
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=\textwidth]{figures/Schwellenspannung_Lebensdauer.png}
-        \caption{Schwellenspannung aufgetragen gegen die nach dem Monitorkreis normierte Messkreis werte aus Tabelle \ref{}}
+        \caption{Schwellenspannung aufgetragen gegen die nach dem Monitorkreis normierte Messkreis werte aus Tabelle \ref{tab:RohdatenSchwellspannungLebensdauer}}
         \label{fig:SchwellspannungLebensdauer}
     \end{subfigure}
     \hfill
@@ -523,7 +528,6 @@ Deren Fehler lassen sich durch gaussische Fehlerfortpflanzung bestimmen zu:
     \Delta N_1&=\sqrt{\Delta N^2_\text{Start}-\Delta N^2_\text{tot}} \\
     \Delta N_2&=\sqrt{\Delta N^2_\text{Stopp}-\Delta N^2_\text{Start}} \\
 \end{align*}
-
 Damit folgt eine Anzahl an Zufallskoinzidenzen für jeden Zähler schritt von:
 \begin{displaymath}
     N_\text{Zufall}=\frac{\Delta t N_1 N_2}{T}
@@ -557,6 +561,7 @@ Hierzu wird die Anzahl an Ereignissen gegen die Zeit aufgetragen, wobei jeder Ka
 An diese Auftragung wird dann das Zerfallsgesetz \ref{eq:Zerfall} (\cite{Zerfallsgesetz}) angepasst.
 \begin{equation}
     N(t)=N_0\cdot e^{-\frac{t}{\tau}}
+    \label{eq:Zerfall}
 \end{equation}
 Hier ist $N_0$ die Anzahl an Teilchen zum Beginn, $t$ die vergangene Zeit, $\tau$ die Lebensdauer.
 Die Anpassung ist in der Abbildung \ref{fig:LebensdauerFit} zu sehen, die daraus erhaltenen Parameter sind in der Tabelle \ref{tab:ParameterLebensdauerFit} aufgetragen.
@@ -575,7 +580,7 @@ Die Anpassung ist in der Abbildung \ref{fig:LebensdauerFit} zu sehen, die daraus
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/Lebensdauer_fit_korrektur.png}
+    \includegraphics[width=0.8\textwidth]{figures/Lebensdauer_fit_korrektur.png}
     \caption{Anpassungsfunktion an die Messdaten der Lebensdauermessung}
     \label{fig:LebensdauerFit}
 \end{figure}
@@ -589,7 +594,8 @@ Genauigkeit der Experiments ist es ein qualitativ akzeptables Ergebnis, da hier 
 
 
 \section{Fazit}
-Insgesamt kann davon gesrochen werden, dass die Durchführung gut gelungen ist, die Ergebnisse sind aussagekräftig und mögliche Fehlerquellen konnten identifiziert werden und deren Konsequenzen analysiert werden.
+Insgesamt kann davon gesprochen werden, dass die Durchführung gut gelungen ist, die Ergebnisse sind aussagekräftig und mögliche Fehlerquellen konnten identifiziert werden und deren Konsequenzen analysiert werden.
+
 Für die Schwellspannung des D12 Szintillators konnte eine Schwellspannung von $\SI{-70}{\milli\volt}$ bestimmt werden, im nachhinein betrachtet ist dieser wohl zu niedrig eingestellt worden und die folgen dieser wurden
 an gegebener Stelle diskutiert.
 
@@ -605,6 +611,7 @@ Die Winkelverteilung konnte als $\cos^2$ verteilt ermittelt werden, die Anpassun
         $n$ & 1.82(6) \\ \hline
         $c$ & -08(35) \\ \hline
         $d$ & 03(20) \\ \hline
+        $\chi^2$ & 48.6 \\ \hline
     \end{tabular}
     \label{tab:CosinusAnpassungWinkelverteilungFazit}
 \end{table}
@@ -621,6 +628,7 @@ Landau- und eine Gausverteilung und der Vergleich zeigte eindeutig, dass die Ver
         $\mu$ & 257,54(83) \\ \hline
         $\sigma$ & 38.78(52) \\ \hline
         $A$ & 62,6(11) \\ \hline
+        $\chi^2$ & 698 \\ \hline
     \end{tabular}
     \label{tab:LandauAnpassungPulshoheFazit}
 \end{table}
@@ -644,7 +652,7 @@ Die Anzahl an Zufallskoinzidenzen pro Zeitschritt wurde mit
 \begin{displaymath}
     N_\text{Zufall}=\SI{27,00(2)}{}
 \end{displaymath}
-Wobei hier ein Fehler von 1 angenommen wurde, da es nur ganzzahlige Ereignisse geben kann.
+ermittelt, wobei hier ein Fehler von 1 angenommen wurde, da es nur ganzzahlige Ereignisse geben kann.
 
 Schlussendlich konnte eine Lebensdauer des Myons mit 
 \begin{displaymath}
@@ -681,7 +689,7 @@ bestimmt werden, dieser weicht um $3$-$\sigma$ vom Literaturwert ab ist aber im 
     \label{fig:LABView4}
 \end{figure}
 
-\subsection*{Winkelverteilung}
+\subsection{Winkelverteilung}
 \begin{table}[H]
     \centering
     \caption{Anpassungsparameter der Bestimmung der Schwellenspannung für die Winkelverteilung}
@@ -704,7 +712,7 @@ bestimmt werden, dieser weicht um $3$-$\sigma$ vom Literaturwert ab ist aber im 
         140 & 7.27e-04 & 2.02e-04 \\ \hline
         150 & 1.68e-04 & 9.71e-05 \\ \hline
     \end{tabular}   
-    \label{tab:LebensdauerRohdaten}
+    \label{tab:SchwellenspannungWinkelverteilung}
 \end{table}
 
 \begin{table}[H]
@@ -739,7 +747,7 @@ bestimmt werden, dieser weicht um $3$-$\sigma$ vom Literaturwert ab ist aber im 
     \label{fig:PulshoheWinkelverteilungAndereGruppe}
 \end{figure}
 
-\subsection*{Lebensdauer}
+\subsection{Lebensdauer}
 
 \begin{table}[H]
     \centering

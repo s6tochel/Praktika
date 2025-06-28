@@ -47,6 +47,32 @@
       \field{volume}{37}
       \field{year}{2010}
     \endentry
+    \entry{Wer}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=549c6b225a4037c88d1c1a302c225fb6}{%
+           family={Hermann\bibnamedelima Kolanski},
+           familyi={H\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Norbert\bibnamedelima Wermes},
+           giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{549c6b225a4037c88d1c1a302c225fb6}
+      \strng{fullhash}{549c6b225a4037c88d1c1a302c225fb6}
+      \strng{fullhashraw}{549c6b225a4037c88d1c1a302c225fb6}
+      \strng{bibnamehash}{549c6b225a4037c88d1c1a302c225fb6}
+      \strng{authorbibnamehash}{549c6b225a4037c88d1c1a302c225fb6}
+      \strng{authornamehash}{549c6b225a4037c88d1c1a302c225fb6}
+      \strng{authorfullhash}{549c6b225a4037c88d1c1a302c225fb6}
+      \strng{authorfullhashraw}{549c6b225a4037c88d1c1a302c225fb6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Teilchendetektoren}
+      \field{year}{2016}
+    \endentry
     \entry{Anleitung}{manual}{}{}
       \list{organization}{1}{%
         {Universität Bonn}%
@@ -198,7 +224,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Wer}
 \endrefsection
 \endinput
 
