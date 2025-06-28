@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  28 JUN 2025 10:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  28 JUN 2025 10:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -742,46 +742,6 @@ No file V529.toc.
 
 
 [2]
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V525/Latex/V529.tex:44: Undefined control sequence.
-l.44 ...er des angeregten Zustands $5/2^+$ des \ce
-                                                  {^{133}Cs} Nuklids untersu...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V525/Latex/V529.tex:44: Missing $ inserted.
-<inserted text> 
-                $
-l.44 ... des angeregten Zustands $5/2^+$ des \ce{^
-                                                  {133}Cs} Nuklids untersuch...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V525/Latex/V529.tex:44: Extra }, or forgotten $.
-l.44 ...eregten Zustands $5/2^+$ des \ce{^{133}Cs}
-                                                   Nuklids untersucht werden...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V525/Latex/V529.tex:46: Missing $ inserted.
-<inserted text> 
-                $
-l.46 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (1015.6394pt too wide) in paragraph at lines 44--46
-[]\OML/cmm/m/it/10 CsNuklidsuntersuchtwerden:DabeiwirdeinFast \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Slowkoinzidenzkreisaufgebaut; dieseArtderSchaltungsollverstandenwerdenunddieeinzelnennuklearenelektronikKomponentensollenuntersuchtwerden:EssollderEffektdereinzelnenKomponentenaufdasSignalmiteinemOszilloskopuntersuchtwerden:$ 
- []
-
-
 
 [3]
 
@@ -834,26 +794,54 @@ LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 75.
 
 (./a_durchführung.tex) (./b_auswertung.tex) (./c_anhang.tex)
 
-! LaTeX Error: File `e_anhang.tex' not found.
+[4]
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
+[5]
 
-Enter file name: 
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V525/Latex/V529.tex:96: Emergency stop.
-<read *> 
-         
-l.96 \input{e_anhang.tex}
-                         ^^M
-*** (cannot \read from terminal in nonstop modes)
+[6]
 
- 
+[7]
+
+LaTeX Warning: Empty bibliography on input line 98.
+
+
+Package caption Warning: Unused \captionsetup[sub] on input line 23.
+See the caption package documentation for explanation.
+
+(./V529.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-03-26>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                V529
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'V529.run.xml'.
+\openout1 = `V529.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 26385 strings out of 469626
- 523663 string characters out of 5475183
- 1331124 words of memory out of 5000000
- 52916 multiletter control sequences out of 15000+600000
+ 26414 strings out of 469626
+ 524016 string characters out of 5475183
+ 1332124 words of memory out of 5000000
+ 52920 multiletter control sequences out of 15000+600000
  632376 words of font info for 60 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  75i,7n,80p,1076b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-h:/Meine Ablage/Bonn_studium/10. Semester/Praktikum 5/Praktika/Praktikum 5/V525/Latex/V529.tex:96:  ==> Fatal error occurred, no output PDF file produced!
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on V529.pdf (7 pages, 114954 bytes).
+PDF statistics:
+ 155 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+
