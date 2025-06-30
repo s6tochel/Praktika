@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import os
 from scipy.optimize import curve_fit
 from scipy.integrate import quad as integrate
+from np_to_latex import to_latex_table
 
 current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
 parent_dir_path = os.path.abspath(os.path.join(current_path, os.pardir)) + "/"
@@ -17,6 +18,8 @@ b0 = data[3]
 b0_err = data[5]
 
 dt = np.array( [32, 48, 64, 80, 96] ) -5
+
+to_latex_table([dt, b0, b0_err], data_path + "Zeitkalibration_data.txt", round_to=[1,0,0])
 
 ################################################################################################
 
@@ -50,12 +53,12 @@ fit_vals = np.linspace(0, np.max(xdata), 300)
 
 plt.figure()
 plt.grid()
-plt.errorbar(xdata, ydata, xerr=xerr, yerr=yerr, fmt='o', label=f'Messfehler', color='blue', ms=2, zorder=1, alpha=1)
+plt.errorbar(xdata, ydata, xerr=xerr, yerr=yerr, fmt='o', label=f'Messwerte', color='blue', ms=2, zorder=1, alpha=1)
 plt.plot(fit_vals, fit_func(fit_vals, *popt), label=r"Fit ($\chi_\text{}^2 \approx$" + f"{np.round(chi_squared, 3)})", color="black", linewidth=1, zorder=3, alpha=0.8)
 plt.legend()
 
 plt.title("Zeitkalibration")
-plt.xlabel(r'Zeitabstand des ns-Delay $\Delta t$')
+plt.xlabel(r'Zeitabstand des ns-Delay $\Delta t$ / ns')
 plt.ylabel(r'Mittlere Kanalnummer der gefitteten Peaks $b_0$')
 
 plt.savefig(figure_path + "Zeitkalibration" + ".png", dpi=300)

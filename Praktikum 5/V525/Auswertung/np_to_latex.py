@@ -53,26 +53,3 @@ def join_files(list_of_files, new_file_name):
     new_file = open(new_file_name, "w")
     new_file.write(entire_text)
     new_file.close()
-
-
-
-current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
-data_path = current_path + "line_data/"
-
-file_list = [data_path + f for f in os.listdir(data_path) if isfile(join(data_path, f))]
-file_names = [f for f in os.listdir(data_path) if isfile(join(data_path, f))]
-print(file_names)
-
-sorted_file_names = ['Untergrund_HPGe_fits.txt', 'Cs_HPGe_fits.txt', 'Co_HPGe_fits1.txt', 'Co_HPGe_fits2.txt', 'Eu_HPGe_fits1.txt', 'Eu_HPGe_fits2.txt', 'Eu_HPGe_fits3.txt', 'Eu_HPGe_fits4.txt', 'Eu_HPGe_fits5.txt', 'Eu_HPGe_fits6.txt', 'Eu_HPGe_fits7.txt', 'Eu_HPGe_fits8.txt', 'Eu_HPGe_fits9.txt', 'Eu_HPGe_fits10.txt', 'Eu_HPGe_fits11.txt']
-
-sorted_file_list = [data_path + f for f in sorted_file_names]
-
-join_files(sorted_file_list, data_path + "big_data.txt")
-
-data = np.loadtxt(data_path + "big_data.txt", delimiter=" ", usecols = range(2, 8)).T
-
-data = np.insert(data, 0, np.array(range(data[0].size))+1, axis=0)
-
-rounding_list = [0, 0, 0, 2, 2, 2, 2]
-
-to_latex_table(data, current_path + "latex_table_data",round_to=rounding_list)

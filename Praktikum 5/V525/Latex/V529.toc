@@ -7,9 +7,11 @@
 \contentsline {subsection}{\numberline {3.3}Zeitkalibration des TAC}{6}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Lebensdauerbestimmung}{6}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Auswertung}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Slowkoinzidenzkreis}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Fastkoinzidenzkreis}{6}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Zeitkalibration des TAC}{6}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Lebensdauerbestimmung}{6}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Fazit}{6}{section.5}%
-\contentsline {section}{\numberline {6}Anhang}{6}{section.6}%
+\contentsline {subsection}{\numberline {4.1}Fitten der Spektrallinien}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Energieeichung}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Energieauflösung für die Spektrallinien}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Zeitkalibration des TAC}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Eingestellte Schwellen der SCAs und CFDs}{11}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Ermittlung der Lebensdauer}{13}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Fazit}{13}{section.5}%
+\contentsline {section}{\numberline {6}Anhang}{13}{section.6}%

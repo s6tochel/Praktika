@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import os
 from scipy.optimize import curve_fit
 from scipy.integrate import quad as integrate
+from np_to_latex import to_latex_table
 
 current_path = os.path.dirname(os.path.realpath(__file__)) + "/"
 parent_dir_path = os.path.abspath(os.path.join(current_path, os.pardir)) + "/"
@@ -17,15 +18,15 @@ data3 = np.loadtxt(data_path + "Spektrum3_b.txt", delimiter=" ", dtype=float)
 
 data = np.vstack((data1, data2, data3)).T
 
+line_num = data[0]
 b0 = data[3]
 b0_err = data[5]
 
 delete_idx_list = [3, 4, 6]
 
+line_num = np.delete(line_num, delete_idx_list)
 b0 = np.delete(b0, delete_idx_list)
 b0_err = np.delete(b0_err, delete_idx_list)
-
-print(len(b0))
 
 E_lit = np.array( [510.9989, 30.625, 30.973, 81, 276.4, 302.9, 356, 383.8] )
 
@@ -36,6 +37,7 @@ xerr = np.zeros(len(E_lit))
 ydata = b0
 yerr = b0_err
 
+to_latex_table([line_num, E_lit, b0, b0_err], data_path + "Eichung_data_rechts.txt", round_to=[0,1,0,0])
 
 ################################################################################################
 
@@ -61,7 +63,7 @@ fit_vals = np.linspace(np.min(xdata), np.max(xdata), 300)
 
 plt.figure()
 plt.grid()
-plt.errorbar(xdata, ydata, xerr=xerr, yerr=yerr, fmt='o', label=f'Messfehler', color='blue', ms=2, zorder=1, alpha=1)
+plt.errorbar(xdata, ydata, xerr=xerr, yerr=yerr, fmt='o', label=f'Messwerte', color='blue', ms=2, zorder=1, alpha=1)
 plt.plot(fit_vals, fit_func(fit_vals, *popt), label=r"Fit ($\chi_\text{}^2 \approx$" + f"{np.round(chi_squared, 2)})", color="black", linewidth=1, zorder=3, alpha=0.8)
 plt.legend()
 

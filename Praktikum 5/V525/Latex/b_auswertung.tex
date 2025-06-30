@@ -1,10 +1,361 @@
 \section{Auswertung}
 
-\subsection{Slowkoinzidenzkreis}
+\subsection{Fitten der Spektrallinien}
 
-\subsection{Fastkoinzidenzkreis}
+\begin{equation}
+    N(b) = (H_1 + b \cdot H_2) + \sum_{i=1}^{n} A_i \cdot \exp \left( - \frac{(b - b_{0,i})^2}{2 \sigma_{b,i}^2}\right)
+    \label{eq:LinienFitFunktion}
+\end{equation}
 
+\begin{table}
+    \centering
+    \caption{Mittelwerte $b_0$, Standartabweichungen $\sigma_b$ und zugehöriger Fehler $\Delta \sigma_b$ der gemessenen Spektrallinien (Peaks) in MCA-Kanälen (Rechte Seite)}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         Abb. & Peak Nr. & $b_0$ & $\sigma_b$ & $\Delta \sigma_b$ \\ \hline \hline
+         \ref{fig:Spektrum2} & 1 & 6842 & 219,7 & 0,5 \\ \hline
+         \ref{fig:Spektrum3_a} & 1 & 453 & 27,6 & 0,2 \\ \hline
+         \ref{fig:Spektrum3_a} & 2 & 472 & 61,6 & 1,1 \\ \hline
+         \ref{fig:Spektrum3_a} & 3 & 756 & 49,0 & 2,0 \\ \hline
+         \ref{fig:Spektrum3_a} & 4 & 980 & 95,3 & 2,4 \\ \hline
+         \ref{fig:Spektrum3_a} & 5 & 1198 & 54,3 & 0,2 \\ \hline
+         \ref{fig:Spektrum3_a} & 6 & 1682 & 59,1 & 3,0 \\ \hline
+         \ref{fig:Spektrum3_b} & 1 & 3921 & 329,8 & 26,5 \\ \hline
+         \ref{fig:Spektrum3_b} & 2 & 4178 & 133,2 & 4,9 \\ \hline
+         \ref{fig:Spektrum3_b} & 3 & 4847 & 186,7 & 2,1 \\ \hline
+         \ref{fig:Spektrum3_b} & 4 & 5317 & 168,8 & 4,8 \\ \hline
+    \end{tabular}
+    \label{tab:PeakWerte1}
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{Mittelwerte $b_0$, Standartabweichungen $\sigma_b$ und zugehöriger Fehler $\Delta \sigma_b$ der gemessenen Spektrallinien (Peaks) in MCA-Kanälen (Linke Seite)}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         Abb. & Peak Nr. & $b_0$ & $\sigma_b$ & $\Delta \sigma_b$ \\ \hline \hline
+         \ref{fig:Spektrum6} & 1 & 7080 & 222,0 & 0,7 \\ \hline
+         \ref{fig:Spektrum7_a} & 1 & 259 & 94,8 & 13,8 \\ \hline
+         \ref{fig:Spektrum7_a} & 2 & 441 & 27,1 & 0,3 \\ \hline
+         \ref{fig:Spektrum7_a} & 3 & 454 & 82,7 & 8,4 \\ \hline
+         \ref{fig:Spektrum7_a} & 4 & 746 & 50,6 & 1,5 \\ \hline
+         \ref{fig:Spektrum7_a} & 5 & 972 & 101,9 & 2,6 \\ \hline
+         \ref{fig:Spektrum7_a} & 6 & 1197 & 52,6 & 0,2 \\ \hline
+         \ref{fig:Spektrum7_a} & 7 & 1684 & 61,1 & 3,4 \\ \hline
+         \ref{fig:Spektrum7_b} & 1 & 4197 & 225,1 & 2,1 \\ \hline
+         \ref{fig:Spektrum7_b} & 2 & 4251 & 0,152 & 0,009 \\ \hline
+         \ref{fig:Spektrum7_b} & 3 & 4956 & 162,5 & 1,3 \\ \hline
+         \ref{fig:Spektrum7_b} & 4 & 5346 & 220,3 & 8,2 \\ \hline
+    \end{tabular}
+    \label{tab:PeakWerte2}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Energieeichung}
+
+\begin{table}
+    \centering
+    \caption{Zugeordnete Literaturwerte der Energien $E_\text{lit.}$ zu gemessenen Spektrallinie mit Mittelwert $b_0$ und Standartabweichung $\sigma_b$ in MCA-Kanälen (Rechte Seite)}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         Abb. & Peak Nr. & $E_\text{lit.}$ & $b_0$ & $\sigma_b$ \\ \hline \hline
+         \ref{fig:Spektrum2} & 1 & 511,0 & 6842 & 220 \\ \hline
+         \ref{fig:Spektrum3_a} & 1 & 30,6 & 453 & 28 \\ \hline
+         \ref{fig:Spektrum3_a} & 2 & 31,0 & 472 & 62 \\ \hline
+         \ref{fig:Spektrum3_a} & 5 & 81,0 & 1198 & 54 \\ \hline
+         \ref{fig:Spektrum3_b} & 1 & 276,4 & 3921 & 330 \\ \hline
+         \ref{fig:Spektrum3_b} & 2 & 302,9 & 4178 & 133 \\ \hline
+         \ref{fig:Spektrum3_b} & 3 & 356,0 & 4847 & 187 \\ \hline
+         \ref{fig:Spektrum3_b} & 4 & 383,8 & 5317 & 169 \\ \hline
+    \end{tabular}
+    \label{tab:Energieeichung1}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{Energieeichung1.png}
+  \caption{Linearer Fit der Mittelwerte $b_0$ der gefitteten Na- und Ba-Linien gegen die Literaturwerte der Energieen $E_\text{lit.}$ (Rechte Seite)}
+\label{fig:Energieeichung1}
+\end{figure}
+
+\begin{align*}
+    b_\text{R} &= m_\text{R} \cdot E + n_\text{R} \\
+    m_\text{R} &= \SI{13,59 \pm 0,25}{\per \kilo \eV} \\
+    n_\text{R} &= \SI{49,27 \pm 27,15}{}
+\end{align*}
+
+\begin{table}
+    \centering
+    \caption{Zugeordnete Literaturwerte der Energien $E_\text{lit.}$ zu gemessenen Spektrallinien mit Mittelwert $b_0$ und Standartabweichung $\sigma_b$ in MCA-Kanälen (Linke Seite)}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         Abb. & Peak Nr. & $E_\text{lit.}$ & $b_0$ & $\sigma_b$ \\ \hline \hline
+         \ref{fig:Spektrum6} & 1 & 511,0 & 7080 & 222 \\ \hline
+         \ref{fig:Spektrum7_a} & 2 & 30,6 & 441 & 27 \\ \hline
+         \ref{fig:Spektrum7_a} & 3 & 31,0 & 454 & 83 \\ \hline
+         \ref{fig:Spektrum7_a} & 6 & 81,0 & 1197 & 53 \\ \hline
+         \ref{fig:Spektrum7_b} & 2 & 302,9 & 4251 & 0 \\ \hline
+         \ref{fig:Spektrum7_b} & 3 & 356,0 & 4956 & 162 \\ \hline
+         \ref{fig:Spektrum7_b} & 4 & 383,8 & 5346 & 220 \\ \hline
+    \end{tabular}
+    \label{tab:Energieeichung2}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{Energieeichung2.png}
+  \caption{Linearer Fit der Mittelwerte $b_0$ der gefitteten Na- und Ba-Linien gegen die Literaturwerte der Energieen $E_\text{lit.}$ (Linke Seite)}
+\label{fig:Energieeichung2}
+\end{figure}
+
+\begin{align*}
+    b_\text{L} &= m_\text{L} \cdot E + n_\text{L} \\
+    m_\text{L} &= \SI{13,95 \pm 0,09}{\per \kilo \eV} \\
+    n_\text{L} &= \SI{24,22 \pm 26,49}{}
+\end{align*}
+
+\begin{align}
+    \begin{split}
+        b &= m \cdot E + n\\
+        E &= \frac{1}{m} \cdot b + \left(-\frac{n}{m}\right) = m' \cdot b + n'\\
+        m' &= \frac{1}{m} \quad \text{und} \quad n' = -\frac{n}{m}
+    \end{split}
+    \label{eq:Energieumwandlung}
+\end{align}
+
+\begin{equation}
+    \Delta y(x_1, x_2,\ldots,x_n) = \sqrt{\sum_{i=1}^{n} \left(\pdv{y}{x_i} \cdot \Delta x_i\right)^2}
+    \label{eq:Fehlerfortpflanzung}
+\end{equation}
+
+\begin{align}
+    \begin{split}
+        \Delta m' &= \frac{\Delta m}{m^2} \\
+        \Delta n' &= \sqrt{\left(\frac{\Delta n}{m}\right)^2 + \left(\frac{n \cdot \Delta m}{m^2}\right)^2}
+    \end{split}
+    \label{eq:FehlerEnergieumwandlung1}
+\end{align}
+
+\begin{equation}
+    \Delta E = \sqrt{(b \cdot \Delta m')^2 + (m' \cdot \Delta b)^2 + (\Delta n')^2}
+    \label{eq:FehlerEnergieumwandlung2}
+\end{equation}
+
+\begin{align}
+    \begin{split}
+        E &= m_\text{R}' \cdot b_\text{R} + n_\text{R}' \\
+        m_\text{R}' &= \SI{73,58 \pm 1,37}{\eV} \\
+        n_\text{R}' &= \SI{-3,625 \pm 1,999}{\kilo\eV}
+    \end{split}
+    \label{eq:EnergieeichungR}
+\end{align}
+
+\begin{align}
+    \begin{split}
+        E &= m_\text{L}' \cdot b_\text{L} + n_\text{L}' \\
+        m_\text{L}' &= \SI{71,67 \pm 0,50}{\eV} \\
+        n_\text{L}' &= \SI{-1,736 \pm 1,899}{\kilo\eV}
+    \end{split}
+    \label{eq:EnergieeichungL}
+\end{align}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Energieauflösung für die Spektrallinien}
+
+\begin{align}
+    \begin{split}
+        \text{FWHM} &= 2 \sqrt{2 \ln 2} \cdot (m' \cdot \sigma_b) \\
+        \Delta \text{FWHM} &= \text{FWHM} \cdot \sqrt{\left( \frac{\Delta m'}{m'} \right)^2 + \left( \frac{\Delta \sigma_b}{\sigma_b} \right)^2}
+    \end{split}
+    \label{eq:FWHM}
+\end{align}
+
+\begin{table}
+    \centering
+    \caption{Hablwertsbreiten FWHM der charakteristischen Na- und Ba-Linien und zugehörige Fehler (in \si{\kilo\eV})}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         & & Na \SI{511}{\kilo\electronvolt} & Ba \SI{81}{\kilo\electronvolt} & Ba \SI{356}{\kilo\electronvolt} \\ \hline \hline
+        
+         Rechts & FWHM & 38,12 & 9,41 & 32,35 \\ \hline
+         & $\Delta$FWHM & 0,72 & 0,17 & 0,70 \\ \hline \hline
+
+         Links & FWHM & 37,13 & 8,88 & 27,43 \\ \hline
+         & $\Delta$FWHM & 0,28 & 0,07 & 0,29 \\ \hline
+    \end{tabular}
+    \label{tab:Halbwertsbreiten}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Zeitkalibration des TAC}
 
-\subsection{Lebensdauerbestimmung}
+\begin{table}
+    \centering
+    \caption{Auf ns-Delay eingestellte Verzögerung $\Delta t$ und gemessene Mittelwerte $b_0$ und Standartabweichungen $\sigma_b$ der Na Promptkurven in MCA-Kanälen}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         $\Delta t$ / \si{\nano\second} & $b_0$ & $\sigma_b$ \\ \hline \hline
+         27 & 2097 & 98 \\ \hline
+         43 & 3351 & 102 \\ \hline
+         59 & 4599 & 101 \\ \hline
+         75 & 5864 & 101 \\ \hline
+         91 & 7113 & 98 \\ \hline
+    \end{tabular}
+    \label{tab:Zeitkalibration}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{Zeitkalibration.png}
+  \caption{Linearer Fit der Mittelwerte $b_0$ der Na Promptkurven gegen die eingestellten Verzögerung $\Delta t$ des ns-Delays zur Zeitkalibration}
+\label{fig:Zeitkalibration}
+\end{figure}
+
+\begin{align*}
+    b_t &= m_t \cdot \Delta t + n_t \\
+    m_t &= \SI{78,41 \pm 1,95}{\per \nano \second} \\
+    n_t &= \SI{-21,43 \pm 123,55}{}
+\end{align*}
+
+\begin{align}
+    \begin{split}
+        \Delta t &= m_t' \cdot b_t + n_t' \\
+        m_t' &= \SI{12,75 \pm 0,32}{\pico \second} \\
+        n_t' &= \SI{0,273 \pm 0,002}{\nano \second}
+    \end{split}
+    \label{eq:Zeitkalibration}
+\end{align}
+
+\begin{equation*}
+    1 \text{bin} \, \widehat{=} \, \SI{12,75 \pm 0,32}{\pico\second}
+    \label{eq:Zeitkalibration2}
+\end{equation*}
+
+\begin{displaymath}
+    \sigma_b = \SI{97,81 \pm 1,46}{}
+\end{displaymath}
+
+\begin{align*}
+    \sigma_t &= m_t' \cdot \sigma_b \\
+    \Rightarrow \sigma_t &= \SI{1,247 \pm 0,036}{\nano \second}
+\end{align*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Eingestellte Schwellen der SCAs und CFDs}
+
+\begin{table}
+    \centering
+    \caption{Eingestellte SCA-Schwellen angegeben in MCA-Kanälen}
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+         Seite & Abb. & Linie / \si{\kilo\eV} & Unten & Oben & Intervall \\ \hline \hline
+        
+         Rechts & \ref{fig:Spektrum4} & Na 511 & 5962 & 7691 & 1729 \\ \hline
+         Links & \ref{fig:Spektrum8} & Na 511 & 6398 & 7708 & 1310 \\ \hline
+         Rechts & \ref{fig:Spektrum13} & Ba 81 & 957 & 1466 & 509 \\ \hline
+         Links & \ref{fig:Spektrum14} & Ba 356 & 4592 & 5423 & 831 \\ \hline
+    \end{tabular}
+    \label{tab:SCA_Schwellen1}
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{Eingestellte SCA-Schwellen angegeben in Energie / \si{\kilo\eV}}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         Seite & Linie / \si{\kilo\eV} & Unten & Oben & Intervall \\ \hline \hline
+        
+         Rechts & Na 511 & \SI{435,0 \pm 8,5}{} & \SI{562,3 \pm 10,8}{} & \SI{127,3 \pm 13,7}{} \\ \hline
+         Links & Na 511 & \SI{456,8 \pm 4,0}{} & \SI{550,7 \pm 4,5}{} & \SI{93,9 \pm 6,0}{} \\ \hline
+         Rechts & Ba 81 & \SI{66,8 \pm 2,8}{} & \SI{104,2 \pm 3,2}{} & \SI{37,4 \pm 4,3}{} \\ \hline
+         Links & Ba 356 & \SI{327,4 \pm 3,3}{} & \SI{386,9 \pm 3,6}{} & \SI{59,5 \pm 4,9}{} \\ \hline
+    \end{tabular}
+    \label{tab:SCA_Schwellen2}
+\end{table}
+
+\begin{equation}
+    \Delta \left(\frac{N_1}{N_2}\right) = \sqrt{\frac{N_1}{N_2^2} + \frac{N_1^2}{N_2^3}}
+    \label{eq:SchwellenFehler}
+\end{equation}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{SchwelleCFD1.png}
+  \caption{Quotient des aufgenommenen Ba-Spektrums vor ($N_1$) und hinter ($N_2$) dem CFD-Modul zur Bestimmung der eingestellten Schwelle (Rechte Seite)}
+\label{fig:SchwelleCFD1}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{SchwelleCFD2.png}
+  \caption{Quotient des aufgenommenen Ba-Spektrums vor ($N_1$) und hinter ($N_2$) dem CFD-Modul zur Bestimmung der eingestellten Schwelle (Linke Seite)}
+\label{fig:SchwelleCFD2}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Ermittlung der Lebensdauer}
+
+\begin{equation}
+    M (t) = \frac{I}{2 \tau} e^{\frac{\sigma_b^2 - 2 \tau (t - t_0)}{2 \tau^2}} \cdot \{\text{er} f(a) + \text{er} f(b)\}
+    \label{eq:LebensdauerFitFunktion}
+\end{equation}
+
+\begin{equation}
+    \text{er} f(x) = \int_{0}^{x} e^{-y^2} dy
+    \label{eq:LebensdauerFehlerfunktion}
+\end{equation}
+
+\begin{equation}
+    a = \frac{\sigma_b^2 + \tau t_0}{\sqrt{2} \sigma_b \tau}
+    \quad \text{und} \quad
+    b = \frac{\tau (t - t_0) - \sigma_b^2}{\sqrt{2} \sigma_b \tau}
+    \label{eq:LebensdauerAB}
+\end{equation}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{Lebensdauerfit.png}
+  \caption{Fit der Faltungs-Funktion \ref{eq:LebensdauerFitFunktion} an die Lebensdauerkurve des betrachteten $^{133}$Cs-Zustandes}
+\label{fig:Lebensdauerfit}
+\end{figure}
+
+\begin{align}
+    \begin{split}
+        I_b &= \SI{0,316 \pm 0,002}{} \\
+        t_{0,b} &= \SI{1861 \pm 2}{} \\
+        \tau_b &= \SI{830 \pm 2}{} \\
+    \end{split}
+    \label{eq:LebensdauerParameter}
+\end{align}
+
+\begin{displaymath}
+    \tau = \SI{10,86 \pm 0,27}{\nano\second}
+\end{displaymath}
+
+\begin{displaymath}
+    T_{1/2} = \ln{2} \cdot \tau = \SI{7,52 \pm 0,19}{\nano\second}
+\end{displaymath}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
