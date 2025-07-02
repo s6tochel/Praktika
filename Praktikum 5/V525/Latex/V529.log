@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.14)  30 JUN 2025 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.14)  1 JUL 2025 11:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -645,14 +645,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./V529.aux
-
-LaTeX Warning: Label `tab:Halbwertsbreiten' multiply defined.
-
-
-LaTeX Warning: Label `tab:Halbwertsbreiten' multiply defined.
-
-)
+ (./V529.aux)
 \openout1 = `V529.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -754,7 +747,7 @@ LaTeX Warning: Reference `cfd1' on page 4 undefined on input line 75.
 
 LaTeX Warning: Reference `cfd2' on page 4 undefined on input line 75.
 
-<../Abbildungen/cfd1.png, id=58, 702.82574pt x 384.2355pt>
+<../Abbildungen/cfd1.png, id=62, 702.82574pt x 384.2355pt>
 File: ../Abbildungen/cfd1.png Graphic file (type png)
 <use ../Abbildungen/cfd1.png>
 Package pdftex.def Info: ../Abbildungen/cfd1.png  used on input line 78.
@@ -765,7 +758,7 @@ LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 79.
 
 LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 79.
 
-<../Abbildungen/cfd2.png, id=59, 1204.5pt x 516.93124pt>
+<../Abbildungen/cfd2.png, id=63, 1204.5pt x 516.93124pt>
 File: ../Abbildungen/cfd2.png Graphic file (type png)
 <use ../Abbildungen/cfd2.png>
 Package pdftex.def Info: ../Abbildungen/cfd2.png  used on input line 84.
@@ -777,19 +770,24 @@ LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 85.
 LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 85.
 
 (./a_durchführung.tex) (./b_Auswertung.tex
+Overfull \hbox (6.08401pt too wide) in paragraph at lines 5--10
+\OT1/cmr/m/n/10 Um mit den auf-ge-nom-me-nen Spek-tren die Ener-gie-ei-chung durchf[]uhren zu k[]onnen,
+ []
+
+
 
 [4]
 
 [5 <../Abbildungen/cfd1.png> <../Abbildungen/cfd2.png>]
-<../Abbildungen/Energieeichung1.png, id=107, 462.528pt x 346.896pt>
+<../Abbildungen/Energieeichung1.png, id=119, 462.528pt x 346.896pt>
 File: ../Abbildungen/Energieeichung1.png Graphic file (type png)
 <use ../Abbildungen/Energieeichung1.png>
-Package pdftex.def Info: ../Abbildungen/Energieeichung1.png  used on input line 78.
+Package pdftex.def Info: ../Abbildungen/Energieeichung1.png  used on input line 92.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Energieeichung2.png, id=115, 462.528pt x 346.896pt>
+<../Abbildungen/Energieeichung2.png, id=127, 462.528pt x 346.896pt>
 File: ../Abbildungen/Energieeichung2.png Graphic file (type png)
 <use ../Abbildungen/Energieeichung2.png>
-Package pdftex.def Info: ../Abbildungen/Energieeichung2.png  used on input line 108.
+Package pdftex.def Info: ../Abbildungen/Energieeichung2.png  used on input line 122.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
 
 
@@ -797,171 +795,173 @@ Package pdftex.def Info: ../Abbildungen/Energieeichung2.png  used on input line 
 
 [7]
 
-[8 <../Abbildungen/Energieeichung1.png> <../Abbildungen/Energieeichung2.png>]
-<../Abbildungen/Zeitkalibration.png, id=149, 462.528pt x 346.896pt>
+[8 <../Abbildungen/Energieeichung1.png>]
+
+[9 <../Abbildungen/Energieeichung2.png>]
+<../Abbildungen/Zeitkalibration.png, id=165, 462.528pt x 346.896pt>
 File: ../Abbildungen/Zeitkalibration.png Graphic file (type png)
 <use ../Abbildungen/Zeitkalibration.png>
-Package pdftex.def Info: ../Abbildungen/Zeitkalibration.png  used on input line 215.
+Package pdftex.def Info: ../Abbildungen/Zeitkalibration.png  used on input line 229.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
 
 
-[9]
+[10]
 
-[10 <../Abbildungen/Zeitkalibration.png>]
-<../Abbildungen/SchwelleCFD1.png, id=174, 462.528pt x 346.896pt>
+[11 <../Abbildungen/Zeitkalibration.png>]
+<../Abbildungen/SchwelleCFD1.png, id=190, 462.528pt x 346.896pt>
 File: ../Abbildungen/SchwelleCFD1.png Graphic file (type png)
 <use ../Abbildungen/SchwelleCFD1.png>
-Package pdftex.def Info: ../Abbildungen/SchwelleCFD1.png  used on input line 291.
+Package pdftex.def Info: ../Abbildungen/SchwelleCFD1.png  used on input line 305.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/SchwelleCFD2.png, id=175, 462.528pt x 346.896pt>
+<../Abbildungen/SchwelleCFD2.png, id=191, 462.528pt x 346.896pt>
 File: ../Abbildungen/SchwelleCFD2.png Graphic file (type png)
 <use ../Abbildungen/SchwelleCFD2.png>
-Package pdftex.def Info: ../Abbildungen/SchwelleCFD2.png  used on input line 298.
+Package pdftex.def Info: ../Abbildungen/SchwelleCFD2.png  used on input line 312.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
 
 
-[11]
+[12]
 
-[12 <../Abbildungen/SchwelleCFD1.png> <../Abbildungen/SchwelleCFD2.png>]
-<../Abbildungen/Lebensdauerfit.png, id=197, 462.528pt x 346.896pt>
+[13 <../Abbildungen/SchwelleCFD1.png> <../Abbildungen/SchwelleCFD2.png>]
+<../Abbildungen/Lebensdauerfit.png, id=213, 462.528pt x 346.896pt>
 File: ../Abbildungen/Lebensdauerfit.png Graphic file (type png)
 <use ../Abbildungen/Lebensdauerfit.png>
-Package pdftex.def Info: ../Abbildungen/Lebensdauerfit.png  used on input line 327.
+Package pdftex.def Info: ../Abbildungen/Lebensdauerfit.png  used on input line 341.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
 ) (./c_anhang.tex
-<../Abbildungen/Spektren/Spektrum1.png, id=200, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum1.png, id=216, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum1.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum1.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum1.png  used on input line 5.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum2.png, id=201, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum2.png, id=217, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum2.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum2.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum2.png  used on input line 12.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum3.png, id=202, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum3.png, id=218, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum3.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum3.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum3.png  used on input line 19.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum3_a3.png, id=203, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum3_a3.png, id=219, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum3_a3.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum3_a3.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum3_a3.png  used on input line 26.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum3_b.png, id=204, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum3_b.png, id=220, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum3_b.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum3_b.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum3_b.png  used on input line 33.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum4.png, id=205, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum4.png, id=221, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum4.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum4.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum4.png  used on input line 40.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum5.png, id=206, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum5.png, id=222, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum5.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum5.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum5.png  used on input line 50.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum6.png, id=207, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum6.png, id=223, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum6.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum6.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum6.png  used on input line 57.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum7.png, id=208, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum7.png, id=224, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum7.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum7.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum7.png  used on input line 64.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum7_a.png, id=209, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum7_a.png, id=225, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum7_a.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum7_a.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum7_a.png  used on input line 71.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum7_b.png, id=210, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum7_b.png, id=226, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum7_b.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum7_b.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum7_b.png  used on input line 78.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum8.png, id=211, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum8.png, id=227, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum8.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum8.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum8.png  used on input line 85.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum9.png, id=212, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum9.png, id=228, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum9.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum9.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum9.png  used on input line 95.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum10.png, id=213, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum10.png, id=229, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum10.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum10.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum10.png  used on input line 102.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum11.png, id=214, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum11.png, id=230, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum11.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum11.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum11.png  used on input line 109.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum12.png, id=215, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum12.png, id=231, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum12.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum12.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum12.png  used on input line 116.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum12_a.png, id=216, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum12_a.png, id=232, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum12_a.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum12_a.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum12_a.png  used on input line 123.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum12_b.png, id=217, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum12_b.png, id=233, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum12_b.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum12_b.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum12_b.png  used on input line 130.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<../Abbildungen/Spektren/Spektrum13.png, id=218, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum13.png, id=234, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum13.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum13.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum13.png  used on input line 139.
 (pdftex.def)             Requested size: 172.5pt x 129.37639pt.
-<../Abbildungen/Spektren/Spektrum13_a.png, id=219, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum13_a.png, id=235, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum13_a.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum13_a.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum13_a.png  used on input line 145.
 (pdftex.def)             Requested size: 172.5pt x 129.37639pt.
-<../Abbildungen/Spektren/Spektrum14.png, id=220, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum14.png, id=236, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum14.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum14.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum14.png  used on input line 157.
 (pdftex.def)             Requested size: 172.5pt x 129.37639pt.
-<../Abbildungen/Spektren/Spektrum14_a.png, id=221, 462.528pt x 346.896pt>
+<../Abbildungen/Spektren/Spektrum14_a.png, id=237, 462.528pt x 346.896pt>
 File: ../Abbildungen/Spektren/Spektrum14_a.png Graphic file (type png)
 <use ../Abbildungen/Spektren/Spektrum14_a.png>
 Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum14_a.png  used on input line 163.
 (pdftex.def)             Requested size: 172.5pt x 129.37639pt.
 )
 
-[13 <../Abbildungen/Lebensdauerfit.png>]
+[14 <../Abbildungen/Lebensdauerfit.png>]
 
-[14 <../Abbildungen/Spektren/Spektrum1.png> <../Abbildungen/Spektren/Spektrum2.png>]
+[15 <../Abbildungen/Spektren/Spektrum1.png> <../Abbildungen/Spektren/Spektrum2.png>]
 
-[15 <../Abbildungen/Spektren/Spektrum3.png> <../Abbildungen/Spektren/Spektrum3_a3.png>]
+[16 <../Abbildungen/Spektren/Spektrum3.png> <../Abbildungen/Spektren/Spektrum3_a3.png>]
 
-[16 <../Abbildungen/Spektren/Spektrum3_b.png> <../Abbildungen/Spektren/Spektrum4.png>]
+[17 <../Abbildungen/Spektren/Spektrum3_b.png> <../Abbildungen/Spektren/Spektrum4.png>]
 
-[17 <../Abbildungen/Spektren/Spektrum5.png> <../Abbildungen/Spektren/Spektrum6.png>]
+[18 <../Abbildungen/Spektren/Spektrum5.png> <../Abbildungen/Spektren/Spektrum6.png>]
 
-[18 <../Abbildungen/Spektren/Spektrum7.png> <../Abbildungen/Spektren/Spektrum7_a.png>]
+[19 <../Abbildungen/Spektren/Spektrum7.png> <../Abbildungen/Spektren/Spektrum7_a.png>]
 
-[19 <../Abbildungen/Spektren/Spektrum7_b.png> <../Abbildungen/Spektren/Spektrum8.png>]
+[20 <../Abbildungen/Spektren/Spektrum7_b.png> <../Abbildungen/Spektren/Spektrum8.png>]
 
-[20 <../Abbildungen/Spektren/Spektrum9.png> <../Abbildungen/Spektren/Spektrum10.png>]
+[21 <../Abbildungen/Spektren/Spektrum9.png> <../Abbildungen/Spektren/Spektrum10.png>]
 
-[21 <../Abbildungen/Spektren/Spektrum11.png> <../Abbildungen/Spektren/Spektrum12.png>]
+[22 <../Abbildungen/Spektren/Spektrum11.png> <../Abbildungen/Spektren/Spektrum12.png>]
 
-[22 <../Abbildungen/Spektren/Spektrum12_a.png> <../Abbildungen/Spektren/Spektrum12_b.png>]
+[23 <../Abbildungen/Spektren/Spektrum12_a.png> <../Abbildungen/Spektren/Spektrum12_b.png>]
 
-[23 <../Abbildungen/Spektren/Spektrum13.png> <../Abbildungen/Spektren/Spektrum13_a.png> <../Abbildungen/Spektren/Spektrum14.png> <../Abbildungen/Spektren/Spektrum14_a.png>]
+[24 <../Abbildungen/Spektren/Spektrum13.png> <../Abbildungen/Spektren/Spektrum13_a.png> <../Abbildungen/Spektren/Spektrum14.png> <../Abbildungen/Spektren/Spektrum14_a.png>]
 
 LaTeX Warning: Empty bibliography on input line 111.
 
@@ -975,9 +975,6 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                V529
 (biblatex)                and rerun LaTeX afterwards.
@@ -987,18 +984,18 @@ Package logreq Info: Writing requests to 'V529.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26783 strings out of 473190
- 538221 string characters out of 5715800
- 1366368 words of memory out of 5000000
+ 26784 strings out of 473190
+ 538228 string characters out of 5715800
+ 1366593 words of memory out of 5000000
  49656 multiletter control sequences out of 15000+600000
  564519 words of font info for 56 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  79i,17n,93p,762b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on V529.pdf (23 pages, 5866214 bytes).
+Output written on V529.pdf (24 pages, 5869012 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 461 PDF objects out of 1000 (max. 8388607)
+ 341 compressed objects within 4 object streams
+ 102 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

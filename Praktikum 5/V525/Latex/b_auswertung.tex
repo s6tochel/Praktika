@@ -2,10 +2,24 @@
 
 \subsection{Fitten der Spektrallinien}
 
+Um mit den aufgenommenen Spektren die Energieeichung durchführen zu können, muss man Gaussfunktionen an die Spektrallinien fitten.
+Dadurch kann man dann den Mittelwert $b_0$, die Amplitude $A$ und die Standartabweichung $\sigma$ der Spektrallinien ermitteln.
+Da die Spektrallinien auf einem Untergrund liegen, den wir nicht betrachten wollen, wird ein linearer Untergrundteil ($H_1 + b \cdot H_2$) hinzuaddiert.
+Wenn die Linien nah an einander liegen, überlappen sie sich und man muss die Summe aus mehreren Gaussfunktionen an die Messwerte fitten.
+Somit erhalten wir folgende Fit-Funktion:
 \begin{equation}
     N(b) = (H_1 + b \cdot H_2) + \sum_{i=1}^{n} A_i \cdot \exp \left( - \frac{(b - b_{0,i})^2}{2 \sigma_{b,i}^2}\right)
     \label{eq:LinienFitFunktion}
 \end{equation}
+wobei n die Anzahl an sich überlappenden Gaussfunktionen darstellt.
+
+Im Anhang sind die Abbildungen der Fits zu erkennen. 
+In Abbildung \ref{fig:Spektrum2} ist der Fit der \SI{511}{\kilo\eV}-Linie des Natrium-Spektrums für die rechte Seite des Aufbaus dargestellt.
+In Abbildungen \ref{fig:Spektrum3_a} und \ref{fig:Spektrum3_b} sind mehrere Linien des Barium-Spektrums für die rechte Seite gefittet.
+Für die linke Seite findet man die gleichen Fits in Abbildungen \ref{fig:Spektrum6} bzw. \ref{fig:Spektrum7_a} und \ref{fig:Spektrum7_b}.
+
+Die durch diese Fits erhaltenen Mittelwerte $b_0$, Standartabweichung $\sigma_b$ und zugehörigen Fehler $\Delta \sigma_b$ sind in Tabelle \ref{tab:PeakWerte1} für die rechte Seite und Tabelle \ref{tab:PeakWerte2} für die linke Seite eingetragen.
+Dabei steht der Index $b$ dafür, dass die Standartabweichung in Einheit der MCA-Kanäle angegeben ist.
 
 \begin{table}
     \centering
@@ -49,6 +63,16 @@
     \end{tabular}
     \label{tab:PeakWerte2}
 \end{table}
+
+In Abbildung \ref{fig:Spektrum7_b} erkennt man, dass die 2. Gaussfunktion nicht optimal angepasst werden konnte.
+Dies ist auch in den Fit-Parametern, genauer in der Standartabweichung von $\sigma_b = \SI{0,152 \pm 0,009}{}$ wiedergespiegelt.
+Diese Standartabweichung ist viel zu klein für die Auflösung des Szintillationsdetektors und diese Linie muss verworfen werden.
+
+Wir haben die Funktion \texttt{curve_fit} aus dem Python Modul \texttt{scipy.optimize} verwendet um die Fits durchzuführen.
+Die Fehler auf die Mittelwerte $b_0$ die wir erhalten haben waren unrealistisch klein.
+Woran das genau lag ist uns unklar, doch anscheinend können unrealistische Fehler auftreten, wenn die Fit-Parameter korrelieren.
+Nun haben wir uns überlegt, dass der Fehler der Mittelwerte mit der Standartabweichung korreliert.
+Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf die Mittelwerte verwendet.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
