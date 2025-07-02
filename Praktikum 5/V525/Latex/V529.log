@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  28 JUN 2025 11:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  3 JUL 2025 00:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -644,10 +644,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./V529.aux
-Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported  on input line 10.
-)
+
+No file V529.aux.
 \openout1 = `V529.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -668,7 +666,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
- (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count461
 \scratchdimen=\dimen259
@@ -705,6 +703,8 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 Package hyperref Info: Link coloring OFF on input line 34.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Package babel Info: 'ngerman' activates 'ngerman' shorthands.
+(babel)             Reported  on input line 34.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -734,7 +734,8 @@ Package biblatex Info: Reference segment=0 on input line 34.
 
 [1
 
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./V529.toc)
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+No file V529.toc.
 \tf@toc=\write6
 \openout6 = `V529.toc'.
 
@@ -749,7 +750,7 @@ LaTeX Warning: Reference `cfd1' on page 4 undefined on input line 75.
 
 LaTeX Warning: Reference `cfd2' on page 4 undefined on input line 75.
 
-<../Abbildungen/cfd1.png, id=58, 702.82574pt x 384.2355pt>
+<../Abbildungen/cfd1.png, id=32, 702.82574pt x 384.2355pt>
 File: ../Abbildungen/cfd1.png Graphic file (type png)
 <use ../Abbildungen/cfd1.png>
 Package pdftex.def Info: ../Abbildungen/cfd1.png  used on input line 78.
@@ -760,7 +761,7 @@ LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 79.
 
 LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 79.
 
-<../Abbildungen/cfd2.png, id=59, 1204.5pt x 516.93124pt>
+<../Abbildungen/cfd2.png, id=33, 1204.5pt x 516.93124pt>
 File: ../Abbildungen/cfd2.png Graphic file (type png)
 <use ../Abbildungen/cfd2.png>
 Package pdftex.def Info: ../Abbildungen/cfd2.png  used on input line 84.
@@ -771,15 +772,110 @@ LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 85.
 
 LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 85.
 
-(./a_durchführung.tex) (./b_auswertung.tex) (./c_anhang.tex)
+
 
 [4]
 
-[5 <../Abbildungen/cfd1.png> <../Abbildungen/cfd2.png>]
+[5 <../Abbildungen/cfd1.png> <../Abbildungen/cfd2.png>] (./a_durchführung.tex
+./a_durchführung.tex:5: Undefined control sequence.
+<argument> \mikro 
+                  \electronvolt 
+l.5 ...olt}$ und $\SI{108(1)}{\mikro\electronvolt}
+                                                  $
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./a_durchführung.tex:5: Undefined control sequence.
+<argument> \mikro 
+                  \electronvolt 
+l.5 ...olt}$ und $\SI{108(1)}{\mikro\electronvolt}
+                                                  $
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./a_durchführung.tex:6: Undefined control sequence.
+<argument> \mikro 
+                  \electronvolt 
+l.6 ...olt}$ und $\SI{118(1)}{\mikro\electronvolt}
+                                                  $ für den rechten Detektor.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./a_durchführung.tex:6: Undefined control sequence.
+<argument> \mikro 
+                  \electronvolt 
+l.6 ...olt}$ und $\SI{118(1)}{\mikro\electronvolt}
+                                                  $ für den rechten Detektor.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `tab:niedervolt' on page 6 undefined on input line 9.
+
+
+LaTeX Warning: Reference `sec:anhang' on page 6 undefined on input line 10.
+
+./a_durchführung.tex:18: Undefined control sequence.
+<recently read> \multirow 
+                          
+l.18     \multirow
+                  {7}{*}{links} & Grd & 0 \\ \hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./a_durchführung.tex:25: Undefined control sequence.
+<recently read> \multirow 
+                          
+l.25     \multirow
+                  {7}{*}{rechts} & Grd & 0.00 \\ \hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 
 [6]
 
-LaTeX Warning: Empty bibliography on input line 111.
+LaTeX Warning: Reference `' on page 7 undefined on input line 43.
+
+
+./a_durchführung.tex:48: LaTeX Error: File `Koinzidenz' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...egraphics[width=0.8\textwidth]{Koinzidenz}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (./b_auswertung.tex) (./c_anhang.tex)
+
+[7]
+
+[8]
+
+LaTeX Warning: Empty bibliography on input line 137.
 
 
 Package caption Warning: Unused \captionsetup[sub] on input line 23.
@@ -795,6 +891,9 @@ L3 programming layer <2025-03-26>
 LaTeX Warning: There were undefined references.
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                V529
 (biblatex)                and rerun LaTeX afterwards.
@@ -804,18 +903,18 @@ Package logreq Info: Writing requests to 'V529.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26376 strings out of 469626
- 523470 string characters out of 5475183
- 1333359 words of memory out of 5000000
- 52879 multiletter control sequences out of 15000+600000
+ 26431 strings out of 469626
+ 524371 string characters out of 5475183
+ 1336126 words of memory out of 5000000
+ 52916 multiletter control sequences out of 15000+600000
  632208 words of font info for 59 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,7n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on V529.pdf (6 pages, 282827 bytes).
+ 75i,9n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on V529.pdf (8 pages, 297915 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -41,15 +41,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Einleitung}
-In diesem Versuch soll die Lebensdauer des angeregten Zustands $5/2^+$ des $^{133}$Cs Nuklids untersucht werden. Dabei wird ein Fast-Slowkoinzidenzkreis aufgebaut, diese Art der Schaltung soll verstanden werden und 
-die einzelnen nuklearen elektronik Komponenten sollen untersucht werden. Es soll der Effekt der einzelnen Komponenten auf das Signal mit einem Oszilloskop untersucht werden. 
+In diesem Versuch soll die Lebensdauer des angeregten Zustands $5/2^+$ des $^{133}$Cs Nuklids untersucht werden. Dabei wird ein Fast-Slowkoinzidenzkreis aufgebaut, diese Art der Schaltung soll verstanden werden. 
+Außerdem soll der Effekt der einzelnen Komponenten auf das Signal mit einem Oszilloskop untersucht werden. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Theorie}
 \subsection*{Szintillationszähler}
 Ein Szintillationszähler ist ein Detektor, der ionisierende Strahlung misst, indem er die von der Strahlung erzeugte Szintillation in Photonen umwandelt.
-Dieses Photon wird dann von einem Photomultiplier verstärkt und in ein elektrisches Signal umgewandelt.
+Diese Photonen werden dann von einem Photomultiplier verstärkt und in ein elektrisches Signal umgewandelt.
 Der Szintillator besteht aus NaI(Ti), das bei Wechselwirkung mit ionisierender Strahlung durch lumineszenzentren Photonen emittiert, typischerweise in Form von ultraviolettem oder sichtbarem Licht.
 \subsection*{Photomultiplier}
 Ein Photomultiplier (PMT) ist ein lichtempfindliches Gerät, das schwaches Licht in ein elektrisches Signal umwandelt. 
@@ -61,16 +61,16 @@ Im folgenden werden die einzelnen elektronischen Komponenten kurz beschrieben.
 Der Splitter erzeugt aus einem Signal 2 identische Signale, deren Amplitude wird halbiert. 
 Realisiert wird das ganze durch einen Spannungsteiler.
 \subsubsection*{Verstärker}
-Diese Komponente verstärkt ein vorhandenes Signal, dabei wird in diesem Versuch ein besonderer Verstärker benutzt, dieser verstärkt das Signal nicht nur sonder es gibt ein Gausförmiges Signal aus.
+Diese Komponente verstärkt ein vorhandenes Signal, dabei wird in diesem Versuch ein besonderer Verstärker benutzt, dieser verstärkt das Signal nicht nur, sonder es gibt ein gausförmiges Signal aus.
 \subsubsection*{Einkanalanalysator (SCA)}
-Der Einkanalanalysator wird dazu verwendet um analoge Signale in einem bestimmten Bereich zu filtern und nur dann digitales Signal ausgibt, wenn das analoge Signal in dem gewünschten Bereich liegt, dies geschieht indem ein Tief- und ein Hochpassfilter genutzt wird. 
+Der Einkanalanalysator wird dazu verwendet um analoge Signale in einem bestimmten Bereich zu filtern und nur dann ein digitales Signal auszugeben, wenn das analoge Signal in dem gewünschten Bereich liegt, dies geschieht indem ein Tief- und ein Hochpassfilter genutzt wird. 
 \subsubsection*{Vielkanalanalysator (MCA)}
 Im Gegensatz zum Einkanalanalysator nimmt ein Vielkanalanalysator alle Signale auf, dies wird realisiert, indem viele Einkanalanalysatoren mit bestimmten Intervallen genutzt werden um den gesamten Bereich abzudecken. 
 Die aufgenommenen Signale werden dann gezählt und in den zugehörigen Kanälen gespeichert.
 In unserem Fall hat der MCA auch ein Gate Signal, dieses gibt vor, wann die Signale in den MCA geschrieben werden sollen.
 \subsubsection*{Constant Fraction Diskriminator (CFD)}
-Wenn Signale getriggert werden geschieht das im Normalfall mit einem leadingedge, also wenn die Amplitude des Signals ein bestimmten Schwellenwert erreicht. 
-Wenn aber zwei Signale in der selben Zeit 2 verschieden große Maxima erreicht, dann erreicht das eine Signal diesen Schwellenwert früher und die Signale würden zu verschiedenen Zeitpunkten triggern. 
+Wenn Signale getriggert werden geschieht das im Normalfall mit einem leading edge, also wenn die Amplitude des Signals ein bestimmten Schwellenwert erreicht. 
+Wenn aber zwei Signale in der selben Zeit zwei verschieden große Maxima erreichen, dann erreicht das eine Signal diesen Schwellenwert früher und die Signale würden zu verschiedenen Zeitpunkten triggern. 
 Damit die Signale immer zum selben Zeitpunkt triggern unabhängig von ihrer Amplitude wird bei einem bestimmten Anteil der maximalen Amplitude getriggert. 
 Dies realisiert der CFD, indem er das Signal in zwei teilt und den einen Teil invertiert und verzögert auf den anderen Teil des Signals addiert, somit kann an einem bestimmten Punkt ein Nullpunkt erzeugt werden, welcher als Triggerpunkt verwendet wird, dieser prozess ist in Abbildung \ref{cfd1} dargestellt. Schlussendlich sieht man in Abbildung \ref{cfd2}, dass es dadurch zu gleichzeitigem triggern kommt unabhängig von der Amplitude.
 \begin{figure}
@@ -89,6 +89,32 @@ Dies realisiert der CFD, indem er das Signal in zwei teilt und den einen Teil in
 Die Koinzidenzeinheit ermöglicht es, Signale von zwei oder mehr Quellen zu vergleichen und ein logisches Und zu erzeugen. 
 Wenn die Signale gleichzeitig ankommen, wird eine logische 1 ausgegeben. 
 \subsection*{Gate-Delay-Generator (GDG)}
+Das GDG kann aus einem Eingangssignal ein Ausgangsignal erzeugen, welches eine bestimmte Amplitude und eine bestimmte Dauer hat.
+\subsection*{Time to Amplitude Converter (TAC)}
+Der TAC wandelt die Zeitdifferenz zwischen zwei Signalen in eine Spannung um, indem es mit konstantem Strom eine Kapazität auflädt. 
+Damit ist dann das Ausgangssignal proportional zur Zeitdifferenz von dem Start und Stop Signal.
+\subsection*{Fast-Slow Koinzidenzkreis}
+Bei dem Slow-Fast-Koinzidenzprinzip werden 2 Photonen, die fast gleichzeitig oder gleichzeitig gemessen werden, 
+anhand der Energien können die Photonen dann identifiziert werden. 
+
+In diesem Versuch soll der Zerfall von $^{133}\text{Ba}$ zu dem stabilen Zustand $7/2^+$ vom $^{133}\text{Cs}$ betrachtet werden. 
+Hierbei wird der Zerfall von dem Zustand $1/2^+$ des $^{133}\text{Cs}$ zu dem Zustand $5/2^+$ des $^{133}\text{Cs}$ mit einer Energie von $\SI{356}{\kilo\electronvolt}$ als Startsignal 
+und der Zerfall vom Zustand $5/2^+$ des $^{133}\text{Cs}$ zu dem Zustand $7/2^+$ des $^{133}\text{Cs}$ mit einer Energie von $\SI{81}{\kilo\electronvolt}$ als Stop-Signal verwendet.
+
+Das Analoge Signal des Photomultipliers wird an einer der Dynoden abgenommen, um ein saturiertes Signal zu vermeiden und dann zuerst durch einen Verstärker in eine gaußförmiges Signal umgewandelt, 
+danach durch einen Splitter aufgeteilt.
+Anschließend wird das Signal durch einen Einkanalanalysator gefiltert, wenn die Energie des Signals dem eingestellten Wert entspricht und 
+innerhalb einer bestimmten Zeitspanne das Signal des $\SI{81}{\kilo\electronvolt}$Zerfall ankommt, wird das Koinzidenzmodul ausgelöst und 
+der MCA wird durch den Gate für eine Messung geöffnet. 
+
+Im Fast-Koinzidenzkreis wird dann das Startsignal durch die Seite mit dem SCA, 
+dass auf die Energie von $\SI{356}{\kilo\electronvolt}$ eingestellt ist gesetz, der genaue Zeitpunkt kann dann noch mithilfe eines CFD bestimmt werden.
+Das Stopsignal kommt dann verzögert durch ein ns-Delay nach dem Startsignal an, diese konstante
+Verzögerung kann dann später in der Auswertung berücksichtigt werden, dies wird gemacht um die Messung eines Stopsignals vor dem Startsignal zu vermeiden.
+Die Signale werden dann in einem TAC in eine Spannung umgewandelt, die dann im MCA gespeichert wird. 
+Hieraus kann dann die Zerfallskurve aufgenommen und somit die Lebensdauer des angeregten Zustands $5/2^+$ des $^{133}$Cs Nuklids bestimmt werden.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
