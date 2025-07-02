@@ -13,6 +13,11 @@ Somit erhalten wir folgende Fit-Funktion:
 \end{equation}
 wobei n die Anzahl an sich überlappenden Gaussfunktionen darstellt.
 
+Da es sich beim Aufnehmen der Spektren und somit der Anzahl der Ticks N in einem bestimmten Kanal um ein Zählexperiment handelt, sind die Fehler auf die Ticks N gegeben durch:
+\begin{displaymath}
+    \Delta N = \sqrt{N}
+\end{displaymath}
+
 Im Anhang sind die Abbildungen der Fits zu erkennen. 
 In Abbildung \ref{fig:Spektrum2} ist der Fit der \SI{511}{\kilo\eV}-Linie des Natrium-Spektrums für die rechte Seite des Aufbaus dargestellt.
 In Abbildungen \ref{fig:Spektrum3_a} und \ref{fig:Spektrum3_b} sind mehrere Linien des Barium-Spektrums für die rechte Seite gefittet.
@@ -68,7 +73,7 @@ In Abbildung \ref{fig:Spektrum7_b} erkennt man, dass die 2. Gaussfunktion nicht 
 Dies ist auch in den Fit-Parametern, genauer in der Standartabweichung von $\sigma_b = \SI{0,152 \pm 0,009}{}$ wiedergespiegelt.
 Diese Standartabweichung ist viel zu klein für die Auflösung des Szintillationsdetektors und diese Linie muss verworfen werden.
 
-Wir haben die Funktion \texttt{curve_fit} aus dem Python Modul \texttt{scipy.optimize} verwendet um die Fits durchzuführen.
+%Wir haben die Funktion \texttt{curve_fit} aus dem Python Modul \texttt{scipy.optimize} verwendet um die Fits durchzuführen.
 Die Fehler auf die Mittelwerte $b_0$ die wir erhalten haben waren unrealistisch klein.
 Woran das genau lag ist uns unklar, doch anscheinend können unrealistische Fehler auftreten, wenn die Fit-Parameter korrelieren.
 Nun haben wir uns überlegt, dass der Fehler der Mittelwerte mit der Standartabweichung korreliert.
@@ -78,6 +83,16 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Energieeichung}
+
+Zur Energieeichung teilen wir einigen Linien, die wir gefittet haben, Literaturwerte für deren Energie $E_\text{lit.}$ zu.
+Somit können wir dann die Mittelwerte $b_0$ gegen diese Energieen $E_\text{lit.}$ auftragen und einen linearen Fit durchführen, da der Zusammenhang proportional sein sollte.
+Die ermittelten Mittelwerte $b_0$ wurden auf die y-Achse gelegt, damit deren Messfehler (hier Standartabweichungen $\sigma_b$) in die Gewichtung des Geradenfits eingehen.
+Dabei wurden die Literaturwerte aus den Zerfallsschemen von Natrium-22 (Abbildung \ref{fig:Na_Zerfallsschema}) und von Barium-133 (Abbildung \ref{fig:Ba_Zerfallsschema}) entnommen.
+Um die Energien den richtigen Linien zuzuordnen, haben wir uns an der \SI{511}{\kilo\eV}-Linie im Natrium-Spektrum und der \SI{81}{\kilo\eV}- bzw. \SI{356}{\kilo\eV}-Linie im Barium-Spektrum orientiert.
+Diese sind deutlich erkennbar und durch deren Mittelwerte und bekannten Energien konnte eine ungefähre Skalierung und Zuteilung der Energien an die Linien erfolgen.
+
+Nicht alle gefitteten Linien wurden für die Eichung verwendet, da für einige keine passende Energie gefunden werden konnte.
+In Tabelle \ref{tab:Energieeichung1} sind die verwendeten Linien, sowie deren Literaturwerte für die Energie für die rechte Seite des Aufbaus eingetragen.
 
 \begin{table}
     \centering
@@ -97,19 +112,22 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \label{tab:Energieeichung1}
 \end{table}
 
+In Abbildung \ref{fig:Energieeichung1} ist sind die Mittelwerte $b_0$ aus Tabelle \ref{tab:Energieeichung1} gegen die Energiewerte $E_\text{lit.}$ aufgetragen.
+Dazu wurde ein Geradenfit durchgeführt.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{Energieeichung1.png}
   \caption{Linearer Fit der Mittelwerte $b_0$ der gefitteten Na- und Ba-Linien gegen die Literaturwerte der Energieen $E_\text{lit.}$ (Rechte Seite)}
 \label{fig:Energieeichung1}
 \end{figure}
-
+Die Fit-Parameter der Eich-Gerade sind folgende:
 \begin{align*}
     b_\text{R} &= m_\text{R} \cdot E + n_\text{R} \\
     m_\text{R} &= \SI{13,59 \pm 0,25}{\per \kilo \eV} \\
     n_\text{R} &= \SI{49,27 \pm 27,15}{}
 \end{align*}
-
+Der Vorgang ist gleich für die linke Seite des Aufbaus.
+In Tabelle \ref{tab:Energieeichung2} sind die verwendeten Linien und deren Energiewerte eingetragen.
 \begin{table}
     \centering
     \caption{Zugeordnete Literaturwerte der Energien $E_\text{lit.}$ zu gemessenen Spektrallinien mit Mittelwert $b_0$ und Standartabweichung $\sigma_b$ in MCA-Kanälen (Linke Seite)}
@@ -126,20 +144,21 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{tabular}
     \label{tab:Energieeichung2}
 \end{table}
-
+In Abbildung \ref{fig:Energieeichung2} sieht man den Geradenfit zur Energieeichung der linken Seite.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{Energieeichung2.png}
   \caption{Linearer Fit der Mittelwerte $b_0$ der gefitteten Na- und Ba-Linien gegen die Literaturwerte der Energieen $E_\text{lit.}$ (Linke Seite)}
 \label{fig:Energieeichung2}
 \end{figure}
-
+Für die linke Seite erhält man folgende Fit-Parameter für die Energieeichung:
 \begin{align*}
     b_\text{L} &= m_\text{L} \cdot E + n_\text{L} \\
     m_\text{L} &= \SI{13,95 \pm 0,09}{\per \kilo \eV} \\
     n_\text{L} &= \SI{24,22 \pm 26,49}{}
 \end{align*}
 
+Da wir die Mittelwerte $b_0$ der Kanalnummer $b$ auf die y-Achse gelegt haben, müssen wir die Fit-Parameter umwandeln um eine einfache Umrechnung der Kanalnummern in Energie zu erlauben:
 \begin{align}
     \begin{split}
         b &= m \cdot E + n\\
@@ -148,12 +167,13 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{split}
     \label{eq:Energieumwandlung}
 \end{align}
-
+Die Fehler auf diese neuen Eichparameter $m'$ und $n'$ lassen sich durch die allgemeine Fehlerfortpflanzung-Formel \ref{eq:Fehlerfortpflanzung} berechnen.
 \begin{equation}
     \Delta y(x_1, x_2,\ldots,x_n) = \sqrt{\sum_{i=1}^{n} \left(\pdv{y}{x_i} \cdot \Delta x_i\right)^2}
     \label{eq:Fehlerfortpflanzung}
 \end{equation}
 
+Man erhält somit:
 \begin{align}
     \begin{split}
         \Delta m' &= \frac{\Delta m}{m^2} \\
@@ -161,12 +181,14 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{split}
     \label{eq:FehlerEnergieumwandlung1}
 \end{align}
-
+und für den Fehler auf der Energie $E$:
 \begin{equation}
     \Delta E = \sqrt{(b \cdot \Delta m')^2 + (m' \cdot \Delta b)^2 + (\Delta n')^2}
     \label{eq:FehlerEnergieumwandlung2}
 \end{equation}
 
+Nun kann man die neuen Eichparameter $m'$ und $n'$ ausrechnen.
+Für die rechte Seite erhält man:
 \begin{align}
     \begin{split}
         E &= m_\text{R}' \cdot b_\text{R} + n_\text{R}' \\
@@ -175,7 +197,7 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{split}
     \label{eq:EnergieeichungR}
 \end{align}
-
+und für die linke Seite findet man:
 \begin{align}
     \begin{split}
         E &= m_\text{L}' \cdot b_\text{L} + n_\text{L}' \\
@@ -185,11 +207,15 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \label{eq:EnergieeichungL}
 \end{align}
 
+\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Energieauflösung für die Spektrallinien}
 
+Um die Energieauflösung der Spektrallinien zu betrachten, kann man sich deren Halbwertsbreiten FWHM ansehen.
+Die Halbwertsbreite FWHM lässt sich aus der Standartabweichung $\sigma_b$ berechnen.
+Multipliziert man die noch mit der Eichkonstante $m'$, erhält man die Halbwertsbreite in Energieeinheit.
 \begin{align}
     \begin{split}
         \text{FWHM} &= 2 \sqrt{2 \ln 2} \cdot (m' \cdot \sigma_b) \\
@@ -197,7 +223,8 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{split}
     \label{eq:FWHM}
 \end{align}
-
+Betrachtet werden hier die Natrium \SI{511}{\kilo\eV}-Linie und die Barium \SI{81}{\kilo\eV}- und \SI{356}{\kilo\eV}-Linien für beide Seiten.
+Die durch Formel \ref{eq:FWHM} berechneten Werte für die Hablwertsbreite dieser Linien sind in Tabelle \ref{tab:Halbwertsbreiten} eingetragen.
 \begin{table}
     \centering
     \caption{Hablwertsbreiten FWHM der charakteristischen Na- und Ba-Linien und zugehörige Fehler (in \si{\kilo\eV})}
@@ -214,11 +241,17 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \label{tab:Halbwertsbreiten}
 \end{table}
 
+\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Zeitkalibration des TAC}
 
+Um die Zeitkalibration durchzuführen wurden Gausskurven an die Promptkurven in Abbildung \ref{fig:Spektrum12} gefittet.
+Der Vorgang ist dabei identisch zu dem Fitten der Gausskurven an die Spektrallinien.
+Diese Fits sind in Abbildung \ref{fig:Spektrum12_b} zu sehen.
+In Tabelle \ref{tab:Zeitkalibration} sind die erhaltenen Mittelwerte $b_0$ und die Standartabweichung $\sigma_b$ sowie die Verzögerung $\Delta t$ eingetragen.
+Die Verzögerung $\Delta t$ ist dabei die Dauer die auf dem ns-Delay eingestellt wurde um die zugehörige Promptkurve zu erhalten.
 \begin{table}
     \centering
     \caption{Auf ns-Delay eingestellte Verzögerung $\Delta t$ und gemessene Mittelwerte $b_0$ und Standartabweichungen $\sigma_b$ der Na Promptkurven in MCA-Kanälen}
@@ -233,20 +266,24 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{tabular}
     \label{tab:Zeitkalibration}
 \end{table}
-
+Trägt man nun die Mittelwerte $b_0$ mit zugehörigem Fehler $\sigma_b$ gegen die Verzögerungen $\Delta t$ auf, kann man wieder einen Geradenfit durchführen.
+Der Vorgang der Zeitkalibration des TAC ist identisch zu der Energieeichung.
+Auch hier wurden die Mittelwerte der Kanalnummern $b$ wieder auf die y-Achse gelegt, zur korrekten Gewichtung des Geradenfits mit den Messfehlern.
+In Abbildung \ref{fig:Zeitkalibration} ist dieser Geradenfit abgebildet.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{Zeitkalibration.png}
   \caption{Linearer Fit der Mittelwerte $b_0$ der Na Promptkurven gegen die eingestellten Verzögerung $\Delta t$ des ns-Delays zur Zeitkalibration}
 \label{fig:Zeitkalibration}
 \end{figure}
-
+Die resultierenden Fit-Parameter sind folgende:
 \begin{align*}
     b_t &= m_t \cdot \Delta t + n_t \\
     m_t &= \SI{78,41 \pm 1,95}{\per \nano \second} \\
     n_t &= \SI{-21,43 \pm 123,55}{}
 \end{align*}
-
+Auch hier müssen die Fit-Parameter wieder entsprechend Gleichung \ref{eq:Energieumwandlung} umgeformt werden.
+Man erhält in diesem Fall:
 \begin{align}
     \begin{split}
         \Delta t &= m_t' \cdot b_t + n_t' \\
@@ -255,29 +292,40 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{split}
     \label{eq:Zeitkalibration}
 \end{align}
-
+Somit sieht man das folgende Verhältnis zwischen den Kanalnummern (bins) auf dem MCA und der eingehenden Zeitverzögerung $\Delta t$ im TAC:
 \begin{equation*}
     1 \text{bin} \, \widehat{=} \, \SI{12,75 \pm 0,32}{\pico\second}
     \label{eq:Zeitkalibration2}
 \end{equation*}
 
+\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+
+Die Standartabweichung der ersten Promtkurve (bei $\Delta t = \SI{27}{\nano\second}$) ist in Abbildung \ref{fig:Spektrum12_a} besser einzuschätzen.
+Sie beträgt in Einheiten der MCA-Kanäle $b$:
 \begin{displaymath}
     \sigma_b = \SI{97,81 \pm 1,46}{}
 \end{displaymath}
-
+Wandelt man dies durch die Zeitkalibration \ref{eq:Zeitkalibration} in eine Zeitspanne um, ergibt sich:
 \begin{align*}
     \sigma_t &= m_t' \cdot \sigma_b \\
     \Rightarrow \sigma_t &= \SI{1,247 \pm 0,036}{\nano \second}
 \end{align*}
 
+\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Eingestellte Schwellen der SCAs und CFDs}
 
+Die auf dem SCA eingestellen Schwellen können direkt in den Rohdaten der aufgenommenen Spektren abgelesen werden.
+Da in den Spektren ohne Abschneiden durch ein SCA immer ein Untergrund zu erkennen ist, kann man durch dessen Abwesenheit auf ein Filtern durch den SCA deuten.
+Somit wurde in den Rohdaten nach den Schwellen in den Kanalnummern $b$ gesucht, an denen die Ticks $N$ auf einer Seite die Werte 0 oder gelegentlich 1 nicht überschreiten, und auf der anderen Seite höher sind.
+Bei Manchen dieser Schwellen überschreiten die Ticks $N$ den $N=2$-Treshold um dann wieder zurück auf 0 und 1 zu fallen bis Sie nach und nach höher werden.
+Diese Ausbreitung der Schwellen lag um die 20 bins, was somit als Fehler auf diese Messung genommen wurde.
+In Tabelle \ref{tab:SCA_Schwellen1} sind diese ermittelten Schwellen angegeben.
 \begin{table}
     \centering
-    \caption{Eingestellte SCA-Schwellen angegeben in MCA-Kanälen}
+    \caption{Eingestellte SCA-Schwellen angegeben in MCA-Kanälen (Messehler: 20)}
     \begin{tabular}{|c|c|c|c|c|c|}
         \hline
          Seite & Abb. & Linie / \si{\kilo\eV} & Unten & Oben & Intervall \\ \hline \hline
@@ -289,7 +337,8 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{tabular}
     \label{tab:SCA_Schwellen1}
 \end{table}
-
+Durch die Energieeichungen \ref{eq:EnergieeichungR} für die rechte Seite und \ref{eq:EnergieeichungL} für die linke Seite können wir diese Schwellen in Einheiten der Energie angeben.
+Diese Energien der Schwellen sind in Tabelle \ref{tab:SCA_Schwellen2} abzulesen.
 \begin{table}
     \centering
     \caption{Eingestellte SCA-Schwellen angegeben in Energie / \si{\kilo\eV}}
@@ -305,54 +354,86 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \label{tab:SCA_Schwellen2}
 \end{table}
 
+\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+
+Um die Schwellen der CFD zu ermitteln wurde der Quotient der Ba-Spektren $N_1$ vor Hinzuschalten des CFD und der Ba-Spektren $N_2$ nach dessen Hinzuschalten genommen.
+Der Fehler dieses Quotienten $N_1 / N_2$ berechnet sich aus:
 \begin{equation}
     \Delta \left(\frac{N_1}{N_2}\right) = \sqrt{\frac{N_1}{N_2^2} + \frac{N_1^2}{N_2^3}}
     \label{eq:SchwellenFehler}
 \end{equation}
-
+Um den Quotienten bilden zu können wurde $N_2 = 1$ für die Messpunkte gesetzt an denen $N_2 = 0$ war.
+Dies dürfte die Ermittlung der Schwelle nicht beeinflussen, da an der Schwelle die Werte von $N_1$ um ein vielfaches größer als die von $N_2$ sind.
+Trägt man nun diesen Quotienten gegen die Kanalnummer $b$ auf, kann man leicht die eingestellte Schwelle des CFD erkennen.
+In Abbildung \ref{fig:SchwelleCFD1} ist dies für die rechte Seite aufgetragen.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{SchwelleCFD1.png}
   \caption{Quotient des aufgenommenen Ba-Spektrums vor ($N_1$) und hinter ($N_2$) dem CFD-Modul zur Bestimmung der eingestellten Schwelle (Rechte Seite)}
 \label{fig:SchwelleCFD1}
 \end{figure}
+Man sieht unterhalb von $b = 100$, dass die keine Ticks gemessen werden.
+Dies gilt sowohl für $N_1$ und $N_2$.
+Oberhalb von $b = 100$ schwankt der Quotient um 1 und wird nie größer als 2.
+Somit erkennt man, dass die Schwelle des CFD so klein ist, dass sie sich nicht auf die Messungen auswirkt.
 
+In Abbildung \ref{fig:SchwelleCFD2} ist der Quotient $N_1 / N_2$ gegen $b$ für die linke Seite aufgetragen.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{SchwelleCFD2.png}
   \caption{Quotient des aufgenommenen Ba-Spektrums vor ($N_1$) und hinter ($N_2$) dem CFD-Modul zur Bestimmung der eingestellten Schwelle (Linke Seite)}
 \label{fig:SchwelleCFD2}
 \end{figure}
+Hier erkennt man einen deutlichen Unterschied zur rechten Seite.
+Der Quotient bleibt sehr klein bis ca. $b=300$ und steigt dann an bis ca. $b=370$.
+Dann varriert er stark bis ca. $b=430$ und fällt dann wieder ab bis $b=500$, ab wo er dann wieder sehr niedrig bleibt.
 
+Wir erkennen also, dass die Schwelle des CFD der linken Seite zwischen $b=300$ und $b=500$ liegt, wobei der CFD die Signale bei $b = 370$ am stärksten zu unterdrücken scheint.
+Wir nehmen also die Schwelle als $b = \SI{370 \pm 100}{}$ an.
+Durch die Energieeichung \ref{eq:EnergieeichungL} finden wir somit für die Energie der Schwelle $E = \SI{24,78 \pm 7,42}{\kilo\eV}$
+
+\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Ermittlung der Lebensdauer}
 
+Die Lebensdauerkurve ist eine Faltung aus einer Promptkurve (Gausskurve) und einer Zerfallskurve (Fallende Exponentialkurve).
+Die Promptkurve kommt durch endliche Zeitauflösung des TAC und die Zerfallskurve durch das Zerfallsgesetz und die endliche Lebensdauer des betrachteten $^{133}$Cs-Zustandes.
+Die resultierende Lebensdauerkurve hat die Form der folgenden Funktion \cite{Anleitung}:
 \begin{equation}
-    M (t) = \frac{I}{2 \tau} e^{\frac{\sigma_b^2 - 2 \tau (t - t_0)}{2 \tau^2}} \cdot \{\text{er} f(a) + \text{er} f(b)\}
+    M (t) = \frac{I}{2 \tau} e^{\frac{\sigma^2 - 2 \tau (t - t_0)}{2 \tau^2}} \cdot \{\text{er} f(a) + \text{er} f(b)\}
     \label{eq:LebensdauerFitFunktion}
 \end{equation}
-
+mit der Fehlerfunktion
 \begin{equation}
     \text{er} f(x) = \int_{0}^{x} e^{-y^2} dy
     \label{eq:LebensdauerFehlerfunktion}
 \end{equation}
-
+und
 \begin{equation}
     a = \frac{\sigma_b^2 + \tau t_0}{\sqrt{2} \sigma_b \tau}
     \quad \text{und} \quad
     b = \frac{\tau (t - t_0) - \sigma_b^2}{\sqrt{2} \sigma_b \tau}
     \label{eq:LebensdauerAB}
 \end{equation}
+Diese Funktion kann man nun an die Lebensdauerkurve aus Abbildung \ref{fig:Lebensdauermessung} fitten.
+Der Fit funktionierte bei uns nicht korrekt, bis wir einen Parameter festgelegt haben.
+Somit haben wir die Standartabweichung $\sigma$ festgelegt, da wir für diesen Parameter einen Wert von $\sigma_b = \SI{97,81 \pm 1,46}{}$ aus dem Zeitkalibrationsteil hatten.
+Dann wurde der Fit durchgeführt und der Wert für $\sigma$ verändert bis der $\chi^2$-Wert kleiner wurde.
+Dies wurde so oft wiederholt, bis wir ein ungefähres Minimum von $\chi^2$ gefunden hatten.
+Dies war bei einem Wert von $\sigma_b = 2,25 \cdot 97,81 \approx 220$.
+Wegen dieser Vorgehensweise ist es schwer einen Fehler auf den Wert von $\sigma_b$ anzugeben.
+Dies ist aber nicht schlimm, da wir nur an dem Wert von der Lebensdauer $\tau$ interessiert sind.
 
+Die resultierende Anpassung ist in Abbildung \ref{fig:Lebensdauerfit} abgebildet.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{Lebensdauerfit.png}
   \caption{Fit der Faltungs-Funktion \ref{eq:LebensdauerFitFunktion} an die Lebensdauerkurve des betrachteten $^{133}$Cs-Zustandes}
 \label{fig:Lebensdauerfit}
 \end{figure}
-
+Die Fit-Parameter dieser Anpassung sind die Folgenden:
 \begin{align}
     \begin{split}
         I_b &= \SI{0,316 \pm 0,002}{} \\
@@ -361,25 +442,15 @@ Aus diesem Grund haben wir die Standartabweichung im folgenden als Fehler auf di
     \end{split}
     \label{eq:LebensdauerParameter}
 \end{align}
-
+wobei der Index $b$ jeweils beschreibt, dass die Lebensdauerkurve nicht in Abhängigkeit der Zeit $t$ sondern in Abhängigkeit der Kanalnummer $b$ ist.
+Um die Lebensdauer $\tau$ in Einheiten der Zeit zu erhalten muss die Zeitkalibration \ref{eq:Zeitkalibration} verwendet werden.
+Man erhält:
 \begin{displaymath}
     \tau = \SI{10,86 \pm 0,27}{\nano\second}
 \end{displaymath}
-
+und somit eine Halbwertszeit von:
 \begin{displaymath}
     T_{1/2} = \ln{2} \cdot \tau = \SI{7,52 \pm 0,19}{\nano\second}
 \end{displaymath}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
