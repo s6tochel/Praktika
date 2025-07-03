@@ -94,6 +94,12 @@ Diese sind deutlich erkennbar und durch deren Mittelwerte und bekannten Energien
 Nicht alle gefitteten Linien wurden für die Eichung verwendet, da für einige keine passende Energie gefunden werden konnte.
 In Tabelle \ref{tab:Energieeichung1} sind die verwendeten Linien, sowie deren Literaturwerte für die Energie für die rechte Seite des Aufbaus eingetragen.
 
+Für die beiden K$_\alpha$-Linien wurden die Literaturwerte von \SI{30.625}{\kilo\eV} und \SI{30.973}{\kilo\eV} aus \cite{KalphaEnergie} angenommen.
+
+Die Linien auf den Zerfallsschemen mit niedriger relativer Intensität sind nicht in den Spektren zu erkennen.
+Auch sind Linien die nah aneinander liegen in den gemessenen Spektren nicht optisch unterscheidbar und müssen durch eine Überlagerung meherer Gaußkurven ermittelt werden.
+Dies liegt an der schlechten Energieauflösung des Szintillationsdetektors.
+
 \begin{table}
     \centering
     \caption{Zugeordnete Literaturwerte der Energien $E_\text{lit.}$ zu gemessenen Spektrallinie mit Mittelwert $b_0$ und Standartabweichung $\sigma_b$ in MCA-Kanälen (Rechte Seite)}
@@ -207,7 +213,12 @@ und für die linke Seite findet man:
     \label{eq:EnergieeichungL}
 \end{align}
 
-\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+Man sieht, dass die Steigung der Eichgerade für beide Seiten fast gleich ist.
+Nur der y-Achsenabschnitt ist für die rechte Seite doppelt so weit vom Ursprung entfernt wie für die linke Seite.
+Da die Steigung jedoch mit Kanalnummern multipliziert wird die ungefähr in der Größenordnung 1000 liegen, sieht man dass der y-Achsenabschnitt für beide Seiten relativ klein ist.
+Dies würde man auch erwarten, da die Kanalnummer proportional zu der Energie sein sollte, weil das Signal nur verstärkt und nicht verschoben wurde.
+
+Gleichungen \ref{eq:EnergieeichungR} und \ref{eq:EnergieeichungL} werden im Folgenden verwendet um Kanalnummer $b$ in Energie $E$ umzurechnen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -227,7 +238,7 @@ Betrachtet werden hier die Natrium \SI{511}{\kilo\eV}-Linie und die Barium \SI{8
 Die durch Formel \ref{eq:FWHM} berechneten Werte für die Hablwertsbreite dieser Linien sind in Tabelle \ref{tab:Halbwertsbreiten} eingetragen.
 \begin{table}
     \centering
-    \caption{Hablwertsbreiten FWHM der charakteristischen Na- und Ba-Linien und zugehörige Fehler (in \si{\kilo\eV})}
+    \caption{Halbwertsbreiten FWHM der charakteristischen Na- und Ba-Linien und zugehörige Fehler (in \si{\kilo\eV})}
     \begin{tabular}{|c|c|c|c|c|}
         \hline
          & & Na \SI{511}{\kilo\electronvolt} & Ba \SI{81}{\kilo\electronvolt} & Ba \SI{356}{\kilo\electronvolt} \\ \hline \hline
@@ -241,7 +252,9 @@ Die durch Formel \ref{eq:FWHM} berechneten Werte für die Hablwertsbreite dieser
     \label{tab:Halbwertsbreiten}
 \end{table}
 
-\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+Man sieht, dass die Halbwertsbreiten für gleiche Linien und verschiedene Seiten nicht stark abweichen.
+Die Auflösung der linken Seite scheint hier im Allgemeinen etwas schärfer zu sein.
+Auch erkennt man, dass die Halbwertsbreiten mit der Energie steigen, also dass die Auflösung besser für niedrigere Energien ist.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -297,8 +310,7 @@ Somit sieht man das folgende Verhältnis zwischen den Kanalnummern (bins) auf de
     1 \text{bin} \, \widehat{=} \, \SI{12,75 \pm 0,32}{\pico\second}
     \label{eq:Zeitkalibration2}
 \end{equation*}
-
-\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+Dieses Verhältnis, bzw. Gleichung \ref{eq:Zeitkalibration}, wird im Folgenden verwendet um Zeitabstände $\Delta t$ aus Kanalnummern $b$ zu berechnen.
 
 Die Standartabweichung der ersten Promtkurve (bei $\Delta t = \SI{27}{\nano\second}$) ist in Abbildung \ref{fig:Spektrum12_a} besser einzuschätzen.
 Sie beträgt in Einheiten der MCA-Kanäle $b$:
@@ -311,7 +323,9 @@ Wandelt man dies durch die Zeitkalibration \ref{eq:Zeitkalibration} in eine Zeit
     \Rightarrow \sigma_t &= \SI{1,247 \pm 0,036}{\nano \second}
 \end{align*}
 
-\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+Man erkennt, dass die Zeitverschmierung durch den Aufbau bei ungefähr \SI{1}{\nano\second} liegt.
+Diese Zeitverschmierung wird sich auf die Lebensdauermessung auswirken und muss zu deren Ermittlung mit berücksichtigt werden.
+Die Zeitverschmierung und Promptkurve kommt durch die endliche und statistisch verteilte Dauer zwischen einem tatsächlich eingehenden Ereignis in dem Detektor, und dessen Registrierung.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -354,7 +368,9 @@ Diese Energien der Schwellen sind in Tabelle \ref{tab:SCA_Schwellen2} abzulesen.
     \label{tab:SCA_Schwellen2}
 \end{table}
 
-\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+Vergleicht man die Energieintervalle aus Tabelle \ref{tab:SCA_Schwellen2} mit den Halbwertsbreiten auf Tabelle \ref{tab:Halbwertsbreiten}, erkennt man dass die Intervalle immer zwischen der doppelten und dreifachen Halbwertsbreite liegen.
+Dies macht Sinn, da man ein solch großen Intervall benötigt um den komplette Gaußkurve abzudecken.
+Auch kann man erkennen, dass die Literaturwerte der Energieen stehts ungefähr in der Mitte der eingestellten Energieintervalle liegen.
 
 Um die Schwellen der CFD zu ermitteln wurde der Quotient der Ba-Spektren $N_1$ vor Hinzuschalten des CFD und der Ba-Spektren $N_2$ nach dessen Hinzuschalten genommen.
 Der Fehler dieses Quotienten $N_1 / N_2$ berechnet sich aus:
@@ -390,9 +406,11 @@ Dann varriert er stark bis ca. $b=430$ und fällt dann wieder ab bis $b=500$, ab
 
 Wir erkennen also, dass die Schwelle des CFD der linken Seite zwischen $b=300$ und $b=500$ liegt, wobei der CFD die Signale bei $b = 370$ am stärksten zu unterdrücken scheint.
 Wir nehmen also die Schwelle als $b = \SI{370 \pm 100}{}$ an.
-Durch die Energieeichung \ref{eq:EnergieeichungL} finden wir somit für die Energie der Schwelle $E = \SI{24,78 \pm 7,42}{\kilo\eV}$
+Durch die Energieeichung \ref{eq:EnergieeichungL} finden wir somit für die Energie der Schwelle $E = \SI{24,78 \pm 7,42}{\kilo\eV}$.
 
-\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+Man sieht, dass am oberen Ende der Schwelle die K$_\alpha$-Linien (bei ungefähr \SI{30,8}{\kilo\eV}) unterdrückt werden sollten.
+Vergleicht man das Spektrum ohne CFD (Abbildung \ref{fig:Spektrum7}) mit dem Spektrum mit CFD (Abbildung \ref{fig:Spektrum10}) ist dies auch deutlich zu erkennen.
+Die \SI{81}{\kilo\eV}-Linie wird nicht abgeschnitten, jedoch wurde trotzdem aus Sicherheit die linke Seite für die \SI{356}{\kilo\eV}-Linie verwendet.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -453,4 +471,62 @@ und somit eine Halbwertszeit von:
     T_{1/2} = \ln{2} \cdot \tau = \SI{7,52 \pm 0,19}{\nano\second}
 \end{displaymath}
 
-\textbf{\color{red} HIER KOMMENTAR SCHREIBEN}
+Laut Abbildung \ref{fig:Ba_Zerfallsschema} beträgt der Literaturwert der Halbwertszeit des betrachteten $^{133}$Cs-Zustandes bei $T_{1/2} = \SI{6,283 \pm 0,014}{\nano\second}$ \cite{Anleitung}.
+Dieser Literaturwert liegt weder im direkten Fehlerbereich, noch im 2$\sigma$-Bereich unseres Ergebnisses.
+Unser Wert liegt \SI{19,7}{\percent} über dem Literaturwert.
+Woran die Abweichung genau liegt ist schwer zu sagen.
+Betrachtet man Abbildung \ref{fig:Lebensdauerfit} genauer erkennt man, dass die Kurve an ihrem Maxiumum nicht in der Mitte der Messwerte liegt, und auch bei ihrem Abfall optisch nicht optimal durch die Messwerte zu gehen scheint.
+Vielleicht ist diese Abweichung der reellen Kurve von der Fit-Kurve der Ursprung von der Abweichung der beiden Werte für die Halbwertszeit.
+Die Zeitkalibration dürfe nicht der Grund sein, da diese perfekt funktioniert zu haben scheint.
+Auch hat der Versuchsaufbau gut geklappt und wir bezweifeln, dass die Fehlerquelle in einem falschen Einstellen der Elektronik liegt.
+
+\section{Fazit}
+
+Als erstes haben wir Spektren aufgenommen und Gaußkurven an deren Spektrallinien gefittet.
+Dann haben wir anhand der Mittelwerte der Kanalnummern $b$ und bekannten Literaturwerte der Energien $E$ dieser Linien eine Energieeichung für beide Seiten des Versuchsaufbaus durchgeführt.
+Diese Energieeichung ist für beide Seiten gut gelungen und wir fanden für die rechte Seite:
+\begin{align}
+    \begin{split}
+        E &= m_\text{R}' \cdot b_\text{R} + n_\text{R}' \\
+        m_\text{R}' &= \SI{73,58 \pm 1,37}{\eV} \\
+        n_\text{R}' &= \SI{-3,625 \pm 1,999}{\kilo\eV}
+    \end{split}
+    \label{eq:EnergieeichungR}
+\end{align}
+für die linke Seite:
+\begin{align}
+    \begin{split}
+        E &= m_\text{L}' \cdot b_\text{L} + n_\text{L}' \\
+        m_\text{L}' &= \SI{71,67 \pm 0,50}{\eV} \\
+        n_\text{L}' &= \SI{-1,736 \pm 1,899}{\kilo\eV}
+    \end{split}
+    \label{eq:EnergieeichungL}
+\end{align}
+
+Dann haben und die Halbwertsbreiten der Natrium \SI{511}{\kilo\eV}-Linie und der Barium \SI{81}{\kilo\eV}- und \SI{356}{\kilo\eV}-Linien angesehen.
+Die Werte lagen in einem Bereich zwischen ungefähr \SI{8}{\kilo\eV} für niedrige Photonenergien und \SI{40}{\kilo\eV} für hohe Photonenergien.
+Die Werte sind in Tabelle \ref{tab:Halbwertsbreiten} abzulesen und wir fanden für beide Seiten sehr ähnliche Werte.
+Auch erkennt man, dass die Energieauflösung schlechter für höhere Photonenergien ist.
+
+Danach haben wir die Zeitkalibration der TAC durchgeführt.
+Dort fanden wir folgenden Zusammenhang:
+\begin{equation*}
+    1 \text{bin} \, \widehat{=} \, \SI{12,75 \pm 0,32}{\pico\second}
+    \label{eq:Zeitkalibration2}
+\end{equation*}
+
+Als Nächstes haben wir die in den SCA eingestellten Schwelen bestimmt.
+Die Werte für diese sind in Tabelle \ref{tab:SCA_Schwellen2} eingetragen.
+Wir sehen, dass die eingestellten Bereiche immer um den Literaturwert der Energie der Linie zentriert waren.
+Der Intervall zwischen den Schwellen lag immer zwischen der doppelten und dreifachen Halbwertsbreite der Linien.
+Für die CFD-Schwellen wir, dass die minimale Schwelle für die rechte Seite unterhalb der minimal messbaren Energie lag.
+Für die linke Seite hingegen lag die Schwelle in einem Energiebereich von \SI{24,78 \pm 7,42}{\kilo\eV} und schnitt die K$_\alpha$-Linien ab.
+
+Schlussendlich haben wir die Halbwertszeit des \SI{81}{\kilo\volt} $^{133}$Cs-Zustandes auf
+\begin{displaymath}
+    T_{1/2} = \SI{7,52 \pm 0,19}{\nano\second}
+\end{displaymath}
+bestimmt, was \SI{19,7}{\percent} über dem Literaturwert von \SI{6,283 \pm 0,014}{\nano\second} \cite{Anleitung} liegt.
+
+Alle gemessenen und bestimmten Werte liegen in einer realistischen Größenordnung und ergeben Sinn.
+Damit sehen wir den Versuch als gelungen an.

@@ -1,0 +1,19 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {section}{\numberline {3}Durchführung}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Slowkoinzidenzkreis}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fastkoinzidenzkreis}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Zeitkalibration des TAC}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Lebensdauerbestimmung}{6}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Fitten der Spektrallinien}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Energieeichung}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Energieauflösung für die Spektrallinien}{12}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Zeitkalibration des TAC}{12}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Eingestellte Schwellen der SCAs und CFDs}{14}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Ermittlung der Lebensdauer}{17}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Fazit}{18}{section.5}%
+\contentsline {section}{\numberline {6}Fazit}{19}{section.6}%
+\contentsline {section}{\numberline {7}Anhang}{19}{section.7}%
+\contentsline {section}{Literatur}{31}{section*.51}%
