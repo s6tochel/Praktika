@@ -10,6 +10,7 @@
   separate-uncertainty=true,
   per-mode=symbol
 ]{siunitx}
+\usepackage{multirow}
 
 \sisetup{output-decimal-marker = {,}}
 
@@ -72,7 +73,7 @@ In unserem Fall hat der MCA auch ein Gate Signal, dieses gibt vor, wann die Sign
 Wenn Signale getriggert werden geschieht das im Normalfall mit einem leading edge, also wenn die Amplitude des Signals ein bestimmten Schwellenwert erreicht. 
 Wenn aber zwei Signale in der selben Zeit zwei verschieden große Maxima erreichen, dann erreicht das eine Signal diesen Schwellenwert früher und die Signale würden zu verschiedenen Zeitpunkten triggern. 
 Damit die Signale immer zum selben Zeitpunkt triggern unabhängig von ihrer Amplitude wird bei einem bestimmten Anteil der maximalen Amplitude getriggert. 
-Dies realisiert der CFD, indem er das Signal in zwei teilt und den einen Teil invertiert und verzögert auf den anderen Teil des Signals addiert, somit kann an einem bestimmten Punkt ein Nullpunkt erzeugt werden, welcher als Triggerpunkt verwendet wird, dieser prozess ist in Abbildung \ref{cfd1} dargestellt. Schlussendlich sieht man in Abbildung \ref{cfd2}, dass es dadurch zu gleichzeitigem triggern kommt unabhängig von der Amplitude.
+Dies realisiert der CFD, indem er das Signal in zwei teilt und den einen Teil invertiert und verzögert auf den anderen Teil des Signals addiert, somit kann an einem bestimmten Punkt ein Nullpunkt erzeugt werden, welcher als Triggerpunkt verwendet wird, dieser prozess ist in Abbildung \ref{fig:cfd1} dargestellt. Schlussendlich sieht man in Abbildung \ref{fig:cfd2}, dass es dadurch zu gleichzeitigem triggern kommt unabhängig von der Amplitude.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{cfd1.png}

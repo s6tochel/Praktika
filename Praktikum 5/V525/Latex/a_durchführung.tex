@@ -1,9 +1,15 @@
 \section{Durchführung}
-
+Ziel des Versuches ist es den Aufbau in der Abbildung \ref{fig:VollerAufbau} aufzubauen und die Lebensdauer des angeregten Zustands $5/2^+$ des $^{133}$Cs Nuklids zu bestimmen.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{VollerSchaltplan.pdf}
+    \caption{Voller Aufbau des Versuchs.}
+    \label{fig:VollerAufbau}
+\end{figure}
 \subsection{Slowkoinzidenzkreis}
 Als erstes soll der Slowkreis aufgebaut und eingesellt werden. Dazu wird als erstes die Hochspannung des Detektors eingestellt. 
-Zu beginn des Versuches waren diese schon eingeschaltet und eingestellt auf $\SI{610}{\kilo\electronvolt}$ und $\SI{108(1)}{\mikro\electronvolt}$
-für den linken Detektor und $\SI{668}{\kilo\electronvolt}$ und $\SI{118(1)}{\mikro\electronvolt}$ für den rechten Detektor.
+Zu beginn des Versuches waren diese schon eingeschaltet und eingestellt auf $\SI{610}{\kilo\electronvolt}$ und $\SI{108(1)}{\micro\electronvolt}$
+für den linken Detektor und $\SI{668}{\kilo\electronvolt}$ und $\SI{118(1)}{\micro\electronvolt}$ für den rechten Detektor.
 \subsubsection*{Niedervoltspannung}
 Neben der Hochspannung muss auch die Niedervoltspannung vermessen werden.
 Die gemessenen Werte sind in der Tabelle \ref{tab:niedervolt} aufgelistet, Außerdem sind die aufgenommen Oszillatorgraphen in dem Anhang unter Kapitel
@@ -15,14 +21,14 @@ Die Niedervoltspannung wurde mit Hilfe einer speziellen Messspitze an den Oszill
 \begin{tabular}{|c|c|c|}
 \hline
     & Niedervoltkanel & Spannung [V] \\ \hline
-    \multirow{7}{*}{links} & Grd & 0 \\ \hline
+    \multirow[t]{7}{*}{links} & Grd & 0 \\ \hline
                         & +24 & 22 \\ \hline
                         & -24 & -22 \\ \hline
                         & +12 & 12 \\ \hline
                         & -12 & -12 \\ \hline
                         & +6 & unid. \\ \hline
                         & -6 & unid. \\ \hline
-    \multirow{7}{*}{rechts} & Grd & 0.00 \\ \hline
+    \multirow[t]{7}{*}{rechts} & Grd & 0.00 \\ \hline
                         & +24 & 23 \\ \hline
                         & -24 & -24 \\ \hline
                         & +12 & 12 \\ \hline
@@ -42,31 +48,339 @@ der Niedervoltspannungen zu erkennen.
 Um die Slow-pulse des Photomultipliers zu analysieren wurde zunächst das Signal nach dem Vorverstärker und das Signal
 nach dem Hauptverstärker an ein Oszilloskop angeschlossen, der Aufbau der Schaltung ist in der Abbildung \ref{}
 dargestellt.
-
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Koinzidenz}
+    \includegraphics[width=0.8\textwidth]{Schaltplan1.pdf}
+    \caption{Aufbau der Schaltung zur Messung der Slow-pulse des Photomultipliers.}
+    \label{fig:AufbauSlowpulse}
+\end{figure}
+Die damit am Oszilloskop aufgenommenen Signale sind in den Abbildungen \ref{fig:slowpulseLinks} und \ref{fig:slowpulseRechts} zu sehen.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-24.PNG}
+        \caption{Signale des linken Photomultipliers nach dem Vorverstärker (Gelb) und dem Hauptverstärker (Blau).}
+        \label{fig:slowpulseLinks}
+        \centering
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-20.PNG}
+        \caption{Signale des rechten Photomultipliers nach dem Vorverstärker (Gelb) und dem Hauptverstärker (Blau).}
+        \label{fig:slowpulseRechts}
+    \end{subfigure}
     \caption{Aufbau der Schaltung zur Messung der Slow-pulse des Photomultipliers.}
     \label{fig:slowpulse}
 \end{figure}
+
+Das Signal nach dem Vorverstärker steigt zunächst stark an und fällt dann langsam wieder ab, während das Signal nach 
+dem Hauptverstärker eine Gaußförmige kurve ist, welcher im Vergleich schnell ansteigt und dann auch schnell absteigt.
+Dabei steigt das Signal nach dem Vorverstärker rechts innerhalb von $\SI{10}{\micro\s}$ an, dabei wird eine Amplitude von etwa 
+$\SI{900}{\milli\volt}$ erreicht und fällt dann über eine dauer von 
+mehr als $\SI{100}{\micro\s}$ ab, es wurde nicht der komplette Abfall des Signals mit aufgenommen, deshalb kann hier nur 
+eine grobe Schätzung gemacht werden.
+Für die Linkeseite wurde eine Anstiegszeit von etwa $\SI{5}{\micro\s}$ gemessen, dabei erreichte das Signal eine 
+maximale Amplitude von etwa $\SI{500}{\milli\volt}$. Die Abfallzeit betrug etwa $\SI{100}{\micro\s}$.
+
+Die Signale nach dem Hauptverstärker auf der rechten Seite wurden mit einer Anstiegszeit von etwa $\SI{10}{\micro\s}$ gemessen, 
+genau wie die Abstiegszeit auch, wobei hier zu erwähnen ist, dass das Signal nach oben hin abgeschnitten war, dies kann daren liegen, 
+dass entweder der Arbeitsbereich des Verstärker überschritten wurde, oder das Signal einen hohen Offset hatte, welches auch zur 
+überschreitung des Arbeitsbereichs führen kann.
+Die maximale ablesbare Amplitude betrug hier etwa $\SI{6}{\volt}$, wobei durch das Clipping eine höhere Verstärkung nicht ablesbar ist
+und damit ist die genaue Verstärkung nicht bestimmbar.
+Auf der Rechtenseite wurde somit eine Verstärkung erreicht die größer ist als $\nu_\text{rechts}\geq 6,67$ 
+Auf der Linkenseite wurde eine Anstiegszeit von etwa $\SI{10}{\micro\s}$ gemessen, dieser entspricht auch der Abfallzeit. 
+Die maximale Amplitude betrug hier etwa $\SI{6,8}{\volt}$. 
+Damit ist die Verstärkung auf der Linkenseite bei $\nu_\text{links}\approx 13,6$.
+
 \subsubsection*{Triggerung mit dem SCA}
+Der vorherige Aufbau wird um den SCA erweitert, dieser wird zunächst aber komplett geöffnet, um zu unter suchen, wie dieser
+unser beeinträchtigt.
+Um dies zu realisieren wird das Signal nach dem Hauptverstärker am Signalteiler aufgeteilt und geht zum einen in den SCA und
+zum anderen in ein Delay-Amplifier.
+Das Signal wird am Signalteiler geteilt um die Form des Signal beizubehalten.
+Außerdem wird der GDG auch schon angeschlossen, aber die Verzögerung ist auf nullgesetzt.
+Der Aufbau ist in der Abbildung \ref{fig:AufbauSCA} zu sehen.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Schaltplan2.pdf}
+    \caption{Aufbau der Schaltung zur Messung der Slow-pulse des Photomultipliers mit dem SCA.}
+    \label{fig:AufbauSCA}
+\end{figure}
+Mit diesem Aufbau wurde dann der Ausgang am SCA und der Ausgang am Delay-Amplifier am Oszilloskop angeschlossen und beobachtet.
+Die beobachteten Signale sind in den Abbildungen \ref{fig:scaLinks} und \ref{fig:scaRechts} zu sehen.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-25.PNG}
+        \caption{Signal des SCA (Gelb) und des Delay-Amplifiers (Blau) auf der linken Seite.}
+        \label{fig:scaLinks}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-21.PNG}
+        \caption{Signal des SCA (Gelb) und des Delay-Amplifiers (Blau) auf der rechten Seite.}
+        \label{fig:scaRechts}
+    \end{subfigure}
+    \caption{Signal des SCA verglichen mit dem Signal nach dem Delay-Amplifier.}
+    \label{fig:sca}
+\end{figure}
+Wie zu erkennen ist, ist das Signal nach dem SCA Gaußförmig und man erkennt mehr als ein gausförmiges Signal
+die alle um den gleichen Schwerpunkt gruppiert sind, allerdings mit verschiedenen Amplituden. 
+Die Gruppe an mittleren Signalen sind die der $\SI{511}{\kilo\electronvolt}$-Linie.
+Das Signal nach dem Delay-Amplifier ist rechteckig.
+Nun wird die $\SI{511}{\kilo\electronvolt}$-Linie auf eine Signalstärke von etwa 3-4$\si{\eV}$ eingestellt und 
+solange verzögert bis das Analoge Signal innerhalb des digitalen Signals liegt.
+Zu sehen ist das in den Abbildungen \ref{SCAVerzögertLinks} und \ref{SCAVerzögertrechts}.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-27.PNG}
+        \caption{Signal des SCA (Gelb) und des Delay-Amplifiers (Blau) überlappt auf der linken Seite.}
+        \label{SCAVerzögertLinks}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-22.PNG}
+        \caption{Signal des SCA (Gelb) und des Delay-Amplifiers (Blau) überlappt auf der rechten Seite.}
+        \label{SCAVerzögertrechts}
+    \end{subfigure}
+    \caption{Signal des SCA verglichen mit dem Signal nach dem Delay-Amplifier, verzögert und überlappt.}
+    \label{fig:SCAVerzögert}
+\end{figure}
+Damit konnten die Signale zur vollständigen Überlappung gebracht werden. 
+Die Signale auf der Rechtenseite mussten um etwa $\SI{5,8(2)}{\micro\s}$ verzögert werden und auf der 
+Linkenseite um etwa $\SI{6,0(2)}{\micro\s}$.
+Ab hier darf die Verstärkung nicht mehr verändert werden, da sonst die Position der $\SI{511}{\kilo\electronvolt}$-Linie
+im Spektrum verschoben wird und damit auch die Überlappung nicht mehr gegeben ist.
+
 \subsubsection*{Energiespektrum der $^{22}$Na-Quelle}
+Jetzt kann mithilfe des Signals aus dem SCA eine Spektralaufnahme des Spektrum der $^{22}$Na-Quelle gemacht werden.
+Dazu wird der Ausgang des SCA an den Eingang des MCA angeschlossen und der Gate-Delay-Generator an den Gate-Eingang des MCA.
+Dann kann mit Hilfe der Software MCA3 an dem Computer das Spektrum aufgenommen werden.
+Der Aufbau ist in der Abbildung \ref{fig:AufbauMCA} zu sehen.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Schaltplan3.pdf}
+    \caption{Aufbau der Schaltung zur Messung des Energiespektrums der $^{22}$Na-Quelle.}
+    \label{fig:AufbauMCA}
+\end{figure}
+Die aufgenommenen Spektren sind im Anhang in den Abbildungen \ref{fig:SpektrumNaLinks} und \ref{fig:SpektrumNaRechts} zu sehen.
+Es ist zu erkennen das bei dem Natrium zwei Linien erkannt werden können, die der $\SI{511}{\kilo\eV}$- und der $\SI{1274}{\kilo\eV}$-Linie.
+Nachdem das vollständige Spektrum aufgenommen wurde, wird die Verstärkung so lange erhöht, bis die 
+$\SI{511}{\kilo\eV}$-Linie am rechten Rand des Aufnahmefensters von dem MCA liegt.
+Diese Aufnahmen sind im Anhang in den Abbildungen \ref{fig:SpektrumNaLinks511} und \ref{fig:SpektrumNaRechts511} zu sehen. 
+Außerdem ist darauf zu achten, dass sowohl die $\SI{511}{\kilo\eV}$-Linie des $^{22}$Na als auch die $\SI{81}{\kilo\eV}$-Linie des $^{133}$Ba im messbaren Bereich des MCA liegt.
+
 \subsubsection*{Energiespektren der $^{22}$Na- und $^{133}$Ba-Quellen}
+Nachdem alles eingestellt wurde können dann die vollständigen spektren der beiden Quellen aufgenommen werden.
+Diese Aufnahmen werden mit dem selben Aufbau (Abbildung \ref{fig:AufbauMCA}) wie bei der $^{22}$Na-Quelle gemacht.
+Die aufgenommenen Rohdaten der Spektren liegen im Anhang in dem Abschnitt \ref{sec:RohSpektren}.
 \subsubsection*{Einkanalfenster der $^{22}$Na-Quelle} 
+Nun wird das Einkanalfenster für die $^{22}$Na-Quelle eingestellt.
+Dazu wird der Einkanalanalysator auf die $\SI{511}{\kilo\eV}$-Linie eingestellt, indem die Schwellen bei fortwährender Aufnahme
+verstellt werden, bis nur noch die $\SI{511}{\kilo\eV}$-Linie wächst.
+Anschließend wird diese dann aufgenommen, damit aus der Aufnahme die Schwellen des SCA bestimmt werden können.
+Die aufgenommenen Spektren sind im Anhang in den Abbildungen \ref{fig:SpektrumNaLinksEinkanal} und \ref{fig:SpektrumNaRechtsEinkanal} zu sehen.
+
+Es wurden dann noch das Eingangssignal des MCA und das Gatesignal des MCA an den Oszilloskop angeschlossen und beobachtet.
+Abgebildet ist das ganze in den Abbildungen \ref{fig:MCAOsziLinks} und \ref{fig:MCAOsziRechts}.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-28.PNG}
+        \caption{Signal des MCA Eingangs (Gelb) und des Gate Eingangs (Blau) auf der Linkenseite.}
+        \label{fig:MCAOsziLinks}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-23.PNG}
+        \caption{Signal des MCA Eingangs (Gelb) und des Gate Eingangs (Blau) auf der rechtenseite.}
+        \label{fig:MCAOsziRechts}
+    \end{subfigure}
+    \caption{Signal des MCA Eingangs verglichen mit dem Gate-Eingang des MCA.}
+    \label{fig:MCAOszi}
+\end{figure}
+Es kann beobachtet werden, dass die Anzahl an sichtbaren Linien weniger geworden ist und das die Amplitude gewachsen ist.
+Im weiteren Verlauf wurde dann der Delay-Amplifier angeschlossen gelassen und der Schaltkreis für die Slowkoinzidenz nicht mehr
+verändert, um zu vermeiden, dass die justage verloren geht.
+
+Während des Versuches wurde erst die eine dann die andere Seite eingestellt, im Verlauf des Protokolls aus Übersichtsgründen wurden diese gleichzeitig aufgeführt.
+
 \subsubsection*{Slowkoinzidenz herstellen}
+Um den Slowkoinzidenzkreis zu vervollständigen müssen noch die Signale der rechten und linken Seite in Koinzidenz gebracht werden.
+Dies wurde eingestellt und ist zu sehen in der Abbildung \ref{fig:Slowkoinzidenz}.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Oszi/KOINZ-30.PNG}
+    \caption{Herstellung der Slowkoinzidenz.}
+    \label{fig:Slowkoinzidenz}
+\end{figure}
+Die Signale liegen aufeinander und lösen damit eine Koinzidenz aus, diese besitzen jeweils eine Signalbreite von $\SI{600(20)}{\nano\s}$. 
+Die Signale dürfen also nicht weiter als diese $\SI{600(40)}{\nano\s}$ auseinander liegen, da sonst keine Koinzidenz mehr ausgelöst wird.
 
 \subsection{Fastkoinzidenzkreis}
+Nachdem der Slowkoinzidenzkreis aufgebaut wurde, muss die Fastkoinzidenzkreis aufgenaut werden.
 \subsubsection*{Fast-pulse des Photomultipliers}
+Dazu schauen wir uns erst die Signalformen des Photomulipliers von dem Fast-pulse an.
+Der zugehörige Aufbai ist in der Abbildung \ref{fig:AufbauFastpulse} zu sehen.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Schaltplan7.pdf}
+    \caption{Aufbau der Schaltung zur Messung des Fast-pulse gegen den Slow-pulse Signal.}
+    \label{fig:AufbauFastpulse}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-32.PNG}
+        \caption{Slow-pulse Signal (Gelb) und Fast-pulse Signal (Blau) auf der Linkenseite.}
+        \label{fig:FastVsSlowLinks}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Oszi/KOINZ-31.PNG}
+        \caption{Slow-pulse Signal (Gelb) und Fast-pulse Signal (Blau) auf der Linkenseite.}
+        \label{fig:FastVsSlowRechts}
+    \end{subfigure}
+    \caption{Vergleich des Slow-pulse Signals mit dem Fast-pulse Signal.}
+    \label{fig:FastVsSlow}
+\end{figure}
+Wie in den Aufnahem in Abbildung \ref{fig:FastVsSlow} zu sehen ist, ist der Anstieg des Fast-pulse Signals
+in unserer zeitskala fast instanten. Der Anstiegzeit der Slowsignale beträgt bei beiden Detektoren etwa $\SI{1}{\micro\s}$.
+Auch der Abfall geht bei dem Fast-pulse Signal sehr schnell ca. $SI{1}{\micro\s}$ im Vergleich zum Slow-pulse Signal, diese lagen bei ca $\SI{100}{\micro\s}$
+Das Fast-pulse Signal ist negativ, während das Slow-pulse Signal positiv ist.
+Dies ist die Folge daraus, dass das Fast-pulse Signal an der Anode des Photomultipliers abgenommen wird, also 
+ankommende Elektronen gemessen werden, während das Slow-pulse Signal an der Dynode abgenommen wird, hier werden also 
+die fehlenden Elektronen gemessen. 
+
 \subsubsection*{CFD-Diskriminatorschwelle}
+Im nächstnen Schritt wird der Constant Fraction Discriminator (CFD) angeschlossen und eingestellt. 
+Dazu wird der Aufbau aus der Abbildung \ref{fig:AufbauCFD} verwendet.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Schaltplan4.pdf}
+    \caption{Aufbau der Schaltung zur Messung des Fast-pulse Signals mit dem CFD.}
+    \label{fig:AufbauCFD}
+\end{figure}
+Hierbei wird das Slow-Signal als Eingangssignal des MCA verwendet und das Fast-Signal als Gate-Signal des MCA.
+Dann wird mithilfe des Delay-Amplifiers und des GDG eine zeitliche Koinzidenz zwischen dem Fast- und Slow-Signal hergestellt.
+Die CFD-Schwelle wird möglichst weit runtergedreht, sodass kein Rauschen beobachtbar ist.
+Wenn man die CFD-Schwelle runterstellt kann man erkennen, dass immer mehr Störlinien sichtbar sind und wenn man die Schwelle 
+wieder hochstellt verschwinden diese wieder.
+Wenn die Koinzidenz eingestellt wurde werden die Signale auf den MCA gegeben und das Spektrum der $^{133}$Ba wird für 
+beide Detektoren aufgenommen. 
+Die aufgenommenen Spektren sind im Anhang in den Abbildungen \ref{fig:SpektrumBaLinks} und \ref{fig:SpektrumBaRechts} zu sehen.
+
 \subsubsection*{Fastkoinzidenz herstellen}
+Damit die Fastkoinzidenz hergestellt werden kann, wird der Aufbau aus der Abbildung \ref{fig:AufbauFastkoinzidenz} verwendet.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Schaltplan5.pdf}
+    \caption{Aufbau der Schaltung zur Herstellung der Fastkoinzidenz.}
+    \label{fig:AufbauFastkoinzidenz}
+\end{figure}
+Hierbei wird das Fast-Signal des linken Detektors mit dem Fast-Signal des rechten Detektors in ein TAC gegeben, wobei eine 
+Seite mit einem ns-Delay verzögert wird, damit das Stopsignal definitiv nach dem Startsignal kommt.
+Da bei uns das Spektrum der $^{133}$Ba-Quelle auf der Rechtenseite bei minimaler CFD-Schwelle trotzdem geschnitten war, haben wir 
+uns dafür entschieden, die Rechteseite als Startsignal zu verwenden und die Linkenseite als Stopsignal.
+Die Aufnahme des Start und Stopsignals ist in der Abbildung \ref{StartStopOszi} zu sehen.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Oszi/KOINZ-38.PNG}
+    \caption{Start- (Blau) und Stopsignal (Gelb) der Fastkoinzidenz ohne Verzögerung.}
+    \label{StartStopOszi}
+\end{figure}
+Da hier die Signale Zeitgleich ankommen wurde das Stopsignal um $\SI{16}{\nano\s}$ verzögert, damit das Stopsignal definitiv nach dem Startsignal kommt.
+Die neu eingestellten Signale sind in der Abbildung \ref{fig:Fastkoinzidenz} zu sehen.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Oszi/KOINZ-40.PNG}
+    \caption{Start- (Blau) und Stopsignal (Gelb) der Fastkoinzidenz mit Verzögerung.}
+    \label{fig:StartStopverzögert}
+\end{figure}
+Aus der Abbildung \ref{startStopverzögert} ist zu erkennen, dass das Startsignal ca. $\SI{14(1)}{\nano\s}$ und das Stopsignal ca. $\SI{14(1)}{\nano\s}$ lang sind, 
+bei einer Amplitude von jeweils etwa $\SI{900(100)}{\milli\volt}$.
+Der Abstand zwischen den beiden Signalen beträgt etwa $\SI{21}{\nano\s}$.
+
 \subsubsection*{Zeitlicher Abgleich der Fast- und Slowkoinzidenz}
+Nachdem alles eingestellt wurde, kann der gesamte Aufbau aufgebaut werden, wie in der Abbildung \ref{fig:VollerAufbau} zu sehen ist.
+Das analog Signal des MCA und das TAC-Signal werden an das Oszilloskop angeschlossen und beobachtet.
+Die aufgenommenen Signale sind in der Abbildung \ref{fig:MCATACKoinzidenz} zu sehen.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Oszi/KOINZ-43.PNG}
+    \caption{Signal des MCA (Gelb) und des TAC (Blau) im Vergleich.}
+    \label{fig:MCATACKoinzidenz}
+\end{figure}
+Das Signal der Koinzidenz wird mit dem GDG so eingestellt, dass das Signal des TAC mit dem des Koinzidenz koinzidiert.
+Dies ist wie in Abbildung \ref{fig:MCATACKoinzidenz} zu sehen schon der Fall gewesen, wichtig ist es dass das Gate Signal 
+vollständig in dem Signal des TAC liegt.
+Anschließend kann dann das Koinzidenz-Signal an den Gate-Eingang des MCA angeschlossen werden und das TAC-Signal an den Eingang des MCA.
 
 \subsection{Zeitkalibration des TAC}
+Damit die Zeitauflösung des gesamten Aufbaus bestimmt werden kann, muss die Zeitkalibration des TACs durchgeführt werden.
+Dazu wird eine Prompt-Kurve aufgenommen und die Zeitauflösung aus dieser bestimmt.
 \subsubsection*{Aufnahme der Prompt-Kurve}
-\subsubsection*{Bestimmung der Zeitauflösung und der Zeitkalibration}
+Die Prompt-Kurve wird dazu genutzt die Zeitauflösung des gesamten Aufbaus zu bestimmen.
+Diese entsteht dadurch, dass durch den $\beta +$-Zerfall ein Positron emittiert wird, welches dann mit einem Elektron annihiliert und dabei zwei Photonen emittiert.
+Die Photonen haben eine Energie von jeweils $\SI{511}{\kilo\electronvolt}$ und werden um $180^\degree$ gestreut und von den beiden Detektoren detektiert.
+Da die Messung der Ereignisse zwischen eingehendem Signal und dessen detektion statistisch Verteilt sind, beobachten wir eine Gaußkurve, welche 
+der Prompt-Kurve entspricht.
+Damit die Prompt-Kurve aufgenommen werden kann, wird also der Aufbau aus der Abbildung \ref{fig:VollerAufbau} verwendet.
+Anschließend wird die Prompt-Kurve mit Hilfe der MCA3 Software aufgenommen, nach einer ausreichenden Zeit wird dann durch das ns-Delay 
+eine Zeitverzögerung eingestellt und dies wiederholen wir 5 mal.
+Die aufgenommenen Prompt-Kurven sind in der Abbildung \ref{fig:Prompt} zu sehen.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Spektren/Spektrum12.png}
+    \caption{Aufgenommene Prompt-Kurven.}
+    \label{fig:Prompt}
+\end{figure}
+
 
 
 \subsection{Lebensdauerbestimmung}
+Damit die Lebensdauerkurve gemessen werden kann wird die $$^{133}$$Ba-Quelle in den Aufbau eingebaut.
+
+
 \subsubsection*{Einkanalfenser der $^{133}$Ba-Quelle}
+Die SCA-Fenster werden dann auf $\SI{356}{\kilo\eV}$ für den Start-Signal und auf $\SI{81}{\kilo\eV}$ für das Stop-Signal eingestellt.
+Damit die Linien identifiziert werden können, müssen die Einkanalfenster zunächst vollständig geöffnet werden und dann mit den identifizierten
+Linien wie zuvor eingestellt werden.
+Die abgeschnittenen Spektren sind im Anhang unter den Abbildungen \ref{fig:BaStart} und \ref{fig:BaStop} zu finden.
+
+
 \subsubsection*{Koinzidenzen kontrollieren}
+Im Anschluss wird noch einmal überprüft, ob die Koinzidenz noch vorliegt.
+In der Abbildung \ref{fig:KoinzidenzBa} ist zu sehen, dass die Koinzidenz noch vorliegt, dazu wurde diese noch einmal besser justiert.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Oszi/KOINZ-45.PNG}
+    \caption{Koinzidenz der $^{133}$Ba-Quelle Kontrolle.}
+    \label{fig:KoinzidenzBa}
+\end{figure}
+
 \subsubsection*{Messung der Lebensdauerkurve}
+Nachdem nun der ganze Aufbau aufgebaut und justiert wurde, kann die Lebensdauerkurve aufgenommen werden.
+Dabei wird mit dem ns-Delay die Verzögerung so eingestellt, dass ein möglichst großer Bereich der Kurve aufgenommen wird.
+Die Aufnahmen der Lebensdauerkurve ist im Anhang in der Abbildung \ref{fig:Lebensdauerkurve} zu sehen.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%AUFGABEN%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Na Spektren in den Anhang einfügen und hier referenzieren und auch die auf 511keV eingestellten spektren einfügen
+% Ba Spektren in den Anhang einfügen und hier referenzieren
+% Na Einkanal Spektren in den Anhang einfügen und hier referenzieren
+% Ba spektren nach cfd hinzu fügen und hier referenzieren
+% Lebensdauerkurve in den Anhang einfügen und hier referenzieren

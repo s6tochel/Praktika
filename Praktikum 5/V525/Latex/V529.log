@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  3 JUL 2025 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.24)  3 JUL 2025 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -586,14 +586,20 @@ Package siunitx Info: Option "separate-uncertainty" has been deprecated in
 (siunitx)             
 (siunitx)             Use "uncertainty-mode = separate" as a replacement.
 
- (c:/texlive/2025/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+ (c:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip83
+\multirow@cntb=\count454
+\multirow@dima=\skip84
+\bigstrutjot=\dimen188
+) (c:/texlive/2025/texmf-dist/tex/latex/csvsimple/csvsimple.sty
 Package: csvsimple 2024/09/27 v2.7.0 LaTeX CSV file processing
 ) (c:/texlive/2025/texmf-dist/tex/latex/csvsimple/csvsimple-legacy.sty
 Package: csvsimple-legacy 2024/09/27 version 2.7.0 LaTeX2e CSV file processing
  (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks27
-\pgfutil@tempdima=\dimen188
-\pgfutil@tempdimb=\dimen189
+\pgfutil@tempdima=\dimen189
+\pgfutil@tempdimb=\dimen190
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box68
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -608,31 +614,31 @@ Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \csv@file=\read4
-\c@csvinputline=\count454
-\c@csvrow=\count455
-\c@csvcol=\count456
+\c@csvinputline=\count455
+\c@csvrow=\count456
+\c@csvcol=\count457
 \csv@out=\write4
 ) (c:/texlive/2025/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
  Excluding comment 'comment') (c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen190
-\lightrulewidth=\dimen191
-\cmidrulewidth=\dimen192
-\belowrulesep=\dimen193
-\belowbottomsep=\dimen194
-\aboverulesep=\dimen195
-\abovetopsep=\dimen196
-\cmidrulesep=\dimen197
-\cmidrulekern=\dimen198
-\defaultaddspace=\dimen199
-\@cmidla=\count457
-\@cmidlb=\count458
-\@aboverulesep=\dimen256
-\@belowrulesep=\dimen257
-\@thisruleclass=\count459
-\@lastruleclass=\count460
-\@thisrulewidth=\dimen258
+\heavyrulewidth=\dimen191
+\lightrulewidth=\dimen192
+\cmidrulewidth=\dimen193
+\belowrulesep=\dimen194
+\belowbottomsep=\dimen195
+\aboverulesep=\dimen196
+\abovetopsep=\dimen197
+\cmidrulesep=\dimen198
+\cmidrulekern=\dimen199
+\defaultaddspace=\dimen256
+\@cmidla=\count458
+\@cmidlb=\count459
+\@aboverulesep=\dimen257
+\@belowrulesep=\dimen258
+\@thisruleclass=\count460
+\@lastruleclass=\count461
+\@thisrulewidth=\dimen259
 ) (c:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -648,36 +654,36 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 No file V529.aux.
 \openout1 = `V529.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count461
-\scratchdimen=\dimen259
+\scratchcounter=\count462
+\scratchdimen=\dimen260
 \scratchbox=\box69
-\nofMPsegments=\count462
-\nofMParguments=\count463
+\nofMPsegments=\count463
+\nofMParguments=\count464
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count464
-\MPscratchDim=\dimen260
-\MPnumerator=\count465
-\makeMPintoPDFobject=\count466
+\MPscratchCnt=\count465
+\MPscratchDim=\dimen261
+\MPnumerator=\count466
+\makeMPintoPDFobject=\count467
 \everyMPtoPDFconversion=\toks32
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -699,12 +705,12 @@ Package siunitx Warning: Detected the "physics" package:
 (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 34.
-Package hyperref Info: Link coloring OFF on input line 34.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 35.
+Package hyperref Info: Link coloring OFF on input line 35.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported  on input line 34.
+(babel)             Reported  on input line 35.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -728,8 +734,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'V529.bbl' not found.
 
 No file V529.bbl.
-Package biblatex Info: Reference section=0 on input line 34.
-Package biblatex Info: Reference segment=0 on input line 34.
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
 
 
 [1
@@ -745,141 +751,398 @@ No file V529.toc.
 
 [3]
 
-LaTeX Warning: Reference `cfd1' on page 4 undefined on input line 75.
+LaTeX Warning: Reference `fig:cfd1' on page 4 undefined on input line 76.
 
 
-LaTeX Warning: Reference `cfd2' on page 4 undefined on input line 75.
+LaTeX Warning: Reference `fig:cfd2' on page 4 undefined on input line 76.
 
 <../Abbildungen/cfd1.png, id=32, 702.82574pt x 384.2355pt>
 File: ../Abbildungen/cfd1.png Graphic file (type png)
 <use ../Abbildungen/cfd1.png>
-Package pdftex.def Info: ../Abbildungen/cfd1.png  used on input line 78.
+Package pdftex.def Info: ../Abbildungen/cfd1.png  used on input line 79.
 (pdftex.def)             Requested size: 276.00105pt x 150.88898pt.
 
-LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 79.
+LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 80.
 
 
-LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 79.
+LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 80.
 
 <../Abbildungen/cfd2.png, id=33, 1204.5pt x 516.93124pt>
 File: ../Abbildungen/cfd2.png Graphic file (type png)
 <use ../Abbildungen/cfd2.png>
-Package pdftex.def Info: ../Abbildungen/cfd2.png  used on input line 84.
+Package pdftex.def Info: ../Abbildungen/cfd2.png  used on input line 85.
 (pdftex.def)             Requested size: 276.00105pt x 118.44997pt.
 
-LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 85.
+LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 86.
 
 
-LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 85.
+LaTeX Warning: Citation 'cfd' on page 4 undefined on input line 86.
 
 
 
 [4]
 
 [5 <../Abbildungen/cfd1.png> <../Abbildungen/cfd2.png>] (./a_durchführung.tex
-./a_durchführung.tex:5: Undefined control sequence.
-<argument> \mikro 
-                  \electronvolt 
-l.5 ...olt}$ und $\SI{108(1)}{\mikro\electronvolt}
-                                                  $
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./a_durchführung.tex:5: Undefined control sequence.
-<argument> \mikro 
-                  \electronvolt 
-l.5 ...olt}$ und $\SI{108(1)}{\mikro\electronvolt}
-                                                  $
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: Reference `fig:VollerAufbau' on page 6 undefined on input line 2.
 
-./a_durchführung.tex:6: Undefined control sequence.
-<argument> \mikro 
-                  \electronvolt 
-l.6 ...olt}$ und $\SI{118(1)}{\mikro\electronvolt}
-                                                  $ für den rechten Detektor.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./a_durchführung.tex:6: Undefined control sequence.
-<argument> \mikro 
-                  \electronvolt 
-l.6 ...olt}$ und $\SI{118(1)}{\mikro\electronvolt}
-                                                  $ für den rechten Detektor.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `tab:niedervolt' on page 6 undefined on input line 9.
-
-
-LaTeX Warning: Reference `sec:anhang' on page 6 undefined on input line 10.
-
-./a_durchführung.tex:18: Undefined control sequence.
-<recently read> \multirow 
-                          
-l.18     \multirow
-                  {7}{*}{links} & Grd & 0 \\ \hline
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./a_durchführung.tex:25: Undefined control sequence.
-<recently read> \multirow 
-                          
-l.25     \multirow
-                  {7}{*}{rechts} & Grd & 0.00 \\ \hline
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+<../Abbildungen/VollerSchaltplan.pdf, id=52, 1200.70628pt x 543.44762pt>
+File: ../Abbildungen/VollerSchaltplan.pdf Graphic file (type pdf)
+<use ../Abbildungen/VollerSchaltplan.pdf>
+Package pdftex.def Info: ../Abbildungen/VollerSchaltplan.pdf  used on input line 5.
+(pdftex.def)             Requested size: 276.00105pt x 124.91568pt.
 
 
 [6]
 
-LaTeX Warning: Reference `' on page 7 undefined on input line 43.
+LaTeX Warning: Reference `tab:niedervolt' on page 7 undefined on input line 15.
 
 
-./a_durchführung.tex:48: LaTeX Error: File `Koinzidenz' not found.
+LaTeX Warning: Reference `sec:anhang' on page 7 undefined on input line 16.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 ...egraphics[width=0.8\textwidth]{Koinzidenz}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+
+LaTeX Warning: Reference `' on page 7 undefined on input line 49.
+
+<../Abbildungen/Schaltplan1.pdf, id=59, 682.86612pt x 312.98033pt>
+File: ../Abbildungen/Schaltplan1.pdf Graphic file (type pdf)
+<use ../Abbildungen/Schaltplan1.pdf>
+Package pdftex.def Info: ../Abbildungen/Schaltplan1.pdf  used on input line 53.
+(pdftex.def)             Requested size: 276.00105pt x 126.50322pt.
+
+
+[7{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <../Abbildungen/VollerSchaltplan.pdf>]
+
+LaTeX Warning: Reference `fig:slowpulseLinks' on page 8 undefined on input line 57.
+
+
+LaTeX Warning: Reference `fig:slowpulseRechts' on page 8 undefined on input line 57.
+
+<../Abbildungen/Oszi/KOINZ-24.PNG, id=81, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-24.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-24.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-24.PNG  used on input line 63.
+(pdftex.def)             Requested size: 165.59853pt x 134.54897pt.
+<../Abbildungen/Oszi/KOINZ-20.PNG, id=82, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-20.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-20.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-20.PNG  used on input line 71.
+(pdftex.def)             Requested size: 165.59853pt x 134.54897pt.
+
+
+[8 <../Abbildungen/Schaltplan1.pdf>]
+Overfull \hbox (15.68233pt too wide) in paragraph at lines 79--87
+\OT1/cmr/m/n/10 lang-sam wie-der ab, w[]ahrend das Si-gnal nach dem Haupt-verst[]arker ei-ne Gau^^Yf[]ormige
+ []
+
+
+LaTeX Warning: Reference `fig:AufbauSCA' on page 9 undefined on input line 106.
+
+<../Abbildungen/Schaltplan2.pdf, id=99, 711.31892pt x 455.2441pt>
+File: ../Abbildungen/Schaltplan2.pdf Graphic file (type pdf)
+<use ../Abbildungen/Schaltplan2.pdf>
+Package pdftex.def Info: ../Abbildungen/Schaltplan2.pdf  used on input line 109.
+(pdftex.def)             Requested size: 276.00105pt x 176.64143pt.
+
+LaTeX Warning: Reference `fig:scaLinks' on page 9 undefined on input line 114.
+
+
+LaTeX Warning: Reference `fig:scaRechts' on page 9 undefined on input line 114.
+
+<../Abbildungen/Oszi/KOINZ-25.PNG, id=100, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-25.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-25.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-25.PNG  used on input line 119.
+(pdftex.def)             Requested size: 155.24895pt x 126.13866pt.
+<../Abbildungen/Oszi/KOINZ-21.PNG, id=101, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-21.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-21.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-21.PNG  used on input line 126.
+(pdftex.def)             Requested size: 155.24895pt x 126.13866pt.
+
+
+[9 <../Abbildungen/Oszi/KOINZ-24.PNG> <../Abbildungen/Oszi/KOINZ-20.PNG>]
+
+LaTeX Warning: Reference `SCAVerzögertLinks' on page 10 undefined on input line 139.
+
+
+LaTeX Warning: Reference `SCAVerzögertrechts' on page 10 undefined on input line 139.
+
+<../Abbildungen/Oszi/KOINZ-27.PNG, id=111, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-27.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-27.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-27.PNG  used on input line 144.
+(pdftex.def)             Requested size: 165.59853pt x 134.54897pt.
+<../Abbildungen/Oszi/KOINZ-22.PNG, id=112, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-22.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-22.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-22.PNG  used on input line 151.
+(pdftex.def)             Requested size: 165.59853pt x 134.54897pt.
+
+
+[10 <../Abbildungen/Schaltplan2.pdf> <../Abbildungen/Oszi/KOINZ-25.PNG> <../Abbildungen/Oszi/KOINZ-21.PNG>]
+
+LaTeX Warning: Reference `fig:AufbauMCA' on page 11 undefined on input line 168.
+
+<../Abbildungen/Schaltplan3.pdf, id=131, 910.48819pt x 455.2441pt>
+File: ../Abbildungen/Schaltplan3.pdf Graphic file (type pdf)
+<use ../Abbildungen/Schaltplan3.pdf>
+Package pdftex.def Info: ../Abbildungen/Schaltplan3.pdf  used on input line 171.
+(pdftex.def)             Requested size: 276.00105pt x 137.9983pt.
+
+
+[11 <../Abbildungen/Oszi/KOINZ-27.PNG> <../Abbildungen/Oszi/KOINZ-22.PNG>]
+
+LaTeX Warning: Reference `fig:SpektrumNaLinks' on page 12 undefined on input line 175.
+
+
+LaTeX Warning: Reference `fig:SpektrumNaRechts' on page 12 undefined on input line 175.
+
+
+LaTeX Warning: Reference `fig:SpektrumNaLinks511' on page 12 undefined on input line 179.
+
+
+LaTeX Warning: Reference `fig:SpektrumNaRechts511' on page 12 undefined on input line 179.
+
+
+LaTeX Warning: Reference `fig:AufbauMCA' on page 12 undefined on input line 184.
+
+
+LaTeX Warning: Reference `sec:RohSpektren' on page 12 undefined on input line 185.
+
+
+LaTeX Warning: Reference `fig:SpektrumNaLinksEinkanal' on page 12 undefined on input line 191.
+
+
+LaTeX Warning: Reference `fig:SpektrumNaRechtsEinkanal' on page 12 undefined on input line 191.
+
+
+Overfull \hbox (1.72383pt too wide) in paragraph at lines 187--192
+\OT1/cmr/m/n/10 fortw[]ahrender Auf-nah-me ver-stellt wer-den, bis nur noch die $511 []$-Linie w[]achst.
+ []
+
+
+Overfull \hbox (4.11282pt too wide) in paragraph at lines 187--192
+\OT1/cmr/m/n/10 An-schlie-^^Yend wird die-se dann auf-ge-nom-men, da-mit aus der Auf-nah-me die Schwel-
+ []
+
+
+LaTeX Warning: Reference `fig:MCAOsziLinks' on page 12 undefined on input line 194.
+
+
+LaTeX Warning: Reference `fig:MCAOsziRechts' on page 12 undefined on input line 194.
+
+<../Abbildungen/Oszi/KOINZ-28.PNG, id=140, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-28.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-28.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-28.PNG  used on input line 199.
+(pdftex.def)             Requested size: 165.59853pt x 134.54897pt.
+<../Abbildungen/Oszi/KOINZ-23.PNG, id=141, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-23.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-23.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-23.PNG  used on input line 206.
+(pdftex.def)             Requested size: 165.59853pt x 134.54897pt.
+
+
+[12 <../Abbildungen/Schaltplan3.pdf>]
+
+LaTeX Warning: Reference `fig:Slowkoinzidenz' on page 13 undefined on input line 221.
+
+<../Abbildungen/Oszi/KOINZ-30.PNG, id=159, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-30.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-30.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-30.PNG  used on input line 224.
+(pdftex.def)             Requested size: 276.00105pt x 224.2589pt.
+
+LaTeX Warning: Reference `fig:AufbauFastpulse' on page 13 undefined on input line 235.
+
+<../Abbildungen/Schaltplan7.pdf, id=160, 682.86612pt x 321.51616pt>
+File: ../Abbildungen/Schaltplan7.pdf Graphic file (type pdf)
+<use ../Abbildungen/Schaltplan7.pdf>
+Package pdftex.def Info: ../Abbildungen/Schaltplan7.pdf  used on input line 238.
+(pdftex.def)             Requested size: 276.00105pt x 129.95331pt.
+
+
+[13 <../Abbildungen/Oszi/KOINZ-28.PNG> <../Abbildungen/Oszi/KOINZ-23.PNG>]
+<../Abbildungen/Oszi/KOINZ-32.PNG, id=173, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-32.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-32.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-32.PNG  used on input line 247.
+(pdftex.def)             Requested size: 165.59853pt x 134.54897pt.
+<../Abbildungen/Oszi/KOINZ-31.PNG, id=174, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-31.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-31.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-31.PNG  used on input line 254.
+(pdftex.def)             Requested size: 165.59853pt x 134.54897pt.
+
+
+LaTeX Warning: Reference `fig:FastVsSlow' on page 14 undefined on input line 261.
+
+./a_durchführung.tex:263: Undefined control sequence.
+\micro ->\ERROR 
+                
+l.263 ...lse Signal sehr schnell ca. $SI{1}{\micro
+                                                  \s}$ im Vergleich zum Slow...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./a_durchführung.tex:263: Undefined control sequence.
+\s ->\ERROR 
+            
+l.263 ...e Signal sehr schnell ca. $SI{1}{\micro\s
+                                                  }$ im Vergleich zum Slow-p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:AufbauCFD' on page 14 undefined on input line 271.
+
+<../Abbildungen/Schaltplan4.pdf, id=175, 682.86612pt x 711.31892pt>
+File: ../Abbildungen/Schaltplan4.pdf Graphic file (type pdf)
+<use ../Abbildungen/Schaltplan4.pdf>
+Package pdftex.def Info: ../Abbildungen/Schaltplan4.pdf  used on input line 274.
+(pdftex.def)             Requested size: 276.00105pt x 287.50732pt.
+
+
+[14 <../Abbildungen/Oszi/KOINZ-30.PNG> <../Abbildungen/Schaltplan7.pdf>]
+
+[15 <../Abbildungen/Oszi/KOINZ-32.PNG> <../Abbildungen/Oszi/KOINZ-31.PNG>]
+
+LaTeX Warning: Reference `fig:SpektrumBaLinks' on page 16 undefined on input line 285.
+
+
+LaTeX Warning: Reference `fig:SpektrumBaRechts' on page 16 undefined on input line 285.
+
+
+LaTeX Warning: Reference `fig:AufbauFastkoinzidenz' on page 16 undefined on input line 288.
+
+<../Abbildungen/Schaltplan5.pdf, id=201, 1195.01572pt x 341.43306pt>
+File: ../Abbildungen/Schaltplan5.pdf Graphic file (type pdf)
+<use ../Abbildungen/Schaltplan5.pdf>
+Package pdftex.def Info: ../Abbildungen/Schaltplan5.pdf  used on input line 291.
+(pdftex.def)             Requested size: 276.00105pt x 78.85616pt.
+
+
+[16 <../Abbildungen/Schaltplan4.pdf>]
+
+LaTeX Warning: Reference `StartStopOszi' on page 17 undefined on input line 299.
+
+<../Abbildungen/Oszi/KOINZ-38.PNG, id=218, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-38.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-38.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-38.PNG  used on input line 302.
+(pdftex.def)             Requested size: 276.00105pt x 224.2589pt.
+
+LaTeX Warning: Reference `fig:Fastkoinzidenz' on page 17 undefined on input line 307.
+
+<../Abbildungen/Oszi/KOINZ-40.PNG, id=219, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-40.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-40.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-40.PNG  used on input line 310.
+(pdftex.def)             Requested size: 276.00105pt x 224.2589pt.
+
+LaTeX Warning: Reference `startStopverzögert' on page 17 undefined on input line 314.
+
+
+LaTeX Warning: Reference `fig:VollerAufbau' on page 17 undefined on input line 319.
+
+
+LaTeX Warning: Reference `fig:MCATACKoinzidenz' on page 17 undefined on input line 321.
+
+<../Abbildungen/Oszi/KOINZ-43.PNG, id=220, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-43.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-43.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-43.PNG  used on input line 324.
+(pdftex.def)             Requested size: 276.00105pt x 224.2589pt.
+
+
+[17 <../Abbildungen/Oszi/KOINZ-38.PNG> <../Abbildungen/Schaltplan5.pdf>]
+
+[18 <../Abbildungen/Oszi/KOINZ-40.PNG>]
+
+LaTeX Warning: Reference `fig:MCATACKoinzidenz' on page 19 undefined on input line 329.
+
+./a_durchführung.tex:339: Undefined control sequence.
+\degree ->\ERROR 
+                 
+l.339 ...electronvolt}$ und werden um $180^\degree
+                                                  $ gestreut und von den bei...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./a_durchführung.tex:339: Missing { inserted.
+<to be read again> 
+                   $
+l.339 ...lectronvolt}$ und werden um $180^\degree$
+                                                   gestreut und von den beid...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+./a_durchführung.tex:339: Missing } inserted.
+<inserted text> 
+                }
+l.339 ...lectronvolt}$ und werden um $180^\degree$
+                                                   gestreut und von den beid...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: Reference `fig:VollerAufbau' on page 19 undefined on input line 342.
+
+
+LaTeX Warning: Reference `fig:Prompt' on page 19 undefined on input line 345.
+
+<../Abbildungen/Spektren/Spektrum12.png, id=245, 462.528pt x 346.896pt>
+File: ../Abbildungen/Spektren/Spektrum12.png Graphic file (type png)
+<use ../Abbildungen/Spektren/Spektrum12.png>
+Package pdftex.def Info: ../Abbildungen/Spektren/Spektrum12.png  used on input line 348.
+(pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
+
+
+[19 <../Abbildungen/Oszi/KOINZ-43.PNG>]
+
+LaTeX Warning: Reference `fig:BaStart' on page 20 undefined on input line 363.
+
+
+LaTeX Warning: Reference `fig:BaStop' on page 20 undefined on input line 363.
+
+
+LaTeX Warning: Reference `fig:KoinzidenzBa' on page 20 undefined on input line 368.
+
+<../Abbildungen/Oszi/KOINZ-45.PNG, id=255, 642.4pt x 521.95pt>
+File: ../Abbildungen/Oszi/KOINZ-45.PNG Graphic file (type png)
+<use ../Abbildungen/Oszi/KOINZ-45.PNG>
+Package pdftex.def Info: ../Abbildungen/Oszi/KOINZ-45.PNG  used on input line 371.
+(pdftex.def)             Requested size: 276.00105pt x 224.2589pt.
+
+
+[20 <../Abbildungen/Spektren/Spektrum12.png>]
+
+LaTeX Warning: Reference `fig:Lebensdauerkurve' on page 21 undefined on input line 379.
+
+
+Overfull \hbox (0.50723pt too wide) in paragraph at lines 377--380
+\OT1/cmr/m/n/10 dau-er-kur-ve auf-ge-nom-men wer-den. Da-bei wird mit dem ns-Delay die Verz[]ogerung
+ []
 
 ) (./b_auswertung.tex) (./c_anhang.tex)
 
-[7]
+[21 <../Abbildungen/Oszi/KOINZ-45.PNG>]
 
-[8]
-
-LaTeX Warning: Empty bibliography on input line 137.
-
-
-Package caption Warning: Unused \captionsetup[sub] on input line 23.
-See the caption package documentation for explanation.
+LaTeX Warning: Empty bibliography on input line 138.
 
 (./V529.aux)
  ***********
@@ -903,18 +1166,18 @@ Package logreq Info: Writing requests to 'V529.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26431 strings out of 469626
- 524371 string characters out of 5475183
- 1336126 words of memory out of 5000000
- 52916 multiletter control sequences out of 15000+600000
- 632208 words of font info for 59 fonts, out of 8000000 for 9000
+ 26770 strings out of 469626
+ 534058 string characters out of 5475183
+ 1336739 words of memory out of 5000000
+ 53217 multiletter control sequences out of 15000+600000
+ 633520 words of font info for 63 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,9n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on V529.pdf (8 pages, 297915 bytes).
+ 75i,11n,80p,777b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on V529.pdf (21 pages, 877523 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
 
